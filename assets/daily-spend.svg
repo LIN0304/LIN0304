@@ -1,107 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace">
   <defs>
-    <linearGradient id="barGrad" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#2C7A7B"/>
-      <stop offset="100%" stop-color="#1A4D4E"/>
-    </linearGradient>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#F7FAF9"/>
-      <stop offset="100%" stop-color="#EEF3F1"/>
-    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="0" cy="0" r="0.6" fill="#3b1f0d"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="0.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="1200" height="520" rx="14" fill="url(#bg)"/>
-  <text x="32" y="38" font-size="13" font-weight="700" letter-spacing="2" fill="#0F3D2E">DAILY SPEND</text>
-  <text x="32" y="64" font-size="20" font-weight="700" fill="#111">Cost + Tokens by Day</text>
-  <text x="1168" y="38" font-size="12" fill="#4a5b55" text-anchor="end">14 of 14 days &#183; 13 active &#183; day-by-day bars</text>
-
-  <!-- baseline -->
-  <line x1="40" y1="380" x2="1160" y2="380" stroke="#cfd8d5" stroke-width="1"/>
-
-  <!-- Bars: 14 days, max ~$720 -->
-  <!-- Layout: each slot 78px wide, bar 56px, gap 22; start x=50 -->
-  <g>
-    <!-- Apr 30: 0.15 -->
-    <rect x="50"  y="378" width="56" height="2"   rx="3" fill="url(#barGrad)"/>
-    <text x="78"  y="370" font-size="11" fill="#111" text-anchor="middle">$0.148</text>
-    <!-- May 1: 0 -->
-    <rect x="128" y="379" width="56" height="1"   rx="3" fill="#cfd8d5"/>
-    <text x="156" y="370" font-size="11" fill="#888" text-anchor="middle">$0.000</text>
-    <!-- May 2: 26.95 -->
-    <rect x="206" y="365" width="56" height="15"  rx="3" fill="url(#barGrad)"/>
-    <text x="234" y="357" font-size="11" fill="#111" text-anchor="middle">$26.952</text>
-    <!-- May 3: 82.18 -->
-    <rect x="284" y="335" width="56" height="45"  rx="3" fill="url(#barGrad)"/>
-    <text x="312" y="327" font-size="11" fill="#111" text-anchor="middle">$82.177</text>
-    <!-- May 4: 120.29 -->
-    <rect x="362" y="316" width="56" height="64"  rx="3" fill="url(#barGrad)"/>
-    <text x="390" y="308" font-size="11" fill="#111" text-anchor="middle">$120.285</text>
-    <!-- May 5: 171.75 -->
-    <rect x="440" y="287" width="56" height="93"  rx="3" fill="url(#barGrad)"/>
-    <text x="468" y="279" font-size="11" fill="#111" text-anchor="middle">$171.752</text>
-    <!-- May 6: 84.90 -->
-    <rect x="518" y="334" width="56" height="46"  rx="3" fill="url(#barGrad)"/>
-    <text x="546" y="326" font-size="11" fill="#111" text-anchor="middle">$84.897</text>
-    <!-- May 7: 365.94 -->
-    <rect x="596" y="181" width="56" height="199" rx="3" fill="url(#barGrad)"/>
-    <text x="624" y="173" font-size="11" fill="#111" text-anchor="middle">$365.942</text>
-    <!-- May 8: 464.72 -->
-    <rect x="674" y="127" width="56" height="253" rx="3" fill="url(#barGrad)"/>
-    <text x="702" y="119" font-size="11" fill="#111" text-anchor="middle">$464.717</text>
-    <!-- May 9: 540.97 -->
-    <rect x="752" y="85"  width="56" height="295" rx="3" fill="url(#barGrad)"/>
-    <text x="780" y="77"  font-size="11" fill="#111" text-anchor="middle">$540.973</text>
-    <!-- May 10: 289.15 -->
-    <rect x="830" y="223" width="56" height="157" rx="3" fill="url(#barGrad)"/>
-    <text x="858" y="215" font-size="11" fill="#111" text-anchor="middle">$289.148</text>
-    <!-- May 11: 185.15 -->
-    <rect x="908" y="280" width="56" height="100" rx="3" fill="url(#barGrad)"/>
-    <text x="936" y="272" font-size="11" fill="#111" text-anchor="middle">$185.154</text>
-    <!-- May 12: 720.00 (max) -->
-    <rect x="986" y="85"  width="56" height="295" rx="3" fill="url(#barGrad)"/>
-    <text x="1014" y="77" font-size="11" fill="#111" text-anchor="middle">$720.000</text>
-    <!-- May 13: 675.30 -->
-    <rect x="1064" y="105" width="56" height="275" rx="3" fill="url(#barGrad)"/>
-    <text x="1092" y="97"  font-size="11" fill="#111" text-anchor="middle">$675.300</text>
-  </g>
-
-  <!-- Date labels -->
-  <g font-size="11" fill="#4a5b55" text-anchor="middle">
-    <text x="78"   y="402">Apr 30</text>
-    <text x="156"  y="402">May 1</text>
-    <text x="234"  y="402">May 2</text>
-    <text x="312"  y="402">May 3</text>
-    <text x="390"  y="402">May 4</text>
-    <text x="468"  y="402">May 5</text>
-    <text x="546"  y="402">May 6</text>
-    <text x="624"  y="402">May 7</text>
-    <text x="702"  y="402">May 8</text>
-    <text x="780"  y="402">May 9</text>
-    <text x="858"  y="402">May 10</text>
-    <text x="936"  y="402">May 11</text>
-    <text x="1014" y="402">May 12</text>
-    <text x="1092" y="402">May 13</text>
-  </g>
-
-  <!-- Token sub-labels -->
-  <g font-size="11" font-weight="700" fill="#0F3D2E" text-anchor="middle">
-    <text x="78"   y="420">50.5K</text>
-    <text x="156"  y="420">0</text>
-    <text x="234"  y="420">25.24M</text>
-    <text x="312"  y="420">107.49M</text>
-    <text x="390"  y="420">153.20M</text>
-    <text x="468"  y="420">220.90M</text>
-    <text x="546"  y="420">105.50M</text>
-    <text x="624"  y="420">433.80M</text>
-    <text x="702"  y="420">524.20M</text>
-    <text x="780"  y="420">625.30M</text>
-    <text x="858"  y="420">351.90M</text>
-    <text x="936"  y="420">196.00M</text>
-    <text x="1014" y="420">810.00M</text>
-    <text x="1092" y="420">752.40M</text>
-  </g>
-
-  <!-- Footer range -->
-  <rect x="32" y="450" width="1136" height="42" rx="8" fill="#ffffff" stroke="#dfe7e4"/>
-  <text x="48" y="476" font-size="12" fill="#4a5b55">Range</text>
-  <text x="1152" y="476" font-size="12" font-weight="700" fill="#0F3D2E" text-anchor="end">2026-04-30 to 2026-05-13 &#183; 14 of 14 days &#183; 13 active</text>
+  <rect width="1200" height="540" fill="#1a0f08" rx="14"/>
+  <rect width="1200" height="540" fill="url(#grid)" rx="14"/>
+  <rect x="6" y="6" width="1188" height="528" fill="none" stroke="#d97706" stroke-width="1.5" rx="12"/>
+  <text x="32" y="48" font-size="20" font-weight="700" fill="#f97316" filter="url(#glow)">:: DAILY_SPEND // COST_BY_DAY</text>
+  <text x="1168" y="48" font-size="12" fill="#d97706" text-anchor="end">ASCII // ORANGE GRID</text>
+  <text x="32" y="72" font-size="12" fill="#fcd34d">&gt; 14 of 14 days | 13 active | range 2026-04-30 → 2026-05-13</text>
+  <line x1="24" y1="88" x2="1176" y2="88" stroke="#7c2d12" stroke-width="1"/>
+    <text x="100" y="123" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">04-30</text>
+    <rect x="170" y="110" width="2" height="18" fill="#f97316" rx="2"/>
+    <text x="180" y="123" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$0.148</text>
+    <text x="100" y="149" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-01</text>
+    <rect x="170" y="136" width="2" height="18" fill="#f97316" rx="2"/>
+    <text x="180" y="149" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$0.000</text>
+    <text x="100" y="175" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-02</text>
+    <rect x="170" y="162" width="32.94133333333333" height="18" fill="#f97316" rx="2"/>
+    <text x="210.94133333333332" y="175" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$26.952</text>
+    <text x="100" y="201" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-03</text>
+    <rect x="170" y="188" width="100.43855555555557" height="18" fill="#f97316" rx="2"/>
+    <text x="278.4385555555556" y="201" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$82.177</text>
+    <text x="100" y="227" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-04</text>
+    <rect x="170" y="214" width="147.01500000000001" height="18" fill="#f97316" rx="2"/>
+    <text x="325.015" y="227" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$120.285</text>
+    <text x="100" y="253" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-05</text>
+    <rect x="170" y="240" width="209.9191111111111" height="18" fill="#f97316" rx="2"/>
+    <text x="387.9191111111111" y="253" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$171.752</text>
+    <text x="100" y="279" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-06</text>
+    <rect x="170" y="266" width="103.763" height="18" fill="#f97316" rx="2"/>
+    <text x="281.76300000000003" y="279" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$84.897</text>
+    <text x="100" y="305" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-07</text>
+    <rect x="170" y="292" width="447.26244444444444" height="18" fill="#f97316" rx="2"/>
+    <text x="625.2624444444444" y="305" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$365.942</text>
+    <text x="100" y="331" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-08</text>
+    <rect x="170" y="318" width="567.9874444444445" height="18" fill="#f97316" rx="2"/>
+    <text x="745.9874444444445" y="331" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$464.717</text>
+    <text x="100" y="357" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-09</text>
+    <rect x="170" y="344" width="661.1892222222222" height="18" fill="#f97316" rx="2"/>
+    <text x="839.1892222222222" y="357" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$540.973</text>
+    <text x="100" y="383" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-10</text>
+    <rect x="170" y="370" width="353.4031111111111" height="18" fill="#f97316" rx="2"/>
+    <text x="531.4031111111111" y="383" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$289.148</text>
+    <text x="100" y="409" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-11</text>
+    <rect x="170" y="396" width="226.29933333333332" height="18" fill="#f97316" rx="2"/>
+    <text x="404.2993333333333" y="409" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$185.154</text>
+    <text x="100" y="435" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-12</text>
+    <rect x="170" y="422" width="880" height="18" fill="#f97316" rx="2"/>
+    <text x="1058" y="435" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$720.000</text>
+    <text x="100" y="461" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-13</text>
+    <rect x="170" y="448" width="825.3666666666667" height="18" fill="#f97316" rx="2"/>
+    <text x="1003.3666666666667" y="461" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$675.300</text>
+  <rect x="32" y="490" width="1136" height="36" fill="none" stroke="#7c2d12" stroke-width="1" rx="4"/>
+  <text x="48" y="513" font-size="11" fill="#92400e">01001100 // DAILY_SPEND_RENDER</text>
+  <text x="48" y="525" font-size="11" fill="#92400e">for day in range(14): draw_bar(cost=row.v, max=$720.000)</text>
+  <text x="1152" y="519" font-size="12" font-weight="700" fill="#f97316" text-anchor="end">TOTAL = $3,726.680</text>
 </svg>

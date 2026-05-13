@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" font-family="ui-sans-serif, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="barGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2C7A7B"/>
+      <stop offset="100%" stop-color="#1A4D4E"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#F7FAF9"/>
+      <stop offset="100%" stop-color="#EEF3F1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" rx="14" fill="url(#bg)"/>
+  <text x="32" y="38" font-size="13" font-weight="700" letter-spacing="2" fill="#0F3D2E">DAILY SPEND</text>
+  <text x="32" y="64" font-size="20" font-weight="700" fill="#111">Cost + Tokens by Day</text>
+  <text x="1168" y="38" font-size="12" fill="#4a5b55" text-anchor="end">14 of 14 days &#183; 13 active &#183; day-by-day bars</text>
+
+  <!-- baseline -->
+  <line x1="40" y1="380" x2="1160" y2="380" stroke="#cfd8d5" stroke-width="1"/>
+
+  <!-- Bars: 14 days, max ~$720 -->
+  <!-- Layout: each slot 78px wide, bar 56px, gap 22; start x=50 -->
+  <g>
+    <!-- Apr 30: 0.15 -->
+    <rect x="50"  y="378" width="56" height="2"   rx="3" fill="url(#barGrad)"/>
+    <text x="78"  y="370" font-size="11" fill="#111" text-anchor="middle">$0.148</text>
+    <!-- May 1: 0 -->
+    <rect x="128" y="379" width="56" height="1"   rx="3" fill="#cfd8d5"/>
+    <text x="156" y="370" font-size="11" fill="#888" text-anchor="middle">$0.000</text>
+    <!-- May 2: 26.95 -->
+    <rect x="206" y="365" width="56" height="15"  rx="3" fill="url(#barGrad)"/>
+    <text x="234" y="357" font-size="11" fill="#111" text-anchor="middle">$26.952</text>
+    <!-- May 3: 82.18 -->
+    <rect x="284" y="335" width="56" height="45"  rx="3" fill="url(#barGrad)"/>
+    <text x="312" y="327" font-size="11" fill="#111" text-anchor="middle">$82.177</text>
+    <!-- May 4: 120.29 -->
+    <rect x="362" y="316" width="56" height="64"  rx="3" fill="url(#barGrad)"/>
+    <text x="390" y="308" font-size="11" fill="#111" text-anchor="middle">$120.285</text>
+    <!-- May 5: 171.75 -->
+    <rect x="440" y="287" width="56" height="93"  rx="3" fill="url(#barGrad)"/>
+    <text x="468" y="279" font-size="11" fill="#111" text-anchor="middle">$171.752</text>
+    <!-- May 6: 84.90 -->
+    <rect x="518" y="334" width="56" height="46"  rx="3" fill="url(#barGrad)"/>
+    <text x="546" y="326" font-size="11" fill="#111" text-anchor="middle">$84.897</text>
+    <!-- May 7: 365.94 -->
+    <rect x="596" y="181" width="56" height="199" rx="3" fill="url(#barGrad)"/>
+    <text x="624" y="173" font-size="11" fill="#111" text-anchor="middle">$365.942</text>
+    <!-- May 8: 464.72 -->
+    <rect x="674" y="127" width="56" height="253" rx="3" fill="url(#barGrad)"/>
+    <text x="702" y="119" font-size="11" fill="#111" text-anchor="middle">$464.717</text>
+    <!-- May 9: 540.97 -->
+    <rect x="752" y="85"  width="56" height="295" rx="3" fill="url(#barGrad)"/>
+    <text x="780" y="77"  font-size="11" fill="#111" text-anchor="middle">$540.973</text>
+    <!-- May 10: 289.15 -->
+    <rect x="830" y="223" width="56" height="157" rx="3" fill="url(#barGrad)"/>
+    <text x="858" y="215" font-size="11" fill="#111" text-anchor="middle">$289.148</text>
+    <!-- May 11: 185.15 -->
+    <rect x="908" y="280" width="56" height="100" rx="3" fill="url(#barGrad)"/>
+    <text x="936" y="272" font-size="11" fill="#111" text-anchor="middle">$185.154</text>
+    <!-- May 12: 720.00 (max) -->
+    <rect x="986" y="85"  width="56" height="295" rx="3" fill="url(#barGrad)"/>
+    <text x="1014" y="77" font-size="11" fill="#111" text-anchor="middle">$720.000</text>
+    <!-- May 13: 675.30 -->
+    <rect x="1064" y="105" width="56" height="275" rx="3" fill="url(#barGrad)"/>
+    <text x="1092" y="97"  font-size="11" fill="#111" text-anchor="middle">$675.300</text>
+  </g>
+
+  <!-- Date labels -->
+  <g font-size="11" fill="#4a5b55" text-anchor="middle">
+    <text x="78"   y="402">Apr 30</text>
+    <text x="156"  y="402">May 1</text>
+    <text x="234"  y="402">May 2</text>
+    <text x="312"  y="402">May 3</text>
+    <text x="390"  y="402">May 4</text>
+    <text x="468"  y="402">May 5</text>
+    <text x="546"  y="402">May 6</text>
+    <text x="624"  y="402">May 7</text>
+    <text x="702"  y="402">May 8</text>
+    <text x="780"  y="402">May 9</text>
+    <text x="858"  y="402">May 10</text>
+    <text x="936"  y="402">May 11</text>
+    <text x="1014" y="402">May 12</text>
+    <text x="1092" y="402">May 13</text>
+  </g>
+
+  <!-- Token sub-labels -->
+  <g font-size="11" font-weight="700" fill="#0F3D2E" text-anchor="middle">
+    <text x="78"   y="420">50.5K</text>
+    <text x="156"  y="420">0</text>
+    <text x="234"  y="420">25.24M</text>
+    <text x="312"  y="420">107.49M</text>
+    <text x="390"  y="420">153.20M</text>
+    <text x="468"  y="420">220.90M</text>
+    <text x="546"  y="420">105.50M</text>
+    <text x="624"  y="420">433.80M</text>
+    <text x="702"  y="420">524.20M</text>
+    <text x="780"  y="420">625.30M</text>
+    <text x="858"  y="420">351.90M</text>
+    <text x="936"  y="420">196.00M</text>
+    <text x="1014" y="420">810.00M</text>
+    <text x="1092" y="420">752.40M</text>
+  </g>
+
+  <!-- Footer range -->
+  <rect x="32" y="450" width="1136" height="42" rx="8" fill="#ffffff" stroke="#dfe7e4"/>
+  <text x="48" y="476" font-size="12" fill="#4a5b55">Range</text>
+  <text x="1152" y="476" font-size="12" font-weight="700" fill="#0F3D2E" text-anchor="end">2026-04-30 to 2026-05-13 &#183; 14 of 14 days &#183; 13 active</text>
+</svg>

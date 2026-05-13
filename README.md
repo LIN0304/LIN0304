@@ -23,14 +23,7 @@
 
 ### Daily Spend — Cost by Day  *(14 of 14 days · 13 active)*
 
-```mermaid
-%%{init: {'theme':'base','themeVariables':{'xyChart':{'plotColorPalette':'#2C7A7B'},'fontFamily':'ui-sans-serif'}}}%%
-xychart-beta
-    title " "
-    x-axis ["Apr30","May1","May2","May3","May4","May5","May6","May7","May8","May9","May10","May11","May12","May13"]
-    y-axis "USD" 0 --> 800
-    bar [0.15, 0, 26.95, 82.18, 120.29, 171.75, 84.90, 365.94, 464.72, 540.97, 289.15, 185.15, 720.00, 675.30]
-```
+![Daily spend](./assets/daily-spend.svg)
 
 ---
 

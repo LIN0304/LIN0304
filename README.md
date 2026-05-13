@@ -8,10 +8,10 @@
 
 | Live dashboard | Updated | Snapshot time | Range | Total tokens | Sessions |
 | --- | --- | --- | --- | ---: | ---: |
-| [Open on Vercel](https://public-profile-dashboard.vercel.app) | just now | `2026-05-13T15:54:54+08:00` | Past 14 days | 4,378,682,400 | 942 |
+| [Open on Vercel](https://public-profile-dashboard.vercel.app) | just now | `2026-05-13T15:55:28+08:00` | Past 12 days | 4,379,383,013 | 941 |
 
 Public snapshot only: local paths, session ids, prompts, transcripts, and secrets are removed before publishing.
 
 <!-- vercel-claim:  -->
-<!-- generated-at: 2026-05-13T15:54:40+08:00 -->
+<!-- generated-at: 2026-05-13T15:55:23+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->

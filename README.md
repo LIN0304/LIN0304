@@ -27,36 +27,9 @@
 
 ---
 
-<table>
-<tr>
-<td width="55%" valign="top">
+### Cost by Model · Token Mix
 
-### Cost by Model
-
-| Model | Tokens | Cost |
-|---|---:|---:|
-| 🟥 **gpt-5.5** | 4,386,359,912 | **$3,726.680** |
-| 🟫 gpt-5.3-codex-spark | 164,171 | $0.000 |
-
-</td>
-<td width="45%" valign="top">
-
-### Token Mix
-
-```mermaid
-%%{init: {'theme':'base','themeVariables':{'pie1':'#0F3D2E','pie2':'#2C7A7B','pie3':'#B7791F'}}}%%
-pie showData
-    "Non-cached input" : 212486024
-    "Cached input" : 4154448640
-    "Output" : 19589419
-```
-
-**Cache hit rate: `95.1%`**
-`4.15B cached / 4.37B input`
-
-</td>
-</tr>
-</table>
+![Cost by Model and Token Mix](./assets/model-tokenmix.svg)
 
 ---
 

@@ -5,10 +5,10 @@
 
 ![Dashboard updated](https://img.shields.io/github/last-commit/LIN0304/LIN0304?label=dashboard%20updated&style=for-the-badge&color=16745b)
 
-Last updated: <relative-time datetime="2026-05-15T19:15:13+08:00">just now</relative-time>  
-Snapshot: `2026-05-15T19:15:13+08:00` · Range: **Past 14 days**
+Last updated: <relative-time datetime="2026-05-15T23:42:00+08:00">just now</relative-time>  
+Snapshot: `2026-05-15T23:42:00+08:00` · Range: **Past 14 days**
 
-![Codex usage dashboard](https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard.svg?v=20260515T1915130800)
+![Codex usage dashboard](https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard.svg?v=20260515T2342000800)
 
-<!-- generated-at: 2026-05-15T19:15:03+08:00 -->
+<!-- generated-at: 2026-05-15T23:41:55+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->

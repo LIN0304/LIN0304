@@ -1,6 +1,6 @@
 <div align="center">
 
-# Ray Lin · 林緒睿
+# Ray Lin 
 
 **GPTs Developer & Moderator @ Puffer Labs** · 🐡 Taiwan
 

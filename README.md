@@ -54,7 +54,7 @@ Snapshot: `2026-05-18T16:14:31+08:00` · Range: **Past 17 days**
 
 <picture>
   <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-mobile.svg?v=20260518T1614310800">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard.svg?v=20260518T1614310800" width="100%" alt="Codex usage dashboard: 8.2B tokens, 94.5% cache hit, $7,323.73 estimated cost, Past 17 days">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard.svg?v=20260518T1614310800" width="100%" alt="Codex usage dashboard: 8.20B tokens, 94.5% cache hit, $7,323.73 estimated cost, Past 17 days">
 </picture>
 
 <!-- generated-at: 2026-05-18T16:14:22+08:00 -->

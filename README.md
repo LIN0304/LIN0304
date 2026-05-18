@@ -49,15 +49,15 @@ I build and moderate custom GPTs, ship Model Context Protocol (MCP) servers for 
 
 ![Dashboard updated](https://img.shields.io/github/last-commit/LIN0304/LIN0304?label=dashboard%20updated&style=for-the-badge&color=16745b)
 
-Last updated: <relative-time datetime="2026-05-18T23:03:11+08:00">just now</relative-time>
-Snapshot: `2026-05-18T23:03:11+08:00` · Range: **Past 17 days**
+Last updated: <relative-time datetime="2026-05-19T01:44:29+08:00">just now</relative-time>
+Snapshot: `2026-05-19T01:44:29+08:00` · Range: **Past 17 days**
 
 <picture>
-  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-mobile.svg?v=20260518T2303110800">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard.svg?v=20260518T2303110800" width="100%" alt="Codex usage dashboard: 8.9B tokens, 94.3% cache hit, $7,918.82 estimated cost, Past 17 days">
+  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-mobile.svg?v=20260519T0144290800">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard.svg?v=20260519T0144290800" width="100%" alt="Codex usage dashboard: 9.0B tokens, 94.3% cache hit, $8,093.46 estimated cost, Past 17 days">
 </picture>
 
-<!-- generated-at: 2026-05-18T23:03:02+08:00 -->
+<!-- generated-at: 2026-05-19T01:44:18+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->
 
 ---

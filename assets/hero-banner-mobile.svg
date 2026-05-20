@@ -1,67 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="320" viewBox="0 0 420 320" role="img" aria-labelledby="hero-m-title hero-m-desc">
-  <title id="hero-m-title">Ray Lin — Agents Developer &amp; Moderator @ Puffer Labs</title>
-  <desc id="hero-m-desc">Mobile terminal-style hero banner.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="340" viewBox="0 0 420 340" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="hero-m-title hero-m-desc">
+  <title id="hero-m-title">Ray Lin — Agents Developer &amp; Moderator at Puffer Labs</title>
+  <desc id="hero-m-desc">Ray Lin, Agents Developer and Moderator at Puffer Labs. Building AI agents at the edge of large language models and Web3. Based in Taipei, Taiwan.</desc>
   <defs>
-    <linearGradient id="hero-m-panel" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#160b04"/>
-      <stop offset="64%" stop-color="#0c0806"/>
-      <stop offset="100%" stop-color="#221004"/>
+    <linearGradient id="bg-m" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
-    <linearGradient id="hero-m-stroke" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#ff4d00"/>
-      <stop offset="50%" stop-color="#ff8a22"/>
-      <stop offset="100%" stop-color="#ff4d00"/>
-    </linearGradient>
-    <filter id="hero-m-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="1.8" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
 
-  <rect width="420" height="320" rx="16" fill="#050403"/>
-  <rect x="12" y="12" width="396" height="296" rx="14" fill="url(#hero-m-panel)" stroke="url(#hero-m-stroke)" stroke-width="1.6"/>
+  <rect width="420" height="340" rx="14" fill="url(#bg-m)"/>
+  <rect x="0.5" y="0.5" width="419" height="339" rx="13.5" fill="none" stroke="#21262d" stroke-width="1"/>
 
-  <g opacity="0.22">
-    <path d="M22 50 H398" stroke="#3b2111" stroke-width="1"/>
-    <path d="M22 82 H398" stroke="#3b2111" stroke-width="1"/>
-    <path d="M22 114 H398" stroke="#3b2111" stroke-width="1"/>
-    <path d="M22 146 H398" stroke="#3b2111" stroke-width="1"/>
-    <path d="M22 178 H398" stroke="#3b2111" stroke-width="1"/>
-    <path d="M22 210 H398" stroke="#3b2111" stroke-width="1"/>
-    <path d="M22 242 H398" stroke="#3b2111" stroke-width="1"/>
-    <path d="M22 274 H398" stroke="#3b2111" stroke-width="1"/>
+  <rect x="24" y="28" width="40" height="3" rx="1.5" fill="#ff7a1a"/>
+
+  <text x="24" y="56" font-size="10" font-weight="700" letter-spacing="2.4" fill="#8b949e"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">AI AGENTS &#8226; MCP &#8226; ETHEREUM</text>
+
+  <text x="24" y="108" font-size="44" font-weight="800" fill="#f0f6fc"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Ray Lin</text>
+
+  <text x="24" y="136" font-size="14" font-weight="600" fill="#c9d1d9"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Agents Developer &amp; Moderator</text>
+  <text x="24" y="156" font-size="14" font-weight="600" fill="#c9d1d9"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">at Puffer Labs</text>
+
+  <text x="24" y="184" font-size="12" font-weight="400" fill="#7d8590"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Building AI agents at the edge of large</text>
+  <text x="24" y="200" font-size="12" font-weight="400" fill="#7d8590"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">language models and Web3.</text>
+
+  <g transform="translate(24,224)">
+    <rect width="192" height="30" rx="15" fill="#161b22" stroke="#ff7a1a" stroke-opacity="0.7"/>
+    <circle cx="16" cy="15" r="3.5" fill="#ff7a1a"/>
+    <text x="28" y="20" font-size="11" font-weight="600" fill="#ff8a22"
+          font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Open to collaboration</text>
   </g>
 
-  <path d="M22 50 H398" stroke="#ff7a1a" stroke-width="1.4" opacity="0.85"/>
-  <path d="M22 286 H398" stroke="#ff7a1a" stroke-width="1.4" opacity="0.4"/>
+  <text x="24" y="282" font-size="10" font-weight="600" letter-spacing="1.4" fill="#8b949e"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">STACK</text>
+  <text x="24" y="300" font-size="11" font-weight="500" fill="#7d8590"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">GPT &#8226; Claude &#8226; MCP &#8226; Ethereum</text>
+  <text x="24" y="316" font-size="11" font-weight="500" fill="#7d8590"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Polygon &#8226; Farcaster &#8226; 1inch</text>
 
-  <text x="26" y="40" font-size="11" font-weight="800" fill="#ffca88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">:: PROFILE_README</text>
-
-  <g transform="translate(280,28)">
-    <rect width="110" height="18" rx="9" fill="#0c0806" stroke="#ff8a22" stroke-opacity="0.85"/>
-    <circle cx="12" cy="9" r="3.5" fill="#ffd08a">
-      <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
-    </circle>
-    <text x="22" y="13" font-size="9" font-weight="800" fill="#ffca88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">STATUS: BUILDING</text>
-  </g>
-
-  <g filter="url(#hero-m-glow)">
-    <text x="26" y="106" font-size="42" font-weight="900" fill="#ff8a22" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" letter-spacing="1.5">RAY LIN</text>
-  </g>
-  <text x="26" y="132" font-size="13" font-weight="800" fill="#ffd08a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; Agents Dev @ Puffer Labs</text>
-  <text x="26" y="154" font-size="11" font-weight="700" fill="#ffca88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">// LLM agents · MCP · Ethereum</text>
-  <rect x="244" y="144" width="8" height="12" fill="#ffd08a">
-    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.5;0.5;0.999;1" dur="1.1s" repeatCount="indefinite"/>
-  </rect>
-
-  <g transform="translate(22,176)">
-    <rect width="376" height="98" rx="10" fill="#15100c" stroke="#ff8a22" stroke-opacity="0.7"/>
-    <rect x="10" y="10" width="356" height="2" fill="#ff8a22" opacity="0.72"/>
-    <text x="20" y="32" font-size="10" font-weight="800" fill="#ffb057" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; STACK</text>
-    <text x="20" y="54" font-size="12" font-weight="800" fill="#fff2df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">GPT · CLAUDE · MCP</text>
-    <text x="20" y="74" font-size="12" font-weight="800" fill="#fff2df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">ETHEREUM · POLYGON</text>
-    <text x="20" y="92" font-size="12" font-weight="800" fill="#fff2df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">FARCASTER · 1INCH</text>
-  </g>
-
-  <text x="26" y="302" font-size="9" font-weight="700" fill="#cc6b2c" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">🐡 TAIWAN · UTC+8 · 01001100 01001001 01001110</text>
+  <text x="396" y="56" font-size="10" font-weight="500" fill="#8b949e" text-anchor="end"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Taipei &#8226; UTC+8</text>
 </svg>

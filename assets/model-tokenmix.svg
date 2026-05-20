@@ -1,86 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" role="img" aria-labelledby="mt-title">
+  <title id="mt-title">Model Share &amp; Token Mix</title>
   <defs>
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <linearGradient id="mt-panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#160b04"/>
+      <stop offset="100%" stop-color="#1a0f08"/>
+    </linearGradient>
+    <linearGradient id="mt-modelBar" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#cc3a00"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="mt-cacheBar" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#0f5b48"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <pattern id="mt-grid" width="20" height="20" patternUnits="userSpaceOnUse">
       <circle cx="0" cy="0" r="0.6" fill="#3b1f0d"/>
     </pattern>
-    <filter id="glow">
+    <filter id="mt-glow">
       <feGaussianBlur stdDeviation="0.6" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="540" fill="#1a0f08" rx="14"/>
-  <rect width="1200" height="540" fill="url(#grid)" rx="14"/>
-  <rect x="6" y="6" width="1188" height="528" fill="none" stroke="#d97706" stroke-width="1.5" rx="12"/>
+  <rect width="1200" height="560" fill="url(#mt-panel)" rx="14"/>
+  <rect width="1200" height="560" fill="url(#mt-grid)" rx="14"/>
+  <rect x="6" y="6" width="1188" height="548" fill="none" stroke="#d97706" stroke-width="1.5" rx="12"/>
 
-  <!-- ====== [02] MODEL SHARE ====== -->
-  <text x="32" y="48" font-size="18" font-weight="700" fill="#f97316" filter="url(#glow)">[02] COST_BY_MODEL // MODEL_SHARE</text>
+  <text x="32" y="48" font-size="18" font-weight="800" fill="#f97316" filter="url(#mt-glow)">[02] COST_BY_MODEL // MODEL_SHARE</text>
   <line x1="24" y1="62" x2="1176" y2="62" stroke="#7c2d12" stroke-width="1"/>
 
-  <!-- Table header -->
-  <text x="48"   y="92" font-size="12" fill="#92400e">&gt; MODEL</text>
-  <text x="640"  y="92" font-size="12" fill="#92400e" text-anchor="end">TOKENS</text>
-  <text x="780"  y="92" font-size="12" fill="#92400e" text-anchor="end">COST</text>
-  <text x="1160" y="92" font-size="12" fill="#92400e" text-anchor="end">SHARE</text>
+  <text x="48"   y="92" font-size="12" font-weight="700" fill="#92400e">&gt; MODEL</text>
+  <text x="640"  y="92" font-size="12" font-weight="700" fill="#92400e" text-anchor="end">TOKENS</text>
+  <text x="780"  y="92" font-size="12" font-weight="700" fill="#92400e" text-anchor="end">COST</text>
+  <text x="1160" y="92" font-size="12" font-weight="700" fill="#92400e" text-anchor="end">SHARE</text>
   <line x1="24" y1="102" x2="1176" y2="102" stroke="#3b1f0d" stroke-width="1"/>
 
-  <!-- Row 1: gpt-5.5 -->
-  <rect x="48" y="116" width="10" height="14" fill="#f97316"/>
-  <text x="68"   y="128" font-size="14" fill="#fcd34d" font-weight="700">gpt-5.5</text>
-  <text x="640"  y="128" font-size="14" fill="#fbbf24" text-anchor="end">4,386,359,912</text>
-  <text x="780"  y="128" font-size="14" fill="#fbbf24" text-anchor="end" font-weight="700">$3,726.680</text>
-  <rect x="820" y="118" width="280" height="10" fill="#3b1f0d" rx="2"/>
-  <rect x="820" y="118" width="280" height="10" fill="#f97316" rx="2"/>
-  <text x="1160" y="128" font-size="13" fill="#f97316" text-anchor="end" font-weight="700">100.00%</text>
+  <g>
+    <rect x="48" y="116" width="6" height="16" fill="#f97316" rx="2"/>
+    <text x="64"   y="128" font-size="14" fill="#fcd34d" font-weight="800">gpt-5.5</text>
+    <text x="64"   y="142" font-size="10" fill="#92400e" font-weight="700">flagship · default</text>
+    <text x="640"  y="128" font-size="14" fill="#fbbf24" text-anchor="end" font-weight="700">4,386,359,912</text>
+    <text x="780"  y="128" font-size="14" fill="#fbbf24" text-anchor="end" font-weight="800">$3,726.68</text>
+    <rect x="820" y="118" width="280" height="12" fill="#3b1f0d" rx="3"/>
+    <rect x="820" y="118" width="280" height="12" fill="url(#mt-modelBar)" rx="3"/>
+    <text x="1160" y="128" font-size="13" fill="#f97316" text-anchor="end" font-weight="800">100.00%</text>
+  </g>
 
-  <!-- Row 2: gpt-5.3-codex-spark -->
-  <rect x="48" y="148" width="10" height="14" fill="#92400e"/>
-  <text x="68"   y="160" font-size="14" fill="#fcd34d">gpt-5.3-codex-spark</text>
-  <text x="640"  y="160" font-size="14" fill="#fbbf24" text-anchor="end">164,171</text>
-  <text x="780"  y="160" font-size="14" fill="#fbbf24" text-anchor="end">$0.000</text>
-  <rect x="820" y="150" width="280" height="10" fill="#3b1f0d" rx="2"/>
-  <rect x="820" y="150" width="0.04" height="10" fill="#92400e" rx="2"/>
-  <text x="1160" y="160" font-size="13" fill="#92400e" text-anchor="end">&lt; 0.01%</text>
+  <g>
+    <rect x="48" y="156" width="6" height="16" fill="#92400e" rx="2"/>
+    <text x="64"   y="168" font-size="14" fill="#fcd34d" font-weight="800">gpt-5.3-codex-spark</text>
+    <text x="64"   y="182" font-size="10" fill="#92400e" font-weight="700">low-latency</text>
+    <text x="640"  y="168" font-size="14" fill="#fbbf24" text-anchor="end" font-weight="700">164,171</text>
+    <text x="780"  y="168" font-size="14" fill="#fbbf24" text-anchor="end" font-weight="800">$0.00</text>
+    <rect x="820" y="158" width="280" height="12" fill="#3b1f0d" rx="3"/>
+    <rect x="820" y="158" width="0.04" height="12" fill="#92400e" rx="3"/>
+    <text x="1160" y="168" font-size="13" fill="#92400e" text-anchor="end" font-weight="700">&lt; 0.01%</text>
+  </g>
 
-  <line x1="24" y1="200" x2="1176" y2="200" stroke="#3b1f0d" stroke-width="1"/>
+  <line x1="24" y1="216" x2="1176" y2="216" stroke="#3b1f0d" stroke-width="1"/>
 
-  <!-- ====== [03] TOKEN MIX ====== -->
-  <text x="32" y="240" font-size="18" font-weight="700" fill="#f97316" filter="url(#glow)">[03] TOKEN_MIX // INPUT_CACHE_OUTPUT</text>
-  <line x1="24" y1="254" x2="1176" y2="254" stroke="#7c2d12" stroke-width="1"/>
+  <text x="32" y="252" font-size="18" font-weight="800" fill="#f97316" filter="url(#mt-glow)">[03] TOKEN_MIX // INPUT_CACHE_OUTPUT</text>
+  <line x1="24" y1="266" x2="1176" y2="266" stroke="#7c2d12" stroke-width="1"/>
 
-  <!-- Legend -->
-  <rect x="48" y="276" width="12" height="12" fill="#22c55e"/>
-  <text x="66" y="287" font-size="12" fill="#fcd34d">Cached input</text>
-  <text x="200" y="287" font-size="12" fill="#fbbf24" font-weight="700">4,154,448,640</text>
+  <g>
+    <rect x="48" y="288" width="12" height="12" fill="#22c55e" rx="2"/>
+    <text x="66" y="299" font-size="12" font-weight="700" fill="#fcd34d">Cached input</text>
+    <text x="208" y="299" font-size="12" font-weight="800" fill="#fbbf24">4,154,448,640</text>
+  </g>
+  <g>
+    <rect x="370" y="288" width="12" height="12" fill="#3b82f6" rx="2"/>
+    <text x="388" y="299" font-size="12" font-weight="700" fill="#fcd34d">Non-cached input</text>
+    <text x="548" y="299" font-size="12" font-weight="800" fill="#fbbf24">212,486,024</text>
+  </g>
+  <g>
+    <rect x="700" y="288" width="12" height="12" fill="#f97316" rx="2"/>
+    <text x="718" y="299" font-size="12" font-weight="700" fill="#fcd34d">Output</text>
+    <text x="800" y="299" font-size="12" font-weight="800" fill="#fbbf24">19,589,419</text>
+  </g>
 
-  <rect x="370" y="276" width="12" height="12" fill="#3b82f6"/>
-  <text x="388" y="287" font-size="12" fill="#fcd34d">Non-cached input</text>
-  <text x="540" y="287" font-size="12" fill="#fbbf24" font-weight="700">212,486,024</text>
-  <rect x="700" y="276" width="12" height="12" fill="#f97316"/>
-  <text x="718" y="287" font-size="12" fill="#fcd34d">Output</text>
-  <text x="800" y="287" font-size="12" fill="#fbbf24" font-weight="700">19,589,419</text>
+  <rect x="30" y="328" width="1140" height="32" fill="#3b1f0d" rx="6"/>
+  <rect x="30" y="328" width="1079.69" height="32" fill="url(#mt-cacheBar)" rx="6"/>
+  <rect x="1109.69" y="328" width="55.22" height="32" fill="#3b82f6"/>
+  <rect x="1164.91" y="328" width="5.09" height="32" fill="#f97316"/>
 
-  <!-- Stacked bar -->
-  <rect x="30" y="320" width="1140" height="28" fill="#3b1f0d" rx="3"/>
-  <rect x="30" y="320" width="1079.6866402614025" height="28" fill="#22c55e" rx="3"/>
-  <rect x="1109.6866402614025" y="320" width="55.22232701258373" height="28"  fill="#3b82f6"/>
-  <rect x="1164.9089672739863" y="320" width="5.091032726013646" height="28" fill="#f97316"/>
+  <text x="569.84" y="349" font-size="13" fill="#0f0f0f" text-anchor="middle" font-weight="900">94.71% cached</text>
+  <text x="1137.30" y="318" font-size="10" fill="#fcd34d" font-weight="800" text-anchor="middle">4.84%</text>
+  <text x="1167.45" y="318" font-size="10" fill="#fcd34d" font-weight="800" text-anchor="middle">0.45%</text>
 
-  <!-- Percent labels on bar -->
-  <text x="569.8433201307013" y="339" font-size="13" fill="#0f0f0f" text-anchor="middle" font-weight="700">94.71%</text>
-  <text x="1234.9089672739863" y="339" font-size="11" fill="#fcd34d" font-weight="700">4.84% / 0.45%</text>
+  <g>
+    <rect x="30" y="400" width="560" height="124" fill="none" stroke="#d97706" stroke-width="1.5" rx="8"/>
+    <text x="48" y="426" font-size="11" font-weight="800" fill="#92400e">&gt; CACHE_HIT_RATE</text>
+    <text x="48" y="488" font-size="56" font-weight="900" fill="#f97316" filter="url(#mt-glow)">95.1%</text>
+    <text x="48" y="512" font-size="12" font-weight="700" fill="#fcd34d">cached / (cached + non_cached)</text>
+    <g transform="translate(490,420)">
+      <rect width="84" height="22" rx="11" fill="#0f1f17" stroke="#22c55e" stroke-opacity="0.5"/>
+      <circle cx="12" cy="11" r="3.5" fill="#22c55e"/>
+      <text x="22" y="15" font-size="10" font-weight="800" fill="#86efac">excellent</text>
+    </g>
+  </g>
 
-  <!-- ====== CACHE HIT RATE BOX ====== -->
-  <rect x="30" y="380" width="560" height="120" fill="none" stroke="#d97706" stroke-width="1.5" rx="6"/>
-  <text x="48" y="408" font-size="12" fill="#92400e">&gt; CACHE_HIT_RATE</text>
-  <text x="48" y="466" font-size="56" font-weight="700" fill="#f97316" filter="url(#glow)" font-family="JetBrains Mono, monospace">95.1%</text>
-  <text x="48" y="490" font-size="12" fill="#fcd34d">cached / (cached + non_cached)</text>
-
-  <rect x="610" y="380" width="560" height="120" fill="none" stroke="#d97706" stroke-width="1.5" rx="6"/>
-  <text x="628" y="408" font-size="12" fill="#92400e">&gt; VOLUME</text>
-  <text x="628" y="446" font-size="22" font-weight="700" fill="#fbbf24">4.15B cached / 4.37B input</text>
-  <text x="628" y="470" font-size="13" fill="#fcd34d">non-cached: 212.49M  &#183;  output: 19.59M</text>
-  <text x="628" y="490" font-size="11" fill="#92400e">savings vs no-cache: $18,694.601</text>
-
+  <g>
+    <rect x="610" y="400" width="560" height="124" fill="none" stroke="#d97706" stroke-width="1.5" rx="8"/>
+    <text x="628" y="426" font-size="11" font-weight="800" fill="#92400e">&gt; VOLUME</text>
+    <text x="628" y="458" font-size="22" font-weight="800" fill="#fbbf24">4.15B cached · 4.37B input</text>
+    <text x="628" y="484" font-size="13" font-weight="700" fill="#fcd34d">non-cached 212.49M  &#183;  output 19.59M</text>
+    <g transform="translate(628,498)">
+      <rect width="200" height="22" rx="11" fill="#1a0f08" stroke="#f97316" stroke-opacity="0.5"/>
+      <circle cx="12" cy="11" r="3.5" fill="#f97316"/>
+      <text x="22" y="15" font-size="10" font-weight="800" fill="#fbbf24">savings vs no-cache · $18,694.60</text>
+    </g>
+  </g>
 </svg>

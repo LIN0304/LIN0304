@@ -62,8 +62,8 @@ I build and moderate custom **GPTs**, ship **MCP servers** for onchain protocols
 ## Activity
 
 <p>
-  <img width="49%" alt="Ray's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=LIN0304&show_icons=true&hide_border=true&theme=transparent&icon_color=ff7a1a&title_color=ff8a22&text_color=c9d1d9&ring_color=ff7a1a" />
-  <img width="49%" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LIN0304&layout=compact&hide_border=true&theme=transparent&title_color=ff8a22&text_color=c9d1d9" />
+  <img width="49%" alt="Ray's GitHub stats: 102 public repos, 24 stars earned, 6 gists, 11 followers, 18 following, member since Aug 2020" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/github-stats.svg" />
+  <img width="49%" alt="Top languages by repository count: Python 36.2%, JavaScript 18.8%, HTML 18.8%, TypeScript 13.0%, Solidity 2.9%, other 10.3%" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/top-languages.svg" />
 </p>
 
 <p>

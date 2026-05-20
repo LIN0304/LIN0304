@@ -1,61 +1,134 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" font-family="JetBrains Mono, ui-monospace, Menlo, Consolas, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" role="img" aria-labelledby="ds-title">
+  <title id="ds-title">Daily Spend — Cost by Day</title>
   <defs>
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <linearGradient id="ds-panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#160b04"/>
+      <stop offset="100%" stop-color="#1a0f08"/>
+    </linearGradient>
+    <linearGradient id="ds-area" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffb057" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#f97316" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="ds-stroke" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="80%" stop-color="#ffb057"/>
+      <stop offset="100%" stop-color="#ffd08a"/>
+    </linearGradient>
+    <pattern id="ds-grid" width="20" height="20" patternUnits="userSpaceOnUse">
       <circle cx="0" cy="0" r="0.6" fill="#3b1f0d"/>
     </pattern>
-    <filter id="glow">
+    <filter id="ds-glow">
       <feGaussianBlur stdDeviation="0.6" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="ds-peakGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="1200" height="540" fill="#1a0f08" rx="14"/>
-  <rect width="1200" height="540" fill="url(#grid)" rx="14"/>
-  <rect x="6" y="6" width="1188" height="528" fill="none" stroke="#d97706" stroke-width="1.5" rx="12"/>
-  <text x="32" y="48" font-size="20" font-weight="700" fill="#f97316" filter="url(#glow)">:: DAILY_SPEND // COST_BY_DAY</text>
+
+  <rect width="1200" height="560" fill="url(#ds-panel)" rx="14"/>
+  <rect width="1200" height="560" fill="url(#ds-grid)" rx="14"/>
+  <rect x="6" y="6" width="1188" height="548" fill="none" stroke="#d97706" stroke-width="1.5" rx="12"/>
+
+  <text x="32" y="48" font-size="20" font-weight="700" fill="#f97316" filter="url(#ds-glow)">:: DAILY_SPEND // PEAK_CHART</text>
   <text x="1168" y="48" font-size="12" fill="#d97706" text-anchor="end">ASCII // ORANGE GRID</text>
-  <text x="32" y="72" font-size="12" fill="#fcd34d">&gt; 14 of 14 days | 13 active | range 2026-04-30 → 2026-05-13</text>
+  <text x="32" y="72" font-size="12" fill="#fcd34d">&gt; 14 of 14 days · 13 active · 2026-04-30 → 2026-05-13</text>
   <line x1="24" y1="88" x2="1176" y2="88" stroke="#7c2d12" stroke-width="1"/>
-    <text x="100" y="123" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">04-30</text>
-    <rect x="170" y="110" width="2" height="18" fill="#f97316" rx="2"/>
-    <text x="180" y="123" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$0.148</text>
-    <text x="100" y="149" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-01</text>
-    <rect x="170" y="136" width="2" height="18" fill="#f97316" rx="2"/>
-    <text x="180" y="149" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$0.000</text>
-    <text x="100" y="175" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-02</text>
-    <rect x="170" y="162" width="32.94133333333333" height="18" fill="#f97316" rx="2"/>
-    <text x="210.94133333333332" y="175" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$26.952</text>
-    <text x="100" y="201" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-03</text>
-    <rect x="170" y="188" width="100.43855555555557" height="18" fill="#f97316" rx="2"/>
-    <text x="278.4385555555556" y="201" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$82.177</text>
-    <text x="100" y="227" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-04</text>
-    <rect x="170" y="214" width="147.01500000000001" height="18" fill="#f97316" rx="2"/>
-    <text x="325.015" y="227" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$120.285</text>
-    <text x="100" y="253" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-05</text>
-    <rect x="170" y="240" width="209.9191111111111" height="18" fill="#f97316" rx="2"/>
-    <text x="387.9191111111111" y="253" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$171.752</text>
-    <text x="100" y="279" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-06</text>
-    <rect x="170" y="266" width="103.763" height="18" fill="#f97316" rx="2"/>
-    <text x="281.76300000000003" y="279" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$84.897</text>
-    <text x="100" y="305" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-07</text>
-    <rect x="170" y="292" width="447.26244444444444" height="18" fill="#f97316" rx="2"/>
-    <text x="625.2624444444444" y="305" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$365.942</text>
-    <text x="100" y="331" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-08</text>
-    <rect x="170" y="318" width="567.9874444444445" height="18" fill="#f97316" rx="2"/>
-    <text x="745.9874444444445" y="331" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$464.717</text>
-    <text x="100" y="357" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-09</text>
-    <rect x="170" y="344" width="661.1892222222222" height="18" fill="#f97316" rx="2"/>
-    <text x="839.1892222222222" y="357" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$540.973</text>
-    <text x="100" y="383" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-10</text>
-    <rect x="170" y="370" width="353.4031111111111" height="18" fill="#f97316" rx="2"/>
-    <text x="531.4031111111111" y="383" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$289.148</text>
-    <text x="100" y="409" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-11</text>
-    <rect x="170" y="396" width="226.29933333333332" height="18" fill="#f97316" rx="2"/>
-    <text x="404.2993333333333" y="409" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$185.154</text>
-    <text x="100" y="435" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-12</text>
-    <rect x="170" y="422" width="880" height="18" fill="#f97316" rx="2"/>
-    <text x="1058" y="435" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$720.000</text>
-    <text x="100" y="461" font-size="13" fill="#fcd34d" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace">05-13</text>
-    <rect x="170" y="448" width="825.3666666666667" height="18" fill="#f97316" rx="2"/>
-    <text x="1003.3666666666667" y="461" font-size="13" fill="#fbbf24" font-family="JetBrains Mono, ui-monospace, monospace">$675.300</text>
-  <text x="1152" y="510" font-size="14" font-weight="700" fill="#f97316" text-anchor="end">TOTAL = $3,726.680</text>
+
+  <g>
+    <rect x="32" y="104" width="180" height="64" rx="8" fill="#0f0805" stroke="#f97316" stroke-opacity="0.7"/>
+    <text x="44" y="124" font-size="11" font-weight="800" fill="#fbbf24">&gt; TOTAL</text>
+    <text x="44" y="154" font-size="22" font-weight="900" fill="#fff2df">$3,726.68</text>
+  </g>
+  <g>
+    <rect x="220" y="104" width="180" height="64" rx="8" fill="#0f0805" stroke="#fbbf24" stroke-opacity="0.7"/>
+    <text x="232" y="124" font-size="11" font-weight="800" fill="#fbbf24">&gt; PEAK</text>
+    <text x="232" y="154" font-size="22" font-weight="900" fill="#fff2df">$720.00</text>
+    <text x="392" y="160" font-size="10" font-weight="800" fill="#fbbf24" text-anchor="end">05-12</text>
+  </g>
+  <g>
+    <rect x="408" y="104" width="180" height="64" rx="8" fill="#0f0805" stroke="#f97316" stroke-opacity="0.7"/>
+    <text x="420" y="124" font-size="11" font-weight="800" fill="#fbbf24">&gt; AVG / DAY</text>
+    <text x="420" y="154" font-size="22" font-weight="900" fill="#fff2df">$266.19</text>
+  </g>
+  <g>
+    <rect x="596" y="104" width="180" height="64" rx="8" fill="#0f0805" stroke="#fbbf24" stroke-opacity="0.7"/>
+    <text x="608" y="124" font-size="11" font-weight="800" fill="#fbbf24">&gt; ACTIVE</text>
+    <text x="608" y="154" font-size="22" font-weight="900" fill="#fff2df">13 / 14</text>
+  </g>
+
+  <text x="32" y="206" font-size="14" font-weight="800" fill="#f97316">[01] COST BY DAY · PEAK CHART</text>
+  <line x1="32" y1="218" x2="1176" y2="218" stroke="#7c2d12" stroke-width="1"/>
+
+  <g font-size="10" font-weight="800" fill="#92400e">
+    <text x="74" y="240" text-anchor="end">$800</text>
+    <text x="74" y="276" text-anchor="end">$600</text>
+    <text x="74" y="312" text-anchor="end">$400</text>
+    <text x="74" y="348" text-anchor="end">$200</text>
+    <text x="74" y="404" text-anchor="end">$0</text>
+  </g>
+  <g stroke="#3b1f0d" stroke-width="1" opacity="0.7" stroke-dasharray="2 4">
+    <path d="M80 237 H1140"/>
+    <path d="M80 273 H1140"/>
+    <path d="M80 310 H1140"/>
+    <path d="M80 346 H1140"/>
+  </g>
+  <path d="M80 400 H1140" stroke="#7c2d12" stroke-width="1"/>
+
+  <path d="M80,400 L80,399.95 L161.54,400 L243.08,391.24 L324.62,373.29 L406.15,360.91 L487.69,344.18 L569.23,372.41 L650.77,281.07 L732.31,248.97 L813.85,224.18 L895.38,306.03 L976.92,339.83 L1058.46,166.00 L1140,180.53 L1140,400 Z" fill="url(#ds-area)"/>
+  <path d="M80,399.95 L161.54,400 L243.08,391.24 L324.62,373.29 L406.15,360.91 L487.69,344.18 L569.23,372.41 L650.77,281.07 L732.31,248.97 L813.85,224.18 L895.38,306.03 L976.92,339.83 L1058.46,166.00 L1140,180.53" fill="none" stroke="url(#ds-stroke)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <g fill="#1a0f08" stroke="#fbbf24" stroke-width="1.4">
+    <circle cx="80" cy="399.95" r="3"/>
+    <circle cx="161.54" cy="400" r="3"/>
+    <circle cx="243.08" cy="391.24" r="3"/>
+    <circle cx="324.62" cy="373.29" r="3"/>
+    <circle cx="406.15" cy="360.91" r="3"/>
+    <circle cx="487.69" cy="344.18" r="3"/>
+    <circle cx="569.23" cy="372.41" r="3"/>
+    <circle cx="650.77" cy="281.07" r="3"/>
+    <circle cx="732.31" cy="248.97" r="3"/>
+    <circle cx="813.85" cy="224.18" r="3"/>
+    <circle cx="895.38" cy="306.03" r="3"/>
+    <circle cx="976.92" cy="339.83" r="3"/>
+    <circle cx="1140" cy="180.53" r="3"/>
+  </g>
+
+  <g>
+    <circle cx="1058.46" cy="166" r="11" fill="#f97316" opacity="0.30"/>
+    <circle cx="1058.46" cy="166" r="6.5" fill="#fbbf24" filter="url(#ds-peakGlow)"/>
+    <circle cx="1058.46" cy="166" r="3" fill="#fff2df"/>
+    <rect x="990" y="138" width="138" height="20" rx="5" fill="#1a0f08" stroke="#f97316" stroke-opacity="0.85"/>
+    <text x="1059" y="152" font-size="11" font-weight="900" fill="#ffd08a" text-anchor="middle">↑ $720.00 · 05-12</text>
+    <path d="M1059 158 L1058.5 162" stroke="#f97316" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <g font-size="10" font-weight="800" fill="#fbbf24">
+    <text x="80" y="418" text-anchor="middle">04-30</text>
+    <text x="243.08" y="418" text-anchor="middle">05-02</text>
+    <text x="406.15" y="418" text-anchor="middle">05-04</text>
+    <text x="569.23" y="418" text-anchor="middle">05-06</text>
+    <text x="732.31" y="418" text-anchor="middle">05-08</text>
+    <text x="895.38" y="418" text-anchor="middle">05-10</text>
+    <text x="1058.46" y="418" text-anchor="middle">05-12</text>
+  </g>
+
+  <g>
+    <rect x="32" y="448" width="556" height="84" rx="8" fill="none" stroke="#d97706" stroke-opacity="0.6" stroke-width="1.4"/>
+    <text x="48" y="472" font-size="11" font-weight="800" fill="#92400e">&gt; TREND · LAST 7 DAYS</text>
+    <text x="48" y="500" font-size="20" font-weight="900" fill="#f97316" filter="url(#ds-glow)">+584%</text>
+    <text x="48" y="520" font-size="11" font-weight="700" fill="#fcd34d">$540.97 → $675.30 (peak 05-12)</text>
+    <text x="572" y="472" font-size="11" font-weight="800" fill="#92400e" text-anchor="end">RAMP</text>
+    <text x="572" y="500" font-size="14" font-weight="900" fill="#fbbf24" text-anchor="end">▲ accelerating</text>
+  </g>
+  <g>
+    <rect x="608" y="448" width="560" height="84" rx="8" fill="none" stroke="#d97706" stroke-opacity="0.6" stroke-width="1.4"/>
+    <text x="624" y="472" font-size="11" font-weight="800" fill="#92400e">&gt; DISTRIBUTION</text>
+    <text x="624" y="498" font-size="13" font-weight="800" fill="#fcd34d">low $0.000 · 05-01</text>
+    <text x="624" y="518" font-size="13" font-weight="800" fill="#fcd34d">median $187.7  ·  range $0 → $720</text>
+    <text x="1152" y="472" font-size="11" font-weight="800" fill="#92400e" text-anchor="end">PEAK / AVG</text>
+    <text x="1152" y="500" font-size="14" font-weight="900" fill="#fbbf24" text-anchor="end">2.70 ×</text>
+  </g>
 </svg>

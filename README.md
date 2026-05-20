@@ -1,7 +1,10 @@
 <div align="center">
 
 <a href="https://github.com/LIN0304">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg" width="100%" alt="Ray Lin — GPTs Developer & Moderator @ Puffer Labs · Building AI agents at the edge of LLMs and Web3" />
+  <picture>
+    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner-mobile.svg">
+    <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg" width="100%" alt="Ray Lin — GPTs Developer & Moderator @ Puffer Labs · Building AI agents at the edge of LLMs and Web3" />
+  </picture>
 </a>
 
 <a href="https://www.linkedin.com/in/hsu-jui-lin-50b82b216/">
@@ -88,6 +91,10 @@ intersection of autonomous coding agents and Ethereum infrastructure.
 <p align="center">
   <img height="170" alt="Ray's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=LIN0304&show_icons=true&hide_border=true&theme=transparent&icon_color=ff7a1a&title_color=ff8a22&text_color=ffca88&ring_color=ff7a1a" />
   <img height="170" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LIN0304&layout=compact&hide_border=true&theme=transparent&title_color=ff8a22&text_color=ffca88" />
+</p>
+
+<p align="center">
+  <img width="100%" alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=LIN0304&bg_color=00000000&color=ff8a22&line=ff7a1a&point=ffd08a&area=true&area_color=ff4d00&title_color=ff8a22&hide_border=true&custom_title=Contribution+Activity" />
 </p>
 
 <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/section-divider.svg" width="100%" alt="" />

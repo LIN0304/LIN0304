@@ -3,7 +3,7 @@
 <a href="https://github.com/LIN0304">
   <picture>
     <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner-mobile.svg">
-    <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg" width="100%" alt="Ray Lin — GPTs Developer & Moderator @ Puffer Labs · Building AI agents at the edge of LLMs and Web3" />
+    <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg" width="100%" alt="Ray Lin — Agents Developer & Moderator @ Puffer Labs · Building AI agents at the edge of LLMs and Web3" />
   </picture>
 </a>
 

@@ -1,39 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1160" height="1260" viewBox="0 0 1160 1260" role="img" aria-labelledby="title desc">
 <title id="title">Codex Usage Dashboard</title>
-<desc id="desc">Codex usage snapshot: 71.55B tokens across 22 models and 6 agents, 93.89% cache hit, $74,361 cost, with a 14-day peak chart and full model breakdown.</desc>
+<desc id="desc">71.55B tokens, 22 models, 6 agents, 93.89% cache, $74,361 cost.</desc>
 <defs>
-    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#160b04"/>
-      <stop offset="62%" stop-color="#0c0806"/>
-      <stop offset="100%" stop-color="#221004"/>
-    </linearGradient>
-    <linearGradient id="peakArea" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#ffb057" stop-opacity="0.95"/>
-      <stop offset="35%" stop-color="#ff7a1a" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0.02"/>
-    </linearGradient>
-    <linearGradient id="peakStroke" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#ff7a1a"/>
-      <stop offset="70%" stop-color="#ffb057"/>
-      <stop offset="100%" stop-color="#ffd08a"/>
-    </linearGradient>
-    <linearGradient id="cacheBar" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#0f5b48"/>
-      <stop offset="100%" stop-color="#2dd4a3"/>
-    </linearGradient>
-    <linearGradient id="costBar" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#cc3a00"/>
-      <stop offset="100%" stop-color="#ff7a1a"/>
-    </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 1  0 0.35 0 0 0.26  0 0 0.08 0 0  0 0 0 0.9 0"/>
-      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="peakGlow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#160b04"/><stop offset="62%" stop-color="#0c0806"/><stop offset="100%" stop-color="#221004"/></linearGradient>
+    <linearGradient id="peakArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#ffb057" stop-opacity="0.95"/><stop offset="35%" stop-color="#ff7a1a" stop-opacity="0.55"/><stop offset="100%" stop-color="#ff4d00" stop-opacity="0.02"/></linearGradient>
+    <linearGradient id="peakStroke" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#ff7a1a"/><stop offset="70%" stop-color="#ffb057"/><stop offset="100%" stop-color="#ffd08a"/></linearGradient>
+    <linearGradient id="cacheBar" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#0f5b48"/><stop offset="100%" stop-color="#2dd4a3"/></linearGradient>
+    <linearGradient id="costBar" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#cc3a00"/><stop offset="100%" stop-color="#ff7a1a"/></linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5" result="blur"/><feColorMatrix in="blur" type="matrix" values="1 0 0 0 1  0 0.35 0 0 0.26  0 0 0.08 0 0  0 0 0 0.9 0"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="peakGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
 <rect width="1160" height="1260" rx="18" fill="#050403"/>
 <rect x="20" y="20" width="1120" height="1220" rx="18" fill="url(#panel)" stroke="#ff7a1a" stroke-width="2"/>
@@ -45,12 +20,7 @@
 <text x="50" y="66" font-size="25" font-weight="900" fill="#ff8a22">:: CODEX_USAGE_DASHBOARD // ALL_AGENTS</text>
 <text x="50" y="94" font-size="13" font-weight="750" fill="#ffca88">&gt; Past 248 days · 88 active · 22 models · 6 agents · 2025-09-16 → 2026-05-21</text>
 <text x="1110" y="66" font-size="12" font-weight="800" fill="#ffca88" text-anchor="end">ASCII // ORANGE GRID</text>
-<g>
-      <circle cx="1042" cy="90" r="3.4" fill="#ff7a1a">
-        <animate attributeName="opacity" values="0.25;1;0.25" dur="2s" repeatCount="indefinite"/>
-      </circle>
-      <text x="1052" y="94" font-size="11" font-weight="850" fill="#ff8a22">LIVE</text>
-    </g></g>
+<g><circle cx="1042" cy="90" r="3.4" fill="#ff7a1a"><animate attributeName="opacity" values="0.25;1;0.25" dur="2s" repeatCount="indefinite"/></circle><text x="1052" y="94" font-size="11" font-weight="850" fill="#ff8a22">LIVE</text></g></g>
 <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
 <rect x="50" y="130" width="168" height="76" rx="8" fill="#15100c" stroke="#ff8a22" stroke-opacity="0.78"/>
 <rect x="58" y="139" width="152" height="2" fill="#ff8a22" opacity="0.78"/>
@@ -87,62 +57,45 @@
 <rect x="50" y="226" width="1060" height="270" rx="12" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
 <path d="M66 270 H1094" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
 <text x="66" y="258" font-size="16" font-weight="900" fill="#ff8a22">[01] DAILY TOKEN VOLUME // PEAK CHART</text>
-<g transform="translate(820,246)">
-      <rect width="276" height="18" rx="9" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.6"/>
+<g transform="translate(786,246)">
+      <rect width="310" height="18" rx="9" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.6"/>
       <circle cx="14" cy="9" r="3.5" fill="#ff8a22"/>
-      <text x="24" y="13" font-size="10" font-weight="800" fill="#ffd08a">peak ↑ 32.4B · 05-20 · today 6.6B</text>
+      <text x="24" y="13" font-size="10" font-weight="800" fill="#ffd08a">peak ↑ 32.4B · 05-20 · today 6.6B · √ scale</text>
     </g>
 <g font-size="10" font-weight="800" fill="#7a4318">
-<text x="88" y="300.0" text-anchor="end">35B</text>
-<text x="88" y="322.3" text-anchor="end">30B</text>
-<text x="88" y="344.6" text-anchor="end">25B</text>
-<text x="88" y="366.9" text-anchor="end">20B</text>
-<text x="88" y="389.1" text-anchor="end">15B</text>
-<text x="88" y="411.4" text-anchor="end">10B</text>
-<text x="88" y="433.7" text-anchor="end">5B</text>
-<text x="88" y="456.0" text-anchor="end">0B</text>
+<text x="88" y="459.5" text-anchor="end">0</text>
+<text x="88" y="440.9" text-anchor="end">500M</text>
+<text x="88" y="422.2" text-anchor="end">2B</text>
+<text x="88" y="400.5" text-anchor="end">5B</text>
+<text x="88" y="357.4" text-anchor="end">15B</text>
+<text x="88" y="303.5" text-anchor="end">35B</text>
 </g>
 <g stroke="#4b2a13" stroke-width="1" opacity="0.55" stroke-dasharray="2 4">
-<path d="M94 322.3 H1090"/>
-<path d="M94 344.6 H1090"/>
-<path d="M94 366.9 H1090"/>
-<path d="M94 389.1 H1090"/>
-<path d="M94 411.4 H1090"/>
-<path d="M94 433.7 H1090"/>
-<path d="M94 456.0 H1090"/>
+<path d="M94 437.4 H1090"/>
+<path d="M94 418.7 H1090"/>
+<path d="M94 397.0 H1090"/>
+<path d="M94 353.9 H1090"/>
+<path d="M94 300.0 H1090"/>
 </g>
 <path d="M94 456 H1090" stroke="#6c3a16" stroke-width="1.3"/>
-<path d="M94,456 L94.00,453.72 L170.31,452.53 L246.62,453.59 L322.92,453.98 L399.23,449.38 L475.54,453.60 L551.85,453.31 L628.15,454.40 L704.46,453.23 L780.77,449.61 L857.08,431.95 L933.38,377.04 L1009.69,311.73 L1086.00,426.46 L1086,456 Z" fill="url(#peakArea)"/>
-<path d="M94.00,453.72 L170.31,452.53 L246.62,453.59 L322.92,453.98 L399.23,449.38 L475.54,453.60 L551.85,453.31 L628.15,454.40 L704.46,453.23 L780.77,449.61 L857.08,431.95 L933.38,377.04 L1009.69,311.73 L1086.00,426.46" fill="none" stroke="url(#peakStroke)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M94,456 L94.00,437.15 L170.31,432.72 L246.62,436.62 L322.92,438.24 L399.23,423.86 L475.54,436.64 L551.85,435.50 L628.15,440.18 L704.46,435.20 L780.77,424.42 L857.08,394.74 L933.38,345.02 L1009.69,305.98 L1086.00,388.12 L1086,456 Z" fill="url(#peakArea)"/>
+<path d="M94.00,437.15 L170.31,432.72 L246.62,436.62 L322.92,438.24 L399.23,423.86 L475.54,436.64 L551.85,435.50 L628.15,440.18 L704.46,435.20 L780.77,424.42 L857.08,394.74 L933.38,345.02 L1009.69,305.98 L1086.00,388.12" fill="none" stroke="url(#peakStroke)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
 <g fill="#0d0907" stroke="#ffb057" stroke-width="1.4">
-<circle cx="94.00" cy="453.72" r="2.6"/>
-<circle cx="170.31" cy="452.53" r="2.6"/>
-<circle cx="246.62" cy="453.59" r="2.6"/>
-<circle cx="322.92" cy="453.98" r="2.6"/>
-<circle cx="399.23" cy="449.38" r="2.6"/>
-<circle cx="475.54" cy="453.60" r="2.6"/>
-<circle cx="551.85" cy="453.31" r="2.6"/>
-<circle cx="628.15" cy="454.40" r="2.6"/>
-<circle cx="704.46" cy="453.23" r="2.6"/>
-<circle cx="780.77" cy="449.61" r="2.6"/>
-<circle cx="857.08" cy="431.95" r="2.6"/>
+<circle cx="94.00" cy="437.15" r="2.6"/>
+<circle cx="170.31" cy="432.72" r="2.6"/>
+<circle cx="246.62" cy="436.62" r="2.6"/>
+<circle cx="322.92" cy="438.24" r="2.6"/>
+<circle cx="399.23" cy="423.86" r="2.6"/>
+<circle cx="475.54" cy="436.64" r="2.6"/>
+<circle cx="551.85" cy="435.50" r="2.6"/>
+<circle cx="628.15" cy="440.18" r="2.6"/>
+<circle cx="704.46" cy="435.20" r="2.6"/>
+<circle cx="780.77" cy="424.42" r="2.6"/>
+<circle cx="857.08" cy="394.74" r="2.6"/>
 </g>
-<g>
-      <circle cx="933.38" cy="377.04" r="4.5" fill="#1b0e07" stroke="#ffb057" stroke-width="1.6"/>
-      <path d="M933.38 371.04 V359.04" stroke="#ffb057" stroke-width="1" stroke-dasharray="2 2"/>
-      <text x="933.38" y="355.04" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="middle">17.7B · 05-19</text>
-    </g>
-<g>
-      <circle cx="1009.69" cy="311.73" r="11" fill="#ff4d00" opacity="0.30"/>
-      <circle cx="1009.69" cy="311.73" r="6.5" fill="#ff8a22" filter="url(#peakGlow)"/>
-      <circle cx="1009.69" cy="311.73" r="3" fill="#fff2df"/>
-      <rect x="963.69" y="287.73" width="92" height="20" rx="5" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.85"/>
-      <text x="1009.69" y="301.73" font-size="11" font-weight="900" fill="#ffd08a" text-anchor="middle">↑ 32.4B · 05-20</text>
-    </g>
-<g>
-      <circle cx="1086.00" cy="426.46" r="4.5" fill="#1b0e07" stroke="#ffd08a" stroke-width="1.6"/>
-      <text x="1086.00" y="416.46" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="middle">today 6.6B</text>
-    </g>
+<g><circle cx="933.38" cy="345.02" r="4.5" fill="#1b0e07" stroke="#ffb057" stroke-width="1.6"/><path d="M933.38 339.02 V327.02" stroke="#ffb057" stroke-width="1" stroke-dasharray="2 2"/><text x="933.38" y="323.02" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="middle">17.7B · 05-19</text></g>
+<g><circle cx="1009.69" cy="305.98" r="11" fill="#ff4d00" opacity="0.30"/><circle cx="1009.69" cy="305.98" r="6.5" fill="#ff8a22" filter="url(#peakGlow)"/><circle cx="1009.69" cy="305.98" r="3" fill="#fff2df"/><rect x="963.69" y="281.98" width="92" height="20" rx="5" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.85"/><text x="1009.69" y="295.98" font-size="11" font-weight="900" fill="#ffd08a" text-anchor="middle">↑ 32.4B · 05-20</text></g>
+<g><circle cx="1086.00" cy="388.12" r="4.5" fill="#1b0e07" stroke="#ffd08a" stroke-width="1.6"/><text x="1086.00" y="378.12" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="middle">today 6.6B</text></g>
 <g font-size="10" font-weight="800" fill="#ffca88">
 <text x="94.00" y="471" text-anchor="middle">05-08</text>
 <text x="246.62" y="471" text-anchor="middle">05-10</text>
@@ -297,7 +250,7 @@
 <text x="605" y="830" text-anchor="end">CACHE</text>
 <text x="720" y="830" text-anchor="end">COST</text>
 <text x="800" y="830" text-anchor="end">%</text>
-<text x="970" y="830" text-anchor="middle">COST SHARE</text>
+<text x="970" y="830" text-anchor="middle">COST SHARE (√)</text>
 </g>
 <path d="M66 836 H1094" stroke="#4b2a13" stroke-width="1" stroke-dasharray="2 4"/>
 <rect x="62" y="840" width="1036" height="17" fill="#120904" opacity="0.55"/>
@@ -575,14 +528,11 @@
 <text x="800" y="1209" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.000%</text>
 <rect x="820" y="1202" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
 <rect x="820" y="1202" width="1.00" height="9" rx="2" fill="#888888" opacity="0.85"/>
-<text x="66" y="1208" font-size="9" font-weight="700" fill="#cc6b2c">&gt; cost share bar uses sqrt scale so the long tail is visible · exact % shown numerically</text>
+<text x="66" y="1208" font-size="9" font-weight="700" fill="#cc6b2c">&gt; share bar uses sqrt scale so the long tail is visible · exact % shown numerically</text>
 </g>
 <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-<g filter="url(#glow)">
-      <path d="M50 1250 H742" stroke="#ff8a22" stroke-width="2"/>
-      <path d="M50 1250 h24 m10 0 h8 m10 0 h42 m10 0 h18 m10 0 h74 m10 0 h12" stroke="#ffd08a" stroke-width="2"/>
-    </g>
+<g filter="url(#glow)"><path d="M50 1250 H742" stroke="#ff8a22" stroke-width="2"/><path d="M50 1250 h24 m10 0 h8 m10 0 h42 m10 0 h18 m10 0 h74 m10 0 h12" stroke="#ffd08a" stroke-width="2"/></g>
 <rect x="756" y="1236" width="352" height="22" rx="6" fill="#0a0604" stroke="#673110" stroke-opacity="0.82"/>
-<text x="774" y="1251" font-size="10" font-weight="650" fill="#cc6b2c">01001100 // 22 models · 6 agents · 248d window</text>
+<text x="774" y="1251" font-size="10" font-weight="650" fill="#cc6b2c">01001100 // 22 models · 6 agents · 248d window · √ scale</text>
 </g>
 </svg>

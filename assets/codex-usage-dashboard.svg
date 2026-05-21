@@ -1,538 +1,210 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="1260" viewBox="0 0 1160 1260" role="img" aria-labelledby="title desc">
-<title id="title">Codex Usage Dashboard</title>
-<desc id="desc">71.55B tokens, 22 models, 6 agents, 93.89% cache, $74,361 cost.</desc>
-<defs>
-    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#160b04"/><stop offset="62%" stop-color="#0c0806"/><stop offset="100%" stop-color="#221004"/></linearGradient>
-    <linearGradient id="peakArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#ffb057" stop-opacity="0.95"/><stop offset="35%" stop-color="#ff7a1a" stop-opacity="0.55"/><stop offset="100%" stop-color="#ff4d00" stop-opacity="0.02"/></linearGradient>
-    <linearGradient id="peakStroke" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#ff7a1a"/><stop offset="70%" stop-color="#ffb057"/><stop offset="100%" stop-color="#ffd08a"/></linearGradient>
-    <linearGradient id="cacheBar" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#0f5b48"/><stop offset="100%" stop-color="#2dd4a3"/></linearGradient>
-    <linearGradient id="costBar" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#cc3a00"/><stop offset="100%" stop-color="#ff7a1a"/></linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.5" result="blur"/><feColorMatrix in="blur" type="matrix" values="1 0 0 0 1  0 0.35 0 0 0.26  0 0 0.08 0 0  0 0 0 0.9 0"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="peakGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="760" viewBox="0 0 1160 760" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Usage Dashboard</title>
+  <desc id="desc">Public aggregate Codex usage snapshot with totals, daily volume, model share, token mix, and update time.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#160b04"/>
+      <stop offset="62%" stop-color="#0c0806"/>
+      <stop offset="100%" stop-color="#221004"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 1  0 0.35 0 0 0.26  0 0 0.08 0 0  0 0 0 0.9 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-<rect width="1160" height="1260" rx="18" fill="#050403"/>
-<rect x="20" y="20" width="1120" height="1220" rx="18" fill="url(#panel)" stroke="#ff7a1a" stroke-width="2"/>
-<g stroke="#3b2111" stroke-width="1" opacity="0.30"><path d="M32 56 L1128 56"/><path d="M32 90 L1128 90"/><path d="M32 124 L1128 124"/><path d="M32 158 L1128 158"/><path d="M32 192 L1128 192"/><path d="M32 226 L1128 226"/><path d="M32 260 L1128 260"/><path d="M32 294 L1128 294"/><path d="M32 328 L1128 328"/><path d="M32 362 L1128 362"/><path d="M32 396 L1128 396"/><path d="M32 430 L1128 430"/><path d="M32 464 L1128 464"/><path d="M32 498 L1128 498"/><path d="M32 532 L1128 532"/><path d="M32 566 L1128 566"/><path d="M32 600 L1128 600"/><path d="M32 634 L1128 634"/><path d="M32 668 L1128 668"/><path d="M32 702 L1128 702"/><path d="M32 736 L1128 736"/><path d="M32 770 L1128 770"/><path d="M32 804 L1128 804"/><path d="M32 838 L1128 838"/><path d="M32 872 L1128 872"/><path d="M32 906 L1128 906"/><path d="M32 940 L1128 940"/><path d="M32 974 L1128 974"/><path d="M32 1008 L1128 1008"/><path d="M32 1042 L1128 1042"/><path d="M32 1076 L1128 1076"/><path d="M32 1110 L1128 1110"/><path d="M32 1144 L1128 1144"/><path d="M32 1178 L1128 1178"/><path d="M32 1212 L1128 1212"/></g>
-<g stroke="#3b2111" stroke-width="1" opacity="0.18"><path d="M50 40 L-330.8 1230"/><path d="M158 40 L-222.8 1230"/><path d="M266 40 L-114.8 1230"/><path d="M374 40 L-6.8 1230"/><path d="M482 40 L101.2 1230"/><path d="M590 40 L209.2 1230"/><path d="M698 40 L317.2 1230"/><path d="M806 40 L425.2 1230"/><path d="M914 40 L533.2 1230"/><path d="M1022 40 L641.2 1230"/><path d="M1130 40 L749.2 1230"/></g>
-<path d="M36 110 H1124" stroke="#ff7a1a" stroke-width="1.4" opacity="0.8"/>
-<path d="M36 1236 H1124" stroke="#ff7a1a" stroke-width="1.4" opacity="0.5"/>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-<text x="50" y="66" font-size="25" font-weight="900" fill="#ff8a22">:: CODEX_USAGE_DASHBOARD // ALL_AGENTS</text>
-<text x="50" y="94" font-size="13" font-weight="750" fill="#ffca88">&gt; Past 248 days · 88 active · 22 models · 6 agents · 2025-09-16 → 2026-05-21</text>
-<text x="1110" y="66" font-size="12" font-weight="800" fill="#ffca88" text-anchor="end">ASCII // ORANGE GRID</text>
-<g><circle cx="1042" cy="90" r="3.4" fill="#ff7a1a"><animate attributeName="opacity" values="0.25;1;0.25" dur="2s" repeatCount="indefinite"/></circle><text x="1052" y="94" font-size="11" font-weight="850" fill="#ff8a22">LIVE</text></g></g>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-<rect x="50" y="130" width="168" height="76" rx="8" fill="#15100c" stroke="#ff8a22" stroke-opacity="0.78"/>
-<rect x="58" y="139" width="152" height="2" fill="#ff8a22" opacity="0.78"/>
-<text x="68" y="160" font-size="11" font-weight="800" fill="#ffb057">&gt; TOTAL TOKENS</text>
-<text x="68" y="190" font-size="20" font-weight="850" fill="#fff2df">71.6B</text>
-<text x="208" y="200" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end">88d active</text>
-<rect x="232" y="130" width="168" height="76" rx="8" fill="#15100c" stroke="#ff4d00" stroke-opacity="0.78"/>
-<rect x="240" y="139" width="152" height="2" fill="#ff4d00" opacity="0.78"/>
-<text x="250" y="160" font-size="11" font-weight="800" fill="#ffb057">&gt; COST</text>
-<text x="250" y="190" font-size="20" font-weight="850" fill="#fff2df">$74,361</text>
-<text x="390" y="200" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end">$844.99 / active d</text>
-<rect x="414" y="130" width="168" height="76" rx="8" fill="#15100c" stroke="#2dd4a3" stroke-opacity="0.78"/>
-<rect x="422" y="139" width="152" height="2" fill="#2dd4a3" opacity="0.78"/>
-<text x="432" y="160" font-size="11" font-weight="800" fill="#2dd4a3">&gt; CACHE HIT</text>
-<text x="432" y="190" font-size="20" font-weight="850" fill="#fff2df">93.89%</text>
-<text x="572" y="200" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end">66.91B cached</text>
-<rect x="596" y="130" width="168" height="76" rx="8" fill="#15100c" stroke="#f06d19" stroke-opacity="0.78"/>
-<rect x="604" y="139" width="152" height="2" fill="#f06d19" opacity="0.78"/>
-<text x="614" y="160" font-size="11" font-weight="800" fill="#ffb057">&gt; SESSIONS</text>
-<text x="614" y="190" font-size="20" font-weight="850" fill="#fff2df">4,147</text>
-<text x="754" y="200" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end">47 / active d</text>
-<rect x="778" y="130" width="148" height="76" rx="8" fill="#15100c" stroke="#ff8a22" stroke-opacity="0.78"/>
-<rect x="786" y="139" width="132" height="2" fill="#ff8a22" opacity="0.78"/>
-<text x="796" y="160" font-size="11" font-weight="800" fill="#ffb057">&gt; MODELS</text>
-<text x="796" y="190" font-size="20" font-weight="850" fill="#fff2df">22</text>
-<text x="916" y="200" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end">6 agents</text>
-<rect x="940" y="130" width="148" height="76" rx="8" fill="#15100c" stroke="#ff4d00" stroke-opacity="0.78"/>
-<rect x="948" y="139" width="132" height="2" fill="#ff4d00" opacity="0.78"/>
-<text x="958" y="160" font-size="11" font-weight="800" fill="#ffb057">&gt; INPUT</text>
-<text x="958" y="190" font-size="20" font-weight="850" fill="#fff2df">4.35B</text>
-<text x="1078" y="200" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end">+ 291M output</text>
-</g>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-<rect x="50" y="226" width="1060" height="270" rx="12" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
-<path d="M66 270 H1094" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
-<text x="66" y="258" font-size="16" font-weight="900" fill="#ff8a22">[01] DAILY TOKEN VOLUME // PEAK CHART</text>
-<g transform="translate(786,246)">
-      <rect width="310" height="18" rx="9" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.6"/>
-      <circle cx="14" cy="9" r="3.5" fill="#ff8a22"/>
-      <text x="24" y="13" font-size="10" font-weight="800" fill="#ffd08a">peak ↑ 32.4B · 05-20 · today 6.6B · √ scale</text>
-    </g>
-<g font-size="10" font-weight="800" fill="#7a4318">
-<text x="88" y="459.5" text-anchor="end">0</text>
-<text x="88" y="440.9" text-anchor="end">500M</text>
-<text x="88" y="422.2" text-anchor="end">2B</text>
-<text x="88" y="400.5" text-anchor="end">5B</text>
-<text x="88" y="357.4" text-anchor="end">15B</text>
-<text x="88" y="303.5" text-anchor="end">35B</text>
-</g>
-<g stroke="#4b2a13" stroke-width="1" opacity="0.55" stroke-dasharray="2 4">
-<path d="M94 437.4 H1090"/>
-<path d="M94 418.7 H1090"/>
-<path d="M94 397.0 H1090"/>
-<path d="M94 353.9 H1090"/>
-<path d="M94 300.0 H1090"/>
-</g>
-<path d="M94 456 H1090" stroke="#6c3a16" stroke-width="1.3"/>
-<path d="M94,456 L94.00,437.15 L170.31,432.72 L246.62,436.62 L322.92,438.24 L399.23,423.86 L475.54,436.64 L551.85,435.50 L628.15,440.18 L704.46,435.20 L780.77,424.42 L857.08,394.74 L933.38,345.02 L1009.69,305.98 L1086.00,388.12 L1086,456 Z" fill="url(#peakArea)"/>
-<path d="M94.00,437.15 L170.31,432.72 L246.62,436.62 L322.92,438.24 L399.23,423.86 L475.54,436.64 L551.85,435.50 L628.15,440.18 L704.46,435.20 L780.77,424.42 L857.08,394.74 L933.38,345.02 L1009.69,305.98 L1086.00,388.12" fill="none" stroke="url(#peakStroke)" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
-<g fill="#0d0907" stroke="#ffb057" stroke-width="1.4">
-<circle cx="94.00" cy="437.15" r="2.6"/>
-<circle cx="170.31" cy="432.72" r="2.6"/>
-<circle cx="246.62" cy="436.62" r="2.6"/>
-<circle cx="322.92" cy="438.24" r="2.6"/>
-<circle cx="399.23" cy="423.86" r="2.6"/>
-<circle cx="475.54" cy="436.64" r="2.6"/>
-<circle cx="551.85" cy="435.50" r="2.6"/>
-<circle cx="628.15" cy="440.18" r="2.6"/>
-<circle cx="704.46" cy="435.20" r="2.6"/>
-<circle cx="780.77" cy="424.42" r="2.6"/>
-<circle cx="857.08" cy="394.74" r="2.6"/>
-</g>
-<g><circle cx="933.38" cy="345.02" r="4.5" fill="#1b0e07" stroke="#ffb057" stroke-width="1.6"/><path d="M933.38 339.02 V327.02" stroke="#ffb057" stroke-width="1" stroke-dasharray="2 2"/><text x="933.38" y="323.02" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="middle">17.7B · 05-19</text></g>
-<g><circle cx="1009.69" cy="305.98" r="11" fill="#ff4d00" opacity="0.30"/><circle cx="1009.69" cy="305.98" r="6.5" fill="#ff8a22" filter="url(#peakGlow)"/><circle cx="1009.69" cy="305.98" r="3" fill="#fff2df"/><rect x="963.69" y="281.98" width="92" height="20" rx="5" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.85"/><text x="1009.69" y="295.98" font-size="11" font-weight="900" fill="#ffd08a" text-anchor="middle">↑ 32.4B · 05-20</text></g>
-<g><circle cx="1086.00" cy="388.12" r="4.5" fill="#1b0e07" stroke="#ffd08a" stroke-width="1.6"/><text x="1086.00" y="378.12" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="middle">today 6.6B</text></g>
-<g font-size="10" font-weight="800" fill="#ffca88">
-<text x="94.00" y="471" text-anchor="middle">05-08</text>
-<text x="246.62" y="471" text-anchor="middle">05-10</text>
-<text x="399.23" y="471" text-anchor="middle">05-12</text>
-<text x="551.85" y="471" text-anchor="middle">05-14</text>
-<text x="704.46" y="471" text-anchor="middle">05-16</text>
-<text x="857.08" y="471" text-anchor="middle">05-18</text>
-<text x="1009.69" y="471" text-anchor="middle">05-20</text>
-</g>
-<g>
-      <text x="66" y="488" font-size="10" font-weight="800" fill="#cc6b2c">avg</text>
-      <text x="98" y="488" font-size="10" font-weight="850" fill="#fff2df">4.96B</text>
-      <text x="156" y="488" font-size="10" font-weight="800" fill="#cc6b2c">median</text>
-      <text x="206" y="488" font-size="10" font-weight="850" fill="#fff2df">700.8M</text>
-      <text x="284" y="488" font-size="10" font-weight="800" fill="#cc6b2c">range</text>
-      <text x="324" y="488" font-size="10" font-weight="850" fill="#fff2df">359.7M ↔ 32.37B</text>
-      <text x="478" y="488" font-size="10" font-weight="800" fill="#cc6b2c">peak vs avg</text>
-      <text x="556" y="488" font-size="10" font-weight="850" fill="#2dd4a3">+553%</text>
-      <text x="630" y="488" font-size="10" font-weight="800" fill="#cc6b2c">last 7d</text>
-      <text x="676" y="488" font-size="10" font-weight="850" fill="#fff2df">64.5B</text>
-      <text x="730" y="488" font-size="10" font-weight="800" fill="#cc6b2c">vs prev 7d</text>
-      <text x="804" y="488" font-size="10" font-weight="850" fill="#2dd4a3">+1213%</text>
-      <text x="876" y="488" font-size="10" font-weight="800" fill="#cc6b2c">trend</text>
-      <text x="916" y="488" font-size="10" font-weight="850" fill="#2dd4a3">▲▲ accelerating</text>
-    </g>
-</g>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-<rect x="50" y="514" width="342" height="234" rx="12" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
-<path d="M68 558 H374" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
-<text x="68" y="548" font-size="15" font-weight="900" fill="#ff8a22">[02] AGENT BREAKDOWN</text>
-<text x="374" y="548" font-size="10" font-weight="800" fill="#ffd08a" text-anchor="end">6 agents</text>
-<rect x="68" y="572" width="306" height="14" rx="5" fill="#24160d" stroke="#4b2a13"/>
-<rect x="68.00" y="572" width="296.00" height="14" fill="#ff7a1a"/>
-<rect x="364.00" y="572" width="2.00" height="14" fill="#d97757"/>
-<rect x="366.00" y="572" width="2.00" height="14" fill="#58a6ff"/>
-<rect x="368.00" y="572" width="2.00" height="14" fill="#2dd4a3"/>
-<rect x="370.00" y="572" width="2.00" height="14" fill="#b779ff"/>
-<rect x="372.00" y="572" width="2.00" height="14" fill="#ffb057"/>
-<rect x="68" y="591" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="84" y="600" font-size="11" font-weight="800" fill="#fff2df">Codex</text>
-<text x="84" y="612" font-size="9" font-weight="700" fill="#cc6b2c">4,095 sessions</text>
-<text x="372" y="600" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$74,296.24</text>
-<text x="372" y="612" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="end">99.913%</text>
-<rect x="68" y="615" width="10" height="10" rx="2" fill="#d97757"/>
-<text x="84" y="624" font-size="11" font-weight="800" fill="#fff2df">Claude</text>
-<text x="84" y="636" font-size="9" font-weight="700" fill="#cc6b2c">10 sessions</text>
-<text x="372" y="624" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$56.94</text>
-<text x="372" y="636" font-size="9" font-weight="800" fill="#d97757" text-anchor="end">0.077%</text>
-<rect x="68" y="639" width="10" height="10" rx="2" fill="#58a6ff"/>
-<text x="84" y="648" font-size="11" font-weight="800" fill="#fff2df">Qwen</text>
-<text x="84" y="660" font-size="9" font-weight="700" fill="#cc6b2c">28 sessions</text>
-<text x="372" y="648" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$6.60</text>
-<text x="372" y="660" font-size="9" font-weight="800" fill="#58a6ff" text-anchor="end">0.009%</text>
-<rect x="68" y="663" width="10" height="10" rx="2" fill="#2dd4a3"/>
-<text x="84" y="672" font-size="11" font-weight="800" fill="#fff2df">Gemini</text>
-<text x="84" y="684" font-size="9" font-weight="700" fill="#cc6b2c">11 sessions</text>
-<text x="372" y="672" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$1.37</text>
-<text x="372" y="684" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end">0.002%</text>
-<rect x="68" y="687" width="10" height="10" rx="2" fill="#b779ff"/>
-<text x="84" y="696" font-size="11" font-weight="800" fill="#fff2df">Opencode</text>
-<text x="84" y="708" font-size="9" font-weight="700" fill="#cc6b2c">2 sessions</text>
-<text x="372" y="696" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$0.05</text>
-<text x="372" y="708" font-size="9" font-weight="800" fill="#b779ff" text-anchor="end">0.000%</text>
-<rect x="68" y="711" width="10" height="10" rx="2" fill="#ffb057"/>
-<text x="84" y="720" font-size="11" font-weight="800" fill="#fff2df">Droid</text>
-<text x="84" y="732" font-size="9" font-weight="700" fill="#cc6b2c">1 sessions</text>
-<text x="372" y="720" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$0.02</text>
-<text x="372" y="732" font-size="9" font-weight="800" fill="#ffb057" text-anchor="end">0.000%</text>
-</g>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-<rect x="406" y="514" width="342" height="234" rx="12" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
-<path d="M424 558 H730" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
-<text x="424" y="548" font-size="15" font-weight="900" fill="#ff8a22">[03] TOKEN MIX</text>
-<text x="730" y="548" font-size="10" font-weight="800" fill="#ffd08a" text-anchor="end">71.6B total</text>
-<rect x="424" y="572" width="306" height="14" rx="5" fill="#24160d" stroke="#4b2a13"/>
-<rect x="424.00" y="572" width="286.15" height="14" fill="#2dd4a3"/>
-<rect x="710.15" y="572" width="18.59" height="14" fill="#58a6ff"/>
-<rect x="728.74" y="572" width="1.25" height="14" fill="#ff8a22"/>
-<rect x="729.98" y="572" width="1.00" height="14" fill="#b779ff"/>
-<rect x="424" y="599" width="10" height="10" rx="2" fill="#2dd4a3"/>
-<text x="440" y="608" font-size="11" font-weight="800" fill="#fff2df">Cached read</text>
-<text x="728" y="608" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">66.91B</text>
-<text x="728" y="620" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end">93.512%</text>
-<rect x="424" y="629" width="10" height="10" rx="2" fill="#58a6ff"/>
-<text x="440" y="638" font-size="11" font-weight="800" fill="#fff2df">Non-cached input</text>
-<text x="728" y="638" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">4.35B</text>
-<text x="728" y="650" font-size="9" font-weight="800" fill="#58a6ff" text-anchor="end">6.076%</text>
-<rect x="424" y="659" width="10" height="10" rx="2" fill="#ff8a22"/>
-<text x="440" y="668" font-size="11" font-weight="800" fill="#fff2df">Output</text>
-<text x="728" y="668" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">291.2M</text>
-<text x="728" y="680" font-size="9" font-weight="800" fill="#ff8a22" text-anchor="end">0.407%</text>
-<rect x="424" y="689" width="10" height="10" rx="2" fill="#b779ff"/>
-<text x="440" y="698" font-size="11" font-weight="800" fill="#fff2df">Cache create</text>
-<text x="728" y="698" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">3.7M</text>
-<text x="728" y="710" font-size="9" font-weight="800" fill="#b779ff" text-anchor="end">0.005%</text>
-<rect x="424" y="732" width="306" height="12" rx="4" fill="#0a1714" stroke="#16745b" stroke-opacity="0.45"/>
-<circle cx="432" cy="738" r="2.4" fill="#2dd4a3"/>
-<text x="440" y="741" font-size="9" font-weight="800" fill="#9adfca">cache hit · 93.89% — 66.91B reads on 4.35B input</text>
-</g>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-<rect x="762" y="514" width="342" height="234" rx="12" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
-<path d="M780 558 H1086" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
-<text x="780" y="548" font-size="15" font-weight="900" fill="#ff8a22">[04] TOP SESSIONS BY COST</text>
-<text x="1086" y="548" font-size="10" font-weight="800" fill="#ffd08a" text-anchor="end">top 5 of 4,147</text>
-<rect x="780" y="576" width="22" height="16" rx="4" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.7"/>
-<text x="791" y="587" font-size="9" font-weight="900" fill="#ffd08a" text-anchor="middle">#1</text>
-<text x="808" y="588" font-size="10" font-weight="800" fill="#fff2df">-fe7b · 2026-05-20</text>
-<text x="808" y="600" font-size="9" font-weight="700" fill="#cc6b2c">gpt-5.5 · 4.58B · 96.4% hit</text>
-<text x="1086" y="588" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$8,676.20</text>
-<rect x="986" y="593" width="100" height="6" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="986" y="593" width="100.00" height="6" rx="2" fill="url(#costBar)"/>
-<rect x="780" y="606" width="22" height="16" rx="4" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.7"/>
-<text x="791" y="617" font-size="9" font-weight="900" fill="#ffd08a" text-anchor="middle">#2</text>
-<text x="808" y="618" font-size="10" font-weight="800" fill="#fff2df">-68d2 · 2026-05-21</text>
-<text x="808" y="630" font-size="9" font-weight="700" fill="#cc6b2c">gpt-5.5 · 2.52B · 94.0% hit</text>
-<text x="1086" y="618" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$5,615.70</text>
-<rect x="986" y="623" width="100" height="6" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="986" y="623" width="64.73" height="6" rx="2" fill="url(#costBar)"/>
-<rect x="780" y="636" width="22" height="16" rx="4" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.7"/>
-<text x="791" y="647" font-size="9" font-weight="900" fill="#ffd08a" text-anchor="middle">#3</text>
-<text x="808" y="648" font-size="10" font-weight="800" fill="#fff2df">-a0c2 · 2026-05-21</text>
-<text x="808" y="660" font-size="9" font-weight="700" fill="#cc6b2c">gpt-5.5 · 1.86B · 95.6% hit</text>
-<text x="1086" y="648" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$3,618.13</text>
-<rect x="986" y="653" width="100" height="6" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="986" y="653" width="41.70" height="6" rx="2" fill="url(#costBar)"/>
-<rect x="780" y="666" width="22" height="16" rx="4" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.7"/>
-<text x="791" y="677" font-size="9" font-weight="900" fill="#ffd08a" text-anchor="middle">#4</text>
-<text x="808" y="678" font-size="10" font-weight="800" fill="#fff2df">-434e · 2026-05-21</text>
-<text x="808" y="690" font-size="9" font-weight="700" fill="#cc6b2c">gpt-5.5 · 990.9M · 96.2% hit</text>
-<text x="1086" y="678" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$1,877.37</text>
-<rect x="986" y="683" width="100" height="6" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="986" y="683" width="21.64" height="6" rx="2" fill="url(#costBar)"/>
-<rect x="780" y="696" width="22" height="16" rx="4" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.7"/>
-<text x="791" y="707" font-size="9" font-weight="900" fill="#ffd08a" text-anchor="middle">#5</text>
-<text x="808" y="708" font-size="10" font-weight="800" fill="#fff2df">-b030 · 2026-05-21</text>
-<text x="808" y="720" font-size="9" font-weight="700" fill="#cc6b2c">gpt-5.5 · 841.2M · 94.8% hit</text>
-<text x="1086" y="708" font-size="12" font-weight="900" fill="#fff2df" text-anchor="end">$1,863.61</text>
-<rect x="986" y="713" width="100" height="6" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="986" y="713" width="21.48" height="6" rx="2" fill="url(#costBar)"/>
-</g>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-<rect x="50" y="766" width="1060" height="452" rx="12" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
-<path d="M66 810 H1094" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
-<text x="66" y="798" font-size="16" font-weight="900" fill="#ff8a22">[05] ALL MODELS · TOKENS · COST</text>
-<text x="1094" y="798" font-size="11" font-weight="800" fill="#ffd08a" text-anchor="end">22 models · sorted by cost</text>
-<g font-size="9" font-weight="800" fill="#7a4318">
-<text x="68" y="830" text-anchor="start">#</text>
-<text x="110" y="830" text-anchor="start">MODEL</text>
-<text x="290" y="830" text-anchor="start">AGENT</text>
-<text x="420" y="830" text-anchor="end">SESSIONS</text>
-<text x="510" y="830" text-anchor="end">TOKENS</text>
-<text x="605" y="830" text-anchor="end">CACHE</text>
-<text x="720" y="830" text-anchor="end">COST</text>
-<text x="800" y="830" text-anchor="end">%</text>
-<text x="970" y="830" text-anchor="middle">COST SHARE (√)</text>
-</g>
-<path d="M66 836 H1094" stroke="#4b2a13" stroke-width="1" stroke-dasharray="2 4"/>
-<rect x="62" y="840" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="852" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">01</text>
-<rect x="92" y="843" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="852" font-size="11" font-weight="800" fill="#fff2df">gpt-5.5</text>
-<rect x="290" y="842" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="851" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="852" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">3,987</text>
-<text x="510" y="852" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">23.30B</text>
-<text x="605" y="852" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">94.2%</text>
-<text x="720" y="852" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$51,802.84</text>
-<text x="800" y="852" font-size="10" font-weight="800" fill="#ffd08a" text-anchor="end">69.664%</text>
-<rect x="820" y="845" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="845" width="270.00" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<text x="80" y="869" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">02</text>
-<rect x="92" y="860" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="869" font-size="11" font-weight="800" fill="#fff2df">gpt-5</text>
-<rect x="290" y="859" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="868" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="869" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">119</text>
-<text x="510" y="869" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">47.63B</text>
-<text x="605" y="869" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">93.8%</text>
-<text x="720" y="869" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$22,145.25</text>
-<text x="800" y="869" font-size="10" font-weight="800" fill="#ffd08a" text-anchor="end">29.781%</text>
-<rect x="820" y="862" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="862" width="176.53" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<rect x="62" y="874" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="886" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">03</text>
-<rect x="92" y="877" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="886" font-size="11" font-weight="800" fill="#fff2df">gpt-5-codex</text>
-<rect x="290" y="876" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="885" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="886" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">48</text>
-<text x="510" y="886" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">292.6M</text>
-<text x="605" y="886" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">94.8%</text>
-<text x="720" y="886" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$170.37</text>
-<text x="800" y="886" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.229%</text>
-<rect x="820" y="879" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="879" width="15.48" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<text x="80" y="903" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">04</text>
-<rect x="92" y="894" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="903" font-size="11" font-weight="800" fill="#fff2df">gpt-5.1-codex-max</text>
-<rect x="290" y="893" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="902" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="903" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">25</text>
-<text x="510" y="903" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">98.5M</text>
-<text x="605" y="903" font-size="11" font-weight="700" fill="#ffb057" text-anchor="end">88.7%</text>
-<text x="720" y="903" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$79.05</text>
-<text x="800" y="903" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.106%</text>
-<rect x="820" y="896" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="896" width="10.55" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<rect x="62" y="908" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="920" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">05</text>
-<rect x="92" y="911" width="10" height="10" rx="2" fill="#d97757"/>
-<text x="110" y="920" font-size="11" font-weight="800" fill="#fff2df">claude-opus-4-7</text>
-<rect x="290" y="910" width="58" height="14" rx="3" fill="#1b0e07" stroke="#d97757" stroke-opacity="0.55"/>
-<text x="319" y="919" font-size="9" font-weight="800" fill="#d97757" text-anchor="middle">claude</text>
-<text x="420" y="920" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">7</text>
-<text x="510" y="920" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">55.7M</text>
-<text x="605" y="920" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">94.5%</text>
-<text x="720" y="920" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$52.58</text>
-<text x="800" y="920" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.071%</text>
-<rect x="820" y="913" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="913" width="8.60" height="9" rx="2" fill="#d97757" opacity="0.85"/>
-<text x="80" y="937" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">06</text>
-<rect x="92" y="928" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="937" font-size="11" font-weight="800" fill="#fff2df">gpt-5.2-codex</text>
-<rect x="290" y="927" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="936" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="937" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">5</text>
-<text x="510" y="937" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">77.7M</text>
-<text x="605" y="937" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">97.1%</text>
-<text x="720" y="937" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$51.13</text>
-<text x="800" y="937" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.069%</text>
-<rect x="820" y="930" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="930" width="8.48" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<rect x="62" y="942" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="954" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">07</text>
-<rect x="92" y="945" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="954" font-size="11" font-weight="800" fill="#fff2df">gpt-5.2</text>
-<rect x="290" y="944" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="953" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="954" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">17</text>
-<text x="510" y="954" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">32.4M</text>
-<text x="605" y="954" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">96.4%</text>
-<text x="720" y="954" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$24.55</text>
-<text x="800" y="954" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.033%</text>
-<rect x="820" y="947" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="947" width="5.88" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<text x="80" y="971" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">08</text>
-<rect x="92" y="962" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="971" font-size="11" font-weight="800" fill="#fff2df">gpt-5.3-codex</text>
-<rect x="290" y="961" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="970" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="971" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">3</text>
-<text x="510" y="971" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">24.6M</text>
-<text x="605" y="971" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">96.4%</text>
-<text x="720" y="971" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$16.43</text>
-<text x="800" y="971" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.022%</text>
-<rect x="820" y="964" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="964" width="4.81" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<rect x="62" y="976" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="988" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">09</text>
-<rect x="92" y="979" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="988" font-size="11" font-weight="800" fill="#fff2df">gpt-5.4</text>
-<rect x="290" y="978" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="987" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="988" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">5</text>
-<text x="510" y="988" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">5.2M</text>
-<text x="605" y="988" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">92.8%</text>
-<text x="720" y="988" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$5.83</text>
-<text x="800" y="988" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.008%</text>
-<rect x="820" y="981" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="981" width="2.86" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<text x="80" y="1005" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">10</text>
-<rect x="92" y="996" width="10" height="10" rx="2" fill="#58a6ff"/>
-<text x="110" y="1005" font-size="11" font-weight="800" fill="#fff2df">MiniMax-M2.5</text>
-<rect x="290" y="995" width="58" height="14" rx="3" fill="#1b0e07" stroke="#58a6ff" stroke-opacity="0.55"/>
-<text x="319" y="1004" font-size="9" font-weight="800" fill="#58a6ff" text-anchor="middle">qwen</text>
-<text x="420" y="1005" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">15</text>
-<text x="510" y="1005" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">26.6M</text>
-<text x="605" y="1005" font-size="11" font-weight="700" fill="#cc6b2c" text-anchor="end">47.9%</text>
-<text x="720" y="1005" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$4.97</text>
-<text x="800" y="1005" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.007%</text>
-<rect x="820" y="998" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="998" width="2.64" height="9" rx="2" fill="#58a6ff" opacity="0.85"/>
-<rect x="62" y="1010" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="1022" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">11</text>
-<rect x="92" y="1013" width="10" height="10" rx="2" fill="#d97757"/>
-<text x="110" y="1022" font-size="11" font-weight="800" fill="#fff2df">claude-opus-4-6</text>
-<rect x="290" y="1012" width="58" height="14" rx="3" fill="#1b0e07" stroke="#d97757" stroke-opacity="0.55"/>
-<text x="319" y="1021" font-size="9" font-weight="800" fill="#d97757" text-anchor="middle">claude</text>
-<text x="420" y="1022" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">2</text>
-<text x="510" y="1022" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">1.5M</text>
-<text x="605" y="1022" font-size="11" font-weight="700" fill="#ffb057" text-anchor="end">89.5%</text>
-<text x="720" y="1022" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$2.17</text>
-<text x="800" y="1022" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.003%</text>
-<rect x="820" y="1015" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1015" width="1.75" height="9" rx="2" fill="#d97757" opacity="0.85"/>
-<text x="80" y="1039" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">12</text>
-<rect x="92" y="1030" width="10" height="10" rx="2" fill="#58a6ff"/>
-<text x="110" y="1039" font-size="11" font-weight="800" fill="#fff2df">MiniMax-M2.1</text>
-<rect x="290" y="1029" width="58" height="14" rx="3" fill="#1b0e07" stroke="#58a6ff" stroke-opacity="0.55"/>
-<text x="319" y="1038" font-size="9" font-weight="800" fill="#58a6ff" text-anchor="middle">qwen</text>
-<text x="420" y="1039" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">14</text>
-<text x="510" y="1039" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">4.0M</text>
-<text x="605" y="1039" font-size="11" font-weight="700" fill="#cc6b2c" text-anchor="end">0.0%</text>
-<text x="720" y="1039" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$1.69</text>
-<text x="800" y="1039" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.002%</text>
-<rect x="820" y="1032" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1032" width="1.54" height="9" rx="2" fill="#58a6ff" opacity="0.85"/>
-<rect x="62" y="1044" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="1056" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">13</text>
-<rect x="92" y="1047" width="10" height="10" rx="2" fill="#d97757"/>
-<text x="110" y="1056" font-size="11" font-weight="800" fill="#fff2df">claude-sonnet-4-6</text>
-<rect x="290" y="1046" width="58" height="14" rx="3" fill="#1b0e07" stroke="#d97757" stroke-opacity="0.55"/>
-<text x="319" y="1055" font-size="9" font-weight="800" fill="#d97757" text-anchor="middle">claude</text>
-<text x="420" y="1056" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">1</text>
-<text x="510" y="1056" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">2.3M</text>
-<text x="605" y="1056" font-size="11" font-weight="700" fill="#ffb057" text-anchor="end">88.5%</text>
-<text x="720" y="1056" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$1.62</text>
-<text x="800" y="1056" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.002%</text>
-<rect x="820" y="1049" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1049" width="1.51" height="9" rx="2" fill="#d97757" opacity="0.85"/>
-<text x="80" y="1073" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">14</text>
-<rect x="92" y="1064" width="10" height="10" rx="2" fill="#2dd4a3"/>
-<text x="110" y="1073" font-size="11" font-weight="800" fill="#fff2df">gemini-3-pro-preview</text>
-<rect x="290" y="1063" width="58" height="14" rx="3" fill="#1b0e07" stroke="#2dd4a3" stroke-opacity="0.55"/>
-<text x="319" y="1072" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="middle">gemini</text>
-<text x="420" y="1073" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">4</text>
-<text x="510" y="1073" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">450.7K</text>
-<text x="605" y="1073" font-size="11" font-weight="700" fill="#ffb057" text-anchor="end">61.8%</text>
-<text x="720" y="1073" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$0.82</text>
-<text x="800" y="1073" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.001%</text>
-<rect x="820" y="1066" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1066" width="1.07" height="9" rx="2" fill="#2dd4a3" opacity="0.85"/>
-<rect x="62" y="1078" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="1090" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">15</text>
-<rect x="92" y="1081" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="1090" font-size="11" font-weight="800" fill="#fff2df">gpt-5.3-codex-spark</text>
-<rect x="290" y="1080" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="1089" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="1090" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">1</text>
-<text x="510" y="1090" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">226.6K</text>
-<text x="605" y="1090" font-size="11" font-weight="700" fill="#ffb057" text-anchor="end">68.7%</text>
-<text x="720" y="1090" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$0.61</text>
-<text x="800" y="1090" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.001%</text>
-<rect x="820" y="1083" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1083" width="1.00" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<text x="80" y="1107" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">16</text>
-<rect x="92" y="1098" width="10" height="10" rx="2" fill="#2dd4a3"/>
-<text x="110" y="1107" font-size="11" font-weight="800" fill="#fff2df">gemini-2.5-pro</text>
-<rect x="290" y="1097" width="58" height="14" rx="3" fill="#1b0e07" stroke="#2dd4a3" stroke-opacity="0.55"/>
-<text x="319" y="1106" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="middle">gemini</text>
-<text x="420" y="1107" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">6</text>
-<text x="510" y="1107" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">636.3K</text>
-<text x="605" y="1107" font-size="11" font-weight="700" fill="#ffb057" text-anchor="end">64.8%</text>
-<text x="720" y="1107" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$0.54</text>
-<text x="800" y="1107" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.001%</text>
-<rect x="820" y="1100" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1100" width="1.00" height="9" rx="2" fill="#2dd4a3" opacity="0.85"/>
-<rect x="62" y="1112" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="1124" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">17</text>
-<rect x="92" y="1115" width="10" height="10" rx="2" fill="#d97757"/>
-<text x="110" y="1124" font-size="11" font-weight="800" fill="#fff2df">claude-haiku-4-5</text>
-<rect x="290" y="1114" width="58" height="14" rx="3" fill="#1b0e07" stroke="#d97757" stroke-opacity="0.55"/>
-<text x="319" y="1123" font-size="9" font-weight="800" fill="#d97757" text-anchor="middle">claude</text>
-<text x="420" y="1124" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">2</text>
-<text x="510" y="1124" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">2.5M</text>
-<text x="605" y="1124" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">93.3%</text>
-<text x="720" y="1124" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$0.47</text>
-<text x="800" y="1124" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.001%</text>
-<rect x="820" y="1117" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1117" width="1.00" height="9" rx="2" fill="#d97757" opacity="0.85"/>
-<text x="80" y="1141" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">18</text>
-<rect x="92" y="1132" width="10" height="10" rx="2" fill="#ff7a1a"/>
-<text x="110" y="1141" font-size="11" font-weight="800" fill="#fff2df">gpt-5.1-codex</text>
-<rect x="290" y="1131" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.55"/>
-<text x="319" y="1140" font-size="9" font-weight="800" fill="#ff7a1a" text-anchor="middle">codex</text>
-<text x="420" y="1141" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">1</text>
-<text x="510" y="1141" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">160.9K</text>
-<text x="605" y="1141" font-size="11" font-weight="700" fill="#ffb057" text-anchor="end">78.3%</text>
-<text x="720" y="1141" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$0.17</text>
-<text x="800" y="1141" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.000%</text>
-<rect x="820" y="1134" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1134" width="1.00" height="9" rx="2" fill="#ff7a1a" opacity="0.85"/>
-<rect x="62" y="1146" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="1158" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">19</text>
-<rect x="92" y="1149" width="10" height="10" rx="2" fill="#d97757"/>
-<text x="110" y="1158" font-size="11" font-weight="800" fill="#fff2df">claude-sonnet-4-5</text>
-<rect x="290" y="1148" width="58" height="14" rx="3" fill="#1b0e07" stroke="#d97757" stroke-opacity="0.55"/>
-<text x="319" y="1157" font-size="9" font-weight="800" fill="#d97757" text-anchor="middle">claude</text>
-<text x="420" y="1158" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">1</text>
-<text x="510" y="1158" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">25.2K</text>
-<text x="605" y="1158" font-size="11" font-weight="700" fill="#cc6b2c" text-anchor="end">0.0%</text>
-<text x="720" y="1158" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$0.09</text>
-<text x="800" y="1158" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.000%</text>
-<rect x="820" y="1151" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1151" width="1.00" height="9" rx="2" fill="#d97757" opacity="0.85"/>
-<text x="80" y="1175" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">20</text>
-<rect x="92" y="1166" width="10" height="10" rx="2" fill="#ffb057"/>
-<text x="110" y="1175" font-size="11" font-weight="800" fill="#fff2df">claude-opus-4-5</text>
-<rect x="290" y="1165" width="58" height="14" rx="3" fill="#1b0e07" stroke="#ffb057" stroke-opacity="0.55"/>
-<text x="319" y="1174" font-size="9" font-weight="800" fill="#ffb057" text-anchor="middle">droid</text>
-<text x="420" y="1175" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">1</text>
-<text x="510" y="1175" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">15.6K</text>
-<text x="605" y="1175" font-size="11" font-weight="700" fill="#2dd4a3" text-anchor="end">90.6%</text>
-<text x="720" y="1175" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$0.02</text>
-<text x="800" y="1175" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.000%</text>
-<rect x="820" y="1168" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1168" width="1.00" height="9" rx="2" fill="#ffb057" opacity="0.85"/>
-<rect x="62" y="1180" width="1036" height="17" fill="#120904" opacity="0.55"/>
-<text x="80" y="1192" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">21</text>
-<rect x="92" y="1183" width="10" height="10" rx="2" fill="#2dd4a3"/>
-<text x="110" y="1192" font-size="11" font-weight="800" fill="#fff2df">gemini-2.5-flash</text>
-<rect x="290" y="1182" width="58" height="14" rx="3" fill="#1b0e07" stroke="#2dd4a3" stroke-opacity="0.55"/>
-<text x="319" y="1191" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="middle">gemini</text>
-<text x="420" y="1192" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">2</text>
-<text x="510" y="1192" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">24.0K</text>
-<text x="605" y="1192" font-size="11" font-weight="700" fill="#cc6b2c" text-anchor="end">0.0%</text>
-<text x="720" y="1192" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$0.01</text>
-<text x="800" y="1192" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.000%</text>
-<rect x="820" y="1185" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1185" width="1.00" height="9" rx="2" fill="#2dd4a3" opacity="0.85"/>
-<text x="80" y="1209" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">22</text>
-<rect x="92" y="1200" width="10" height="10" rx="2" fill="#888888"/>
-<text x="110" y="1209" font-size="11" font-weight="800" fill="#fff2df">big-pickle</text>
-<rect x="290" y="1199" width="58" height="14" rx="3" fill="#1b0e07" stroke="#888888" stroke-opacity="0.55"/>
-<text x="319" y="1208" font-size="9" font-weight="800" fill="#888888" text-anchor="middle">other</text>
-<text x="420" y="1209" font-size="11" font-weight="700" fill="#fff2df" text-anchor="end">1</text>
-<text x="510" y="1209" font-size="11" font-weight="700" fill="#ffca88" text-anchor="end">34.9K</text>
-<text x="605" y="1209" font-size="11" font-weight="700" fill="#cc6b2c" text-anchor="end">2.6%</text>
-<text x="720" y="1209" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end">$0.00</text>
-<text x="800" y="1209" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end">0.000%</text>
-<rect x="820" y="1202" width="270" height="9" rx="2" fill="#24160d" stroke="#4b2a13"/>
-<rect x="820" y="1202" width="1.00" height="9" rx="2" fill="#888888" opacity="0.85"/>
-<text x="66" y="1208" font-size="9" font-weight="700" fill="#cc6b2c">&gt; share bar uses sqrt scale so the long tail is visible · exact % shown numerically</text>
-</g>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-<g filter="url(#glow)"><path d="M50 1250 H742" stroke="#ff8a22" stroke-width="2"/><path d="M50 1250 h24 m10 0 h8 m10 0 h42 m10 0 h18 m10 0 h74 m10 0 h12" stroke="#ffd08a" stroke-width="2"/></g>
-<rect x="756" y="1236" width="352" height="22" rx="6" fill="#0a0604" stroke="#673110" stroke-opacity="0.82"/>
-<text x="774" y="1251" font-size="10" font-weight="650" fill="#cc6b2c">01001100 // 22 models · 6 agents · 248d window · √ scale</text>
-</g>
+  <rect width="1160" height="760" rx="18" fill="#050403"/>
+  <rect x="20" y="20" width="1120" height="720" rx="18" fill="url(#panel)" stroke="#ff7a1a" stroke-width="2"/>
+  <path d="M42 40 L-194 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M96 40 L-140 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M150 40 L-86 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M204 40 L-32 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M258 40 L22 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M312 40 L76 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M366 40 L130 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M420 40 L184 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M474 40 L238 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M528 40 L292 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M582 40 L346 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M636 40 L400 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M690 40 L454 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M744 40 L508 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M798 40 L562 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M852 40 L616 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M906 40 L670 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M960 40 L724 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M1014 40 L778 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M1068 40 L832 724" stroke="#3b2111" stroke-width="1" opacity="0.34"/><path d="M32 56 L1128 56" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 90 L1128 90" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 124 L1128 124" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 158 L1128 158" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 192 L1128 192" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 226 L1128 226" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 260 L1128 260" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 294 L1128 294" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 328 L1128 328" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 362 L1128 362" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 396 L1128 396" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 430 L1128 430" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 464 L1128 464" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 498 L1128 498" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 532 L1128 532" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 566 L1128 566" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 600 L1128 600" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 634 L1128 634" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 668 L1128 668" stroke="#3b2111" stroke-width="1" opacity="0.38"/><path d="M32 702 L1128 702" stroke="#3b2111" stroke-width="1" opacity="0.38"/>
+  <path d="M36 104 H1124" stroke="#ff7a1a" stroke-width="1.4" opacity="0.8"/>
+  <path d="M36 716 H1124" stroke="#ff7a1a" stroke-width="1.4" opacity="0.5"/>
+  <text x="50" y="66" font-size="25" font-weight="900" fill="#ff8a22" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">:: CODEX_USAGE_DASHBOARD // README_RENDER</text>
+  <text x="50" y="94" font-size="13" font-weight="750" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; Past 19 days | updated just now | 2026-05-21T14:29:14+08:00</text>
+  <text x="1110" y="66" font-size="12" font-weight="800" fill="#ffca88" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">ASCII // ORANGE GRID</text>
+  
+  <g>
+    <rect x="50" y="130" width="168" height="76" rx="8" fill="#15100c" stroke="#ff8a22" stroke-opacity="0.72"/>
+    <rect x="58" y="139" width="152" height="2" fill="#ff8a22" opacity="0.72"/>
+    <text x="68" y="164" font-size="12" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; TOTAL</text>
+    <text x="68" y="191" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">14.9B</text>
+  </g>
+  
+  <g>
+    <rect x="232" y="130" width="168" height="76" rx="8" fill="#15100c" stroke="#ff4d00" stroke-opacity="0.72"/>
+    <rect x="240" y="139" width="152" height="2" fill="#ff4d00" opacity="0.72"/>
+    <text x="250" y="164" font-size="12" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; COST</text>
+    <text x="250" y="191" font-size="20" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">$13,891.88</text>
+  </g>
+  
+  <g>
+    <rect x="414" y="130" width="168" height="76" rx="8" fill="#15100c" stroke="#ffb057" stroke-opacity="0.72"/>
+    <rect x="422" y="139" width="152" height="2" fill="#ffb057" opacity="0.72"/>
+    <text x="432" y="164" font-size="12" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; CACHE HIT</text>
+    <text x="432" y="191" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">93.5%</text>
+  </g>
+  
+  <g>
+    <rect x="596" y="130" width="168" height="76" rx="8" fill="#15100c" stroke="#f06d19" stroke-opacity="0.72"/>
+    <rect x="604" y="139" width="152" height="2" fill="#f06d19" opacity="0.72"/>
+    <text x="614" y="164" font-size="12" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; SAVINGS</text>
+    <text x="614" y="191" font-size="20" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">$62,349.86</text>
+  </g>
+  
+  <g>
+    <rect x="778" y="130" width="148" height="76" rx="8" fill="#15100c" stroke="#ff8a22" stroke-opacity="0.72"/>
+    <rect x="786" y="139" width="132" height="2" fill="#ff8a22" opacity="0.72"/>
+    <text x="796" y="164" font-size="12" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; SESSIONS</text>
+    <text x="796" y="191" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">3,954</text>
+  </g>
+  
+  <g>
+    <rect x="940" y="130" width="148" height="76" rx="8" fill="#15100c" stroke="#ff4d00" stroke-opacity="0.72"/>
+    <rect x="948" y="139" width="132" height="2" fill="#ff4d00" opacity="0.72"/>
+    <text x="958" y="164" font-size="12" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; DAYS</text>
+    <text x="958" y="191" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">19</text>
+  </g>
+  <rect x="50" y="244" width="560" height="402" rx="12" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
+  <path d="M66 284 H594" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
+  <text x="66" y="276" font-size="16" font-weight="900" fill="#ff8a22" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">[01] DAILY TOKEN VOLUME</text>
+  
+  <g>
+    <text x="64" y="316" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-08</text>
+    <rect x="118" y="306" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="306" width="55" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="316" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">524.2M</text>
+  </g>
+  <g>
+    <text x="64" y="337" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-09</text>
+    <rect x="118" y="327" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="327" width="65" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="337" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">625.3M</text>
+  </g>
+  <g>
+    <text x="64" y="358" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-10</text>
+    <rect x="118" y="348" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="348" width="37" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="358" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">352.0M</text>
+  </g>
+  <g>
+    <text x="64" y="379" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-11</text>
+    <rect x="118" y="369" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="369" width="18" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="379" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">175.1M</text>
+  </g>
+  <g>
+    <text x="64" y="400" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-12</text>
+    <rect x="118" y="390" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="390" width="63" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="400" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">606.2M</text>
+  </g>
+  <g>
+    <text x="64" y="421" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-13</text>
+    <rect x="118" y="411" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="411" width="46" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="421" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">445.9M</text>
+  </g>
+  <g>
+    <text x="64" y="442" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-14</text>
+    <rect x="118" y="432" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="432" width="88" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="442" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">841.9M</text>
+  </g>
+  <g>
+    <text x="64" y="463" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-15</text>
+    <rect x="118" y="453" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="453" width="52" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="463" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">501.5M</text>
+  </g>
+  <g>
+    <text x="64" y="484" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-16</text>
+    <rect x="118" y="474" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="474" width="53" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="484" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">511.9M</text>
+  </g>
+  <g>
+    <text x="64" y="505" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-17</text>
+    <rect x="118" y="495" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="495" width="97" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="505" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">925.0M</text>
+  </g>
+  <g>
+    <text x="64" y="526" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-18</text>
+    <rect x="118" y="516" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="516" width="59" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="526" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">570.6M</text>
+  </g>
+  <g>
+    <text x="64" y="547" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-19</text>
+    <rect x="118" y="537" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="537" width="80" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="547" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">768.8M</text>
+  </g>
+  <g>
+    <text x="64" y="568" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-20</text>
+    <rect x="118" y="558" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="558" width="307" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="568" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">2.9B</text>
+  </g>
+  <g>
+    <text x="64" y="589" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-21</text>
+    <rect x="118" y="579" width="430" height="14" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="118" y="579" width="430" height="14" rx="4" fill="#ff8a22"/>
+    <text x="574" y="589" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">4.1B</text>
+  </g>
+  <rect x="640" y="244" width="468" height="192" rx="12" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
+  <path d="M656 284 H1092" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
+  <text x="656" y="276" font-size="16" font-weight="900" fill="#ff8a22" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">[02] MODEL SHARE</text>
+  
+  <g>
+    <text x="662" y="316" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">gpt-5.5</text>
+    <rect x="822" y="306" width="214" height="16" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="822" y="306" width="214" height="16" rx="4" fill="#ff4d00"/>
+    <text x="1082" y="316" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">14.9B</text>
+  </g>
+  <g>
+    <text x="662" y="344" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">gpt-5.2</text>
+    <rect x="822" y="334" width="214" height="16" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="822" y="334" width="6" height="16" rx="4" fill="#ff4d00"/>
+    <text x="1082" y="344" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">8.1M</text>
+  </g>
+  <g>
+    <text x="662" y="372" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">gpt-5.3-codex-spark</text>
+    <rect x="822" y="362" width="214" height="16" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="822" y="362" width="6" height="16" rx="4" fill="#ff4d00"/>
+    <text x="1082" y="372" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">164.2K</text>
+  </g>
+  <rect x="640" y="456" width="468" height="190" rx="12" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
+  <path d="M656 494 H1092" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
+  <text x="656" y="486" font-size="16" font-weight="900" fill="#ff8a22" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">[03] TOKEN MIX</text>
+  
+  <g>
+    <text x="662" y="526" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Cached input</text>
+    <rect x="822" y="516" width="214" height="16" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="822" y="516" width="214" height="16" rx="4" fill="#16745b"/>
+    <text x="1082" y="526" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">13.9B</text>
+  </g>
+  <g>
+    <text x="662" y="554" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Non-cached input</text>
+    <rect x="822" y="544" width="214" height="16" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="822" y="544" width="14" height="16" rx="4" fill="#2f80ed"/>
+    <text x="1082" y="554" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">963.5M</text>
+  </g>
+  <g>
+    <text x="662" y="582" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Output</text>
+    <rect x="822" y="572" width="214" height="16" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="822" y="572" width="6" height="16" rx="4" fill="#c77d21"/>
+    <text x="1082" y="582" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">71.6M</text>
+  </g>
+  <g>
+    <text x="662" y="610" font-size="12" font-weight="700" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Reasoning</text>
+    <rect x="822" y="600" width="214" height="16" rx="4" fill="#24160d" stroke="#4b2a13" stroke-width="1"/>
+    <rect x="822" y="600" width="6" height="16" rx="4" fill="#9a5bd7"/>
+    <text x="1082" y="610" font-size="12" font-weight="800" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">25.6M</text>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M50 682 H742" stroke="#ff8a22" stroke-width="2"/>
+    <path d="M50 682 h24 m10 0 h8 m10 0 h42 m10 0 h18 m10 0 h74 m10 0 h12" stroke="#ffd08a" stroke-width="2"/>
+  </g>
+  <rect x="756" y="664" width="352" height="54" rx="8" fill="#0a0604" stroke="#673110" stroke-opacity="0.82"/>
+  <text x="774" y="681" font-size="10" font-weight="650" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">01001100 // README_RENDER</text><text x="774" y="695" font-size="10" font-weight="650" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">for day in range(14): draw_bar()</text><text x="774" y="709" font-size="10" font-weight="650" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">cache.hit = cached / input</text>
 </svg>

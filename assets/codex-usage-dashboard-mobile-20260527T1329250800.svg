@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="820" viewBox="0 0 420 820" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Usage Dashboard Mobile</title>
+  <desc id="desc">Mobile Codex usage snapshot: 24.0B tokens, 93.4% cache hit, peak 8.0B on 05-27.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#160b04"/>
+      <stop offset="64%" stop-color="#0c0806"/>
+      <stop offset="100%" stop-color="#221004"/>
+    </linearGradient>
+    <linearGradient id="peakArea" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffb057" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#ff7a1a" stop-opacity="0.50"/>
+      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="peakStroke" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#ff7a1a"/>
+      <stop offset="80%" stop-color="#ffb057"/>
+      <stop offset="100%" stop-color="#ffd08a"/>
+    </linearGradient>
+    <linearGradient id="cacheBar" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#0f5b48"/>
+      <stop offset="100%" stop-color="#2dd4a3"/>
+    </linearGradient>
+    <filter id="peakGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="420" height="820" rx="16" fill="#050403"/>
+  <rect x="12" y="12" width="396" height="796" rx="16" fill="url(#panel)" stroke="#ff7a1a" stroke-width="1.6"/>
+  <path d="M18 58 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 90 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 122 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 154 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 186 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 218 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 250 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 282 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 314 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 346 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 378 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 410 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 442 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 474 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 506 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 538 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 570 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 602 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 634 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 666 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 698 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 730 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 762 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M18 794 H402" stroke="#3b2111" stroke-width="1" opacity="0.22"/><path d="M28 42 L-136 800" stroke="#3b2111" stroke-width="1" opacity="0.16"/><path d="M76 42 L-88 800" stroke="#3b2111" stroke-width="1" opacity="0.16"/><path d="M124 42 L-40 800" stroke="#3b2111" stroke-width="1" opacity="0.16"/><path d="M172 42 L8 800" stroke="#3b2111" stroke-width="1" opacity="0.16"/><path d="M220 42 L56 800" stroke="#3b2111" stroke-width="1" opacity="0.16"/><path d="M268 42 L104 800" stroke="#3b2111" stroke-width="1" opacity="0.16"/><path d="M316 42 L152 800" stroke="#3b2111" stroke-width="1" opacity="0.16"/><path d="M364 42 L200 800" stroke="#3b2111" stroke-width="1" opacity="0.16"/><path d="M412 42 L248 800" stroke="#3b2111" stroke-width="1" opacity="0.16"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="24" y="42" font-size="22" font-weight="900" fill="#ff8a22" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">:: CODEX_USAGE</text>
+    <text x="24" y="62" font-size="10" font-weight="750" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt; Past 30 days · 29 active · 05-27T13:29</text>
+    <g>
+      <circle cx="378" cy="38" r="3" fill="#ff7a1a">
+        <animate attributeName="opacity" values="0.25;1;0.25" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="388" y="42" font-size="10" font-weight="900" fill="#ff8a22" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">LIVE</text>
+    </g>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="24" y="82" width="372" height="86" rx="10" fill="#15100c" stroke="#ff8a22" stroke-opacity="0.78"/>
+    <rect x="36" y="94" width="348" height="2" fill="#ff8a22" opacity="0.75"/>
+    <text x="40" y="120" font-size="11" font-weight="850" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">TOTAL TOKENS</text>
+    <text x="40" y="152" font-size="34" font-weight="900" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">24.0B</text>
+    <text x="380" y="120" font-size="10" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">▲ accelerating</text>
+    <text x="380" y="138" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">800.1M / day</text>
+    <text x="380" y="156" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">↑ 8.0B · 05-27</text>
+  </g>
+
+  
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="24" y="180" width="181" height="60" rx="8" fill="#15100c" stroke="#16745b" stroke-opacity="0.78"/>
+    <rect x="32" y="188" width="165" height="2" fill="#2dd4a3" opacity="0.78"/>
+    <text x="38" y="208" font-size="10" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">CACHE HIT</text>
+    <text x="38" y="230" font-size="20" font-weight="900" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">93.4%</text>
+    <text x="197" y="234" font-size="8" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">22.3B cached</text>
+  </g>
+  
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="215" y="180" width="181" height="60" rx="8" fill="#15100c" stroke="#ff4d00" stroke-opacity="0.78"/>
+    <rect x="223" y="188" width="165" height="2" fill="#ff4d00" opacity="0.78"/>
+    <text x="229" y="208" font-size="10" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">COST</text>
+    <text x="229" y="230" font-size="18" font-weight="900" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">$23,160.20</text>
+    <text x="388" y="234" font-size="8" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">$772 / day</text>
+  </g>
+  
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="24" y="250" width="181" height="60" rx="8" fill="#15100c" stroke="#f06d19" stroke-opacity="0.78"/>
+    <rect x="32" y="258" width="165" height="2" fill="#f06d19" opacity="0.78"/>
+    <text x="38" y="278" font-size="10" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">SAVINGS</text>
+    <text x="38" y="300" font-size="18" font-weight="900" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">$105,103.50</text>
+    <text x="197" y="304" font-size="8" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">vs no-cache</text>
+  </g>
+  
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="215" y="250" width="181" height="60" rx="8" fill="#15100c" stroke="#ff8a22" stroke-opacity="0.78"/>
+    <rect x="223" y="258" width="165" height="2" fill="#ff8a22" opacity="0.78"/>
+    <text x="229" y="278" font-size="10" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">SESSIONS</text>
+    <text x="229" y="300" font-size="20" font-weight="900" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">5,746</text>
+    <text x="388" y="304" font-size="8" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">192 / day</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="24" y="322" width="372" height="184" rx="10" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
+    <path d="M38 358 H382" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
+    <text x="38" y="348" font-size="13" font-weight="900" fill="#ff8a22" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">[01] PEAK CHART · 30d</text>
+    <text x="382" y="348" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">↑ 8.0B · 05-27</text>
+
+    <text x="40" y="365" font-size="8" font-weight="800" fill="#7a4318" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">10B</text><text x="40" y="419" font-size="8" font-weight="800" fill="#7a4318" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">5B</text><text x="40" y="473" font-size="8" font-weight="800" fill="#7a4318" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">0</text>
+    <path d="M46 416.00 H388" stroke="#4b2a13" stroke-width="1" opacity="0.55" stroke-dasharray="2 4"/>
+    <path d="M46 470 H388" stroke="#6c3a16" stroke-width="1"/>
+
+    <path d="M46.00,470.00 L46.00,469.89 L57.79,469.77 L69.59,470.00 L81.38,470.00 L93.17,469.73 L104.97,468.84 L116.76,468.26 L128.55,467.61 L140.34,468.86 L152.14,465.31 L163.93,464.34 L175.72,463.25 L187.52,466.19 L199.31,467.73 L211.10,463.45 L222.90,464.88 L234.69,460.87 L246.48,464.58 L258.28,464.47 L270.07,460.01 L281.86,463.84 L293.66,461.70 L305.45,438.22 L317.24,445.84 L329.03,462.08 L340.83,466.15 L352.62,464.52 L364.41,462.40 L376.21,463.94 L388.00,384.04 L388.00,470.00 Z" fill="url(#peakArea)"/><path d="M46.00,469.89 L57.79,469.77 L69.59,470.00 L81.38,470.00 L93.17,469.73 L104.97,468.84 L116.76,468.26 L128.55,467.61 L140.34,468.86 L152.14,465.31 L163.93,464.34 L175.72,463.25 L187.52,466.19 L199.31,467.73 L211.10,463.45 L222.90,464.88 L234.69,460.87 L246.48,464.58 L258.28,464.47 L270.07,460.01 L281.86,463.84 L293.66,461.70 L305.45,438.22 L317.24,445.84 L329.03,462.08 L340.83,466.15 L352.62,464.52 L364.41,462.40 L376.21,463.94 L388.00,384.04" fill="none" stroke="url(#peakStroke)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="46.00" cy="469.89" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="57.79" cy="469.77" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="93.17" cy="469.73" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="104.97" cy="468.84" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="116.76" cy="468.26" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="128.55" cy="467.61" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="140.34" cy="468.86" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="152.14" cy="465.31" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="163.93" cy="464.34" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="175.72" cy="463.25" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="187.52" cy="466.19" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="199.31" cy="467.73" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="211.10" cy="463.45" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="222.90" cy="464.88" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="234.69" cy="460.87" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="246.48" cy="464.58" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="258.28" cy="464.47" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="270.07" cy="460.01" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="281.86" cy="463.84" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="293.66" cy="461.70" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="305.45" cy="438.22" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="317.24" cy="445.84" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="329.03" cy="462.08" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="340.83" cy="466.15" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="352.62" cy="464.52" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="364.41" cy="462.40" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/><circle cx="376.21" cy="463.94" r="1.8" fill="#0d0907" stroke="#ffb057" stroke-width="1.1"/>
+    <circle cx="69.59" cy="470.00" r="3" fill="#1b0e07" stroke="#7a4318" stroke-width="1.2"/><circle cx="388.00" cy="384.04" r="9" fill="#ff4d00" opacity="0.30"/><circle cx="388.00" cy="384.04" r="5.5" fill="#ff8a22" filter="url(#peakGlow)"/><circle cx="388.00" cy="384.04" r="2.5" fill="#fff2df"/>
+
+    <text x="46" y="484" font-size="9" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">04-28</text><text x="128" y="484" font-size="9" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-05</text><text x="211" y="484" font-size="9" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-12</text><text x="305" y="484" font-size="9" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-20</text><text x="388" y="484" font-size="9" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">05-27</text>
+    <text x="38" y="499" font-size="9" font-weight="850" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">avg</text><text x="62" y="499" font-size="9" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">800.1M</text><text x="120" y="499" font-size="9" font-weight="850" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">7d</text><text x="138" y="499" font-size="9" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">13.1B</text><text x="192" y="499" font-size="9" font-weight="850" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">peak vs avg</text><text x="266" y="499" font-size="9" font-weight="850" fill="#2dd4a3" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">+895%</text><text x="382" y="499" font-size="10" font-weight="850" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">▲</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="24" y="516" width="372" height="146" rx="10" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
+    <path d="M38 550 H382" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
+    <text x="38" y="540" font-size="13" font-weight="900" fill="#ff8a22" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">[02] TOKEN MIX</text>
+    <text x="382" y="540" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">24.0B total</text>
+    <rect x="38.0" y="560.0" width="344.0" height="10" rx="3" fill="#24160d" stroke="#4b2a13"/><rect x="38.00" y="560.0" width="319.19" height="10" rx="3" fill="url(#cacheBar)"/><rect x="357.19" y="560.0" width="22.71" height="10" fill="#58a6ff"/><rect x="379.90" y="560.0" width="1.55" height="10" fill="#ff8a22"/><rect x="381.45" y="560.0" width="0.55" height="10" fill="#b779ff"/>
+    <g><rect x="38" y="582" width="9" height="9" rx="2" fill="#2dd4a3"/><text x="52" y="591" font-size="11" font-weight="800" fill="#fff2df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Cached</text><text x="380" y="591" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">22.3B</text><text x="380" y="602" font-size="8" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">92.79%</text></g><g><rect x="38" y="608" width="9" height="9" rx="2" fill="#58a6ff"/><text x="52" y="617" font-size="11" font-weight="800" fill="#fff2df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Non-cached</text><text x="380" y="617" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">1.6B</text><text x="380" y="628" font-size="8" font-weight="800" fill="#58a6ff" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">6.60%</text></g><g><rect x="38" y="634" width="9" height="9" rx="2" fill="#ff8a22"/><text x="52" y="643" font-size="11" font-weight="800" fill="#fff2df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Output</text><text x="220" y="643" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">108.2M</text></g><g><rect x="232" y="634" width="9" height="9" rx="2" fill="#b779ff"/><text x="246" y="643" font-size="11" font-weight="800" fill="#fff2df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">Reason</text><text x="380" y="643" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">38.8M</text></g>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect x="24" y="672" width="372" height="98" rx="10" fill="#0d0907" stroke="#ff7a1a" stroke-opacity="0.76"/>
+    <path d="M38 706 H382" stroke="#ff7a1a" stroke-width="1" opacity="0.7"/>
+    <text x="38" y="696" font-size="13" font-weight="900" fill="#ff8a22" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">[03] MODEL SHARE</text>
+    <text x="382" y="696" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">5 models</text>
+    <g><text x="38" y="728" font-size="11" font-weight="800" fill="#fff2df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">gpt-5.5</text><rect x="150" y="720" width="170" height="12" rx="4" fill="#24160d" stroke="#4b2a13"/><rect x="150" y="720" width="166" height="12" rx="4" fill="#ff4d00"/><text x="382" y="729" font-size="10" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">23.4B · 97.7%</text></g><g><text x="38" y="754" font-size="11" font-weight="800" fill="#fff2df" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">claude-opus-4-7</text><rect x="150" y="746" width="170" height="12" rx="4" fill="#24160d" stroke="#4b2a13"/><rect x="150" y="746" width="3" height="12" rx="4" fill="#ffb057"/><text x="382" y="755" font-size="10" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">548.8M · 2.3%</text></g>
+  </g>
+
+  <text x="28" y="794" font-size="9" font-weight="650" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">01001100 // peak.chart · window=30d</text>
+</svg>

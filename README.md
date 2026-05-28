@@ -81,15 +81,15 @@ I build and moderate custom **GPTs**, ship **MCP servers** for onchain protocols
 
 ![Dashboard updated](https://img.shields.io/github/last-commit/LIN0304/LIN0304?label=dashboard%20updated&style=for-the-badge&color=16745b)
 
-Last updated: <relative-time datetime="2026-05-28T08:31:01+08:00">just now</relative-time>
-Snapshot: `2026-05-28T08:31:01+08:00` · Range: **Past 30 days**
+Last updated: <relative-time datetime="2026-05-28T09:17:33+08:00">just now</relative-time>
+Snapshot: `2026-05-28T09:17:33+08:00` · Range: **Past 30 days**
 
 <picture>
-  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-mobile-20260528T0831010800.svg">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-20260528T0831010800.svg" width="100%" alt="Codex usage dashboard: 25.9B tokens, 93.4% cache hit, $24,808.41 estimated cost, Past 30 days">
+  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-mobile-20260528T0917330800.svg">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-20260528T0917330800.svg" width="100%" alt="Codex usage dashboard: 25.9B tokens, 93.4% cache hit, $24,810.12 estimated cost, Past 30 days">
 </picture>
 
-<!-- generated-at: 2026-05-28T08:28:44+08:00 -->
+<!-- generated-at: 2026-05-28T09:15:03+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->
 
 ---

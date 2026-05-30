@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-30T09:22:54+08:00",
+  "generated_at": "2026-05-30T09:31:40+08:00",
   "window": {
     "days": 30,
-    "cutoff": "2026-04-30T09:22:54+08:00",
+    "cutoff": "2026-04-30T09:31:40+08:00",
     "timezone": "CST",
     "calendar_day_count": 30,
     "active_day_count": 29
@@ -164,11 +164,11 @@
     }
   },
   "totals": {
-    "input_tokens": 26531106070,
-    "cached_input_tokens": 24783310029,
-    "output_tokens": 122010314,
+    "input_tokens": 26540047959,
+    "cached_input_tokens": 24791973640,
+    "output_tokens": 122094518,
     "reasoning_output_tokens": 42053962,
-    "total_tokens": 26653633184
+    "total_tokens": 26662659277
   },
   "model_rows": [
     {
@@ -210,11 +210,11 @@
     {
       "model": "claude-opus-4-8",
       "tokens": {
-        "input_tokens": 123896713,
-        "cached_input_tokens": 113461603,
-        "output_tokens": 4193802,
+        "input_tokens": 132838602,
+        "cached_input_tokens": 122125214,
+        "output_tokens": 4278006,
         "reasoning_output_tokens": 0,
-        "total_tokens": 128090515
+        "total_tokens": 137116608
       },
       "costs": {
         "input_cost": 0.0,
@@ -1715,37 +1715,37 @@
     {
       "day": "2026-05-30",
       "tokens": {
-        "input_tokens": 56186946,
-        "cached_input_tokens": 53725003,
-        "output_tokens": 434306,
+        "input_tokens": 65128835,
+        "cached_input_tokens": 62388614,
+        "output_tokens": 518510,
         "reasoning_output_tokens": 0,
-        "total_tokens": 56621252
+        "total_tokens": 65647345
       },
       "models": {
         "claude-opus-4-8": {
-          "input_tokens": 56186946,
-          "cached_input_tokens": 53725003,
-          "output_tokens": 434306,
+          "input_tokens": 65128835,
+          "cached_input_tokens": 62388614,
+          "output_tokens": 518510,
           "reasoning_output_tokens": 0,
-          "total_tokens": 56621252
+          "total_tokens": 65647345
         }
       },
       "by_agent": {
         "claude": {
           "tokens": {
-            "input_tokens": 56186946,
-            "cached_input_tokens": 53725003,
-            "output_tokens": 434306,
+            "input_tokens": 65128835,
+            "cached_input_tokens": 62388614,
+            "output_tokens": 518510,
             "reasoning_output_tokens": 0,
-            "total_tokens": 56621252
+            "total_tokens": 65647345
           },
           "models": {
             "claude-opus-4-8": {
-              "input_tokens": 56186946,
-              "cached_input_tokens": 53725003,
-              "output_tokens": 434306,
+              "input_tokens": 65128835,
+              "cached_input_tokens": 62388614,
+              "output_tokens": 518510,
               "reasoning_output_tokens": 0,
-              "total_tokens": 56621252
+              "total_tokens": 65647345
             }
           }
         }
@@ -1826,11 +1826,11 @@
     },
     "claude": {
       "tokens": {
-        "input_tokens": 677827870,
-        "cached_input_tokens": 647081933,
-        "output_tokens": 6560683,
+        "input_tokens": 686769759,
+        "cached_input_tokens": 655745544,
+        "output_tokens": 6644887,
         "reasoning_output_tokens": 0,
-        "total_tokens": 684388553
+        "total_tokens": 693414646
       },
       "models": {
         "claude-opus-4-7": {
@@ -1852,11 +1852,11 @@
         },
         "claude-opus-4-8": {
           "tokens": {
-            "input_tokens": 123896713,
-            "cached_input_tokens": 113461603,
-            "output_tokens": 4193802,
+            "input_tokens": 132838602,
+            "cached_input_tokens": 122125214,
+            "output_tokens": 4278006,
             "reasoning_output_tokens": 0,
-            "total_tokens": 128090515
+            "total_tokens": 137116608
           },
           "costs": {
             "input_cost": 0.0,
@@ -1902,7 +1902,7 @@
           }
         }
       },
-      "session_count": 41,
+      "session_count": 42,
       "total_cost": 1264.8199008000001,
       "cached_savings": 7121.111587199998
     },
@@ -2355,6 +2355,6 @@
       }
     }
   ],
-  "session_count": 6219,
-  "published_at": "2026-05-30T09:24:45+08:00"
+  "session_count": 6220,
+  "published_at": "2026-05-30T09:33:29+08:00"
 }

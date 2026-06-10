@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-10T08:04:50+08:00",
+  "generated_at": "2026-06-10T08:51:36+08:00",
   "window": {
     "days": 39,
-    "cutoff": "2026-05-02T08:04:50+08:00",
+    "cutoff": "2026-05-02T08:51:36+08:00",
     "timezone": "CST",
     "calendar_day_count": 39,
     "active_day_count": 39
@@ -182,29 +182,29 @@
     }
   },
   "totals": {
-    "input_tokens": 39375997616,
-    "cached_input_tokens": 36506425230,
-    "output_tokens": 197186982,
-    "reasoning_output_tokens": 69349644,
-    "total_tokens": 39573701398
+    "input_tokens": 39375658386,
+    "cached_input_tokens": 36506161422,
+    "output_tokens": 197178722,
+    "reasoning_output_tokens": 69343660,
+    "total_tokens": 39573353908
   },
   "model_rows": [
     {
       "model": "gpt-5.5",
       "tokens": {
-        "input_tokens": 37520798558,
-        "cached_input_tokens": 34766891136,
-        "output_tokens": 184433344,
-        "reasoning_output_tokens": 67966605,
-        "total_tokens": 37705748702
+        "input_tokens": 37520459328,
+        "cached_input_tokens": 34766627328,
+        "output_tokens": 184425084,
+        "reasoning_output_tokens": 67960621,
+        "total_tokens": 37705401212
       },
       "costs": {
-        "input_cost": 13769.537110000001,
-        "cached_input_cost": 17383.445568,
-        "output_cost": 5533.00032,
-        "total_cost": 36685.982998,
-        "no_cache_cost": 193136.99311,
-        "cached_savings": 156451.01011200002
+        "input_cost": 13769.16,
+        "cached_input_cost": 17383.313664,
+        "output_cost": 5532.75252,
+        "total_cost": 36685.226184,
+        "no_cache_cost": 193135.04916,
+        "cached_savings": 156449.822976
       }
     },
     {
@@ -2388,28 +2388,28 @@
   "by_agent": {
     "codex": {
       "tokens": {
-        "input_tokens": 37969482202,
-        "cached_input_tokens": 35165275392,
-        "output_tokens": 187007158,
-        "reasoning_output_tokens": 69349644,
-        "total_tokens": 38157006160
+        "input_tokens": 37969142972,
+        "cached_input_tokens": 35165011584,
+        "output_tokens": 186998898,
+        "reasoning_output_tokens": 69343660,
+        "total_tokens": 38156658670
       },
       "models": {
         "gpt-5.5": {
           "tokens": {
-            "input_tokens": 37520798558,
-            "cached_input_tokens": 34766891136,
-            "output_tokens": 184433344,
-            "reasoning_output_tokens": 67966605,
-            "total_tokens": 37705748702
+            "input_tokens": 37520459328,
+            "cached_input_tokens": 34766627328,
+            "output_tokens": 184425084,
+            "reasoning_output_tokens": 67960621,
+            "total_tokens": 37705401212
           },
           "costs": {
-            "input_cost": 13769.537110000001,
-            "cached_input_cost": 17383.445568,
-            "output_cost": 5533.00032,
-            "total_cost": 36685.982998,
-            "no_cache_cost": 193136.99311,
-            "cached_savings": 156451.01011200002
+            "input_cost": 13769.16,
+            "cached_input_cost": 17383.313664,
+            "output_cost": 5532.75252,
+            "total_cost": 36685.226184,
+            "no_cache_cost": 193135.04916,
+            "cached_savings": 156449.822976
           }
         },
         "gpt-5.3-codex-spark": {
@@ -2465,8 +2465,8 @@
         }
       },
       "session_count": 10172,
-      "total_cost": 36880.0083342,
-      "cached_savings": 157079.24326080002
+      "total_cost": 36879.2515202,
+      "cached_savings": 157078.0561248
     },
     "claude": {
       "tokens": {
@@ -2605,7 +2605,7 @@
         "reasoning_output_tokens": 44685446,
         "total_tokens": 13289914970
       },
-      "tool_call_count": 641848,
+      "tool_call_count": 641826,
       "skill_marker_count": 0,
       "plugin_signal_count": 95,
       "subagents": [
@@ -2821,7 +2821,7 @@
       "tools": [
         {
           "name": "exec_command",
-          "count": 533456
+          "count": 533436
         },
         {
           "name": "write_stdin",
@@ -2837,7 +2837,7 @@
         },
         {
           "name": "update_plan",
-          "count": 6421
+          "count": 6419
         },
         {
           "name": "wait_agent",
@@ -3309,5 +3309,5 @@
     }
   ],
   "session_count": 10250,
-  "published_at": "2026-06-10T08:09:38+08:00"
+  "published_at": "2026-06-10T08:54:55+08:00"
 }

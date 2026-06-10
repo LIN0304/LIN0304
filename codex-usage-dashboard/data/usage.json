@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-09T22:59:09+08:00",
+  "generated_at": "2026-06-10T08:04:50+08:00",
   "window": {
     "days": 39,
-    "cutoff": "2026-05-01T22:59:09+08:00",
+    "cutoff": "2026-05-02T08:04:50+08:00",
     "timezone": "CST",
     "calendar_day_count": 39,
     "active_day_count": 39
@@ -173,14 +173,20 @@
       "cached_input": 0.06,
       "output": 1.2,
       "source": "https://platform.minimax.io/docs/guides/pricing-paygo"
+    },
+    "claude-fable-5": {
+      "input": 0.0,
+      "cached_input": 0.0,
+      "output": 0.0,
+      "source": "manual"
     }
   },
   "totals": {
-    "input_tokens": 39353949573,
-    "cached_input_tokens": 36486245676,
-    "output_tokens": 197044482,
+    "input_tokens": 39375997616,
+    "cached_input_tokens": 36506425230,
+    "output_tokens": 197186982,
     "reasoning_output_tokens": 69349644,
-    "total_tokens": 39551510855
+    "total_tokens": 39573701398
   },
   "model_rows": [
     {
@@ -204,19 +210,19 @@
     {
       "model": "claude-opus-4-8",
       "tokens": {
-        "input_tokens": 838337556,
-        "cached_input_tokens": 794008975,
-        "output_tokens": 7716477,
+        "input_tokens": 850878302,
+        "cached_input_tokens": 805884451,
+        "output_tokens": 7761107,
         "reasoning_output_tokens": 0,
-        "total_tokens": 846054033
+        "total_tokens": 858639409
       },
       "costs": {
-        "input_cost": 221.64290499999998,
-        "cached_input_cost": 397.0044875,
-        "output_cost": 192.911925,
-        "total_cost": 811.5593175,
-        "no_cache_cost": 4384.5997050000005,
-        "cached_savings": 3573.0403875000006
+        "input_cost": 224.969255,
+        "cached_input_cost": 402.9422255,
+        "output_cost": 194.027675,
+        "total_cost": 821.9391555,
+        "no_cache_cost": 4448.419185,
+        "cached_savings": 3626.4800294999995
       }
     },
     {
@@ -253,6 +259,24 @@
         "total_cost": 192.72517285,
         "no_cache_cost": 817.87548325,
         "cached_savings": 625.1503104
+      }
+    },
+    {
+      "model": "claude-fable-5",
+      "tokens": {
+        "input_tokens": 9507297,
+        "cached_input_tokens": 8304078,
+        "output_tokens": 97870,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 9605167
+      },
+      "costs": {
+        "input_cost": 0.0,
+        "cached_input_cost": 0.0,
+        "output_cost": 0.0,
+        "total_cost": 0.0,
+        "no_cache_cost": 0.0,
+        "cached_savings": 0.0
       }
     },
     {
@@ -329,45 +353,6 @@
     }
   ],
   "day_rows": [
-    {
-      "day": "2026-05-02",
-      "tokens": {
-        "input_tokens": 25065989,
-        "cached_input_tokens": 23044608,
-        "output_tokens": 177442,
-        "reasoning_output_tokens": 71759,
-        "total_tokens": 25243431
-      },
-      "models": {
-        "gpt-5.5": {
-          "input_tokens": 25065989,
-          "cached_input_tokens": 23044608,
-          "output_tokens": 177442,
-          "reasoning_output_tokens": 71759,
-          "total_tokens": 25243431
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 25065989,
-            "cached_input_tokens": 23044608,
-            "output_tokens": 177442,
-            "reasoning_output_tokens": 71759,
-            "total_tokens": 25243431
-          },
-          "models": {
-            "gpt-5.5": {
-              "input_tokens": 25065989,
-              "cached_input_tokens": 23044608,
-              "output_tokens": 177442,
-              "reasoning_output_tokens": 71759,
-              "total_tokens": 25243431
-            }
-          }
-        }
-      }
-    },
     {
       "day": "2026-05-03",
       "tokens": {
@@ -1602,11 +1587,11 @@
     {
       "day": "2026-05-29",
       "tokens": {
-        "input_tokens": 2067345820,
-        "cached_input_tokens": 1961940376,
-        "output_tokens": 9520069,
+        "input_tokens": 2027469485,
+        "cached_input_tokens": 1923202499,
+        "output_tokens": 9167558,
         "reasoning_output_tokens": 1725376,
-        "total_tokens": 2076865889
+        "total_tokens": 2036637043
       },
       "models": {
         "gpt-5.5": {
@@ -1617,11 +1602,11 @@
           "total_tokens": 2005054757
         },
         "claude-opus-4-8": {
-          "input_tokens": 67709767,
-          "cached_input_tokens": 59736600,
-          "output_tokens": 3759496,
+          "input_tokens": 27833432,
+          "cached_input_tokens": 20998723,
+          "output_tokens": 3406985,
           "reasoning_output_tokens": 0,
-          "total_tokens": 71469263
+          "total_tokens": 31240417
         },
         "gpt-5.3-codex": {
           "input_tokens": 221167,
@@ -1673,19 +1658,19 @@
         },
         "claude": {
           "tokens": {
-            "input_tokens": 67709767,
-            "cached_input_tokens": 59736600,
-            "output_tokens": 3759496,
+            "input_tokens": 27833432,
+            "cached_input_tokens": 20998723,
+            "output_tokens": 3406985,
             "reasoning_output_tokens": 0,
-            "total_tokens": 71469263
+            "total_tokens": 31240417
           },
           "models": {
             "claude-opus-4-8": {
-              "input_tokens": 67709767,
-              "cached_input_tokens": 59736600,
-              "output_tokens": 3759496,
+              "input_tokens": 27833432,
+              "cached_input_tokens": 20998723,
+              "output_tokens": 3406985,
               "reasoning_output_tokens": 0,
-              "total_tokens": 71469263
+              "total_tokens": 31240417
             }
           }
         }
@@ -2339,6 +2324,59 @@
           }
         }
       }
+    },
+    {
+      "day": "2026-06-10",
+      "tokens": {
+        "input_tokens": 61924378,
+        "cached_input_tokens": 58917431,
+        "output_tokens": 495011,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 62419389
+      },
+      "models": {
+        "claude-opus-4-8": {
+          "input_tokens": 52417081,
+          "cached_input_tokens": 50613353,
+          "output_tokens": 397141,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 52814222
+        },
+        "claude-fable-5": {
+          "input_tokens": 9507297,
+          "cached_input_tokens": 8304078,
+          "output_tokens": 97870,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 9605167
+        }
+      },
+      "by_agent": {
+        "claude": {
+          "tokens": {
+            "input_tokens": 61924378,
+            "cached_input_tokens": 58917431,
+            "output_tokens": 495011,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 62419389
+          },
+          "models": {
+            "claude-fable-5": {
+              "input_tokens": 9507297,
+              "cached_input_tokens": 8304078,
+              "output_tokens": 97870,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 9605167
+            },
+            "claude-opus-4-8": {
+              "input_tokens": 52417081,
+              "cached_input_tokens": 50613353,
+              "output_tokens": 397141,
+              "reasoning_output_tokens": 0,
+              "total_tokens": 52814222
+            }
+          }
+        }
+      }
     }
   ],
   "agents": [
@@ -2432,28 +2470,28 @@
     },
     "claude": {
       "tokens": {
-        "input_tokens": 1384467371,
-        "cached_input_tokens": 1320970284,
-        "output_tokens": 10037324,
+        "input_tokens": 1406515414,
+        "cached_input_tokens": 1341149838,
+        "output_tokens": 10179824,
         "reasoning_output_tokens": 0,
-        "total_tokens": 1394504695
+        "total_tokens": 1416695238
       },
       "models": {
         "claude-opus-4-8": {
           "tokens": {
-            "input_tokens": 838337556,
-            "cached_input_tokens": 794008975,
-            "output_tokens": 7716477,
+            "input_tokens": 850878302,
+            "cached_input_tokens": 805884451,
+            "output_tokens": 7761107,
             "reasoning_output_tokens": 0,
-            "total_tokens": 846054033
+            "total_tokens": 858639409
           },
           "costs": {
-            "input_cost": 221.64290499999998,
-            "cached_input_cost": 397.0044875,
-            "output_cost": 192.911925,
-            "total_cost": 811.5593175,
-            "no_cache_cost": 4384.5997050000005,
-            "cached_savings": 3573.0403875000006
+            "input_cost": 224.969255,
+            "cached_input_cost": 402.9422255,
+            "output_cost": 194.027675,
+            "total_cost": 821.9391555,
+            "no_cache_cost": 4448.419185,
+            "cached_savings": 3626.4800294999995
           }
         },
         "minimax-m3": {
@@ -2490,6 +2528,23 @@
             "cached_savings": 7049.6555714999995
           }
         },
+        "claude-fable-5": {
+          "tokens": {
+            "input_tokens": 9507297,
+            "cached_input_tokens": 8304078,
+            "output_tokens": 97870,
+            "reasoning_output_tokens": 0,
+            "total_tokens": 9605167
+          },
+          "costs": {
+            "input_cost": 0.0,
+            "cached_input_cost": 0.0,
+            "output_cost": 0.0,
+            "total_cost": 0.0,
+            "no_cache_cost": 0.0,
+            "cached_savings": 0.0
+          }
+        },
         "claude-haiku-4-5-20251001": {
           "tokens": {
             "input_tokens": 5057846,
@@ -2508,9 +2563,9 @@
           }
         }
       },
-      "session_count": 76,
-      "total_cost": 2051.22657888,
-      "cached_savings": 10626.96481182
+      "session_count": 78,
+      "total_cost": 2061.6064168800003,
+      "cached_savings": 10680.40445382
     },
     "qwen": {
       "tokens": {
@@ -3253,6 +3308,6 @@
       }
     }
   ],
-  "session_count": 10248,
-  "published_at": "2026-06-09T23:02:16+08:00"
+  "session_count": 10250,
+  "published_at": "2026-06-10T08:09:38+08:00"
 }

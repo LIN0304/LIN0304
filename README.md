@@ -5,7 +5,7 @@
   </picture>
 </a>
 
-<p>
+<p align="center">
   <a href="https://www.linkedin.com/in/hsu-jui-lin-50b82b216/">
     <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Hsu--Jui%20Lin-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
   </a>
@@ -24,38 +24,61 @@
 
 I build and moderate custom **GPTs**, ship **MCP servers** for onchain protocols, and prototype AI agents at **ETHGlobal** hackathons. Day-to-day I work at the intersection of autonomous coding agents and Ethereum infrastructure.
 
-### Currently building
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🔭 Currently building
 
 - **MCP servers** — Polygon, Farcaster, 1inch and other onchain integrations
 - **Custom GPTs** — productionising assistants for the Puffer ecosystem
 - **Autonomous coding** — OpenAI Codex and Claude Code workflows
 - **Onchain agents** — agentic flows across Ethereum L1 and L2s
 
-### Focus areas
+</td>
+<td width="50%" valign="top">
+
+### 🎯 Focus areas
 
 - Large language model tooling and evals
 - Retrieval, memory and tool-use for agents
 - Smart-contract integration via MCP
 - Developer experience for AI workflows
 
+</td>
+</tr>
+</table>
+
 ---
 
 ## Tech stack
 
-**Languages**  
+<table>
+<tr>
+<td><strong>Languages</strong></td>
+<td>
 <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
 <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
 <img alt="Solidity" src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white" />
-
-**AI &amp; agents**  
+</td>
+</tr>
+<tr>
+<td><strong>AI &amp; agents</strong></td>
+<td>
 <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" />
 <img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white" />
 <img alt="MCP" src="https://img.shields.io/badge/MCP-FF6B35?style=flat-square&logo=modelcontextprotocol&logoColor=white" />
-
-**Web3**  
+</td>
+</tr>
+<tr>
+<td><strong>Web3</strong></td>
+<td>
 <img alt="Ethereum" src="https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" />
 <img alt="Farcaster" src="https://img.shields.io/badge/Farcaster-855DCD?style=flat-square&logo=farcaster&logoColor=white" />
+</td>
+</tr>
+</table>
 
 ---
 
@@ -94,4 +117,6 @@ Snapshot: `2026-06-13T02:32:26+08:00` · Range: **Past 41 days**
 
 ---
 
-<sub>Reach out on <a href="https://www.linkedin.com/in/hsu-jui-lin-50b82b216/">LinkedIn</a> or <a href="https://x.com/RayLin_AI">X</a> — happy to chat about AI agents, MCP, or Ethereum.</sub>
+<p align="center">
+  <sub>Reach out on <a href="https://www.linkedin.com/in/hsu-jui-lin-50b82b216/">LinkedIn</a> or <a href="https://x.com/RayLin_AI">X</a> — happy to chat about AI agents, MCP, or Ethereum.</sub>
+</p>

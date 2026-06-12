@@ -2,74 +2,68 @@
   <title id="gh-title">Ray Lin's GitHub stats</title>
   <desc id="gh-desc">Public GitHub profile snapshot for LIN0304: 102 repositories, 24 stars earned, 6 gists, 11 followers, 18 following, member since August 2020.</desc>
   <defs>
-    <linearGradient id="gh-bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#161b22"/>
+    <linearGradient id="gh-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#170c05"/>
+      <stop offset="55%" stop-color="#0c0805"/>
+      <stop offset="100%" stop-color="#1f0e05"/>
     </linearGradient>
-    <linearGradient id="gh-accentLine" x1="0" x2="1" y1="0" y2="0">
+    <linearGradient id="gh-accent" x1="0" x2="1" y1="0" y2="0">
       <stop offset="0%" stop-color="#ff7a1a"/>
       <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
     </linearGradient>
-    <radialGradient id="gh-orbGlow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.42"/>
-      <stop offset="60%" stop-color="#ff4d00" stop-opacity="0.10"/>
+    <radialGradient id="gh-orb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#ff4d00" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#ff4d00" stop-opacity="0"/>
     </radialGradient>
+    <clipPath id="gh-clip"><rect width="495" height="195" rx="12"/></clipPath>
   </defs>
 
-  <rect width="495" height="195" rx="10" fill="url(#gh-bg)"/>
-  <rect x="0.5" y="0.5" width="494" height="194" rx="9.5" fill="none" stroke="#21262d" stroke-width="1"/>
-
-  <circle cx="438" cy="98" r="130" fill="url(#gh-orbGlow)"/>
-
-  <g opacity="0.4">
-    <rect x="360" y="22" width="1" height="151" fill="#21262d"/>
-    <rect x="390" y="22" width="1" height="151" fill="#21262d"/>
-    <rect x="420" y="22" width="1" height="151" fill="#21262d"/>
-    <rect x="450" y="22" width="1" height="151" fill="#21262d"/>
-    <rect x="480" y="22" width="1" height="151" fill="#21262d"/>
+  <rect width="495" height="195" rx="12" fill="url(#gh-bg)"/>
+  <g clip-path="url(#gh-clip)">
+    <circle cx="430" cy="70" r="140" fill="url(#gh-orb)"/>
+    <g stroke="#3b2111" stroke-width="1" opacity="0.26">
+      <path d="M0 48 H495"/>
+      <path d="M0 96 H495"/>
+      <path d="M0 144 H495"/>
+    </g>
   </g>
+  <rect x="0.75" y="0.75" width="493.5" height="193.5" rx="11.25" fill="none" stroke="#ff7a1a" stroke-opacity="0.45" stroke-width="1.5"/>
 
-  <rect x="22" y="20" width="40" height="3" rx="1.5" fill="#ff7a1a"/>
-  <rect x="66" y="20" width="80" height="3" rx="1.5" fill="url(#gh-accentLine)"/>
+  <rect x="22" y="18" width="40" height="3" rx="1.5" fill="#ff7a1a"/>
+  <rect x="66" y="18" width="80" height="3" rx="1.5" fill="url(#gh-accent)"/>
 
-  <text x="22" y="46" font-size="10" font-weight="700" letter-spacing="2.4" fill="#8b949e"
-        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">RAY LIN &#8226; GITHUB</text>
+  <text x="22" y="44" font-size="9.5" font-weight="800" letter-spacing="2.2" fill="#ffb057"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">RAY LIN // GITHUB</text>
 
-  <text x="22" y="72" font-size="20" font-weight="800" fill="#f0f6fc" letter-spacing="-0.4"
+  <text x="22" y="70" font-size="19" font-weight="800" fill="#fff2df" letter-spacing="-0.4"
         font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Profile snapshot</text>
 
-  <g transform="translate(386,30)" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-    <circle cx="42" cy="42" r="36" fill="none" stroke="#ff7a1a" stroke-width="2" opacity="0.85"/>
-    <circle cx="42" cy="42" r="30" fill="none" stroke="#ff8a22" stroke-width="1" opacity="0.45"/>
-    <text x="42" y="36" font-size="9" font-weight="700" letter-spacing="1.5" fill="#ffb057" text-anchor="middle">STARS</text>
-    <text x="42" y="58" font-size="22" font-weight="800" fill="#fff2df" text-anchor="middle">24</text>
+  <path d="M22 84 H360" stroke="#3b2111" stroke-width="1" opacity="0.8"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <circle cx="426" cy="62" r="34" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.85" stroke-width="2"/>
+    <circle cx="426" cy="62" r="27" fill="none" stroke="#ff8a22" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="3 4"/>
+    <text x="426" y="56" font-size="8.5" font-weight="800" letter-spacing="1.5" fill="#ffb057" text-anchor="middle">STARS</text>
+    <text x="426" y="78" font-size="21" font-weight="850" fill="#fff2df" text-anchor="middle">24</text>
   </g>
 
-  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-    <text x="22" y="104" font-size="10" font-weight="600" fill="#7d8590" letter-spacing="1.2">PUBLIC REPOS</text>
-    <text x="22" y="128" font-size="22" font-weight="800" fill="#f0f6fc">102</text>
-  </g>
-  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-    <text x="22" y="152" font-size="10" font-weight="600" fill="#7d8590" letter-spacing="1.2">PUBLIC GISTS</text>
-    <text x="22" y="176" font-size="22" font-weight="800" fill="#f0f6fc">6</text>
-  </g>
-
-  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-    <text x="142" y="104" font-size="10" font-weight="600" fill="#7d8590" letter-spacing="1.2">FOLLOWERS</text>
-    <text x="142" y="128" font-size="22" font-weight="800" fill="#f0f6fc">11</text>
-  </g>
-  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-    <text x="142" y="152" font-size="10" font-weight="600" fill="#7d8590" letter-spacing="1.2">FOLLOWING</text>
-    <text x="142" y="176" font-size="22" font-weight="800" fill="#f0f6fc">18</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="800" letter-spacing="1.2" fill="#cc6b2c">
+    <text x="22" y="106">&gt; PUBLIC REPOS</text>
+    <text x="22" y="154">&gt; PUBLIC GISTS</text>
+    <text x="150" y="106">&gt; FOLLOWERS</text>
+    <text x="150" y="154">&gt; FOLLOWING</text>
+    <text x="268" y="106">&gt; MEMBER SINCE</text>
+    <text x="268" y="154">&gt; HANDLE</text>
   </g>
 
-  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-    <text x="252" y="104" font-size="10" font-weight="600" fill="#7d8590" letter-spacing="1.2">MEMBER SINCE</text>
-    <text x="252" y="128" font-size="18" font-weight="800" fill="#f0f6fc">Aug 2020</text>
+  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" fill="#fff2df">
+    <text x="22" y="131" font-size="21">102</text>
+    <text x="22" y="179" font-size="21">6</text>
+    <text x="150" y="131" font-size="21">11</text>
+    <text x="150" y="179" font-size="21">18</text>
+    <text x="268" y="131" font-size="17">Aug 2020</text>
   </g>
-  <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
-    <text x="252" y="152" font-size="10" font-weight="600" fill="#7d8590" letter-spacing="1.2">HANDLE</text>
-    <text x="252" y="174" font-size="13" font-weight="700" fill="#ff8a22">github.com/LIN0304</text>
-  </g>
+  <text x="268" y="177" font-size="12" font-weight="800" fill="#ff8a22"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">github.com/LIN0304</text>
 </svg>

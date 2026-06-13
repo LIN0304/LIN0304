@@ -67,7 +67,9 @@ I build and moderate custom **GPTs**, ship **MCP servers** for onchain protocols
 <td><strong>AI &amp; agents</strong></td>
 <td>
 <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white" />
+<img alt="Codex" src="https://img.shields.io/badge/Codex-000000?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMy40IDIuOSAxLjMgNWw3IDctNyA3IDIuMSAyLjFMMTIuNSAxMiAzLjQgMi45Wk0xMyAxOC45aDkuN1YyMkgxM3YtMy4xWk0xOC4zIDIuNmwxLjUgMi45IDIuOSAxLjUtMi45IDEuNS0xLjUgMi45LTEuNS0yLjktMi45LTEuNSAyLjktMS41IDEuNS0yLjlaIi8%2BPC9zdmc%2B" />
 <img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white" />
+<img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjEgMTAuNWgzdjNoLTN2M2gtMS41djNIMTh2LTNoLTEuNXYzSDE1di0zSDl2M0g3LjV2LTNINnYzSDQuNXYtM0gzdi0zSDB2LTNoM3YtNmgxOFptLTE1IDBoMS41di0zSDZabTEwLjUgMEgxOHYtM2gtMS41eiIvPjwvc3ZnPg%3D%3D" />
 <img alt="MCP" src="https://img.shields.io/badge/MCP-FF6B35?style=flat-square&logo=modelcontextprotocol&logoColor=white" />
 </td>
 </tr>

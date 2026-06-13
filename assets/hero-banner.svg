@@ -15,9 +15,19 @@
       <stop offset="0%" stop-color="#fff7ea"/>
       <stop offset="100%" stop-color="#ffd9ad"/>
     </linearGradient>
+    <linearGradient id="hb-shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="190" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-240 0;560 0" dur="5.5s" repeatCount="indefinite"/>
+    </linearGradient>
     <radialGradient id="hb-orb" cx="0.5" cy="0.5" r="0.5">
       <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.30"/>
       <stop offset="55%" stop-color="#ff4d00" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hb-orb2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="#ff4d00" stop-opacity="0"/>
     </radialGradient>
     <filter id="hb-glow" x="-80%" y="-80%" width="260%" height="260%">
@@ -30,7 +40,10 @@
   <rect width="1200" height="260" rx="16" fill="url(#hb-bg)"/>
 
   <g clip-path="url(#hb-clip)">
-    <circle cx="1070" cy="130" r="230" fill="url(#hb-orb)"/>
+    <circle cx="1070" cy="130" r="230" fill="url(#hb-orb)">
+      <animate attributeName="r" values="230;244;230" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="280" r="210" fill="url(#hb-orb2)"/>
     <g stroke="#3b2111" stroke-width="1" opacity="0.28">
       <path d="M0 52 H1200"/>
       <path d="M0 96 H1200"/>
@@ -44,6 +57,30 @@
       <path d="M1012 0 V260"/>
       <path d="M1078 0 V260"/>
       <path d="M1144 0 V260"/>
+    </g>
+
+    <!-- rising embers -->
+    <g fill="#ff9a3d">
+      <circle cx="150" cy="268" r="1.6">
+        <animate attributeName="cy" values="268;-12" dur="11s" begin="-2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.6;0.6;0" dur="11s" begin="-2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="330" cy="268" r="1.3">
+        <animate attributeName="cy" values="268;-12" dur="14s" begin="-7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0.5;0" dur="14s" begin="-7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="510" cy="268" r="1.8">
+        <animate attributeName="cy" values="268;-12" dur="12s" begin="-4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.55;0.55;0" dur="12s" begin="-4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="690" cy="268" r="1.4">
+        <animate attributeName="cy" values="268;-12" dur="15s" begin="-10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.45;0.45;0" dur="15s" begin="-10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="820" cy="268" r="1.6">
+        <animate attributeName="cy" values="268;-12" dur="13s" begin="-6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0.5;0" dur="13s" begin="-6s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- agent constellation -->
@@ -63,7 +100,27 @@
       <circle cx="1100" cy="148" r="2.4" opacity="0.75"/>
       <circle cx="1144" cy="118" r="2.4" opacity="0.75"/>
     </g>
+
+    <!-- data packets travelling between agents -->
+    <circle r="2" fill="#ffd08a">
+      <animateMotion path="M890 150 L944 116 L998 152 L1048 110" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#ffd08a">
+      <animateMotion path="M1144 118 L1100 148 L1048 110" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="1.8" fill="#ffb057">
+      <animateMotion path="M944 116 L1048 110" dur="2.4s" begin="-0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" begin="-0.6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- hub node with rotating orbit -->
     <circle cx="1048" cy="110" r="8" fill="#ff4d00" opacity="0.28"/>
+    <g>
+      <circle cx="1048" cy="110" r="15" fill="none" stroke="#ff8a22" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="4 5"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 1048 110" to="360 1048 110" dur="10s" repeatCount="indefinite"/>
+    </g>
     <circle cx="1048" cy="110" r="3.4" fill="#ff8a22" filter="url(#hb-glow)">
       <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite"/>
     </circle>
@@ -73,11 +130,20 @@
 
   <rect x="56" y="40" width="56" height="3" rx="1.5" fill="#ff7a1a"/>
   <rect x="116" y="40" width="130" height="3" rx="1.5" fill="url(#hb-accent)"/>
+  <rect x="56" y="40" width="26" height="3" rx="1.5" fill="#ffd9ad">
+    <animate attributeName="x" values="56;220" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
 
   <text x="56" y="72" font-size="12" font-weight="800" letter-spacing="3" fill="#ffb057"
         font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">&gt;_ AI AGENTS &#8226; MCP &#8226; ETHEREUM</text>
+  <rect x="366" y="62" width="7" height="12" fill="#ffb057">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
 
   <text x="56" y="134" font-size="58" font-weight="800" fill="url(#hb-name)" letter-spacing="-1"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Ray Lin</text>
+  <text x="56" y="134" font-size="58" font-weight="800" fill="url(#hb-shine)" letter-spacing="-1"
         font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Ray Lin</text>
 
   <text x="56" y="168" font-size="18" font-weight="600" fill="#ffca88"
@@ -109,10 +175,15 @@
       <circle cx="17" cy="15" r="4.2" fill="#ff7a1a">
         <animate attributeName="opacity" values="0.35;1;0.35" dur="2.4s" repeatCount="indefinite"/>
       </circle>
+      <circle cx="17" cy="15" r="4.2" fill="none" stroke="#ff7a1a" stroke-width="1">
+        <animate attributeName="r" values="4.2;10" dur="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.7;0" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
       <text x="30" y="19" font-size="11" font-weight="800" fill="#ff8a22">OPEN TO COLLABORATION</text>
     </g>
 
-    <text x="1144" y="182" font-size="10" font-weight="800" letter-spacing="2" fill="#ffb057" text-anchor="end">STACK</text>
+    <rect x="1138" y="172" width="6" height="3" rx="1.5" fill="#ff7a1a"/>
+    <text x="1126" y="182" font-size="10" font-weight="800" letter-spacing="2" fill="#ffb057" text-anchor="end">STACK</text>
     <text x="1144" y="202" font-size="11.5" font-weight="600" fill="#ffca88" text-anchor="end">GPT &#8226; Claude &#8226; MCP</text>
     <text x="1144" y="220" font-size="11.5" font-weight="600" fill="#ffca88" text-anchor="end">Ethereum &#8226; Polygon &#8226; Farcaster</text>
     <text x="1144" y="238" font-size="11.5" font-weight="600" fill="#c89a72" text-anchor="end">1inch &#8226; ETHGlobal</text>

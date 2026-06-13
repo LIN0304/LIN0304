@@ -32,6 +32,10 @@
 
   <rect x="22" y="18" width="40" height="3" rx="1.5" fill="#ff7a1a"/>
   <rect x="66" y="18" width="80" height="3" rx="1.5" fill="url(#gh-accent)"/>
+  <rect x="22" y="18" width="18" height="3" rx="1.5" fill="#ffd9ad">
+    <animate attributeName="x" values="22;128" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
 
   <text x="22" y="44" font-size="9.5" font-weight="800" letter-spacing="2.2" fill="#ffb057"
         font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">RAY LIN // GITHUB</text>
@@ -42,8 +46,15 @@
   <path d="M22 84 H360" stroke="#3b2111" stroke-width="1" opacity="0.8"/>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <circle cx="426" cy="62" r="34" fill="none" stroke="#ff7a1a" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.6;0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="34;44" dur="3s" repeatCount="indefinite"/>
+    </circle>
     <circle cx="426" cy="62" r="34" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.85" stroke-width="2"/>
-    <circle cx="426" cy="62" r="27" fill="none" stroke="#ff8a22" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="3 4"/>
+    <g>
+      <circle cx="426" cy="62" r="27" fill="none" stroke="#ff8a22" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="3 4"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 426 62" to="360 426 62" dur="14s" repeatCount="indefinite"/>
+    </g>
     <text x="426" y="56" font-size="8.5" font-weight="800" letter-spacing="1.5" fill="#ffb057" text-anchor="middle">STARS</text>
     <text x="426" y="78" font-size="21" font-weight="850" fill="#fff2df" text-anchor="middle">24</text>
   </g>

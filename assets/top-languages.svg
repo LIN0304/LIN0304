@@ -2,77 +2,86 @@
   <title id="tl-title">Top languages across LIN0304 public repositories</title>
   <desc id="tl-desc">Share of LIN0304 public repositories by primary language, weighted by repository count: Python 36.2%, JavaScript 18.8%, HTML 18.8%, TypeScript 13.0%, Solidity 2.9%, other 10.3%.</desc>
   <defs>
-    <linearGradient id="tl-bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="100%" stop-color="#161b22"/>
+    <linearGradient id="tl-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#170c05"/>
+      <stop offset="55%" stop-color="#0c0805"/>
+      <stop offset="100%" stop-color="#1f0e05"/>
     </linearGradient>
-    <linearGradient id="tl-accentLine" x1="0" x2="1" y1="0" y2="0">
+    <linearGradient id="tl-accent" x1="0" x2="1" y1="0" y2="0">
       <stop offset="0%" stop-color="#ff7a1a"/>
       <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
     </linearGradient>
+    <clipPath id="tl-clip-card"><rect width="495" height="195" rx="12"/></clipPath>
+    <clipPath id="tl-clip-bar"><rect width="451" height="12" rx="6"/></clipPath>
   </defs>
 
-  <rect width="495" height="195" rx="10" fill="url(#tl-bg)"/>
-  <rect x="0.5" y="0.5" width="494" height="194" rx="9.5" fill="none" stroke="#21262d" stroke-width="1"/>
+  <rect width="495" height="195" rx="12" fill="url(#tl-bg)"/>
+  <g clip-path="url(#tl-clip-card)">
+    <g stroke="#3b2111" stroke-width="1" opacity="0.26">
+      <path d="M0 48 H495"/>
+      <path d="M0 96 H495"/>
+      <path d="M0 144 H495"/>
+    </g>
+  </g>
+  <rect x="0.75" y="0.75" width="493.5" height="193.5" rx="11.25" fill="none" stroke="#ff7a1a" stroke-opacity="0.45" stroke-width="1.5"/>
 
-  <rect x="22" y="20" width="40" height="3" rx="1.5" fill="#ff7a1a"/>
-  <rect x="66" y="20" width="80" height="3" rx="1.5" fill="url(#tl-accentLine)"/>
+  <rect x="22" y="18" width="40" height="3" rx="1.5" fill="#ff7a1a"/>
+  <rect x="66" y="18" width="80" height="3" rx="1.5" fill="url(#tl-accent)"/>
 
-  <text x="22" y="46" font-size="10" font-weight="700" letter-spacing="2.4" fill="#8b949e"
-        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">MOST USED &#8226; BY REPO COUNT</text>
+  <text x="22" y="44" font-size="9.5" font-weight="800" letter-spacing="2.2" fill="#ffb057"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">MOST USED // BY REPO COUNT</text>
 
-  <text x="22" y="72" font-size="20" font-weight="800" fill="#f0f6fc" letter-spacing="-0.4"
+  <text x="22" y="70" font-size="19" font-weight="800" fill="#fff2df" letter-spacing="-0.4"
         font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Top languages</text>
 
-  <text x="473" y="46" font-size="10" font-weight="600" letter-spacing="1.2" fill="#7d8590" text-anchor="end"
-        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">69 TYPED REPOS</text>
+  <text x="473" y="44" font-size="9.5" font-weight="800" letter-spacing="1.2" fill="#cc6b2c" text-anchor="end"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">69 TYPED REPOS</text>
 
-  <g transform="translate(22,90)">
-    <rect width="451" height="10" rx="5" fill="#1c2129"/>
-    <clipPath id="tl-clip">
-      <rect width="451" height="10" rx="5"/>
-    </clipPath>
-    <g clip-path="url(#tl-clip)">
-      <rect x="0"   y="0" width="163" height="10" fill="#3572A5"/>
-      <rect x="163" y="0" width="85"  height="10" fill="#f1e05a"/>
-      <rect x="248" y="0" width="85"  height="10" fill="#e34c26"/>
-      <rect x="333" y="0" width="59"  height="10" fill="#3178c6"/>
-      <rect x="392" y="0" width="13"  height="10" fill="#AA6746"/>
-      <rect x="405" y="0" width="46"  height="10" fill="#7d8590"/>
+  <path d="M22 84 H473" stroke="#3b2111" stroke-width="1" opacity="0.8"/>
+
+  <g transform="translate(22,96)">
+    <rect width="451" height="12" rx="6" fill="#1b0e07" stroke="#4b2a13" stroke-width="1"/>
+    <g clip-path="url(#tl-clip-bar)">
+      <rect x="0"   y="0" width="163" height="12" fill="#3572A5"/>
+      <rect x="163" y="0" width="85"  height="12" fill="#f1e05a"/>
+      <rect x="248" y="0" width="85"  height="12" fill="#e34c26"/>
+      <rect x="333" y="0" width="59"  height="12" fill="#3178c6"/>
+      <rect x="392" y="0" width="13"  height="12" fill="#AA6746"/>
+      <rect x="405" y="0" width="46"  height="12" fill="#7a5c40"/>
     </g>
   </g>
 
   <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">
-    <g transform="translate(22,128)">
-      <circle cx="6" cy="-4" r="6" fill="#3572A5"/>
-      <text x="20" y="0" fill="#c9d1d9">Python</text>
-      <text x="216" y="0" fill="#8b949e" text-anchor="end">36.2%</text>
+    <g transform="translate(22,132)">
+      <circle cx="6" cy="-4" r="5.5" fill="#3572A5"/>
+      <text x="20" y="0" fill="#fff2df">Python</text>
+      <text x="216" y="0" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="800">36.2%</text>
     </g>
-    <g transform="translate(22,150)">
-      <circle cx="6" cy="-4" r="6" fill="#f1e05a"/>
-      <text x="20" y="0" fill="#c9d1d9">JavaScript</text>
-      <text x="216" y="0" fill="#8b949e" text-anchor="end">18.8%</text>
+    <g transform="translate(22,154)">
+      <circle cx="6" cy="-4" r="5.5" fill="#f1e05a"/>
+      <text x="20" y="0" fill="#fff2df">JavaScript</text>
+      <text x="216" y="0" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="800">18.8%</text>
     </g>
-    <g transform="translate(22,172)">
-      <circle cx="6" cy="-4" r="6" fill="#e34c26"/>
-      <text x="20" y="0" fill="#c9d1d9">HTML</text>
-      <text x="216" y="0" fill="#8b949e" text-anchor="end">18.8%</text>
+    <g transform="translate(22,176)">
+      <circle cx="6" cy="-4" r="5.5" fill="#e34c26"/>
+      <text x="20" y="0" fill="#fff2df">HTML</text>
+      <text x="216" y="0" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="800">18.8%</text>
     </g>
 
-    <g transform="translate(257,128)">
-      <circle cx="6" cy="-4" r="6" fill="#3178c6"/>
-      <text x="20" y="0" fill="#c9d1d9">TypeScript</text>
-      <text x="216" y="0" fill="#8b949e" text-anchor="end">13.0%</text>
+    <g transform="translate(257,132)">
+      <circle cx="6" cy="-4" r="5.5" fill="#3178c6"/>
+      <text x="20" y="0" fill="#fff2df">TypeScript</text>
+      <text x="216" y="0" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="800">13.0%</text>
     </g>
-    <g transform="translate(257,150)">
-      <circle cx="6" cy="-4" r="6" fill="#AA6746"/>
-      <text x="20" y="0" fill="#c9d1d9">Solidity</text>
-      <text x="216" y="0" fill="#8b949e" text-anchor="end">2.9%</text>
+    <g transform="translate(257,154)">
+      <circle cx="6" cy="-4" r="5.5" fill="#AA6746"/>
+      <text x="20" y="0" fill="#fff2df">Solidity</text>
+      <text x="216" y="0" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="800">2.9%</text>
     </g>
-    <g transform="translate(257,172)">
-      <circle cx="6" cy="-4" r="6" fill="#7d8590"/>
-      <text x="20" y="0" fill="#c9d1d9">Other</text>
-      <text x="216" y="0" fill="#8b949e" text-anchor="end">10.3%</text>
+    <g transform="translate(257,176)">
+      <circle cx="6" cy="-4" r="5.5" fill="#7a5c40"/>
+      <text x="20" y="0" fill="#fff2df">Other</text>
+      <text x="216" y="0" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="800">10.3%</text>
     </g>
   </g>
 </svg>

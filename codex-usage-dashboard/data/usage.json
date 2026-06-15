@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-15T17:18:59+08:00",
+  "generated_at": "2026-06-15T17:19:20+08:00",
   "window": {
     "days": 43,
-    "cutoff": "2026-05-03T17:18:59+08:00",
+    "cutoff": "2026-05-03T17:19:20+08:00",
     "timezone": "CST",
     "calendar_day_count": 43,
     "active_day_count": 43
@@ -208,29 +208,29 @@
     }
   },
   "totals": {
-    "input_tokens": 41008491904,
-    "cached_input_tokens": 38009834347,
-    "output_tokens": 207612190,
-    "reasoning_output_tokens": 70546082,
-    "total_tokens": 41216620894
+    "input_tokens": 41008347685,
+    "cached_input_tokens": 38009699563,
+    "output_tokens": 207611674,
+    "reasoning_output_tokens": 70545971,
+    "total_tokens": 41216476159
   },
   "model_rows": [
     {
       "model": "gpt-5.5",
       "tokens": {
-        "input_tokens": 37861456991,
-        "cached_input_tokens": 35066110208,
-        "output_tokens": 187116287,
-        "reasoning_output_tokens": 68954978,
-        "total_tokens": 38049090078
+        "input_tokens": 37861312772,
+        "cached_input_tokens": 35065975424,
+        "output_tokens": 187115771,
+        "reasoning_output_tokens": 68954867,
+        "total_tokens": 38048945343
       },
       "costs": {
-        "input_cost": 13976.733915,
-        "cached_input_cost": 17533.055104,
-        "output_cost": 5613.48861,
-        "total_cost": 37123.277629000004,
-        "no_cache_cost": 194920.77356499998,
-        "cached_savings": 157797.49593599996
+        "input_cost": 13976.686740000001,
+        "cached_input_cost": 17532.987712,
+        "output_cost": 5613.47313,
+        "total_cost": 37123.147582,
+        "no_cache_cost": 194920.03699,
+        "cached_savings": 157796.889408
       }
     },
     {
@@ -2781,28 +2781,28 @@
   "by_agent": {
     "codex": {
       "tokens": {
-        "input_tokens": 38367426134,
-        "cached_input_tokens": 35512969728,
-        "output_tokens": 190009569,
-        "reasoning_output_tokens": 70546082,
-        "total_tokens": 38557952503
+        "input_tokens": 38367281915,
+        "cached_input_tokens": 35512834944,
+        "output_tokens": 190009053,
+        "reasoning_output_tokens": 70545971,
+        "total_tokens": 38557807768
       },
       "models": {
         "gpt-5.5": {
           "tokens": {
-            "input_tokens": 37861456991,
-            "cached_input_tokens": 35066110208,
-            "output_tokens": 187116287,
-            "reasoning_output_tokens": 68954978,
-            "total_tokens": 38049090078
+            "input_tokens": 37861312772,
+            "cached_input_tokens": 35065975424,
+            "output_tokens": 187115771,
+            "reasoning_output_tokens": 68954867,
+            "total_tokens": 38048945343
           },
           "costs": {
-            "input_cost": 13976.733915,
-            "cached_input_cost": 17533.055104,
-            "output_cost": 5613.48861,
-            "total_cost": 37123.277629000004,
-            "no_cache_cost": 194920.77356499998,
-            "cached_savings": 157797.49593599996
+            "input_cost": 13976.686740000001,
+            "cached_input_cost": 17532.987712,
+            "output_cost": 5613.47313,
+            "total_cost": 37123.147582,
+            "no_cache_cost": 194920.03699,
+            "cached_savings": 157796.889408
           }
         },
         "gpt-5.3-codex-spark": {
@@ -2858,8 +2858,8 @@
         }
       },
       "session_count": 10368,
-      "total_cost": 37345.832273550004,
-      "cached_savings": 158502.67585919995
+      "total_cost": 37345.70222655,
+      "cached_savings": 158502.06933119998
     },
     "claude": {
       "tokens": {
@@ -3059,7 +3059,7 @@
         "reasoning_output_tokens": 45569891,
         "total_tokens": 13536891884
       },
-      "tool_call_count": 652476,
+      "tool_call_count": 652471,
       "skill_marker_count": 0,
       "plugin_signal_count": 95,
       "subagents": [
@@ -3275,7 +3275,7 @@
       "tools": [
         {
           "name": "exec_command",
-          "count": 543488
+          "count": 543483
         },
         {
           "name": "write_stdin",
@@ -3763,5 +3763,5 @@
     }
   ],
   "session_count": 10659,
-  "published_at": "2026-06-15T17:49:17+08:00"
+  "published_at": "2026-06-15T17:50:52+08:00"
 }

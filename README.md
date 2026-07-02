@@ -1,13 +1,13 @@
 <a href="https://github.com/LIN0304">
   <picture>
     <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner-mobile.svg">
-    <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg" width="100%" alt="Ray Lin — Agents Developer & Moderator at Puffer Labs · Building AI agents at the edge of large language models and Web3" />
+    <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg" width="100%" alt="Ray Lin — Agentic Systems Engineer. Building the infrastructure that lets frontier models execute complex tasks reliably. Taipei, Taiwan." />
   </picture>
 </a>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/hsu-jui-lin-50b82b216/">
-    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Hsu--Jui%20Lin-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Hsu--Jui%20Lin-0A66C2?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjAuNDQ3IDIwLjQ1MmgtMy41NTR2LTUuNTY5YzAtMS4zMjgtLjAyNy0zLjAzNy0xLjg1Mi0zLjAzNy0xLjg1MyAwLTIuMTM2IDEuNDQ1LTIuMTM2IDIuOTM5djUuNjY3SDkuMzUxVjloMy40MTR2MS41NjFoLjA0NmMuNDc3LS45IDEuNjM3LTEuODUgMy4zNy0xLjg1IDMuNjAxIDAgNC4yNjcgMi4zNyA0LjI2NyA1LjQ1NXY2LjI4NnpNNS4zMzcgNy40MzNjLTEuMTQ0IDAtMi4wNjMtLjkyNi0yLjA2My0yLjA2NSAwLTEuMTM4LjkyLTIuMDYzIDIuMDYzLTIuMDYzIDEuMTQgMCAyLjA2NC45MjUgMi4wNjQgMi4wNjMgMCAxLjEzOS0uOTI1IDIuMDY1LTIuMDY0IDIuMDY1em0xLjc4MiAxMy4wMTlIMy41NTVWOWgzLjU2NHYxMS40NTJ6TTIyLjIyNSAwSDEuNzcxQy43OTIgMCAwIC43NzQgMCAxLjcyOXYyMC41NDJDMCAyMy4yMjcuNzkyIDI0IDEuNzcxIDI0aDIwLjQ1MUMyMy4yIDI0IDI0IDIzLjIyNyAyNCAyMi4yNzFWMS43MjlDMjQgLjc3NCAyMy4yIDAgMjIuMjI1IDB6Ii8%2BPC9zdmc%2B" />
   </a>
   <a href="https://x.com/RayLin_AI">
     <img alt="X" src="https://img.shields.io/badge/X-@RayLin__AI-000000?style=flat-square&logo=x&logoColor=white" />
@@ -18,40 +18,96 @@
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=LIN0304&style=flat-square&color=ff7a1a&label=views" />
 </p>
 
----
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg" width="100%" alt="" />
 
-## About
+## <samp>&gt;_ 00 · BOOT SEQUENCE</samp>
 
-I build and moderate custom **GPTs**, ship **MCP servers** for onchain protocols, and prototype AI agents at **ETHGlobal** hackathons. Day-to-day I work at the intersection of autonomous coding agents and Ethereum infrastructure.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/terminal-boot.svg" width="100%" alt="Animated terminal session: whoami returns agentic systems engineer; unibench routes a task from benchmark data; an agent loop plans, executes, critiques, verifies and ships with all gates green." />
+</p>
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg" width="100%" alt="" />
+
+## <samp>&gt;_ 01 · MISSION BRIEF</samp>
+
+I work on **agentic systems engineering**. My focus is not simply using AI tools, but **building the infrastructure that allows frontier models to execute complex tasks reliably**.
+
+My work spans **agent skills**, **agent harnesses**, **loop engineering**, **model orchestration**, **benchmark-driven evaluation**, **AI coding workflows**, and **research automation**. I design systems that decompose complex tasks into verifiable steps, separate **planner / executor / critic / verifier** roles, route tasks across different models, use tools when needed, evaluate outputs, recover from failures, and improve through feedback loops.
+
+More broadly, I am interested in moving AI from chat interfaces toward **executable, auditable, self-improving work systems**. I treat models as composable execution components inside larger agentic architectures, with strong emphasis on evaluation, observability, memory/state design, tool use, failure recovery, and human-in-the-loop control boundaries.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🔭 Currently building
+### <samp>◇ SYSTEM MODULES</samp>
 
-- **MCP servers** — Polygon, Farcaster, 1inch and other onchain integrations
-- **Custom GPTs** — productionising assistants for the Puffer ecosystem
-- **Autonomous coding** — OpenAI Codex and Claude Code workflows
-- **Onchain agents** — agentic flows across Ethereum L1 and L2s
+- <samp>agent-skills</samp> — reusable capabilities
+- <samp>agent-harnesses</samp> — execution scaffolding
+- <samp>loop-engineering</samp> — iterate → converge
+- <samp>model-orchestration</samp> — multi-model routing
+- <samp>coding-workflows</samp> — autonomous dev agents
+- <samp>research-automation</samp> — self-driving studies
 
 </td>
 <td width="50%" valign="top">
 
-### 🎯 Focus areas
+### <samp>◇ CONTROL SURFACES</samp>
 
-- Large language model tooling and evals
-- Retrieval, memory and tool-use for agents
-- Smart-contract integration via MCP
-- Developer experience for AI workflows
+- <samp>evaluation</samp> — benchmark-driven, always on
+- <samp>observability</samp> — traces over vibes
+- <samp>memory/state</samp> — designed, not accidental
+- <samp>failure-recovery</samp> — retries with feedback
+- <samp>tool-use</samp> — capabilities on demand
+- <samp>hitl-boundaries</samp> — humans hold the gates
 
 </td>
 </tr>
 </table>
 
----
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg" width="100%" alt="" />
 
-## Tech stack
+## <samp>&gt;_ 02 · AGENT RUNTIME</samp>
+
+<picture>
+  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/agent-loop-mobile.svg">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/agent-loop.svg" width="100%" alt="Animated diagram of the agent execution loop: a task flows through planner, benchmark-aware router across OpenAI and Claude models, executor with tools, critic, and verifier, then ships — with feedback loops back to the planner and a support rail of memory, evals, tools, traces and human-in-the-loop control." />
+</picture>
+
+<details>
+<summary><samp>▸ text-mode schematic</samp></summary>
+
+```text
+          ┌─────────────────── feedback · retry ───────────────────┐
+          │                                                        │
+          ▼                                                        │
+task ──▶ PLANNER ──▶ ROUTER ──▶ EXECUTOR ──▶ CRITIC ──▶ VERIFIER ──┴──▶ ship ✓
+          steps      models     tools        score      gates
+```
+
+</details>
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg" width="100%" alt="" />
+
+## <samp>&gt;_ 03 · CORE PROJECT :: UNIBENCH</samp>
+
+One of my core projects is **UniBench**, a benchmark-aware model intelligence layer for understanding model capabilities and routing tasks based on empirical performance. The goal is to connect **LLM benchmark data**, **task ontologies**, **model capability profiles**, and **automated workflows** into an agentic benchmark operating system.
+
+```text
+┌─ UNIBENCH · MODEL CAPABILITY MATRIX ────────────────────────────┐
+│                                                                 │
+│   coding          ██████████████░░░░░░   swe-bench · lcb        │
+│   reasoning       ████████████░░░░░░░░   gpqa · arc             │
+│   agentic         ███████████████░░░░░   tau-bench · terminal   │
+│   long-context    █████████████░░░░░░░   ruler · longbench      │
+│                                                                 │
+│   route(task) ─▶  argmax( capability − λ·cost − μ·latency )     │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg" width="100%" alt="" />
+
+## <samp>&gt;_ 04 · TECH STACK</samp>
 
 <table>
 <tr>
@@ -70,21 +126,37 @@ I build and moderate custom **GPTs**, ship **MCP servers** for onchain protocols
 <img alt="Codex" src="https://img.shields.io/badge/Codex-000000?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMy40IDIuOSAxLjMgNWw3IDctNyA3IDIuMSAyLjFMMTIuNSAxMiAzLjQgMi45Wk0xMyAxOC45aDkuN1YyMkgxM3YtMy4xWk0xOC4zIDIuNmwxLjUgMi45IDIuOSAxLjUtMi45IDEuNS0xLjUgMi45LTEuNS0yLjktMi45LTEuNSAyLjktMS41IDEuNS0yLjlaIi8%2BPC9zdmc%2B" />
 <img alt="Claude" src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white" />
 <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=data:image/svg%2Bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjEgMTAuNWgzdjNoLTN2M2gtMS41djNIMTh2LTNoLTEuNXYzSDE1di0zSDl2M0g3LjV2LTNINnYzSDQuNXYtM0gzdi0zSDB2LTNoM3YtNmgxOFptLTE1IDBoMS41di0zSDZabTEwLjUgMEgxOHYtM2gtMS41eiIvPjwvc3ZnPg%3D%3D" />
-<img alt="MCP" src="https://img.shields.io/badge/MCP-FF6B35?style=flat-square&logo=modelcontextprotocol&logoColor=white" />
 </td>
 </tr>
 <tr>
-<td><strong>Web3</strong></td>
+<td><strong>Platforms</strong></td>
 <td>
-<img alt="Ethereum" src="https://img.shields.io/badge/Ethereum-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" />
 <img alt="Farcaster" src="https://img.shields.io/badge/Farcaster-855DCD?style=flat-square&logo=farcaster&logoColor=white" />
 </td>
 </tr>
 </table>
 
----
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg" width="100%" alt="" />
 
-## Activity
+## <samp>&gt;_ 05 · COMMS CHANNEL</samp>
+
+<p>
+  <a href="https://www.linkedin.com/in/hsu-jui-lin-50b82b216/">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LINKEDIN-hsu--jui--lin-0A66C2?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjAuNDQ3IDIwLjQ1MmgtMy41NTR2LTUuNTY5YzAtMS4zMjgtLjAyNy0zLjAzNy0xLjg1Mi0zLjAzNy0xLjg1MyAwLTIuMTM2IDEuNDQ1LTIuMTM2IDIuOTM5djUuNjY3SDkuMzUxVjloMy40MTR2MS41NjFoLjA0NmMuNDc3LS45IDEuNjM3LTEuODUgMy4zNy0xLjg1IDMuNjAxIDAgNC4yNjcgMi4zNyA0LjI2NyA1LjQ1NXY2LjI4NnpNNS4zMzcgNy40MzNjLTEuMTQ0IDAtMi4wNjMtLjkyNi0yLjA2My0yLjA2NSAwLTEuMTM4LjkyLTIuMDYzIDIuMDYzLTIuMDYzIDEuMTQgMCAyLjA2NC45MjUgMi4wNjQgMi4wNjMgMCAxLjEzOS0uOTI1IDIuMDY1LTIuMDY0IDIuMDY1em0xLjc4MiAxMy4wMTlIMy41NTVWOWgzLjU2NHYxMS40NTJ6TTIyLjIyNSAwSDEuNzcxQy43OTIgMCAwIC43NzQgMCAxLjcyOXYyMC41NDJDMCAyMy4yMjcuNzkyIDI0IDEuNzcxIDI0aDIwLjQ1MUMyMy4yIDI0IDI0IDIzLjIyNyAyNCAyMi4yNzFWMS43MjlDMjQgLjc3NCAyMy4yIDAgMjIuMjI1IDB6Ii8%2BPC9zdmc%2B&logoColor=white" />
+  </a>
+  <a href="https://x.com/RayLin_AI">
+    <img alt="X" src="https://img.shields.io/badge/X-@RayLin__AI-000000?style=for-the-badge&logo=x&logoColor=white" />
+  </a>
+  <a href="https://github.com/LIN0304">
+    <img alt="GitHub" src="https://img.shields.io/badge/GITHUB-LIN0304-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+Open to collaboration on agent infrastructure, evals, and model orchestration — transmissions welcome on any channel above.
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg" width="100%" alt="" />
+
+## <samp>&gt;_ 06 · TELEMETRY</samp>
 
 <p>
   <img width="49%" alt="Ray's GitHub stats: 102 public repos, 24 stars earned, 6 gists, 11 followers, 18 following, member since Aug 2020" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/github-stats.svg" />
@@ -99,7 +171,7 @@ I build and moderate custom **GPTs**, ship **MCP servers** for onchain protocols
   <img width="100%" alt="GitHub contribution heatmap for LIN0304" src="https://ghchart.rshah.org/ff8a22/LIN0304" />
 </p>
 
----
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg" width="100%" alt="" />
 
 <!-- CODEX_USAGE_DASHBOARD:START -->
 ## Codex Usage Dashboard
@@ -117,8 +189,12 @@ Snapshot: `2026-07-02T12:36:59+08:00` · Range: **Past 62 days**
 <!-- generated-at: 2026-07-02T12:33:01+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->
 
----
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg" width="100%" alt="" />
 
 <p align="center">
-  <sub>Reach out on <a href="https://www.linkedin.com/in/hsu-jui-lin-50b82b216/">LinkedIn</a> or <a href="https://x.com/RayLin_AI">X</a> — happy to chat about AI agents, MCP, or Ethereum.</sub>
+  <samp>└──▶ EOF · transmission ends — the loop continues</samp>
+</p>
+
+<p align="center">
+  <sub>Reach out on <a href="https://www.linkedin.com/in/hsu-jui-lin-50b82b216/">LinkedIn</a> or <a href="https://x.com/RayLin_AI">X</a> — happy to chat about agentic systems, evals, and model orchestration.</sub>
 </p>

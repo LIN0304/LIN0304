@@ -1,222 +1,261 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="hero-title hero-desc">
-<title id="hero-title">Ray Lin — Agentic Systems Engineer</title>
-<desc id="hero-desc">Ray Lin, agentic systems engineer. Building the infrastructure that lets frontier models execute complex tasks reliably. Based in Taipei, Taiwan.</desc>
-<defs>
-<linearGradient id="hb-bg" x1="0" y1="0" x2="1" y2="1">
-<stop offset="0%" stop-color="#170c05"/><stop offset="55%" stop-color="#0c0805"/><stop offset="100%" stop-color="#1f0e05"/>
-</linearGradient>
-<linearGradient id="hb-name" x1="0" x2="0" y1="0" y2="1">
-<stop offset="0%" stop-color="#fff7ea"/><stop offset="55%" stop-color="#ffd9ad"/><stop offset="100%" stop-color="#ffb057"/>
-</linearGradient>
-<linearGradient id="hb-shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="230" y2="0">
-<stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.5"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
-<animateTransform attributeName="gradientTransform" type="translate" values="-260 0;700 0" dur="6s" repeatCount="indefinite"/>
-</linearGradient>
-<linearGradient id="hb-accent" x1="0" x2="1" y1="0" y2="0">
-<stop offset="0%" stop-color="#ff7a1a"/><stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
-</linearGradient>
-<radialGradient id="hb-orb" cx="0.5" cy="0.5" r="0.5">
-<stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.25"/><stop offset="55%" stop-color="#ff4d00" stop-opacity="0.07"/><stop offset="100%" stop-color="#ff4d00" stop-opacity="0"/>
-</radialGradient>
-<filter id="hb-glow" x="-60%" y="-60%" width="220%" height="220%">
-<feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter>
-<clipPath id="hb-clip"><rect width="1200" height="300" rx="16"/></clipPath>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">Ray Lin &#8212; Agentic Systems Engineer</title>
+  <desc id="hero-desc">Ray Lin, agentic systems engineer. Building the infrastructure, workflows, and evaluation systems that let frontier models execute complex tasks reliably. Creator of UniBench, a benchmark-aware model intelligence layer. Based in Taipei, Taiwan.</desc>
+  <defs>
+    <linearGradient id="hb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#170c05"/>
+      <stop offset="55%" stop-color="#0c0805"/>
+      <stop offset="100%" stop-color="#1f0e05"/>
+    </linearGradient>
+    <linearGradient id="hb-accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#ff7a1a"/>
+      <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hb-name" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff7ea"/>
+      <stop offset="100%" stop-color="#ffd9ad"/>
+    </linearGradient>
+    <linearGradient id="hb-shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="190" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-240 0;560 0" dur="5.5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="hb-band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7a1a" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ff7a1a" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hb-orb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#ff4d00" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hb-orb2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="hb-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="hb-clip"><rect width="1200" height="260" rx="16"/></clipPath>
+    <clipPath id="hb-kick"><rect x="56" y="59" width="600" height="17">
+      <animate attributeName="width" values="0;600" dur="0.95s" fill="freeze"/></rect></clipPath>
+  </defs>
 
-<rect width="1200" height="300" rx="16" fill="url(#hb-bg)"/>
-<g clip-path="url(#hb-clip)">
-<circle cx="1060" cy="150" r="240" fill="url(#hb-orb)">
-<animate attributeName="r" values="240;256;240" dur="9s" repeatCount="indefinite"/>
-</circle>
-<g stroke="#3b2111" stroke-width="1" opacity="0.26">
-<path d="M0 52 H1200"/><path d="M0 96 H1200"/><path d="M0 140 H1200"/><path d="M0 184 H1200"/><path d="M0 228 H1200"/><path d="M0 272 H1200"/>
-</g>
-<g stroke="#3b2111" stroke-width="1" opacity="0.18">
-<path d="M880 0 V300"/><path d="M946 0 V300"/><path d="M1012 0 V300"/><path d="M1078 0 V300"/><path d="M1144 0 V300"/>
-</g>
-<g fill="#ffb057">
-<circle cx="880" cy="40" r="1.1" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="3.4s" begin="-0.0s" repeatCount="indefinite"/></circle>
-<circle cx="930" cy="70" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="4.2s" begin="-0.7s" repeatCount="indefinite"/></circle>
-<circle cx="700" cy="30" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="3.8s" begin="-1.4s" repeatCount="indefinite"/></circle>
-<circle cx="760" cy="250" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="4.6s" begin="-2.1s" repeatCount="indefinite"/></circle>
-<circle cx="640" cy="270" r="0.8" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="3.2s" begin="-2.8s" repeatCount="indefinite"/></circle>
-<circle cx="1180" cy="40" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="5.0s" begin="-3.5s" repeatCount="indefinite"/></circle>
-<circle cx="860" cy="262" r="1.1" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="4.0s" begin="-0.2s" repeatCount="indefinite"/></circle>
-<circle cx="620" cy="46" r="0.8" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="4.4s" begin="-0.5s" repeatCount="indefinite"/></circle>
-<circle cx="1176" cy="262" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.15;0.75;0.15" dur="3.6s" begin="-2.0s" repeatCount="indefinite"/></circle>
-</g>
-<g fill="#ff9a3d">
-<circle cx="150" cy="308" r="1.6"><animate attributeName="cy" values="308;-12" dur="11s" begin="-2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.55;0.55;0" dur="11s" begin="-2s" repeatCount="indefinite"/></circle>
-<circle cx="330" cy="308" r="1.3"><animate attributeName="cy" values="308;-12" dur="14s" begin="-7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.55;0.55;0" dur="14s" begin="-7s" repeatCount="indefinite"/></circle>
-<circle cx="510" cy="308" r="1.8"><animate attributeName="cy" values="308;-12" dur="12s" begin="-4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.55;0.55;0" dur="12s" begin="-4s" repeatCount="indefinite"/></circle>
-<circle cx="690" cy="308" r="1.4"><animate attributeName="cy" values="308;-12" dur="15s" begin="-10s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.55;0.55;0" dur="15s" begin="-10s" repeatCount="indefinite"/></circle>
-<circle cx="820" cy="308" r="1.6"><animate attributeName="cy" values="308;-12" dur="13s" begin="-6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.55;0.55;0" dur="13s" begin="-6s" repeatCount="indefinite"/></circle>
-</g>
+  <rect width="1200" height="260" rx="16" fill="url(#hb-bg)"/>
 
-<!-- orchestrator radar -->
-<radialGradient id="hbr-core" cx="0.5" cy="0.5" r="0.5">
-<stop offset="0" stop-color="#ff7a1a" stop-opacity="0.5"/>
-<stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
-</radialGradient>
-<linearGradient id="hbr-wedge" x1="0" y1="0" x2="1" y2="0">
-<stop offset="0" stop-color="#ff7a1a" stop-opacity="0"/>
-<stop offset="1" stop-color="#ff8a22" stop-opacity="0.55"/>
-</linearGradient>
-<circle cx="1052" cy="152" r="66" fill="url(#hbr-core)" opacity="0.5"/>
-<g fill="none" stroke="#ff7a1a" stroke-opacity="0.30">
-<circle cx="1052" cy="152" r="21.8" stroke-dasharray="3 4"/>
-<circle cx="1052" cy="152" r="43.6" stroke-dasharray="3 4"/>
-<circle cx="1052" cy="152" r="66.0" stroke-dasharray="3 4"/>
-<path d="M986 152 H1118 M1052 86 V218" stroke-opacity="0.18"/>
-</g>
-<path d="M1052 152 L1118 152 A66 66 0 0 0 1104.0 111.4 Z" fill="url(#hbr-wedge)" opacity="0.8">
-<animateTransform attributeName="transform" type="rotate" from="0 1052 152" to="360 1052 152" dur="5.5s" repeatCount="indefinite"/>
-</path>
-<circle cx="1081.7" cy="169.2" r="2" fill="#ffd08a" opacity="0"><animate attributeName="opacity" values="0;0.95;0;0" dur="5.5s" begin="0.46s" keyTimes="0;0.12;0.6;1" repeatCount="indefinite"/></circle>
-<circle cx="1011.6" cy="185.9" r="2" fill="#ffd08a" opacity="0"><animate attributeName="opacity" values="0;0.95;0;0" dur="5.5s" begin="2.14s" keyTimes="0;0.12;0.6;1" repeatCount="indefinite"/></circle>
-<circle cx="1041.4" cy="112.5" r="2" fill="#ffd08a" opacity="0"><animate attributeName="opacity" values="0;0.95;0;0" dur="5.5s" begin="3.90s" keyTimes="0;0.12;0.6;1" repeatCount="indefinite"/></circle>
-<g><animateTransform attributeName="transform" type="rotate" from="0 1052 152" to="-360 1052 152" dur="12s" repeatCount="indefinite"/>
-<circle cx="1108.1" cy="152" r="2.2" fill="#ffb057" opacity="0.9"/></g>
-<circle cx="1052" cy="152" r="10" fill="none" stroke="#ff8a22" stroke-opacity="0.6" stroke-dasharray="3 4">
-<animateTransform attributeName="transform" type="rotate" from="0 1052 152" to="360 1052 152" dur="7s" repeatCount="indefinite"/>
-</circle>
-<circle cx="1052" cy="152" r="3.6" fill="#ff8a22">
-<animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" repeatCount="indefinite"/>
-</circle>
-<line x1="1052" y1="152" x2="1052.0" y2="111.1" stroke="#ff7a1a" stroke-opacity="0.35" stroke-dasharray="3 4"/>
-<circle cx="1052.0" cy="111.1" r="3" fill="#ffb057"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" begin="-0.0s" repeatCount="indefinite"/></circle>
-<text x="1052.0" y="76.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="9" font-weight="800" letter-spacing="1" fill="#ffb057" fill-opacity="0.9" text-anchor="middle">PLAN</text>
-<circle r="1.8" fill="#ffd08a"><animateMotion path="M1052 152 L1052.0 111.1" dur="1.8s" begin="-0.0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="-0.0s" repeatCount="indefinite"/></circle>
-<line x1="1052" y1="152" x2="1092.9" y2="152.0" stroke="#ff7a1a" stroke-opacity="0.35" stroke-dasharray="3 4"/>
-<circle cx="1092.9" cy="152.0" r="3" fill="#ffb057"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" begin="-0.55s" repeatCount="indefinite"/></circle>
-<text x="1131.0" y="155.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="9" font-weight="800" letter-spacing="1" fill="#ffb057" fill-opacity="0.9" text-anchor="start">EXEC</text>
-<circle r="1.8" fill="#ffd08a"><animateMotion path="M1052 152 L1092.9 152.0" dur="1.8s" begin="-0.45s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="-0.45s" repeatCount="indefinite"/></circle>
-<line x1="1052" y1="152" x2="1052.0" y2="192.9" stroke="#ff7a1a" stroke-opacity="0.35" stroke-dasharray="3 4"/>
-<circle cx="1052.0" cy="192.9" r="3" fill="#ffb057"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" begin="-1.1s" repeatCount="indefinite"/></circle>
-<text x="1052.0" y="234.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="9" font-weight="800" letter-spacing="1" fill="#ffb057" fill-opacity="0.9" text-anchor="middle">CRIT</text>
-<circle r="1.8" fill="#ffd08a"><animateMotion path="M1052 152 L1052.0 192.9" dur="1.8s" begin="-0.9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="-0.9s" repeatCount="indefinite"/></circle>
-<line x1="1052" y1="152" x2="1011.1" y2="152.0" stroke="#ff7a1a" stroke-opacity="0.35" stroke-dasharray="3 4"/>
-<circle cx="1011.1" cy="152.0" r="3" fill="#ffb057"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" begin="-1.6500000000000001s" repeatCount="indefinite"/></circle>
-<text x="973.0" y="155.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="9" font-weight="800" letter-spacing="1" fill="#ffb057" fill-opacity="0.9" text-anchor="end">VRFY</text>
-<circle r="1.8" fill="#ffd08a"><animateMotion path="M1052 152 L1011.1 152.0" dur="1.8s" begin="-1.35s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="-1.35s" repeatCount="indefinite"/></circle>
-<g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.0s" dur="0.18s" fill="freeze"/><text x="918" y="246" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10.5" font-weight="800" fill="#62e6a8" xml:space="preserve">[ ok ]</text><text x="972" y="246" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10.5" font-weight="600" fill="#c89a72">agent harness attached</text></g><g opacity="0"><animate attributeName="opacity" values="0;1" begin="1.7s" dur="0.18s" fill="freeze"/><text x="918" y="260" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10.5" font-weight="800" fill="#62e6a8" xml:space="preserve">[ ok ]</text><text x="972" y="260" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10.5" font-weight="600" fill="#c89a72">tools mounted · sandbox live</text></g><g opacity="0"><animate attributeName="opacity" values="0;1" begin="2.4s" dur="0.18s" fill="freeze"/><text x="918" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10.5" font-weight="800" fill="#62e6a8" xml:space="preserve">[ ok ]</text><text x="972" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10.5" font-weight="600" fill="#c89a72">models routed via unibench</text></g><g opacity="0"><animate attributeName="opacity" values="0;1" begin="3.1s" dur="0.18s" fill="freeze"/><text x="918" y="288" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10.5" font-weight="800" fill="#62e6a8" xml:space="preserve">[ ok ]</text><text x="972" y="288" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10.5" font-weight="600" fill="#c89a72">verifier green — loop closed</text></g>
-<text x="1144" y="46" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10" font-weight="700" fill="#cc6b2c" text-anchor="end">TAIPEI · UTC+8 · SYS.LOOP v5</text>
+  <g clip-path="url(#hb-clip)">
+    <circle cx="1070" cy="130" r="230" fill="url(#hb-orb)">
+      <animate attributeName="r" values="230;244;230" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="280" r="210" fill="url(#hb-orb2)">
+      <animate attributeName="r" values="210;222;210" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <g stroke="#3b2111" stroke-width="1" opacity="0.28">
+      <path d="M0 52 H1200"/>
+      <path d="M0 96 H1200"/>
+      <path d="M0 140 H1200"/>
+      <path d="M0 184 H1200"/>
+      <path d="M0 228 H1200"/>
+    </g>
+    <g stroke="#3b2111" stroke-width="1" opacity="0.20">
+      <path d="M880 0 V260"/>
+      <path d="M946 0 V260"/>
+      <path d="M1012 0 V260"/>
+      <path d="M1078 0 V260"/>
+      <path d="M1144 0 V260"/>
+    </g>
 
-<linearGradient id="hb-band" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0" stop-color="#ff7a1a" stop-opacity="0"/>
-<stop offset="0.5" stop-color="#ff7a1a" stop-opacity="0.1"/>
-<stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/>
-</linearGradient>
-<rect x="0" y="-80" width="1200" height="70" fill="url(#hb-band)">
-<animate attributeName="y" values="-80;310" dur="8s" repeatCount="indefinite"/>
+    <!-- grid twinkles -->
+    <g fill="#ffb057">
+<circle cx="140" cy="96" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.8s" begin="-0.4s" repeatCount="indefinite"/></circle>
+<circle cx="320" cy="184" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.4s" begin="-1.6s" repeatCount="indefinite"/></circle>
+<circle cx="520" cy="52" r="1.1" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.4s" begin="-2.2s" repeatCount="indefinite"/></circle>
+<circle cx="720" cy="228" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.8s" begin="-0.9s" repeatCount="indefinite"/></circle>
+<circle cx="880" cy="96" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.6s" begin="-2.8s" repeatCount="indefinite"/></circle>
+<circle cx="946" cy="52" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.2s" begin="-1.2s" repeatCount="indefinite"/></circle>
+<circle cx="1078" cy="140" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="5.0s" begin="-3.4s" repeatCount="indefinite"/></circle>
+<circle cx="1144" cy="228" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.9s" begin="-0.2s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- rising embers -->
+    <g fill="#ff9a3d">
+      <circle cx="150" cy="268" r="1.6">
+        <animate attributeName="cy" values="268;-12" dur="11s" begin="-2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.6;0.6;0" dur="11s" begin="-2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="330" cy="268" r="1.3">
+        <animate attributeName="cy" values="268;-12" dur="14s" begin="-7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0.5;0" dur="14s" begin="-7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="510" cy="268" r="1.8">
+        <animate attributeName="cy" values="268;-12" dur="12s" begin="-4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.55;0.55;0" dur="12s" begin="-4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="690" cy="268" r="1.4">
+        <animate attributeName="cy" values="268;-12" dur="15s" begin="-10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.45;0.45;0" dur="15s" begin="-10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="820" cy="268" r="1.6">
+        <animate attributeName="cy" values="268;-12" dur="13s" begin="-6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0.5;0" dur="13s" begin="-6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- agent constellation -->
+    <g stroke="#ff7a1a" stroke-width="1" opacity="0.30">
+      <path d="M890 150 L944 116"/>
+      <path d="M944 116 L998 152"/>
+      <path d="M998 152 L1048 110"/>
+      <path d="M1048 110 L1100 148"/>
+      <path d="M1100 148 L1144 118"/>
+      <path d="M944 116 L1048 110"/>
+      <path d="M998 152 L1100 148"/>
+    </g>
+    <g fill="#ffb057">
+      <circle cx="890" cy="150" r="2.4" opacity="0.75"><animate attributeName="opacity" values="0.55;0.95;0.55" dur="3.4s" begin="-0.2s" repeatCount="indefinite"/></circle>
+      <circle cx="944" cy="116" r="2.4" opacity="0.75"><animate attributeName="opacity" values="0.55;0.95;0.55" dur="3.8s" begin="-1.1s" repeatCount="indefinite"/></circle>
+      <circle cx="998" cy="152" r="2.4" opacity="0.75"><animate attributeName="opacity" values="0.55;0.95;0.55" dur="3.2s" begin="-2.0s" repeatCount="indefinite"/></circle>
+      <circle cx="1100" cy="148" r="2.4" opacity="0.75"><animate attributeName="opacity" values="0.55;0.95;0.55" dur="4.0s" begin="-0.7s" repeatCount="indefinite"/></circle>
+      <circle cx="1144" cy="118" r="2.4" opacity="0.75"><animate attributeName="opacity" values="0.55;0.95;0.55" dur="3.6s" begin="-1.6s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- data packets travelling between agents -->
+    <circle r="2" fill="#ffd08a">
+      <animateMotion path="M890 150 L944 116 L998 152 L1048 110" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2" fill="#ffd08a">
+      <animateMotion path="M1144 118 L1100 148 L1048 110" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" dur="3s" begin="-1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="1.8" fill="#ffb057">
+      <animateMotion path="M944 116 L1048 110" dur="2.4s" begin="-0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" begin="-0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="1.8" fill="#ffd08a">
+      <animateMotion path="M1048 110 L998 152 L1100 148" dur="3.2s" begin="-2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0.9;0" dur="3.2s" begin="-2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- hub node with rotating orbit + counter-orbiting satellite -->
+    <circle cx="1048" cy="110" r="8" fill="#ff4d00" opacity="0.28"/>
+    <g>
+      <circle cx="1048" cy="110" r="15" fill="none" stroke="#ff8a22" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="4 5"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 1048 110" to="360 1048 110" dur="10s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="1063" cy="110" r="1.7" fill="#ffb057" opacity="0.9"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 1048 110" to="-360 1048 110" dur="6.5s" repeatCount="indefinite"/>
+    </g>
+    <circle cx="1048" cy="110" r="3.4" fill="#ff8a22" filter="url(#hb-glow)">
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- sweeping scan band -->
+    <rect x="0" y="-70" width="1200" height="64" fill="url(#hb-band)">
+      <animate attributeName="y" values="-70;266" dur="7.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="0.75" y="0.75" width="1198.5" height="258.5" rx="15.25" fill="none" stroke="#ff7a1a" stroke-opacity="0.5" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.42;0.58;0.42" dur="7s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="56" y="40" width="56" height="3" rx="1.5" fill="#ff7a1a"/>
+  <rect x="116" y="40" width="130" height="3" rx="1.5" fill="url(#hb-accent)"/>
+  <rect x="56" y="40" width="26" height="3" rx="1.5" fill="#ffd9ad">
+    <animate attributeName="x" values="56;220" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0" dur="3.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="56" y="72" font-size="12" font-weight="800" letter-spacing="3" fill="#ffb057"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" textLength="600" lengthAdjust="spacingAndGlyphs" clip-path="url(#hb-kick)" xml:space="preserve">&gt;_ AGENT SKILLS &#8226; HARNESSES &#8226; LOOPS &#8226; EVALS &#8226; ORCHESTRATION</text>
+  <rect x="666" y="62" width="7" height="12" fill="#ffb057">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="56" y="134" font-size="58" font-weight="800" fill="url(#hb-name)" letter-spacing="-1"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Ray Lin</text>
+  <text x="56" y="134" font-size="58" font-weight="800" fill="url(#hb-shine)" letter-spacing="-1"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Ray Lin</text>
+
+  <text x="56" y="168" font-size="18" font-weight="600" fill="#ffca88"
+        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Agentic Systems Engineer &#183; Building UniBench<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.25;1" dur="0.6s" fill="freeze"/></text>
+
+  <!-- rotating typed tagline -->
+<clipPath id="hb-tg0"><rect x="56" y="181.965" width="603" height="17.69">
+<animate attributeName="width" values="0;603;603;0;0" keyTimes="0;0.0458;0.2292;0.2479;1" dur="24s" repeatCount="indefinite"/></rect></clipPath>
+<text x="56" y="194" font-size="14.5" font-weight="400" fill="#c89a72" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" textLength="603" lengthAdjust="spacingAndGlyphs" clip-path="url(#hb-tg0)" xml:space="preserve">Building the infrastructure that lets frontier models execute complex tasks &#8212; reliably.</text>
+<rect x="56" y="183" width="6.8" height="13.5" fill="#ffca88" opacity="0">
+<animate attributeName="x" values="56;659;659;56;56" keyTimes="0;0.0458;0.2292;0.2479;1" dur="24s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0;0" keyTimes="0;0.2479;1" calcMode="discrete" dur="24s" repeatCount="indefinite"/>
 </rect>
-<pattern id="hb-scan" width="4" height="4" patternUnits="userSpaceOnUse">
-<rect width="4" height="2" fill="#000000" fill-opacity="0.08"/>
-<rect y="2" width="4" height="2" fill="#ffffff" fill-opacity="0.012"/>
-</pattern>
-<rect width="1200" height="300" fill="url(#hb-scan)"/>
-</g>
-
-<rect x="0.75" y="0.75" width="1198.5" height="298.5" rx="15.25" fill="none" stroke="#ff7a1a" stroke-opacity="0.5" stroke-width="1.5"/>
-<g fill="none" stroke="#ff7a1a" stroke-width="2.5" stroke-opacity="0.9">
-<path d="M36 10 H10 V36" stroke-dasharray="56" stroke-dashoffset="56"><animate attributeName="stroke-dashoffset" values="56;0" begin="0.00s" dur="0.7s" fill="freeze"/></path>
-<path d="M1164 10 H1190 V36" stroke-dasharray="56" stroke-dashoffset="56"><animate attributeName="stroke-dashoffset" values="56;0" begin="0.15s" dur="0.7s" fill="freeze"/></path>
-<path d="M36 290 H10 V264" stroke-dasharray="56" stroke-dashoffset="56"><animate attributeName="stroke-dashoffset" values="56;0" begin="0.30s" dur="0.7s" fill="freeze"/></path>
-<path d="M1164 290 H1190 V264" stroke-dasharray="56" stroke-dashoffset="56"><animate attributeName="stroke-dashoffset" values="56;0" begin="0.45s" dur="0.7s" fill="freeze"/></path>
-</g>
-
-<!-- kicker -->
-<rect x="56" y="30" width="56" height="3" rx="1.5" fill="#ff7a1a"/>
-<rect x="116" y="30" width="130" height="3" rx="1.5" fill="url(#hb-accent)"/>
-<rect x="56" y="30" width="26" height="3" rx="1.5" fill="#ffd9ad">
-<animate attributeName="x" values="56;220" dur="3.2s" repeatCount="indefinite"/>
-<animate attributeName="opacity" values="0;0.9;0" dur="3.2s" repeatCount="indefinite"/>
+<clipPath id="hb-tg1"><rect x="56" y="181.965" width="0" height="17.69">
+<animate attributeName="width" values="0;0;630;630;0;0" keyTimes="0;0.25;0.2958;0.4792;0.4979;1" dur="24s" repeatCount="indefinite"/></rect></clipPath>
+<text x="56" y="194" font-size="14.5" font-weight="400" fill="#c89a72" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" textLength="630" lengthAdjust="spacingAndGlyphs" clip-path="url(#hb-tg1)" xml:space="preserve">Turning AI from a chat interface into an executable, auditable, self-improving work system.</text>
+<rect x="56" y="183" width="6.8" height="13.5" fill="#ffca88" opacity="0">
+<animate attributeName="x" values="56;56;686;686;56;56" keyTimes="0;0.25;0.2958;0.4792;0.4979;1" dur="24s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.25;0.4979;1" calcMode="discrete" dur="24s" repeatCount="indefinite"/>
 </rect>
-<text x="56" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="12" font-weight="800" letter-spacing="3" fill="#ffb057" xml:space="preserve">&gt;_ AGENTIC SYSTEMS ENGINEERING // FRONTIER-MODEL INFRASTRUCTURE</text>
-<rect x="706" y="48" width="7" height="12" fill="#ffb057">
-<animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/>
+<clipPath id="hb-tg2"><rect x="56" y="181.965" width="0" height="17.69">
+<animate attributeName="width" values="0;0;603;603;0;0" keyTimes="0;0.5;0.5458;0.7292;0.7479;1" dur="24s" repeatCount="indefinite"/></rect></clipPath>
+<text x="56" y="194" font-size="14.5" font-weight="400" fill="#c89a72" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" textLength="603" lengthAdjust="spacingAndGlyphs" clip-path="url(#hb-tg2)" xml:space="preserve">Models as composable components: planners, executors, critics, verifiers, repair loops.</text>
+<rect x="56" y="183" width="6.8" height="13.5" fill="#ffca88" opacity="0">
+<animate attributeName="x" values="56;56;659;659;56;56" keyTimes="0;0.5;0.5458;0.7292;0.7479;1" dur="24s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.5;0.7479;1" calcMode="discrete" dur="24s" repeatCount="indefinite"/>
+</rect>
+<clipPath id="hb-tg3"><rect x="56" y="181.965" width="0" height="17.69">
+<animate attributeName="width" values="0;0;596;596;0;0" keyTimes="0;0.75;0.7958;0.9792;0.9979;1" dur="24s" repeatCount="indefinite"/></rect></clipPath>
+<text x="56" y="194" font-size="14.5" font-weight="400" fill="#c89a72" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" textLength="596" lengthAdjust="spacingAndGlyphs" clip-path="url(#hb-tg3)" xml:space="preserve">UniBench: benchmark-aware routing &#8212; assign every task to the model best suited for it.</text>
+<rect x="56" y="183" width="6.8" height="13.5" fill="#ffca88" opacity="0">
+<animate attributeName="x" values="56;56;652;652;56;56" keyTimes="0;0.75;0.7958;0.9792;0.9979;1" dur="24s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.75;0.9979;1" calcMode="discrete" dur="24s" repeatCount="indefinite"/>
 </rect>
 
-<!-- ascii name -->
-<g filter="url(#hb-glow)">
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="19" fill="url(#hb-name)" >
-<text x="56" y="96.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██████╗  █████╗ ██╗   ██╗    ██╗     ██╗███╗   ██╗</text>
-<text x="56" y="115.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██╔══██╗██╔══██╗╚██╗ ██╔╝    ██║     ██║████╗  ██║</text>
-<text x="56" y="134.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██████╔╝███████║ ╚████╔╝     ██║     ██║██╔██╗ ██║</text>
-<text x="56" y="153.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██╔══██╗██╔══██║  ╚██╔╝      ██║     ██║██║╚██╗██║</text>
-<text x="56" y="172.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██║  ██║██║  ██║   ██║       ███████╗██║██║ ╚████║</text>
-<text x="56" y="191.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚══════╝╚═╝╚═╝  ╚═══╝</text>
-</g>
-</g>
-<g opacity="0"><animate attributeName="opacity" values="0;0;0.75;0.75;0;0;0.75;0.75;0;0" keyTimes="0;0.415;0.420;0.450;0.455;0.705;0.710;0.735;0.740;1" dur="7.0s" repeatCount="indefinite"/>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="19" fill="#ff5d5d" >
-<text x="53.5" y="97.2" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██████╗  █████╗ ██╗   ██╗    ██╗     ██╗███╗   ██╗</text>
-<text x="53.5" y="116.2" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██╔══██╗██╔══██╗╚██╗ ██╔╝    ██║     ██║████╗  ██║</text>
-<text x="53.5" y="135.2" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██████╔╝███████║ ╚████╔╝     ██║     ██║██╔██╗ ██║</text>
-<text x="53.5" y="154.2" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██╔══██╗██╔══██║  ╚██╔╝      ██║     ██║██║╚██╗██║</text>
-<text x="53.5" y="173.2" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██║  ██║██║  ██║   ██║       ███████╗██║██║ ╚████║</text>
-<text x="53.5" y="192.2" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚══════╝╚═╝╚═╝  ╚═══╝</text>
-</g>
-</g>
-<g opacity="0"><animate attributeName="opacity" values="0;0;0.75;0.75;0;0;0.75;0.75;0;0" keyTimes="0;0.415;0.420;0.450;0.455;0.705;0.710;0.735;0.740;1" dur="7.0s" repeatCount="indefinite"/>
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="19" fill="#5ad7ff" >
-<text x="58.5" y="94.8" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██████╗  █████╗ ██╗   ██╗    ██╗     ██╗███╗   ██╗</text>
-<text x="58.5" y="113.8" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██╔══██╗██╔══██╗╚██╗ ██╔╝    ██║     ██║████╗  ██║</text>
-<text x="58.5" y="132.8" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██████╔╝███████║ ╚████╔╝     ██║     ██║██╔██╗ ██║</text>
-<text x="58.5" y="151.8" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██╔══██╗██╔══██║  ╚██╔╝      ██║     ██║██║╚██╗██║</text>
-<text x="58.5" y="170.8" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██║  ██║██║  ██║   ██║       ███████╗██║██║ ╚████║</text>
-<text x="58.5" y="189.8" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚══════╝╚═╝╚═╝  ╚═══╝</text>
-</g>
-</g>
-<g style="mix-blend-mode:screen">
-<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="19" fill="url(#hb-shine)" >
-<text x="56" y="96.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██████╗  █████╗ ██╗   ██╗    ██╗     ██╗███╗   ██╗</text>
-<text x="56" y="115.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██╔══██╗██╔══██╗╚██╗ ██╔╝    ██║     ██║████╗  ██║</text>
-<text x="56" y="134.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██████╔╝███████║ ╚████╔╝     ██║     ██║██╔██╗ ██║</text>
-<text x="56" y="153.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██╔══██╗██╔══██║  ╚██╔╝      ██║     ██║██║╚██╗██║</text>
-<text x="56" y="172.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">██║  ██║██║  ██║   ██║       ███████╗██║██║ ╚████║</text>
-<text x="56" y="191.0" xml:space="preserve" textLength="570.0" lengthAdjust="spacingAndGlyphs">╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚══════╝╚═╝╚═╝  ╚═══╝</text>
-</g>
-</g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <g transform="translate(56,212)">
+      <rect width="150" height="26" rx="13" fill="#1b0e07" stroke="#673110"/>
+      <text x="75" y="17" font-size="10" font-weight="700" fill="#ffca88" text-anchor="middle">github.com/LIN0304</text>
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.5294;1" dur="0.85s" fill="freeze"/>
+    </g>
+    <g transform="translate(214,212)">
+      <rect width="130" height="26" rx="13" fill="#1b0e07" stroke="#673110"/>
+      <text x="65" y="17" font-size="10" font-weight="700" fill="#ffca88" text-anchor="middle">x.com/RayLin_AI</text>
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6;1" dur="1s" fill="freeze"/>
+    </g>
+    <g transform="translate(352,212)">
+      <rect width="122" height="26" rx="13" fill="#1b0e07" stroke="#673110"/>
+      <text x="61" y="17" font-size="10" font-weight="700" fill="#ffca88" text-anchor="middle">in/Hsu-Jui Lin</text>
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6522;1" dur="1.15s" fill="freeze"/>
+    </g>
+  </g>
 
-<!-- rotating typed tagline -->
-<text x="56" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="12.5" font-weight="700" fill="#ff8a22" xml:space="preserve">▸</text>
-<clipPath id="rt1"><rect x="72" y="203.5" width="0" height="18.8">
-<animate attributeName="width" values="0;7.5;15.0;22.5;30.0;37.5;45.0;52.5;60.0;67.5;75.0;82.5;90.0;97.5;105.0;112.5;120.0;127.5;135.0;142.5;150.0;157.5;165.0;172.5;180.0;187.5;195.0;202.5;210.0;217.5;225.0;232.5;240.0;247.5;255.0;262.5;270.0;277.5;285.0;292.5;300.0;307.5;315.0;322.5;330.0;337.5;345.0;352.5;360.0;367.5;375.0;382.5;390.0;397.5;405.0;412.5;420.0;427.5;435.0;442.5;450.0;457.5;465.0;472.5;480.0;487.5;495.0;502.5;510.0;517.5;525.0;532.5;540.0;547.5;555.0;562.5;570.0;577.5;585.0;585.0;0;0" keyTimes="0;0.0015;0.0031;0.0046;0.0062;0.0077;0.0092;0.0108;0.0123;0.0138;0.0154;0.0169;0.0185;0.0200;0.0215;0.0231;0.0246;0.0262;0.0277;0.0292;0.0308;0.0323;0.0338;0.0354;0.0369;0.0385;0.0400;0.0415;0.0431;0.0446;0.0462;0.0477;0.0492;0.0508;0.0523;0.0538;0.0554;0.0569;0.0585;0.0600;0.0615;0.0631;0.0646;0.0662;0.0677;0.0692;0.0708;0.0723;0.0738;0.0754;0.0769;0.0785;0.0800;0.0815;0.0831;0.0846;0.0862;0.0877;0.0892;0.0908;0.0923;0.0938;0.0954;0.0969;0.0985;0.1000;0.1015;0.1031;0.1046;0.1062;0.1077;0.1092;0.1108;0.1123;0.1138;0.1154;0.1169;0.1185;0.1200;0.3139;0.3150;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
-<text x="72" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="12.5" font-weight="700" fill="#ffca88" xml:space="preserve" textLength="585.0" lengthAdjust="spacingAndGlyphs" clip-path="url(#rt1)">BUILDING INFRASTRUCTURE FOR FRONTIER MODELS TO EXECUTE COMPLEX WORK — RELIABLY</text>
-<rect x="72" y="204.5" width="6.8" height="13.5" fill="#ffca88" opacity="0">
-<animate attributeName="x" values="72.0;79.5;87.0;94.5;102.0;109.5;117.0;124.5;132.0;139.5;147.0;154.5;162.0;169.5;177.0;184.5;192.0;199.5;207.0;214.5;222.0;229.5;237.0;244.5;252.0;259.5;267.0;274.5;282.0;289.5;297.0;304.5;312.0;319.5;327.0;334.5;342.0;349.5;357.0;364.5;372.0;379.5;387.0;394.5;402.0;409.5;417.0;424.5;432.0;439.5;447.0;454.5;462.0;469.5;477.0;484.5;492.0;499.5;507.0;514.5;522.0;529.5;537.0;544.5;552.0;559.5;567.0;574.5;582.0;589.5;597.0;604.5;612.0;619.5;627.0;634.5;642.0;649.5;657.0;657.0;72.0" keyTimes="0;0.0015;0.0031;0.0046;0.0062;0.0077;0.0092;0.0108;0.0123;0.0138;0.0154;0.0169;0.0185;0.0200;0.0215;0.0231;0.0246;0.0262;0.0277;0.0292;0.0308;0.0323;0.0338;0.0354;0.0369;0.0385;0.0400;0.0415;0.0431;0.0446;0.0462;0.0477;0.0492;0.0508;0.0523;0.0538;0.0554;0.0569;0.0585;0.0600;0.0615;0.0631;0.0646;0.0662;0.0677;0.0692;0.0708;0.0723;0.0738;0.0754;0.0769;0.0785;0.0800;0.0815;0.0831;0.0846;0.0862;0.0877;0.0892;0.0908;0.0923;0.0938;0.0954;0.0969;0.0985;0.1000;0.1015;0.1031;0.1046;0.1062;0.1077;0.1092;0.1108;0.1123;0.1138;0.1154;0.1169;0.1185;0.1200;0.3139;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/>
-<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.0006;0.3139;0.3150;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/></rect>
-<clipPath id="rt2"><rect x="72" y="203.5" width="0" height="18.8">
-<animate attributeName="width" values="0;0;7.5;15.0;22.5;30.0;37.5;45.0;52.5;60.0;67.5;75.0;82.5;90.0;97.5;105.0;112.5;120.0;127.5;135.0;142.5;150.0;157.5;165.0;172.5;180.0;187.5;195.0;202.5;210.0;217.5;225.0;232.5;240.0;247.5;255.0;262.5;270.0;277.5;285.0;292.5;300.0;307.5;315.0;322.5;330.0;337.5;345.0;352.5;360.0;367.5;375.0;382.5;390.0;397.5;405.0;412.5;420.0;427.5;435.0;442.5;450.0;457.5;465.0;472.5;480.0;487.5;495.0;502.5;510.0;517.5;525.0;525.0;0;0" keyTimes="0;0.3333;0.3350;0.3368;0.3385;0.3402;0.3419;0.3436;0.3453;0.3470;0.3488;0.3505;0.3522;0.3539;0.3556;0.3573;0.3590;0.3608;0.3625;0.3642;0.3659;0.3676;0.3693;0.3710;0.3728;0.3745;0.3762;0.3779;0.3796;0.3813;0.3830;0.3848;0.3865;0.3882;0.3899;0.3916;0.3933;0.3950;0.3968;0.3985;0.4002;0.4019;0.4036;0.4053;0.4070;0.4088;0.4105;0.4122;0.4139;0.4156;0.4173;0.4190;0.4208;0.4225;0.4242;0.4259;0.4276;0.4293;0.4310;0.4328;0.4345;0.4362;0.4379;0.4396;0.4413;0.4430;0.4448;0.4465;0.4482;0.4499;0.4516;0.4533;0.6472;0.6483;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
-<text x="72" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="12.5" font-weight="700" fill="#ffca88" xml:space="preserve" textLength="525.0" lengthAdjust="spacingAndGlyphs" clip-path="url(#rt2)">PLANNER · EXECUTOR · CRITIC · VERIFIER — ROLES SEPARATED, LOOPS CLOSED</text>
-<rect x="72" y="204.5" width="6.8" height="13.5" fill="#ffca88" opacity="0">
-<animate attributeName="x" values="72.0;72.0;79.5;87.0;94.5;102.0;109.5;117.0;124.5;132.0;139.5;147.0;154.5;162.0;169.5;177.0;184.5;192.0;199.5;207.0;214.5;222.0;229.5;237.0;244.5;252.0;259.5;267.0;274.5;282.0;289.5;297.0;304.5;312.0;319.5;327.0;334.5;342.0;349.5;357.0;364.5;372.0;379.5;387.0;394.5;402.0;409.5;417.0;424.5;432.0;439.5;447.0;454.5;462.0;469.5;477.0;484.5;492.0;499.5;507.0;514.5;522.0;529.5;537.0;544.5;552.0;559.5;567.0;574.5;582.0;589.5;597.0;597.0;72.0" keyTimes="0;0.3333;0.3350;0.3368;0.3385;0.3402;0.3419;0.3436;0.3453;0.3470;0.3488;0.3505;0.3522;0.3539;0.3556;0.3573;0.3590;0.3608;0.3625;0.3642;0.3659;0.3676;0.3693;0.3710;0.3728;0.3745;0.3762;0.3779;0.3796;0.3813;0.3830;0.3848;0.3865;0.3882;0.3899;0.3916;0.3933;0.3950;0.3968;0.3985;0.4002;0.4019;0.4036;0.4053;0.4070;0.4088;0.4105;0.4122;0.4139;0.4156;0.4173;0.4190;0.4208;0.4225;0.4242;0.4259;0.4276;0.4293;0.4310;0.4328;0.4345;0.4362;0.4379;0.4396;0.4413;0.4430;0.4448;0.4465;0.4482;0.4499;0.4516;0.4533;0.6472;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/>
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3333;0.3339;0.6472;0.6483;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/></rect>
-<clipPath id="rt3"><rect x="72" y="203.5" width="0" height="18.8">
-<animate attributeName="width" values="0;0;7.5;15.0;22.5;30.0;37.5;45.0;52.5;60.0;67.5;75.0;82.5;90.0;97.5;105.0;112.5;120.0;127.5;135.0;142.5;150.0;157.5;165.0;172.5;180.0;187.5;195.0;202.5;210.0;217.5;225.0;232.5;240.0;247.5;255.0;262.5;270.0;277.5;285.0;292.5;300.0;307.5;315.0;322.5;330.0;337.5;345.0;352.5;360.0;367.5;375.0;382.5;390.0;397.5;405.0;412.5;420.0;427.5;435.0;442.5;450.0;457.5;465.0;472.5;480.0;487.5;495.0;502.5;502.5;0;0" keyTimes="0;0.6667;0.6685;0.6702;0.6720;0.6738;0.6756;0.6774;0.6792;0.6810;0.6828;0.6846;0.6864;0.6882;0.6900;0.6917;0.6935;0.6953;0.6971;0.6989;0.7007;0.7025;0.7043;0.7061;0.7079;0.7097;0.7114;0.7132;0.7150;0.7168;0.7186;0.7204;0.7222;0.7240;0.7258;0.7276;0.7294;0.7311;0.7329;0.7347;0.7365;0.7383;0.7401;0.7419;0.7437;0.7455;0.7473;0.7491;0.7508;0.7526;0.7544;0.7562;0.7580;0.7598;0.7616;0.7634;0.7652;0.7670;0.7688;0.7705;0.7723;0.7741;0.7759;0.7777;0.7795;0.7813;0.7831;0.7849;0.7867;0.9806;0.9817;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/></rect></clipPath>
-<text x="72" y="216" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="12.5" font-weight="700" fill="#ffca88" xml:space="preserve" textLength="502.5" lengthAdjust="spacingAndGlyphs" clip-path="url(#rt3)">BENCHMARK-AWARE ROUTING · EVALS · MEMORY &amp; STATE · FAILURE RECOVERY</text>
-<rect x="72" y="204.5" width="6.8" height="13.5" fill="#ffca88" opacity="0">
-<animate attributeName="x" values="72.0;72.0;79.5;87.0;94.5;102.0;109.5;117.0;124.5;132.0;139.5;147.0;154.5;162.0;169.5;177.0;184.5;192.0;199.5;207.0;214.5;222.0;229.5;237.0;244.5;252.0;259.5;267.0;274.5;282.0;289.5;297.0;304.5;312.0;319.5;327.0;334.5;342.0;349.5;357.0;364.5;372.0;379.5;387.0;394.5;402.0;409.5;417.0;424.5;432.0;439.5;447.0;454.5;462.0;469.5;477.0;484.5;492.0;499.5;507.0;514.5;522.0;529.5;537.0;544.5;552.0;559.5;567.0;574.5;574.5;72.0" keyTimes="0;0.6667;0.6685;0.6702;0.6720;0.6738;0.6756;0.6774;0.6792;0.6810;0.6828;0.6846;0.6864;0.6882;0.6900;0.6917;0.6935;0.6953;0.6971;0.6989;0.7007;0.7025;0.7043;0.7061;0.7079;0.7097;0.7114;0.7132;0.7150;0.7168;0.7186;0.7204;0.7222;0.7240;0.7258;0.7276;0.7294;0.7311;0.7329;0.7347;0.7365;0.7383;0.7401;0.7419;0.7437;0.7455;0.7473;0.7491;0.7508;0.7526;0.7544;0.7562;0.7580;0.7598;0.7616;0.7634;0.7652;0.7670;0.7688;0.7705;0.7723;0.7741;0.7759;0.7777;0.7795;0.7813;0.7831;0.7849;0.7867;0.9806;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/>
-<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6667;0.6672;0.9806;0.9817;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/></rect>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="1144" y="46" font-size="11" font-weight="700" fill="#cc6b2c" text-anchor="end">Taipei, Taiwan &#8226; UTC+8<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.2727;1" dur="0.55s" fill="freeze"/></text>
 
-<!-- link chips -->
-<g transform="translate(56,238)">
-<path d="M7 0 H189 L196 7 V19 L189 26 H7 L0 19 V7 Z" fill="#1b0e07" stroke="#ff7a1a"/>
-<circle cx="14" cy="13.0" r="3.6" fill="#ff7a1a"><animate attributeName="opacity" values="0.35;1;0.35" dur="2.4s" repeatCount="indefinite"/></circle><circle cx="14" cy="13.0" r="3.6" fill="none" stroke="#ff7a1a"><animate attributeName="r" values="3.6;9" dur="2.4s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values="0.7;0" dur="2.4s" repeatCount="indefinite"/></circle>
-<text x="106.0" y="16.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10" font-weight="800" fill="#ff8a22" text-anchor="middle">OPEN TO COLLABORATION</text>
-</g>
-<g transform="translate(262,238)">
-<path d="M7 0 H151 L158 7 V19 L151 26 H7 L0 19 V7 Z" fill="#1b0e07" stroke="#673110"/>
-<text x="79.0" y="16.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle">github.com/LIN0304</text>
-</g>
-<g transform="translate(430,238)">
-<path d="M7 0 H135 L142 7 V19 L135 26 H7 L0 19 V7 Z" fill="#1b0e07" stroke="#673110"/>
-<text x="71.0" y="16.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle">x.com/RayLin_AI</text>
-</g>
-<g transform="translate(582,238)">
-<path d="M7 0 H123 L130 7 V19 L123 26 H7 L0 19 V7 Z" fill="#1b0e07" stroke="#673110"/>
-<text x="65.0" y="16.5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle">in/hsu-jui-lin</text>
-</g>
+    <g transform="translate(936,62)">
+      <rect width="208" height="30" rx="15" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.7"/>
+      <circle cx="17" cy="15" r="4.2" fill="#ff7a1a">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="17" cy="15" r="4.2" fill="none" stroke="#ff7a1a" stroke-width="1">
+        <animate attributeName="r" values="4.2;10" dur="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.7;0" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="30" y="19" font-size="11" font-weight="800" fill="#ff8a22">OPEN TO COLLABORATION</text>
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.4286;1" dur="0.7s" fill="freeze"/>
+    </g>
+
+    <g>
+      <rect x="1138" y="172" width="6" height="3" rx="1.5" fill="#ff7a1a"/>
+      <text x="1126" y="182" font-size="10" font-weight="800" letter-spacing="2" fill="#ffb057" text-anchor="end">STACK</text>
+      <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.5556;1" dur="0.9s" fill="freeze"/>
+    </g>
+    <text x="1144" y="202" font-size="11.5" font-weight="600" fill="#ffca88" text-anchor="end">GPT &#8226; Claude &#8226; Codex &#8226; MCP<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.619;1" dur="1.05s" fill="freeze"/></text>
+    <text x="1144" y="220" font-size="11.5" font-weight="600" fill="#ffca88" text-anchor="end">UniBench &#8226; Evals &#8226; Routing<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.6667;1" dur="1.2s" fill="freeze"/></text>
+    <text x="1144" y="238" font-size="11.5" font-weight="600" fill="#c89a72" text-anchor="end">Harnesses &#8226; Loops &#8226; Memory<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.7037;1" dur="1.35s" fill="freeze"/></text>
+  </g>
 </svg>

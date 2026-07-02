@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T12:01:02+08:00",
+  "generated_at": "2026-07-02T12:33:01+08:00",
   "window": {
     "days": 62,
     "cutoff": "2026-05-02T00:00:00+08:00",
@@ -202,11 +202,11 @@
     }
   },
   "totals": {
-    "input_tokens": 43723960541,
-    "cached_input_tokens": 40493401129,
-    "output_tokens": 222918907,
+    "input_tokens": 43812291174,
+    "cached_input_tokens": 40575134208,
+    "output_tokens": 223343008,
     "reasoning_output_tokens": 77129377,
-    "total_tokens": 43947396248
+    "total_tokens": 44036150982
   },
   "model_rows": [
     {
@@ -230,37 +230,37 @@
     {
       "model": "claude-fable-5",
       "tokens": {
-        "input_tokens": 1500778047,
-        "cached_input_tokens": 1387562369,
-        "output_tokens": 9677105,
+        "input_tokens": 1536204547,
+        "cached_input_tokens": 1417603448,
+        "output_tokens": 9887696,
         "reasoning_output_tokens": 0,
-        "total_tokens": 1510455152
+        "total_tokens": 1546092243
       },
       "costs": {
-        "input_cost": 1132.15678,
-        "cached_input_cost": 1387.562369,
-        "output_cost": 483.85524999999996,
-        "total_cost": 3003.574399,
-        "no_cache_cost": 15491.63572,
-        "cached_savings": 12488.061321000001
+        "input_cost": 1186.01099,
+        "cached_input_cost": 1417.603448,
+        "output_cost": 494.3848,
+        "total_cost": 3097.999238,
+        "no_cache_cost": 15856.43027,
+        "cached_savings": 12758.431032
       }
     },
     {
       "model": "claude-opus-4-8",
       "tokens": {
-        "input_tokens": 791054429,
-        "cached_input_tokens": 747545780,
-        "output_tokens": 3791735,
+        "input_tokens": 843958562,
+        "cached_input_tokens": 799237780,
+        "output_tokens": 4005245,
         "reasoning_output_tokens": 0,
-        "total_tokens": 794846164
+        "total_tokens": 847963807
       },
       "costs": {
-        "input_cost": 217.54324499999998,
-        "cached_input_cost": 373.77289,
-        "output_cost": 94.793375,
-        "total_cost": 686.10951,
-        "no_cache_cost": 4050.06552,
-        "cached_savings": 3363.95601
+        "input_cost": 223.60390999999998,
+        "cached_input_cost": 399.61889,
+        "output_cost": 100.13112500000001,
+        "total_cost": 723.353925,
+        "no_cache_cost": 4319.923935,
+        "cached_savings": 3596.57001
       }
     },
     {
@@ -3137,51 +3137,51 @@
     {
       "day": "2026-07-02",
       "tokens": {
-        "input_tokens": 509838100,
-        "cached_input_tokens": 456048722,
-        "output_tokens": 3466476,
+        "input_tokens": 598168733,
+        "cached_input_tokens": 537781801,
+        "output_tokens": 3890577,
         "reasoning_output_tokens": 0,
-        "total_tokens": 513304576
+        "total_tokens": 602059310
       },
       "models": {
         "claude-fable-5": {
-          "input_tokens": 313695089,
-          "cached_input_tokens": 275338275,
-          "output_tokens": 2499810,
+          "input_tokens": 349121589,
+          "cached_input_tokens": 305379354,
+          "output_tokens": 2710401,
           "reasoning_output_tokens": 0,
-          "total_tokens": 316194899
+          "total_tokens": 351831990
         },
         "claude-opus-4-8": {
-          "input_tokens": 196143011,
-          "cached_input_tokens": 180710447,
-          "output_tokens": 966666,
+          "input_tokens": 249047144,
+          "cached_input_tokens": 232402447,
+          "output_tokens": 1180176,
           "reasoning_output_tokens": 0,
-          "total_tokens": 197109677
+          "total_tokens": 250227320
         }
       },
       "by_agent": {
         "claude": {
           "tokens": {
-            "input_tokens": 509838100,
-            "cached_input_tokens": 456048722,
-            "output_tokens": 3466476,
+            "input_tokens": 598168733,
+            "cached_input_tokens": 537781801,
+            "output_tokens": 3890577,
             "reasoning_output_tokens": 0,
-            "total_tokens": 513304576
+            "total_tokens": 602059310
           },
           "models": {
             "claude-fable-5": {
-              "input_tokens": 313695089,
-              "cached_input_tokens": 275338275,
-              "output_tokens": 2499810,
+              "input_tokens": 349121589,
+              "cached_input_tokens": 305379354,
+              "output_tokens": 2710401,
               "reasoning_output_tokens": 0,
-              "total_tokens": 316194899
+              "total_tokens": 351831990
             },
             "claude-opus-4-8": {
-              "input_tokens": 196143011,
-              "cached_input_tokens": 180710447,
-              "output_tokens": 966666,
+              "input_tokens": 249047144,
+              "cached_input_tokens": 232402447,
+              "output_tokens": 1180176,
               "reasoning_output_tokens": 0,
-              "total_tokens": 197109677
+              "total_tokens": 250227320
             }
           }
         }
@@ -3281,28 +3281,28 @@
     },
     "claude": {
       "tokens": {
-        "input_tokens": 2825912131,
-        "cached_input_tokens": 2649181865,
-        "output_tokens": 15614906,
+        "input_tokens": 2914242764,
+        "cached_input_tokens": 2730914944,
+        "output_tokens": 16039007,
         "reasoning_output_tokens": 0,
-        "total_tokens": 2841527037
+        "total_tokens": 2930281771
       },
       "models": {
         "claude-fable-5": {
           "tokens": {
-            "input_tokens": 1500778047,
-            "cached_input_tokens": 1387562369,
-            "output_tokens": 9677105,
+            "input_tokens": 1536204547,
+            "cached_input_tokens": 1417603448,
+            "output_tokens": 9887696,
             "reasoning_output_tokens": 0,
-            "total_tokens": 1510455152
+            "total_tokens": 1546092243
           },
           "costs": {
-            "input_cost": 1132.15678,
-            "cached_input_cost": 1387.562369,
-            "output_cost": 483.85524999999996,
-            "total_cost": 3003.574399,
-            "no_cache_cost": 15491.63572,
-            "cached_savings": 12488.061321000001
+            "input_cost": 1186.01099,
+            "cached_input_cost": 1417.603448,
+            "output_cost": 494.3848,
+            "total_cost": 3097.999238,
+            "no_cache_cost": 15856.43027,
+            "cached_savings": 12758.431032
           }
         },
         "claude-opus-4-7": {
@@ -3324,19 +3324,19 @@
         },
         "claude-opus-4-8": {
           "tokens": {
-            "input_tokens": 791054429,
-            "cached_input_tokens": 747545780,
-            "output_tokens": 3791735,
+            "input_tokens": 843958562,
+            "cached_input_tokens": 799237780,
+            "output_tokens": 4005245,
             "reasoning_output_tokens": 0,
-            "total_tokens": 794846164
+            "total_tokens": 847963807
           },
           "costs": {
-            "input_cost": 217.54324499999998,
-            "cached_input_cost": 373.77289,
-            "output_cost": 94.793375,
-            "total_cost": 686.10951,
-            "no_cache_cost": 4050.06552,
-            "cached_savings": 3363.95601
+            "input_cost": 223.60390999999998,
+            "cached_input_cost": 399.61889,
+            "output_cost": 100.13112500000001,
+            "total_cost": 723.353925,
+            "no_cache_cost": 4319.923935,
+            "cached_savings": 3596.57001
           }
         },
         "claude-haiku-4-5-20251001": {
@@ -3357,9 +3357,9 @@
           }
         }
       },
-      "session_count": 461,
-      "total_cost": 4781.3508462,
-      "cached_savings": 22167.6070608
+      "session_count": 491,
+      "total_cost": 4913.0201002,
+      "cached_savings": 22670.5907718
     },
     "qwen": {
       "tokens": {
@@ -4146,6 +4146,6 @@
       }
     }
   ],
-  "session_count": 11768,
-  "published_at": "2026-07-02T12:04:24+08:00"
+  "session_count": 11798,
+  "published_at": "2026-07-02T12:36:59+08:00"
 }

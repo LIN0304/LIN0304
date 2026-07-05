@@ -39,6 +39,10 @@
       <feGaussianBlur stdDeviation="3" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <filter id="hb-nameglow" x="-25%" y="-35%" width="150%" height="170%">
+      <feGaussianBlur stdDeviation="1" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
     <clipPath id="hb-clip"><rect width="1200" height="260" rx="16"/></clipPath>
     <clipPath id="hb-kick"><rect x="56" y="59" width="600" height="17">
       <animate attributeName="width" values="0;600" dur="0.95s" fill="freeze"/></rect></clipPath>
@@ -177,10 +181,27 @@
     <animate attributeName="opacity" values="1;1;0;0" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 
-  <text x="56" y="134" font-size="58" font-weight="800" fill="url(#hb-name)" letter-spacing="-1"
-        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Ray Lin</text>
-  <text x="56" y="134" font-size="58" font-weight="800" fill="url(#hb-shine)" letter-spacing="-1"
-        font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Ray Lin</text>
+  <!-- ascii name : RAY LIN -->
+  <g filter="url(#hb-nameglow)">
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="12" fill="url(#hb-name)">
+      <text x="56" y="88.0"  xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;  &#9608;&#9608;&#9608;&#9608;&#9608;&#9559; &#9608;&#9608;&#9559;   &#9608;&#9608;&#9559;    &#9608;&#9608;&#9559;     &#9608;&#9608;&#9559;&#9608;&#9608;&#9608;&#9559;   &#9608;&#9608;&#9559;</text>
+      <text x="56" y="100.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9554;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9554;&#9552;&#9552;&#9608;&#9608;&#9559;&#9562;&#9608;&#9608;&#9559; &#9608;&#9608;&#9554;&#9557;    &#9608;&#9608;&#9553;     &#9608;&#9608;&#9553;&#9608;&#9608;&#9608;&#9608;&#9559;  &#9608;&#9608;&#9553;</text>
+      <text x="56" y="112.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9554;&#9557;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9553; &#9562;&#9608;&#9608;&#9608;&#9608;&#9554;&#9557;     &#9608;&#9608;&#9553;     &#9608;&#9608;&#9553;&#9608;&#9608;&#9554;&#9608;&#9608;&#9559; &#9608;&#9608;&#9553;</text>
+      <text x="56" y="124.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9554;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9554;&#9552;&#9552;&#9608;&#9608;&#9553;  &#9562;&#9608;&#9608;&#9554;&#9557;      &#9608;&#9608;&#9553;     &#9608;&#9608;&#9553;&#9608;&#9608;&#9553;&#9562;&#9608;&#9608;&#9559;&#9608;&#9608;&#9553;</text>
+      <text x="56" y="136.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9553;  &#9608;&#9608;&#9553;&#9608;&#9608;&#9553;  &#9608;&#9608;&#9553;   &#9608;&#9608;&#9553;       &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9608;&#9608;&#9553;&#9608;&#9608;&#9553; &#9562;&#9608;&#9608;&#9608;&#9608;&#9553;</text>
+      <text x="56" y="148.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9562;&#9552;&#9557;  &#9562;&#9552;&#9557;&#9562;&#9552;&#9557;  &#9562;&#9552;&#9557;   &#9562;&#9552;&#9557;       &#9562;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9557;&#9562;&#9552;&#9557;&#9562;&#9552;&#9557;  &#9562;&#9552;&#9552;&#9552;&#9557;</text>
+    </g>
+  </g>
+  <g style="mix-blend-mode:screen">
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="12" fill="url(#hb-shine)">
+      <text x="56" y="88.0"  xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;  &#9608;&#9608;&#9608;&#9608;&#9608;&#9559; &#9608;&#9608;&#9559;   &#9608;&#9608;&#9559;    &#9608;&#9608;&#9559;     &#9608;&#9608;&#9559;&#9608;&#9608;&#9608;&#9559;   &#9608;&#9608;&#9559;</text>
+      <text x="56" y="100.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9554;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9554;&#9552;&#9552;&#9608;&#9608;&#9559;&#9562;&#9608;&#9608;&#9559; &#9608;&#9608;&#9554;&#9557;    &#9608;&#9608;&#9553;     &#9608;&#9608;&#9553;&#9608;&#9608;&#9608;&#9608;&#9559;  &#9608;&#9608;&#9553;</text>
+      <text x="56" y="112.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9554;&#9557;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9553; &#9562;&#9608;&#9608;&#9608;&#9608;&#9554;&#9557;     &#9608;&#9608;&#9553;     &#9608;&#9608;&#9553;&#9608;&#9608;&#9554;&#9608;&#9608;&#9559; &#9608;&#9608;&#9553;</text>
+      <text x="56" y="124.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9554;&#9552;&#9552;&#9608;&#9608;&#9559;&#9608;&#9608;&#9554;&#9552;&#9552;&#9608;&#9608;&#9553;  &#9562;&#9608;&#9608;&#9554;&#9557;      &#9608;&#9608;&#9553;     &#9608;&#9608;&#9553;&#9608;&#9608;&#9553;&#9562;&#9608;&#9608;&#9559;&#9608;&#9608;&#9553;</text>
+      <text x="56" y="136.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9608;&#9608;&#9553;  &#9608;&#9608;&#9553;&#9608;&#9608;&#9553;  &#9608;&#9608;&#9553;   &#9608;&#9608;&#9553;       &#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9559;&#9608;&#9608;&#9553;&#9608;&#9608;&#9553; &#9562;&#9608;&#9608;&#9608;&#9608;&#9553;</text>
+      <text x="56" y="148.0" xml:space="preserve" textLength="360" lengthAdjust="spacingAndGlyphs">&#9562;&#9552;&#9557;  &#9562;&#9552;&#9557;&#9562;&#9552;&#9557;  &#9562;&#9552;&#9557;   &#9562;&#9552;&#9557;       &#9562;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9557;&#9562;&#9552;&#9557;&#9562;&#9552;&#9557;  &#9562;&#9552;&#9552;&#9552;&#9557;</text>
+    </g>
+  </g>
 
   <text x="56" y="168" font-size="18" font-weight="600" fill="#ffca88"
         font-family="Helvetica Neue, Helvetica, Arial, sans-serif">Agentic Systems Engineer &#183; Building UniBench<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.25;1" dur="0.6s" fill="freeze"/></text>

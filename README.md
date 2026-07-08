@@ -1,8 +1,5 @@
 <a href="https://github.com/LIN0304">
-  <picture>
-    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner-mobile.svg?v=20260708">
-    <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg?v=20260708" width="100%" alt="Ray Lin — Agentic Systems Engineer. Building the infrastructure that lets frontier models execute complex tasks reliably. Taipei, Taiwan." />
-  </picture>
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg?v=20260708-2" width="100%" alt="Ray Lin — Agentic Systems Engineer. Building the infrastructure that lets frontier models execute complex tasks reliably. Taipei, Taiwan." />
 </a>
 
 <p align="center">

@@ -15,7 +15,9 @@
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=LIN0304&style=flat-square&color=ff7a1a&label=views" />
 </p>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260708" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/ascii-ticker.svg?v=20260709" width="100%" alt="Scrolling ticker: agent skills · agent harnesses · loop engineering · model orchestration · benchmark-driven evals · traces over vibes · memory by design · failure recovery · tool use on demand · hitl gates · unibench routing" />
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
 
 ## <samp>&gt;_ 00 · BOOT SEQUENCE</samp>
 
@@ -23,7 +25,7 @@
   <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/terminal-boot.svg?v=20260708" width="100%" alt="Animated terminal session: whoami returns agentic systems engineer; unibench routes a task from benchmark data; an agent loop plans, executes, critiques, verifies and ships with all gates green." />
 </p>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260708" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
 
 ## <samp>&gt;_ 01 · MISSION BRIEF</samp>
 
@@ -62,7 +64,7 @@ More broadly, I am interested in moving AI from chat interfaces toward **executa
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260708" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
 
 ## <samp>&gt;_ 02 · AGENT RUNTIME</samp>
 
@@ -84,11 +86,18 @@ task ──▶ PLANNER ──▶ ROUTER ──▶ EXECUTOR ──▶ CRITIC ─�
 
 </details>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260708" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
 
 ## <samp>&gt;_ 03 · CORE PROJECT :: UNIBENCH</samp>
 
 One of my core projects is **UniBench**, a benchmark-aware model intelligence layer for understanding model capabilities and routing tasks based on empirical performance. The goal is to connect **LLM benchmark data**, **task ontologies**, **model capability profiles**, and **automated workflows** into an agentic benchmark operating system.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/unibench-matrix.svg?v=20260709" width="100%" alt="Animated UniBench capability matrix: coding, reasoning, agentic and long-context bars fill from benchmark data (swe-bench, lcb, gpqa, arc, tau-bench, terminal, ruler, longbench), then live route() calls assign tasks — coding-agent 0.93, research-agent 0.91, codex-agent 0.89 — via argmax(capability − λ·cost − μ·latency)." />
+</p>
+
+<details>
+<summary><samp>▸ text-mode matrix</samp></summary>
 
 ```text
 ┌─ UNIBENCH · MODEL CAPABILITY MATRIX ────────────────────────────┐
@@ -102,7 +111,9 @@ One of my core projects is **UniBench**, a benchmark-aware model intelligence la
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260708" width="100%" alt="" />
+</details>
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
 
 ## <samp>&gt;_ 04 · TECH STACK</samp>
 
@@ -133,9 +144,32 @@ One of my core projects is **UniBench**, a benchmark-aware model intelligence la
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260708" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
 
-## <samp>&gt;_ 05 · COMMS CHANNEL</samp>
+## <samp>&gt;_ 05 · MISSION CONTROL</samp>
+
+Live view of the loop at work — every agent on the fleet reports in, every event leaves a trace.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/mission-control.svg?v=20260709" width="100%" alt="Animated mission-control panel: planner, executor, critic and verifier agents run with live spinners, progress bars and status flags; a task token travels the plan → exec → crit → vrfy → ship pipeline with a feedback loop; a task-queue equalizer pulses and an event log streams routing, test, review and ship events." />
+</p>
+
+<details>
+<summary><samp>▸ text-mode fleet report</samp></summary>
+
+```text
+⠸ planner-01   [██████░░░░]  62%  PLAN      ⠼ critic-02     [████████░░]  81%  SCAN
+⠴ executor-04  [███████░░░]  74%  EXEC      ⠧ verifier-01   [███░░░░░░░]  31%  GATE
+
+plan ──▸ exec ──▸ crit ──▸ vrfy ──▸ ship        queue: 07 · p50 3.2m · sla green
+  ◂───────────── feedback ─────────────┘        iter 05 · Δ cost −18% · conv 0.97
+```
+
+</details>
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+
+## <samp>&gt;_ 06 · COMMS CHANNEL</samp>
 
 <p>
   <a href="https://www.linkedin.com/in/hsu-jui-lin-50b82b216/">
@@ -151,13 +185,13 @@ One of my core projects is **UniBench**, a benchmark-aware model intelligence la
 
 Open to collaboration on agent infrastructure, evals, and model orchestration — transmissions welcome on any channel above.
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260708" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
 
-## <samp>&gt;_ 06 · TELEMETRY</samp>
+## <samp>&gt;_ 07 · TELEMETRY</samp>
 
 <p>
-  <img width="49%" alt="Ray's GitHub stats: 102 public repos, 24 stars earned, 6 gists, 11 followers, 18 following, member since Aug 2020" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/github-stats.svg?v=20260708" />
-  <img width="49%" alt="Top languages by repository count: Python 36.2%, JavaScript 18.8%, HTML 18.8%, TypeScript 13.0%, Solidity 2.9%, other 10.3%" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/top-languages.svg?v=20260708" />
+  <img width="49%" alt="Ray's GitHub stats: 102 public repos, 24 stars earned, 6 gists, 11 followers, 18 following, member since Aug 2020" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/github-stats.svg?v=20260709" />
+  <img width="49%" alt="Top languages by repository count: Python 36.2%, JavaScript 18.8%, HTML 18.8%, TypeScript 13.0%, Solidity 2.9%, other 10.3%" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/top-languages.svg?v=20260709" />
 </p>
 
 <p>
@@ -168,7 +202,7 @@ Open to collaboration on agent infrastructure, evals, and model orchestration �
   <img width="100%" alt="GitHub contribution heatmap for LIN0304" src="https://ghchart.rshah.org/ff8a22/LIN0304" />
 </p>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260708" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
 
 <!-- CODEX_USAGE_DASHBOARD:START -->
 ## Codex Usage Dashboard
@@ -186,10 +220,10 @@ Snapshot: `2026-07-08T15:53:55+08:00` · Range: **Past 65 days**
 <!-- generated-at: 2026-07-08T15:51:03+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260708" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
 
 <p align="center">
-  <samp>└──▶ EOF · transmission ends — the loop continues</samp>
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/footer-eof.svg?v=20260709" width="100%" alt="└──▶ EOF · transmission ends — the loop continues" />
 </p>
 
 <p align="center">

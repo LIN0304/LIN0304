@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T16:53:30+08:00",
+  "generated_at": "2026-07-11T21:14:26+08:00",
   "window": {
     "days": 77,
     "cutoff": "2026-04-26T00:00:00+08:00",
@@ -268,11 +268,11 @@
     }
   },
   "totals": {
-    "input_tokens": 46698616447,
-    "cached_input_tokens": 43269936501,
-    "output_tokens": 234730848,
-    "reasoning_output_tokens": 78969164,
-    "total_tokens": 46933864095
+    "input_tokens": 46751991074,
+    "cached_input_tokens": 43322382965,
+    "output_tokens": 234811374,
+    "reasoning_output_tokens": 78996023,
+    "total_tokens": 46987319248
   },
   "model_rows": [
     {
@@ -332,19 +332,19 @@
     {
       "model": "gpt-5.6-sol",
       "tokens": {
-        "input_tokens": 717708612,
-        "cached_input_tokens": 699460608,
-        "output_tokens": 1414233,
-        "reasoning_output_tokens": 473682,
-        "total_tokens": 719122845
+        "input_tokens": 771083239,
+        "cached_input_tokens": 751907072,
+        "output_tokens": 1494759,
+        "reasoning_output_tokens": 500541,
+        "total_tokens": 772577998
       },
       "costs": {
-        "input_cost": 91.24002000000002,
-        "cached_input_cost": 349.730304,
-        "output_cost": 42.42699,
-        "total_cost": 483.397314,
-        "no_cache_cost": 3630.97005,
-        "cached_savings": 3147.572736
+        "input_cost": 95.88083499999999,
+        "cached_input_cost": 375.953536,
+        "output_cost": 44.84277,
+        "total_cost": 516.677141,
+        "no_cache_cost": 3900.2589650000004,
+        "cached_savings": 3383.5818240000003
       }
     },
     {
@@ -3734,19 +3734,19 @@
     {
       "day": "2026-07-11",
       "tokens": {
-        "input_tokens": 717236681,
-        "cached_input_tokens": 682693509,
-        "output_tokens": 2097647,
-        "reasoning_output_tokens": 307593,
-        "total_tokens": 719334328
+        "input_tokens": 770611308,
+        "cached_input_tokens": 735139973,
+        "output_tokens": 2178173,
+        "reasoning_output_tokens": 334452,
+        "total_tokens": 772789481
       },
       "models": {
         "gpt-5.6-sol": {
-          "input_tokens": 522394312,
-          "cached_input_tokens": 509809152,
-          "output_tokens": 893633,
-          "reasoning_output_tokens": 307593,
-          "total_tokens": 523287945
+          "input_tokens": 575768939,
+          "cached_input_tokens": 562255616,
+          "output_tokens": 974159,
+          "reasoning_output_tokens": 334452,
+          "total_tokens": 576743098
         },
         "claude-opus-4-8": {
           "input_tokens": 194842369,
@@ -3759,19 +3759,19 @@
       "by_agent": {
         "codex": {
           "tokens": {
-            "input_tokens": 522394312,
-            "cached_input_tokens": 509809152,
-            "output_tokens": 893633,
-            "reasoning_output_tokens": 307593,
-            "total_tokens": 523287945
+            "input_tokens": 575768939,
+            "cached_input_tokens": 562255616,
+            "output_tokens": 974159,
+            "reasoning_output_tokens": 334452,
+            "total_tokens": 576743098
           },
           "models": {
             "gpt-5.6-sol": {
-              "input_tokens": 522394312,
-              "cached_input_tokens": 509809152,
-              "output_tokens": 893633,
-              "reasoning_output_tokens": 307593,
-              "total_tokens": 523287945
+              "input_tokens": 575768939,
+              "cached_input_tokens": 562255616,
+              "output_tokens": 974159,
+              "reasoning_output_tokens": 334452,
+              "total_tokens": 576743098
             }
           }
         },
@@ -3807,11 +3807,11 @@
   "by_agent": {
     "codex": {
       "tokens": {
-        "input_tokens": 42041398189,
-        "cached_input_tokens": 38932581888,
-        "output_tokens": 212256693,
-        "reasoning_output_tokens": 78969164,
-        "total_tokens": 42254171682
+        "input_tokens": 42094772816,
+        "cached_input_tokens": 38985028352,
+        "output_tokens": 212337219,
+        "reasoning_output_tokens": 78996023,
+        "total_tokens": 42307626835
       },
       "models": {
         "gpt-5.5": {
@@ -3884,25 +3884,25 @@
         },
         "gpt-5.6-sol": {
           "tokens": {
-            "input_tokens": 717708612,
-            "cached_input_tokens": 699460608,
-            "output_tokens": 1414233,
-            "reasoning_output_tokens": 473682,
-            "total_tokens": 719122845
+            "input_tokens": 771083239,
+            "cached_input_tokens": 751907072,
+            "output_tokens": 1494759,
+            "reasoning_output_tokens": 500541,
+            "total_tokens": 772577998
           },
           "costs": {
-            "input_cost": 91.24002000000002,
-            "cached_input_cost": 349.730304,
-            "output_cost": 42.42699,
-            "total_cost": 483.397314,
-            "no_cache_cost": 3630.97005,
-            "cached_savings": 3147.572736
+            "input_cost": 95.88083499999999,
+            "cached_input_cost": 375.953536,
+            "output_cost": 44.84277,
+            "total_cost": 516.677141,
+            "no_cache_cost": 3900.2589650000004,
+            "cached_savings": 3383.5818240000003
           }
         }
       },
       "session_count": 11548,
-      "total_cost": 40968.642902550004,
-      "cached_savings": 173802.8997792
+      "total_cost": 41001.92272955,
+      "cached_savings": 174038.9088672
     },
     "claude": {
       "tokens": {
@@ -4085,7 +4085,7 @@
         "reasoning_output_tokens": 51223358,
         "total_tokens": 15023831183
       },
-      "tool_call_count": 713324,
+      "tool_call_count": 713348,
       "skill_marker_count": 0,
       "plugin_signal_count": 95,
       "subagents": [
@@ -4341,7 +4341,7 @@
         },
         {
           "name": "wait",
-          "count": 373
+          "count": 396
         },
         {
           "name": "send_message",
@@ -4793,5 +4793,5 @@
     }
   ],
   "session_count": 12571,
-  "published_at": "2026-07-11T16:56:48+08:00"
+  "published_at": "2026-07-11T21:17:42+08:00"
 }

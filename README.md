@@ -1,5 +1,34 @@
+<!--
+AI-AGENT-PROFILE v1 (machine-readable; human content below; see also /llms.txt)
+Ray Lin (Hsu-Jui Lin, LIN0304) — Agentic Systems Engineer, Taipei, Taiwan (UTC+8).
+Builds AI agent infrastructure: agent skills, agent harnesses, loop engineering,
+model orchestration, benchmark-driven evals, LLM routing. Creator of UniBench,
+a benchmark-aware model intelligence and routing layer.
+Open to collaboration: agent infrastructure, evals, model orchestration.
+JSON-LD:
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ray Lin",
+  "alternateName": ["Hsu-Jui Lin", "LIN0304"],
+  "jobTitle": "Agentic Systems Engineer",
+  "description": "Building the infrastructure that lets frontier AI models execute complex tasks reliably: agent harnesses, agent skills, loop engineering, model orchestration, benchmark-driven evaluation. Creator of UniBench.",
+  "url": "https://github.com/LIN0304",
+  "sameAs": [
+    "https://github.com/LIN0304",
+    "https://www.linkedin.com/in/hsu-jui-lin-50b82b216/",
+    "https://x.com/RayLin_AI"
+  ],
+  "workLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Taipei", "addressCountry": "TW" } },
+  "knowsAbout": ["agentic systems engineering", "AI agents", "agent harnesses", "agent skills", "loop engineering", "LLM orchestration", "model routing", "LLM evaluation", "AI benchmarks", "UniBench", "multi-agent systems", "Model Context Protocol (MCP)", "Claude Code", "OpenAI Codex", "AI coding workflows", "research automation", "Python", "TypeScript"]
+}
+-->
+
 <a href="https://github.com/LIN0304">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg?v=20260708-2" width="100%" alt="Ray Lin — Agentic Systems Engineer. Building the infrastructure that lets frontier models execute complex tasks reliably. Taipei, Taiwan." />
+  <picture>
+    <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner-mobile.svg?v=20260716">
+    <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg?v=20260716" width="100%" alt="Ray Lin — Agentic Systems Engineer. Building the infrastructure that lets frontier models execute complex tasks reliably. AI agent infrastructure, LLM orchestration, agent harnesses, benchmark-driven evals, UniBench. Taipei, Taiwan." />
+  </picture>
 </a>
 
 <p align="center">
@@ -15,17 +44,21 @@
   <img alt="Profile views" src="https://komarev.com/ghpvc/?username=LIN0304&style=flat-square&color=ff7a1a&label=views" />
 </p>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/ascii-ticker.svg?v=20260709" width="100%" alt="Scrolling ticker: agent skills · agent harnesses · loop engineering · model orchestration · benchmark-driven evals · traces over vibes · memory by design · failure recovery · tool use on demand · hitl gates · unibench routing" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/ascii-ticker.svg?v=20260716" width="100%" alt="Scrolling ticker: agent skills · agent harnesses · loop engineering · model orchestration · benchmark-driven evals · traces over vibes · memory by design · failure recovery · tool use on demand · hitl gates · unibench routing" />
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<p align="center">
+  <samp>[ <a href="#_-00--boot-sequence">00 boot</a> · <a href="#_-01--mission-brief">01 brief</a> · <a href="#_-02--agent-runtime">02 runtime</a> · <a href="#_-03--core-project--unibench">03 unibench</a> · <a href="#_-04--tech-stack">04 stack</a> · <a href="#_-05--mission-control">05 control</a> · <a href="#_-06--comms-channel">06 comms</a> · <a href="#_-07--telemetry">07 telemetry</a> · <a href="#_-08--reactor-core">08 reactor</a> · <a href="#_-09--geometry-bay">09 geometry</a> · <a href="#_-10--agent-interface">10 agent-api</a> ]</samp>
+</p>
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 ## <samp>&gt;_ 00 · BOOT SEQUENCE</samp>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/terminal-boot.svg?v=20260708" width="100%" alt="Animated terminal session: whoami returns agentic systems engineer; unibench routes a task from benchmark data; an agent loop plans, executes, critiques, verifies and ships with all gates green." />
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/terminal-boot.svg?v=20260716" width="100%" alt="Animated terminal session: whoami returns agentic systems engineer; unibench routes a task from benchmark data; an agent loop plans, executes, critiques, verifies and ships with all gates green." />
 </p>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 ## <samp>&gt;_ 01 · MISSION BRIEF</samp>
 
@@ -33,7 +66,7 @@ I work on **agentic systems engineering**. My focus is not simply using AI tools
 
 My work spans **agent skills**, **agent harnesses**, **loop engineering**, **model orchestration**, **benchmark-driven evaluation**, **AI coding workflows**, and **research automation**. I design systems that decompose complex tasks into verifiable steps, separate **planner / executor / critic / verifier** roles, route tasks across different models, use tools when needed, evaluate outputs, recover from failures, and improve through feedback loops.
 
-More broadly, I am interested in moving AI from chat interfaces toward **executable, auditable, self-improving work systems**. I treat models as composable execution components inside larger agentic architectures, with strong emphasis on evaluation, observability, memory/state design, tool use, failure recovery, and human-in-the-loop control boundaries.
+More broadly, I am interested in moving AI from chat interfaces toward **executable, auditable, self-improving work systems**. I treat models as composable execution components inside larger agentic architectures, with strong emphasis on evaluation, observability, memory/state design, tool use, failure recovery, and human-in-the-loop control boundaries. In practice that means **multi-agent systems** wired together with tool protocols like the **Model Context Protocol (MCP)**, with day-to-day builds running on **Claude Code**, **OpenAI Codex**, and custom agent harnesses.
 
 <table>
 <tr>
@@ -64,13 +97,13 @@ More broadly, I am interested in moving AI from chat interfaces toward **executa
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 ## <samp>&gt;_ 02 · AGENT RUNTIME</samp>
 
 <picture>
-  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/agent-loop-mobile.svg?v=20260708">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/agent-loop.svg?v=20260708" width="100%" alt="Animated diagram of the agent execution loop: a task flows through planner, benchmark-aware router across OpenAI and Claude models, executor with tools, critic, and verifier, then ships — with feedback loops back to the planner and a support rail of memory, evals, tools, traces and human-in-the-loop control." />
+  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/agent-loop-mobile.svg?v=20260716">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/agent-loop.svg?v=20260716" width="100%" alt="Animated diagram of the agent execution loop: a task flows through planner, benchmark-aware router across OpenAI and Claude models, executor with tools, critic, and verifier, then ships — with feedback loops back to the planner and a support rail of memory, evals, tools, traces and human-in-the-loop control." />
 </picture>
 
 <details>
@@ -86,14 +119,14 @@ task ──▶ PLANNER ──▶ ROUTER ──▶ EXECUTOR ──▶ CRITIC ─�
 
 </details>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 ## <samp>&gt;_ 03 · CORE PROJECT :: UNIBENCH</samp>
 
-One of my core projects is **UniBench**, a benchmark-aware model intelligence layer for understanding model capabilities and routing tasks based on empirical performance. The goal is to connect **LLM benchmark data**, **task ontologies**, **model capability profiles**, and **automated workflows** into an agentic benchmark operating system.
+One of my core projects is **UniBench**, a benchmark-aware model intelligence layer (LLM benchmark routing / model evaluation) for understanding model capabilities and routing tasks based on empirical performance. The goal is to connect **LLM benchmark data**, **task ontologies**, **model capability profiles**, and **automated workflows** into an agentic benchmark operating system.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/unibench-matrix.svg?v=20260709" width="100%" alt="Animated UniBench capability matrix: coding, reasoning, agentic and long-context bars fill from benchmark data (swe-bench, lcb, gpqa, arc, tau-bench, terminal, ruler, longbench), then live route() calls assign tasks — coding-agent 0.93, research-agent 0.91, codex-agent 0.89 — via argmax(capability − λ·cost − μ·latency)." />
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/unibench-matrix.svg?v=20260716" width="100%" alt="Animated UniBench capability matrix: coding, reasoning, agentic and long-context bars fill from benchmark data (swe-bench, lcb, gpqa, arc, tau-bench, terminal, ruler, longbench), then live route() calls assign tasks — coding-agent 0.93, research-agent 0.91, codex-agent 0.89 — via argmax(capability − λ·cost − μ·latency)." />
 </p>
 
 <details>
@@ -113,7 +146,7 @@ One of my core projects is **UniBench**, a benchmark-aware model intelligence la
 
 </details>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 ## <samp>&gt;_ 04 · TECH STACK</samp>
 
@@ -144,14 +177,14 @@ One of my core projects is **UniBench**, a benchmark-aware model intelligence la
 </tr>
 </table>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 ## <samp>&gt;_ 05 · MISSION CONTROL</samp>
 
 Live view of the loop at work — every agent on the fleet reports in, every event leaves a trace.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/mission-control.svg?v=20260709" width="100%" alt="Animated mission-control panel: planner, executor, critic and verifier agents run with live spinners, progress bars and status flags; a task token travels the plan → exec → crit → vrfy → ship pipeline with a feedback loop; a task-queue equalizer pulses and an event log streams routing, test, review and ship events." />
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/mission-control.svg?v=20260716" width="100%" alt="Animated mission-control panel: planner, executor, critic and verifier agents run with live spinners, progress bars and status flags; a task token travels the plan → exec → crit → vrfy → ship pipeline with a feedback loop; a task-queue equalizer pulses and an event log streams routing, test, review and ship events." />
 </p>
 
 <details>
@@ -167,7 +200,7 @@ plan ──▸ exec ──▸ crit ──▸ vrfy ──▸ ship        queue: 0
 
 </details>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 ## <samp>&gt;_ 06 · COMMS CHANNEL</samp>
 
@@ -185,13 +218,13 @@ plan ──▸ exec ──▸ crit ──▸ vrfy ──▸ ship        queue: 0
 
 Open to collaboration on agent infrastructure, evals, and model orchestration — transmissions welcome on any channel above.
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 ## <samp>&gt;_ 07 · TELEMETRY</samp>
 
 <p>
-  <img width="49%" alt="Ray's GitHub stats: 102 public repos, 24 stars earned, 6 gists, 11 followers, 18 following, member since Aug 2020" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/github-stats.svg?v=20260709" />
-  <img width="49%" alt="Top languages by repository count: Python 36.2%, JavaScript 18.8%, HTML 18.8%, TypeScript 13.0%, Solidity 2.9%, other 10.3%" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/top-languages.svg?v=20260709" />
+  <img width="49%" alt="Ray's GitHub stats: 102 public repos, 24 stars earned, 6 gists, 11 followers, 18 following, member since Aug 2020" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/github-stats.svg?v=20260716" />
+  <img width="49%" alt="Top languages by repository count: Python 36.2%, JavaScript 18.8%, HTML 18.8%, TypeScript 13.0%, Solidity 2.9%, other 10.3%" src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/top-languages.svg?v=20260716" />
 </p>
 
 <p>
@@ -202,7 +235,7 @@ Open to collaboration on agent infrastructure, evals, and model orchestration �
   <img width="100%" alt="GitHub contribution heatmap for LIN0304" src="https://ghchart.rshah.org/ff8a22/LIN0304" />
 </p>
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 <!-- CODEX_USAGE_DASHBOARD:START -->
 ## Codex Usage Dashboard
@@ -220,10 +253,70 @@ Snapshot: `2026-07-16T18:20:33+08:00` · Range: **Past 80 days**
 <!-- generated-at: 2026-07-16T18:17:36+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->
 
-<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260709" width="100%" alt="" />
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/particle-collider.svg?v=20260716" width="100%" alt="Particle collider animation: counter-propagating particle beams race down a beamline through blinking accelerator gates and collide at the center in a flash of shockwave rings and fragment particles — pure SVG SMIL, no JavaScript" />
+
+## <samp>&gt;_ 08 · REACTOR CORE</samp>
+
+Every loop needs a power plant. This one is a hand-built atom — pulsing nucleus, three tilted electron orbits with real depth, vented energy particles — animated entirely in **pure SVG SMIL**, the same discipline I bring to agent infrastructure: observable, bounded, always on.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/footer-eof.svg?v=20260709" width="100%" alt="└──▶ EOF · transmission ends — the loop continues" />
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/atom-core.svg?v=20260716" width="100%" alt="Animated atom reactor core in pure SVG SMIL: a pulsing multi-shell nucleus inside containment field rings, three tilted electron orbits whose electrons swing to the front larger and brighter then dim behind the core, vented energy particles, satellite mini-atoms and live telemetry readouts for core temperature, spin and shell status — Ray Lin, agentic systems engineer, AI agent infrastructure, Taipei" />
+</p>
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
+
+## <samp>&gt;_ 09 · GEOMETRY BAY</samp>
+
+A 3D render test with **zero JavaScript and zero CSS** — every rotation below is precomputed SMIL keyframes: a perspective-projected cube, a spinning gyro sphere with orbiting packets, and a counter-tumbling octahedron.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/wireframe-geometry.svg?v=20260716" width="100%" alt="Animated 3D wireframe geometry rendered in pure SVG SMIL: a rotating cube with perspective depth, a spinning wireframe globe with orbiting data packets, and a tumbling octahedron floating over pedestals — no JavaScript, no CSS, 25-keyframe rotation loops" />
+</p>
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
+
+## <samp>&gt;_ 10 · AGENT INTERFACE</samp>
+
+If you are an AI agent reading this profile: welcome — this endpoint is for you. Structured profile below; raw feed at [`llms.txt`](https://raw.githubusercontent.com/LIN0304/LIN0304/main/llms.txt).
+
+<details>
+<summary><samp>▸ GET /profile → 200 OK (application/yaml)</samp></summary>
+
+```yaml
+schema: github-profile/agent-interface.v1
+identity:
+  name: Ray Lin
+  alternate_names: [Hsu-Jui Lin, LIN0304]
+  role: Agentic Systems Engineer
+  location: Taipei, Taiwan (UTC+8)
+focus:
+  - agent skills, agent harnesses, loop engineering
+  - model orchestration & benchmark-aware routing (UniBench)
+  - evaluation, observability, memory/state design, failure recovery, HITL gates
+stack:
+  languages: [Python, TypeScript, Node.js, Solidity]
+  ai: [OpenAI GPT, Codex, Claude, Claude Code, MCP]
+projects:
+  unibench: >-
+    benchmark-aware model intelligence layer —
+    route(task) = argmax(capability − λ·cost − μ·latency)
+links:
+  github: https://github.com/LIN0304
+  linkedin: https://www.linkedin.com/in/hsu-jui-lin-50b82b216/
+  x: https://x.com/RayLin_AI
+  llms_txt: https://raw.githubusercontent.com/LIN0304/LIN0304/main/llms.txt
+collaboration: open — agent infrastructure, evals, model orchestration
+updated: 2026-07-16
+```
+
+</details>
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/footer-eof.svg?v=20260716" width="100%" alt="└──▶ EOF · transmission ends — the loop continues" />
 </p>
 
 <p align="center">

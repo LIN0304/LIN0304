@@ -242,15 +242,15 @@ Open to collaboration on agent infrastructure, evals, and model orchestration �
 
 ![Dashboard updated](https://img.shields.io/github/last-commit/LIN0304/LIN0304?label=dashboard%20updated&style=for-the-badge&color=16745b)
 
-Last updated: <relative-time datetime="2026-07-16T23:58:53+08:00">just now</relative-time>
-Snapshot: `2026-07-16T23:58:53+08:00` · Range: **Past 80 days**
+Last updated: <relative-time datetime="2026-07-17T00:03:05+08:00">just now</relative-time>
+Snapshot: `2026-07-17T00:03:05+08:00` · Range: **Past 85 days**
 
 <picture>
-  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-mobile-20260716T2358530800.svg">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-20260716T2358530800.svg" width="100%" alt="Codex usage dashboard: 49.8B tokens, 92.9% cache hit, $49,626.96 estimated cost, Past 80 days">
+  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-mobile-20260717T0003050800.svg">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-20260717T0003050800.svg" width="100%" alt="Codex usage dashboard: 49.8B tokens, 92.9% cache hit, $49,630.79 estimated cost, Past 85 days">
 </picture>
 
-<!-- generated-at: 2026-07-16T23:55:51+08:00 -->
+<!-- generated-at: 2026-07-17T00:00:11+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->
 
 <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />

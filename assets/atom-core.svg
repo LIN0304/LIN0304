@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="380" viewBox="0 0 980 380" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="ac-title ac-desc">
+  <title id="ac-title">Reactor core — animated atom, LIN0304 agent runtime</title>
+  <desc id="ac-desc">Animated atom reactor core rendered in pure SVG SMIL: a pulsing multi-shell nucleus inside containment rings, three tilted electron orbits whose electrons swing to the front larger and brighter then dim behind the core, vented energy particles, and live telemetry for core temperature, spin and shell status. Ray Lin — agentic systems engineer, Taipei.</desc>
+  <defs>
+    <linearGradient id="ac-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#140b06"/><stop offset="1" stop-color="#0e0804"/></linearGradient>
+    <linearGradient id="ac-top" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ff7a1a" stop-opacity="0"/><stop offset="0.5" stop-color="#ff7a1a" stop-opacity="0.8"/><stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/></linearGradient>
+    <linearGradient id="ac-band" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a1a" stop-opacity="0"/><stop offset="0.5" stop-color="#ff7a1a" stop-opacity="0.06"/><stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/></linearGradient>
+    <radialGradient id="ac-core" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0.32"/>
+      <stop offset="55%" stop-color="#ff4d00" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ff4d00" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="ac-scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000000" fill-opacity="0.07"/><rect y="2" width="4" height="2" fill="#ffffff" fill-opacity="0.012"/></pattern>
+    <filter id="ac-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="ac-clip"><rect x="10" y="8" width="960" height="364" rx="12"/></clipPath>
+    <clipPath id="ac-type"><rect x="806" y="218" width="144" height="14">
+      <animate attributeName="width" values="0;144" dur="1.1s" begin="0.6s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <rect x="10" y="8" width="960" height="364" rx="12" fill="url(#ac-bg)" stroke="#673110" stroke-width="1.5"/>
+  <rect x="10" y="8" width="960" height="36" rx="12" fill="#1b0e07"/>
+  <rect x="10" y="32" width="960" height="12" fill="#1b0e07"/>
+  <rect x="11" y="8" width="958" height="2" fill="url(#ac-top)"/>
+  <circle cx="34" cy="26" r="5.5" fill="#ff5f56"/>
+  <circle cx="54" cy="26" r="5.5" fill="#ffbd2e"/>
+  <circle cx="74" cy="26" r="5.5" fill="#27c93f"/>
+  <text x="490" y="30" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="11.5" font-weight="700" fill="#c89a72" text-anchor="middle">reactor-core --monitor atom-01 --live &#183; the loop's power plant</text>
+  <circle cx="946" cy="26" r="3" fill="#ff8a22"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.4s" repeatCount="indefinite"/></circle>
+  <circle cx="946" cy="26" r="4" fill="none" stroke="#ff8a22" stroke-width="1"><animate attributeName="r" values="4;10" dur="2.4s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values="0.7;0" dur="2.4s" repeatCount="indefinite"/></circle>
+
+  <g clip-path="url(#ac-clip)">
+    <!-- ambient grid twinkles -->
+    <g fill="#ffb057">
+      <circle cx="60" cy="120" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.8s" begin="-0.4s" repeatCount="indefinite"/></circle>
+      <circle cx="150" cy="64" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.4s" begin="-1.6s" repeatCount="indefinite"/></circle>
+      <circle cx="250" cy="180" r="1.1" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.4s" begin="-2.2s" repeatCount="indefinite"/></circle>
+      <circle cx="320" cy="300" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.8s" begin="-0.9s" repeatCount="indefinite"/></circle>
+      <circle cx="200" cy="250" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.6s" begin="-2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="420" cy="72" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.2s" begin="-1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="560" cy="338" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="5.0s" begin="-3.4s" repeatCount="indefinite"/></circle>
+      <circle cx="660" cy="120" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.9s" begin="-0.2s" repeatCount="indefinite"/></circle>
+      <circle cx="700" cy="300" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.6s" begin="-1.9s" repeatCount="indefinite"/></circle>
+      <circle cx="760" cy="180" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.5s" begin="-2.5s" repeatCount="indefinite"/></circle>
+      <circle cx="830" cy="64" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.1s" begin="-0.6s" repeatCount="indefinite"/></circle>
+      <circle cx="900" cy="250" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.9s" begin="-3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="930" cy="150" r="1.0" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="3.7s" begin="-1.4s" repeatCount="indefinite"/></circle>
+      <circle cx="580" cy="60" r="0.9" opacity="0.2"><animate attributeName="opacity" values="0.12;0.7;0.12" dur="4.3s" begin="-2.0s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- rising embers -->
+    <g fill="#ff9a3d">
+      <circle cx="90" cy="376" r="1.6">
+        <animate attributeName="cy" values="376;-12" dur="11s" begin="-2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.6;0.6;0" dur="11s" begin="-2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="240" cy="376" r="1.3">
+        <animate attributeName="cy" values="376;-12" dur="14s" begin="-7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0.5;0" dur="14s" begin="-7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="400" cy="376" r="1.8">
+        <animate attributeName="cy" values="376;-12" dur="12s" begin="-4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.55;0.55;0" dur="12s" begin="-4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="580" cy="376" r="1.4">
+        <animate attributeName="cy" values="376;-12" dur="15s" begin="-10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.45;0.45;0" dur="15s" begin="-10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="740" cy="376" r="1.6">
+        <animate attributeName="cy" values="376;-12" dur="13s" begin="-6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.5;0.5;0" dur="13s" begin="-6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="890" cy="376" r="1.3">
+        <animate attributeName="cy" values="376;-12" dur="16s" begin="-12s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.45;0.45;0" dur="16s" begin="-12s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- containment field rings -->
+    <g fill="none" stroke="#3b2111" stroke-width="1" opacity="0.35">
+      <circle cx="490" cy="208" r="60"/>
+      <circle cx="490" cy="208" r="110"/>
+      <path d="M366 208 H614"/>
+      <path d="M490 92 V324"/>
+    </g>
+
+    <!-- halo -->
+    <circle cx="490" cy="208" r="96" fill="url(#ac-core)">
+      <animate attributeName="r" values="88;102;88" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- electron orbits (tilted ellipses; electrons ride the same path with depth cues) -->
+    <g transform="rotate(0 490 208)">
+      <ellipse cx="490" cy="208" rx="140" ry="48" fill="none" stroke="#ff8a22" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="5 7">
+        <animate attributeName="stroke-dashoffset" values="0;-48" dur="30s" repeatCount="indefinite"/>
+      </ellipse>
+      <circle r="4" fill="#ffca88" opacity="0.16" filter="url(#ac-glow)">
+        <animateMotion path="M350,208 a140,48 0 1,0 280,0 a140,48 0 1,0 -280,0" dur="7s" begin="-6.87s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.6" fill="#ffd08a" filter="url(#ac-glow)">
+        <animateMotion path="M350,208 a140,48 0 1,0 280,0 a140,48 0 1,0 -280,0" dur="7s" begin="0s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2.4;3.4;2.4;1.6;2.4" keyTimes="0;0.25;0.5;0.75;1" dur="7s" begin="0s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7;0.35;0.7" keyTimes="0;0.25;0.5;0.75;1" dur="7s" begin="0s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.6" fill="#ffd08a" filter="url(#ac-glow)">
+        <animateMotion path="M350,208 a140,48 0 1,0 280,0 a140,48 0 1,0 -280,0" dur="7s" begin="-3.5s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2.4;3.4;2.4;1.6;2.4" keyTimes="0;0.25;0.5;0.75;1" dur="7s" begin="-3.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7;0.35;0.7" keyTimes="0;0.25;0.5;0.75;1" dur="7s" begin="-3.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g transform="rotate(60 490 208)">
+      <ellipse cx="490" cy="208" rx="140" ry="48" fill="none" stroke="#ff8a22" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="5 7">
+        <animate attributeName="stroke-dashoffset" values="0;-48" dur="34s" repeatCount="indefinite"/>
+      </ellipse>
+      <circle r="4" fill="#ffca88" opacity="0.16" filter="url(#ac-glow)">
+        <animateMotion path="M350,208 a140,48 0 1,0 280,0 a140,48 0 1,0 -280,0" dur="8.5s" begin="-1.87s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.6" fill="#ffd08a" filter="url(#ac-glow)">
+        <animateMotion path="M350,208 a140,48 0 1,0 280,0 a140,48 0 1,0 -280,0" dur="8.5s" begin="-2s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2.4;3.4;2.4;1.6;2.4" keyTimes="0;0.25;0.5;0.75;1" dur="8.5s" begin="-2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7;0.35;0.7" keyTimes="0;0.25;0.5;0.75;1" dur="8.5s" begin="-2s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.6" fill="#ffd08a" filter="url(#ac-glow)">
+        <animateMotion path="M350,208 a140,48 0 1,0 280,0 a140,48 0 1,0 -280,0" dur="8.5s" begin="-6.2s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2.4;3.4;2.4;1.6;2.4" keyTimes="0;0.25;0.5;0.75;1" dur="8.5s" begin="-6.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7;0.35;0.7" keyTimes="0;0.25;0.5;0.75;1" dur="8.5s" begin="-6.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g transform="rotate(120 490 208)">
+      <ellipse cx="490" cy="208" rx="140" ry="48" fill="none" stroke="#ff8a22" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="5 7">
+        <animate attributeName="stroke-dashoffset" values="0;-48" dur="38s" repeatCount="indefinite"/>
+      </ellipse>
+      <circle r="4" fill="#ffca88" opacity="0.16" filter="url(#ac-glow)">
+        <animateMotion path="M350,208 a140,48 0 1,0 280,0 a140,48 0 1,0 -280,0" dur="6s" begin="-4.37s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="2.6" fill="#ffd08a" filter="url(#ac-glow)">
+        <animateMotion path="M350,208 a140,48 0 1,0 280,0 a140,48 0 1,0 -280,0" dur="6s" begin="-4.5s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2.4;3.4;2.4;1.6;2.4" keyTimes="0;0.25;0.5;0.75;1" dur="6s" begin="-4.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;1;0.7;0.35;0.7" keyTimes="0;0.25;0.5;0.75;1" dur="6s" begin="-4.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- nucleus: pulsing shells + spinning dashed rings + pings -->
+    <g>
+      <circle cx="490" cy="208" r="21" fill="none" stroke="#ffb057" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="2 6"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 490 208" to="-360 490 208" dur="36s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="490" cy="208" r="15" fill="none" stroke="#ff8a22" stroke-width="1" stroke-dasharray="6 5">
+        <animate attributeName="stroke-opacity" values="0.35;0.7;0.35" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <animateTransform attributeName="transform" type="rotate" from="0 490 208" to="360 490 208" dur="24s" repeatCount="indefinite"/>
+    </g>
+    <circle cx="490" cy="208" r="9" fill="#ff8a22" filter="url(#ac-glow)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="490" cy="208" r="24" fill="none" stroke="#ff7a1a" stroke-width="1">
+      <animate attributeName="r" values="24;56" dur="4s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;0" dur="4s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="490" cy="208" r="24" fill="none" stroke="#ff7a1a" stroke-width="1">
+      <animate attributeName="r" values="24;56" dur="4s" begin="-2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.5;0" dur="4s" begin="-2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- vented energy particles -->
+    <g fill="#ffca88">
+      <circle r="1.4"><animateMotion path="M512.5,195 L600.8,144" dur="2.4s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" keyTimes="0;0.2;1" dur="2.4s" begin="0s" repeatCount="indefinite"/></circle>
+      <circle r="1.4"><animateMotion path="M490,182 L490,80" dur="2.8s" begin="-0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" keyTimes="0;0.2;1" dur="2.8s" begin="-0.8s" repeatCount="indefinite"/></circle>
+      <circle r="1.4"><animateMotion path="M467.5,195 L379.2,144" dur="3.2s" begin="-1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" keyTimes="0;0.2;1" dur="3.2s" begin="-1.6s" repeatCount="indefinite"/></circle>
+      <circle r="1.4"><animateMotion path="M467.5,221 L379.2,272" dur="2.6s" begin="-0.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" keyTimes="0;0.2;1" dur="2.6s" begin="-0.4s" repeatCount="indefinite"/></circle>
+      <circle r="1.4"><animateMotion path="M490,234 L490,336" dur="3s" begin="-1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" keyTimes="0;0.2;1" dur="3s" begin="-1.2s" repeatCount="indefinite"/></circle>
+      <circle r="1.4"><animateMotion path="M512.5,221 L600.8,272" dur="3.4s" begin="-2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.85;0" keyTimes="0;0.2;1" dur="3.4s" begin="-2s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- left telemetry -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace">
+      <rect x="36" y="68" width="6" height="3" fill="#ff7a1a"/>
+      <text x="48" y="76" font-size="10" font-weight="700" fill="#cc6b2c" letter-spacing="2">CORE TEMP</text>
+      <g fill="#ff8a22">
+        <rect x="36" y="106" width="6" height="12"><animate attributeName="height" values="12;26;16;12" dur="2.2s" begin="-0.3s" repeatCount="indefinite"/><animate attributeName="y" values="106;92;102;106" dur="2.2s" begin="-0.3s" repeatCount="indefinite"/></rect>
+        <rect x="46" y="98" width="6" height="20" opacity="0.85"><animate attributeName="height" values="20;10;24;20" dur="2.6s" begin="-1.1s" repeatCount="indefinite"/><animate attributeName="y" values="98;108;94;98" dur="2.6s" begin="-1.1s" repeatCount="indefinite"/></rect>
+        <rect x="56" y="102" width="6" height="16"><animate attributeName="height" values="16;28;12;16" dur="2s" begin="-0.7s" repeatCount="indefinite"/><animate attributeName="y" values="102;90;106;102" dur="2s" begin="-0.7s" repeatCount="indefinite"/></rect>
+        <rect x="66" y="94" width="6" height="24" opacity="0.85"><animate attributeName="height" values="24;14;26;24" dur="2.8s" begin="-1.7s" repeatCount="indefinite"/><animate attributeName="y" values="94;104;92;94" dur="2.8s" begin="-1.7s" repeatCount="indefinite"/></rect>
+        <rect x="76" y="108" width="6" height="10"><animate attributeName="height" values="10;22;14;10" dur="2.4s" begin="-0.1s" repeatCount="indefinite"/><animate attributeName="y" values="108;96;104;108" dur="2.4s" begin="-0.1s" repeatCount="indefinite"/></rect>
+      </g>
+      <text x="36" y="134" font-size="9.5" fill="#7a4a24">6.2e8 K &#183; nominal</text>
+      <rect x="36" y="146" width="6" height="3" fill="#ff7a1a"/>
+      <text x="48" y="154" font-size="10" font-weight="700" fill="#cc6b2c" letter-spacing="2">SPIN</text>
+      <text x="36" y="172" font-size="11.5" font-weight="600" fill="#ffd08a">&#969; = 2&#960; / 7.0s</text>
+      <rect x="36" y="184" width="6" height="3" fill="#ff7a1a"/>
+      <text x="48" y="192" font-size="10" font-weight="700" fill="#cc6b2c" letter-spacing="2">SHELL</text>
+      <text x="36" y="210" font-size="11.5" font-weight="600" fill="#ffd08a">e&#8722; &#215;5 &#183; bound</text>
+      <rect x="128" y="201" width="5" height="10" fill="#ff8a22">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- right telemetry -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" text-anchor="end">
+      <rect x="938" y="68" width="6" height="3" fill="#ff7a1a"/>
+      <text x="944" y="84" font-size="10" font-weight="700" fill="#cc6b2c" letter-spacing="2">FIELD INTEGRITY</text>
+      <text x="944" y="102" font-size="11.5" font-weight="600" fill="#ffd08a">&#9632;&#9632;&#9632;&#9632;&#9633; 82% stable</text>
+      <circle cx="774" cy="98" r="2.6" fill="#ff8a22">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="938" y="146" width="6" height="3" fill="#ff7a1a"/>
+      <text x="944" y="162" font-size="10" font-weight="700" fill="#cc6b2c" letter-spacing="2">EMISSION</text>
+      <text x="944" y="180" font-size="11.5" font-weight="600" fill="#ffd08a">6 p/s &#183; vented</text>
+      <rect x="938" y="192" width="6" height="3" fill="#ff7a1a"/>
+      <text x="944" y="208" font-size="10" font-weight="700" fill="#cc6b2c" letter-spacing="2">PIPELINE</text>
+      <g clip-path="url(#ac-type)">
+        <text x="944" y="228" font-size="11.5" font-weight="600" fill="#ffd08a">route(energy) &#8594; ship</text>
+      </g>
+      <rect x="947" y="220" width="5" height="10" fill="#ff8a22">
+        <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" begin="0.2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- satellite mini-atoms -->
+    <g transform="translate(110,318)">
+      <circle r="14" fill="url(#ac-core)"/>
+      <g transform="rotate(-30)">
+        <ellipse rx="18" ry="7" fill="none" stroke="#ff8a22" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 4"/>
+        <circle r="1.5" fill="#ffd08a">
+          <animateMotion path="M-18,0 a18,7 0 1,0 36,0 a18,7 0 1,0 -36,0" dur="4.5s" begin="0s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+      <circle r="2" fill="#ff8a22" filter="url(#ac-glow)">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g transform="translate(870,318)">
+      <circle r="14" fill="url(#ac-core)"/>
+      <g transform="rotate(25)">
+        <ellipse rx="18" ry="7" fill="none" stroke="#ff8a22" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 4"/>
+        <circle r="1.5" fill="#ffd08a">
+          <animateMotion path="M18,0 a18,7 0 1,0 -36,0 a18,7 0 1,0 36,0" dur="5.5s" begin="-2s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+      <circle r="2" fill="#ff8a22" filter="url(#ac-glow)">
+        <animate attributeName="opacity" values="0.55;1;0.55" dur="3.8s" begin="-1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- sweeping scan band -->
+    <rect x="11" y="-64" width="958" height="64" fill="url(#ac-band)">
+      <animate attributeName="y" values="-64;380" dur="8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="10" y="8" width="960" height="364" rx="12" fill="url(#ac-scan)" clip-path="url(#ac-clip)" pointer-events="none"/>
+</svg>

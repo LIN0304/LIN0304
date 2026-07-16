@@ -1,0 +1,39 @@
+# Ray Lin (Hsu-Jui Lin · LIN0304)
+
+> Agentic Systems Engineer in Taipei, Taiwan (UTC+8). I build the infrastructure that
+> lets frontier AI models execute complex tasks reliably: agent skills, agent harnesses,
+> loop engineering, model orchestration, and benchmark-driven evaluation. Creator of
+> UniBench, a benchmark-aware model intelligence and routing layer.
+
+Ray Lin works on agentic systems engineering: decomposing complex tasks into verifiable
+steps; separating planner, executor, critic, and verifier roles; routing tasks across
+models based on empirical benchmark performance; tool use, memory/state design,
+observability, failure recovery, and human-in-the-loop control boundaries. Interested in
+moving AI from chat interfaces toward executable, auditable, self-improving work systems.
+Stack: Python, TypeScript, Node.js, Solidity; OpenAI (GPT, Codex), Anthropic (Claude,
+Claude Code), Model Context Protocol (MCP), multi-agent systems.
+
+## Profile
+
+- [GitHub](https://github.com/LIN0304): code, projects, and this profile repository
+- [LinkedIn](https://www.linkedin.com/in/hsu-jui-lin-50b82b216/): professional profile (Hsu-Jui Lin)
+- [X / Twitter](https://x.com/RayLin_AI): @RayLin_AI — agents, evals, orchestration
+
+## Projects
+
+- [UniBench](https://github.com/LIN0304): benchmark-aware model intelligence layer —
+  connects LLM benchmark data, task ontologies, and model capability profiles to route
+  each task to the model best suited for it: route(task) = argmax(capability − λ·cost − μ·latency)
+
+## This repository
+
+- [README](https://github.com/LIN0304/LIN0304/blob/main/README.md): animated profile page —
+  every animation is hand-authored pure-SMIL SVG (no JavaScript, no CSS), including a
+  reactor-core atom, 3D wireframe geometry, a particle collider, and a mission-control panel
+- [Agent interface](https://github.com/LIN0304#_-10--agent-interface): structured
+  machine-readable profile block for AI agents (YAML), plus a schema.org Person JSON-LD
+  object in the README's leading HTML comment
+
+## Collaboration
+
+- Open to: agent infrastructure, evals, model orchestration. Reach out on LinkedIn or X.

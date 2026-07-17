@@ -1,16 +1,40 @@
 #!/usr/bin/env node
 // Token Usage Dashboard generator — pure SVG SMIL, zero JS in output.
-// Reads codex-usage-dashboard/data/usage.json and emits desktop + mobile SVGs
-// (timestamped snapshot + stable alias) under assets/.
+// Reads a usage.json export and emits desktop + mobile SVGs (timestamped
+// snapshot + stable alias) under assets/.
 //
-// Usage: node tools/token-usage-dashboard/generate.mjs [--stamp 20260716T2330000800]
+// This file is the ONE renderer for the GitHub profile dashboard. It is mirrored
+// byte-for-byte into LIN0304/LIN0304 by the local publish flow, which drives it
+// through scripts/publish_public_dashboard.py on every "Fetch newest". Editing
+// only the copy in the profile repo does not change what a Fetch publishes —
+// see docs/PUBLISH_PIPELINE.md in codex-usage-dashboard.
+//
+// Usage: node tools/token-usage-dashboard/generate.mjs
+//          [--data <usage.json>] [--assets <dir>] [--stamp 20260716T2330000800]
+//
+// Defaults resolve against the repo the script sits in, so it runs flagless from
+// either checkout: <root>/codex-usage-dashboard/data/usage.json in the profile
+// repo, <root>/data/usage.json in the local dashboard project.
 
-import { readFileSync, writeFileSync, copyFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
-const DATA = JSON.parse(readFileSync(join(ROOT, 'codex-usage-dashboard', 'data', 'usage.json'), 'utf8'));
+
+const argValue = (name) => {
+  const i = process.argv.indexOf(name);
+  return i > -1 ? process.argv[i + 1] : undefined;
+};
+
+const defaultData = () => {
+  const profileRepoPath = join(ROOT, 'codex-usage-dashboard', 'data', 'usage.json');
+  return existsSync(profileRepoPath) ? profileRepoPath : join(ROOT, 'data', 'usage.json');
+};
+
+const DATA_PATH = argValue('--data') ?? defaultData();
+const ASSETS_DIR = argValue('--assets') ?? join(ROOT, 'assets');
+const DATA = JSON.parse(readFileSync(DATA_PATH, 'utf8'));
 
 // ---------------------------------------------------------------- helpers --
 const fmt = (n) =>
@@ -41,7 +65,11 @@ const cacheHit = (T.cached_input_tokens / T.input_tokens) * 100;
 let cost = 0, savings = 0;
 for (const m of DATA.model_rows) { cost += m.costs.total_cost; savings += m.costs.cached_savings; }
 const sessions = DATA.session_count;
-const windowDays = DATA.window.days;
+// window.days is the literal string 'all' for the All history range, which every
+// per-day figure below divides by. Fall back to the counted span so that range
+// renders real numbers instead of NaN.
+const windowDays =
+  typeof DATA.window.days === 'number' ? DATA.window.days : DATA.window.calendar_day_count ?? days.length;
 const activeDays = DATA.window.active_day_count;
 
 const peakIdx = daily.indexOf(Math.max(...daily));
@@ -696,15 +724,15 @@ function mobileSVG() {
 }
 
 // ------------------------------------------------------------------ main --
-const argStamp = process.argv.indexOf('--stamp');
-const stamp = argStamp > -1 ? process.argv[argStamp + 1] : stampNow();
+const stamp = argValue('--stamp') ?? stampNow();
 
-const outDesk = join(ROOT, 'assets', `token-usage-dashboard-${stamp}.svg`);
-const outMob = join(ROOT, 'assets', `token-usage-dashboard-mobile-${stamp}.svg`);
+mkdirSync(ASSETS_DIR, { recursive: true });
+const outDesk = join(ASSETS_DIR, `token-usage-dashboard-${stamp}.svg`);
+const outMob = join(ASSETS_DIR, `token-usage-dashboard-mobile-${stamp}.svg`);
 writeFileSync(outDesk, desktopSVG());
 writeFileSync(outMob, mobileSVG());
-copyFileSync(outDesk, join(ROOT, 'assets', 'token-usage-dashboard.svg'));
-copyFileSync(outMob, join(ROOT, 'assets', 'token-usage-dashboard-mobile.svg'));
+copyFileSync(outDesk, join(ASSETS_DIR, 'token-usage-dashboard.svg'));
+copyFileSync(outMob, join(ASSETS_DIR, 'token-usage-dashboard-mobile.svg'));
 console.log(`stamp=${stamp}`);
 console.log(`wrote ${outDesk}`);
 console.log(`wrote ${outMob}`);

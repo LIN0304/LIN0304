@@ -238,19 +238,21 @@ Open to collaboration on agent infrastructure, evals, and model orchestration �
 <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 <!-- CODEX_USAGE_DASHBOARD:START -->
-## Codex Usage Dashboard
+## Token Usage Dashboard
 
 ![Dashboard updated](https://img.shields.io/github/last-commit/LIN0304/LIN0304?label=dashboard%20updated&style=for-the-badge&color=16745b)
 
-Last updated: <relative-time datetime="2026-07-17T17:21:09+08:00">just now</relative-time>
-Snapshot: `2026-07-17T17:21:09+08:00` · Range: **Past 85 days**
+Last updated: <relative-time datetime="2026-07-17T18:00:10+08:00">just now</relative-time>
+Snapshot: `2026-07-17T18:00:10+08:00` · Range: **Past 85 days** · Feed: `reasoning-visible`
+
+Token telemetry for the whole agent fleet — daily-volume peak trace, a particle-atom token core, model share, token mix with reasoning tokens visible, agent lanes and a 3D geometry bay. Animated in **pure SVG SMIL**, zero JavaScript.
 
 <picture>
-  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-mobile-20260717T1721090800.svg">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/codex-usage-dashboard-20260717T1721090800.svg" width="100%" alt="Codex usage dashboard: 50.2B tokens, 92.9% cache hit, $50,207.14 estimated cost, Past 85 days">
+  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/token-usage-dashboard-mobile-20260717T1800100800.svg">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/token-usage-dashboard-20260717T1800100800.svg" width="100%" alt="Token usage dashboard: 50.2B tokens, 92.9% cache hit, $50,212.53 estimated cost, 12,835 sessions, past 85 days — animated telemetry with a particle-atom token core, reasoning-visible token mix and 3D wireframe geometry">
 </picture>
 
-<!-- generated-at: 2026-07-17T17:18:13+08:00 -->
+<!-- generated-at: 2026-07-17T17:57:15+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->
 
 <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />

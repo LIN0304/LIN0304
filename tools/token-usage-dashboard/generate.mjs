@@ -36,6 +36,12 @@ const DATA_PATH = argValue('--data') ?? defaultData();
 const ASSETS_DIR = argValue('--assets') ?? join(ROOT, 'assets');
 const DATA = JSON.parse(readFileSync(DATA_PATH, 'utf8'));
 
+// Stamped into every SVG this generator emits, and the only thing app.js's
+// verifyPublishedSvg() matches on after upload. Keep it out of the artwork:
+// the point is that panel headings and copy can be redesigned freely without
+// breaking post-publish verification. Change it here and in app.js together.
+const RENDER_MARKER = '<!-- render: token-usage-dashboard -->';
+
 // ---------------------------------------------------------------- helpers --
 const fmt = (n) =>
   n >= 1e9 ? `${(n / 1e9).toFixed(1)}B`
@@ -331,6 +337,7 @@ function desktopSVG() {
   }).join('');
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc">
+  ${RENDER_MARKER}
   <title id="title">Token Usage Dashboard — telemetry</title>
   <desc id="desc">Animated token usage telemetry: ${fmt(totalTokens)} tokens over ${windowDays} days, ${pct(cacheHit)} cache hit, ${usd(cost)} estimated cost, ${int(sessions)} sessions, peak ${fmt(peakVal)} on ${peakDay}, reasoning tokens visible at ${pct(reasoningShareOut)} of output. Pure SVG SMIL — particle atom orbits and precomputed 3D wireframes, no JavaScript.</desc>
   <defs>
@@ -598,6 +605,7 @@ function mobileSVG() {
   }).join('');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc">
+  ${RENDER_MARKER}
   <title id="title">Token Usage Dashboard Mobile — telemetry</title>
   <desc id="desc">Mobile token usage telemetry: ${fmt(totalTokens)} tokens, ${pct(cacheHit)} cache hit, ${usd(cost)} estimated cost, peak ${fmt(peakVal)} on ${peakDay}. Pure SVG SMIL animation.</desc>
   <defs>

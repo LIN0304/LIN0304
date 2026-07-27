@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T12:44:23+08:00",
+  "generated_at": "2026-07-27T12:48:50+08:00",
   "window": {
     "days": 90,
     "cutoff": "2026-04-29T00:00:00+08:00",
@@ -19,45 +19,45 @@
     },
     "method": "Codex: peak cumulative snapshot per session; Claude/Qwen/Gemini: sum per-turn deltas; Grok CLI: sum of per-prompt peak params._meta.totalTokens (running context size; no input/output/cache split in logs)",
     "pricing_source": "https://developers.openai.com/api/docs/pricing + https://platform.claude.com/docs/en/about-claude/pricing + https://ai.google.dev/gemini-api/docs/pricing + https://docs.x.ai/developers/pricing",
-    "pricing_captured_at": "2026-07-27T04:43:57Z",
+    "pricing_captured_at": "2026-07-27T04:48:48Z",
     "pricing_refresh": {
       "schema_version": 1,
-      "status": "partial",
-      "checked_at": "2026-07-27T04:43:57Z",
-      "fetched_at": "2026-07-27T04:43:57Z",
+      "status": "live",
+      "checked_at": "2026-07-27T04:48:48Z",
+      "fetched_at": "2026-07-27T04:48:48Z",
       "model_count": 86,
       "provider_count": 4,
       "refresh_requested": true,
       "force": true,
-      "message": "Some providers use validated cached or bundled fallback prices because not every official source is available.",
+      "message": "All official pricing sources refreshed successfully.",
       "providers": {
         "openai": {
           "provider_id": "openai",
           "label": "OpenAI",
-          "status": "stale",
-          "checked_at": "2026-07-27T04:43:57Z",
-          "fetched_at": "2026-07-27T03:03:37Z",
+          "status": "live",
+          "checked_at": "2026-07-27T04:48:48Z",
+          "fetched_at": "2026-07-27T04:48:48Z",
           "source": "https://developers.openai.com/api/docs/pricing.md",
           "model_count": 45,
           "digest": "483a1c26711718ab1b3e6df073824183a82a75a90acf64f69f778eaa82cf9821",
           "parser_version": "1",
-          "error_code": "FETCH_ERROR",
-          "fetch_status": "failed",
+          "error_code": null,
+          "fetch_status": "updated",
           "etag": "\"1892d98a65090be1027b9f6564d934e9\"",
           "last_modified": "Mon, 27 Jul 2026 02:49:18 GMT"
         },
         "anthropic": {
           "provider_id": "anthropic",
           "label": "Anthropic",
-          "status": "stale",
-          "checked_at": "2026-07-27T04:43:57Z",
-          "fetched_at": "2026-07-27T04:43:04Z",
+          "status": "live",
+          "checked_at": "2026-07-27T04:48:48Z",
+          "fetched_at": "2026-07-27T04:48:48Z",
           "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
           "model_count": 15,
           "digest": "0769b253017dc3552f02cd2181eb69599370c68bc32c2e7d3742f3a47f768088",
           "parser_version": "1",
-          "error_code": "FETCH_ERROR",
-          "fetch_status": "failed",
+          "error_code": null,
+          "fetch_status": "updated",
           "etag": null,
           "last_modified": null
         },
@@ -65,11 +65,11 @@
           "provider_id": "google",
           "label": "Google Gemini",
           "status": "live",
-          "checked_at": "2026-07-27T04:43:57Z",
-          "fetched_at": "2026-07-27T04:43:57Z",
+          "checked_at": "2026-07-27T04:48:48Z",
+          "fetched_at": "2026-07-27T04:48:48Z",
           "source": "https://ai.google.dev/gemini-api/docs/pricing",
           "model_count": 20,
-          "digest": "8e5d538f1a389203daf32ee7f8f30752ec0a7524fd03fb7158ad8e331309c3f0",
+          "digest": "41b768cd70e0fb24cce052b6b92aed37716d424233cebeebfcd0809212298bff",
           "parser_version": "1",
           "error_code": null,
           "fetch_status": "updated",
@@ -79,15 +79,15 @@
         "spacexai": {
           "provider_id": "spacexai",
           "label": "SpaceXAI",
-          "status": "stale",
-          "checked_at": "2026-07-27T04:43:57Z",
-          "fetched_at": "2026-07-27T04:43:04Z",
+          "status": "live",
+          "checked_at": "2026-07-27T04:48:48Z",
+          "fetched_at": "2026-07-27T04:48:48Z",
           "source": "https://docs.x.ai/developers/pricing.md",
           "model_count": 6,
-          "digest": "0ebf209f940e5e1d3bc0d26a42831d193c6ee699243867cbbe9765518892b977",
+          "digest": "b4ccf3dcea4f6427d3a3d4083f61c25aa2c88d140abb3cb72517d38c96d87fb1",
           "parser_version": "1",
-          "error_code": "FETCH_ERROR",
-          "fetch_status": "failed",
+          "error_code": null,
+          "fetch_status": "updated",
           "etag": null,
           "last_modified": null
         }
@@ -127,16 +127,16 @@
       "source": "https://developers.openai.com/api/docs/pricing"
     },
     "gpt-5.2": {
-      "cached_input": 0.175,
-      "currency": "USD",
       "input": 1.75,
+      "cached_input": 0.175,
       "output": 14.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5.2-codex": {
       "input": 1.75,
@@ -157,88 +157,88 @@
       "source": "https://developers.openai.com/api/docs/pricing"
     },
     "gpt-5.5": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 30.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5.4": {
-      "cached_input": 0.25,
-      "currency": "USD",
       "input": 2.5,
+      "cached_input": 0.25,
       "output": 15.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5.4-mini": {
-      "cached_input": 0.075,
-      "currency": "USD",
       "input": 0.75,
+      "cached_input": 0.075,
       "output": 4.5,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5": {
-      "cached_input": 0.125,
-      "currency": "USD",
       "input": 1.25,
+      "cached_input": 0.125,
       "output": 10.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5.6-sol": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 30.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5.6-terra": {
-      "cached_input": 0.25,
-      "currency": "USD",
       "input": 2.5,
+      "cached_input": 0.25,
       "output": 15.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5.6-luna": {
-      "cached_input": 0.1,
-      "currency": "USD",
       "input": 1.0,
+      "cached_input": 0.1,
       "output": 6.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5.6": {
       "input": 5.0,
@@ -247,40 +247,40 @@
       "source": "https://developers.openai.com/api/docs/pricing"
     },
     "claude-opus-4-8": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 25.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "claude-opus-4-7": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 25.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "claude-opus-4-6": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 25.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "claude-opus-4-5-20251101": {
       "input": 5.0,
@@ -289,16 +289,16 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing"
     },
     "claude-sonnet-4-6": {
-      "cached_input": 0.3,
-      "currency": "USD",
       "input": 3.0,
+      "cached_input": 0.3,
       "output": 15.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "claude-sonnet-4-5-20250929": {
       "input": 3.0,
@@ -313,16 +313,16 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing"
     },
     "claude-fable-5": {
-      "cached_input": 1.0,
-      "currency": "USD",
       "input": 10.0,
+      "cached_input": 1.0,
       "output": 50.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3-pro-preview": {
       "input": 1.25,
@@ -340,7 +340,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-2.5-flash": {
       "input": 0.3,
@@ -352,7 +352,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "minimax-m2.5": {
       "input": 0.2,
@@ -379,16 +379,16 @@
       "source": "https://platform.minimax.io/docs/guides/pricing-paygo"
     },
     "grok-4.5": {
-      "cached_input": 0.3,
-      "currency": "USD",
       "input": 2.0,
+      "cached_input": 0.3,
       "output": 6.0,
-      "pricing_status": "official",
+      "source": "https://docs.x.ai/developers/pricing.md",
       "provider_id": "spacexai",
       "provider_label": "SpaceXAI",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://docs.x.ai/developers/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "grok-4.5-latest": {
       "input": 2.0,
@@ -403,16 +403,16 @@
       "source": "https://docs.x.ai/developers/pricing"
     },
     "grok-build-0.1": {
-      "cached_input": 0.2,
-      "currency": "USD",
       "input": 1.0,
+      "cached_input": 0.2,
       "output": 2.0,
-      "pricing_status": "official",
+      "source": "https://docs.x.ai/developers/pricing.md",
       "provider_id": "spacexai",
       "provider_label": "SpaceXAI",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://docs.x.ai/developers/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "grok-build-latest": {
       "input": 2.0,
@@ -421,52 +421,52 @@
       "source": "https://docs.x.ai/developers/pricing"
     },
     "grok-4.3": {
-      "cached_input": 0.2,
-      "currency": "USD",
       "input": 1.25,
+      "cached_input": 0.2,
       "output": 2.5,
-      "pricing_status": "official",
+      "source": "https://docs.x.ai/developers/pricing.md",
       "provider_id": "spacexai",
       "provider_label": "SpaceXAI",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://docs.x.ai/developers/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "grok-4.20-0309-reasoning": {
-      "cached_input": 0.2,
-      "currency": "USD",
       "input": 1.25,
+      "cached_input": 0.2,
       "output": 2.5,
-      "pricing_status": "official",
+      "source": "https://docs.x.ai/developers/pricing.md",
       "provider_id": "spacexai",
       "provider_label": "SpaceXAI",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://docs.x.ai/developers/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "grok-4.20-0309-non-reasoning": {
-      "cached_input": 0.2,
-      "currency": "USD",
       "input": 1.25,
+      "cached_input": 0.2,
       "output": 2.5,
-      "pricing_status": "official",
+      "source": "https://docs.x.ai/developers/pricing.md",
       "provider_id": "spacexai",
       "provider_label": "SpaceXAI",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://docs.x.ai/developers/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "grok-4.20-multi-agent-0309": {
-      "cached_input": 0.2,
-      "currency": "USD",
       "input": 1.25,
+      "cached_input": 0.2,
       "output": 2.5,
-      "pricing_status": "official",
+      "source": "https://docs.x.ai/developers/pricing.md",
       "provider_id": "spacexai",
       "provider_label": "SpaceXAI",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://docs.x.ai/developers/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "grok-4": {
       "input": 3.0,
@@ -492,592 +492,592 @@
       "output": 0.5,
       "source": "manual estimate (Cursor Composer via Grok CLI)"
     },
-    "babbage-002": {
-      "cached_input": 0.4,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 0.4,
-      "output": 0.4,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "davinci-002": {
-      "cached_input": 2.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 2.0,
-      "output": 2.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-3.5-0301": {
-      "cached_input": 1.5,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 1.5,
-      "output": 2.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-3.5-turbo": {
-      "cached_input": 0.5,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 0.5,
-      "output": 1.5,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-3.5-turbo-0125": {
-      "cached_input": 0.5,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 0.5,
-      "output": 1.5,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-3.5-turbo-0613": {
-      "cached_input": 1.5,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 1.5,
-      "output": 2.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-3.5-turbo-1106": {
-      "cached_input": 1.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 1.0,
-      "output": 2.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-3.5-turbo-16k-0613": {
-      "cached_input": 3.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 3.0,
-      "output": 4.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-3.5-turbo-instruct": {
-      "cached_input": 1.5,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 1.5,
-      "output": 2.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4-0125-preview": {
-      "cached_input": 10.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 10.0,
-      "output": 30.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4-0314": {
-      "cached_input": 30.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
+    "gpt-5.5-pro": {
       "input": 30.0,
-      "output": 60.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4-0613": {
       "cached_input": 30.0,
+      "output": 180.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 30.0,
-      "output": 60.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4-1106-preview": {
-      "cached_input": 10.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 10.0,
-      "output": 30.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4-1106-vision-preview": {
-      "cached_input": 10.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 10.0,
-      "output": 30.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4-32k": {
-      "cached_input": 60.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 60.0,
-      "output": 120.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4-turbo-2024-04-09": {
-      "cached_input": 10.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 10.0,
-      "output": 30.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4.1": {
-      "cached_input": 0.5,
-      "currency": "USD",
-      "input": 2.0,
-      "output": 8.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4.1-mini": {
-      "cached_input": 0.1,
-      "currency": "USD",
-      "input": 0.4,
-      "output": 1.6,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4.1-nano": {
-      "cached_input": 0.025,
-      "currency": "USD",
-      "input": 0.1,
-      "output": 0.4,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4o": {
-      "cached_input": 1.25,
-      "currency": "USD",
-      "input": 2.5,
-      "output": 10.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4o-2024-05-13": {
-      "cached_input": 5.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 5.0,
-      "output": 15.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-4o-mini": {
-      "cached_input": 0.075,
-      "currency": "USD",
-      "input": 0.15,
-      "output": 0.6,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-5-mini": {
-      "cached_input": 0.025,
-      "currency": "USD",
-      "input": 0.25,
-      "output": 2.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-5-nano": {
-      "cached_input": 0.005,
-      "currency": "USD",
-      "input": 0.05,
-      "output": 0.4,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-5-pro": {
-      "cached_input": 15.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 15.0,
-      "output": 120.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-5.1": {
-      "cached_input": 0.125,
-      "currency": "USD",
-      "input": 1.25,
-      "output": 10.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gpt-5.2-pro": {
-      "cached_input": 21.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 21.0,
-      "output": 168.0,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5.4-nano": {
-      "cached_input": 0.02,
-      "currency": "USD",
       "input": 0.2,
+      "cached_input": 0.02,
       "output": 1.25,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gpt-5.4-pro": {
-      "cached_input": 30.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
       "input": 30.0,
+      "cached_input": 30.0,
       "output": 180.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
-    "gpt-5.5-pro": {
-      "cached_input": 30.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 30.0,
-      "output": 180.0,
-      "pricing_status": "official",
+    "gpt-5.2-pro": {
+      "input": 21.0,
+      "cached_input": 21.0,
+      "output": 168.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-5.1": {
+      "input": 1.25,
+      "cached_input": 0.125,
+      "output": 10.0,
       "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-5-mini": {
+      "input": 0.25,
+      "cached_input": 0.025,
+      "output": 2.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-5-nano": {
+      "input": 0.05,
+      "cached_input": 0.005,
+      "output": 0.4,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-5-pro": {
+      "input": 15.0,
+      "cached_input": 15.0,
+      "output": 120.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4.1": {
+      "input": 2.0,
+      "cached_input": 0.5,
+      "output": 8.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4.1-mini": {
+      "input": 0.4,
+      "cached_input": 0.1,
+      "output": 1.6,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4.1-nano": {
+      "input": 0.1,
+      "cached_input": 0.025,
+      "output": 0.4,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4o": {
+      "input": 2.5,
+      "cached_input": 1.25,
+      "output": 10.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4o-2024-05-13": {
+      "input": 5.0,
+      "cached_input": 5.0,
+      "output": 15.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4o-mini": {
+      "input": 0.15,
+      "cached_input": 0.075,
+      "output": 0.6,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "o1": {
-      "cached_input": 7.5,
-      "currency": "USD",
       "input": 15.0,
+      "cached_input": 7.5,
       "output": 60.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "o1-mini": {
-      "cached_input": 0.55,
       "currency": "USD",
-      "input": 1.1,
-      "output": 4.4,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "o1-pro": {
-      "cached_input": 150.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
       "input": 150.0,
+      "cached_input": 150.0,
       "output": 600.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "o3": {
-      "cached_input": 0.5,
       "currency": "USD",
-      "input": 2.0,
-      "output": 8.0,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "o3-mini": {
-      "cached_input": 0.55,
-      "currency": "USD",
-      "input": 1.1,
-      "output": 4.4,
-      "pricing_status": "official",
-      "provider_id": "openai",
-      "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
-      "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "o3-pro": {
-      "cached_input": 20.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
       "input": 20.0,
+      "cached_input": 20.0,
       "output": 80.0,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "o3": {
+      "input": 2.0,
+      "cached_input": 0.5,
+      "output": 8.0,
       "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "o4-mini": {
-      "cached_input": 0.275,
-      "currency": "USD",
       "input": 1.1,
+      "cached_input": 0.275,
       "output": 4.4,
-      "pricing_status": "official",
+      "source": "https://developers.openai.com/api/docs/pricing.md",
       "provider_id": "openai",
       "provider_label": "OpenAI",
-      "retrieved_at": "2026-07-27T03:03:37Z",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "o3-mini": {
+      "input": 1.1,
+      "cached_input": 0.55,
+      "output": 4.4,
       "source": "https://developers.openai.com/api/docs/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-haiku-3-5": {
-      "cached_input": 0.08,
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
       "currency": "USD",
-      "input": 0.8,
-      "output": 4.0,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
-    "claude-haiku-4-5": {
-      "cached_input": 0.1,
+    "o1-mini": {
+      "input": 1.1,
+      "cached_input": 0.55,
+      "output": 4.4,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
       "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4-turbo-2024-04-09": {
+      "input": 10.0,
+      "cached_input": 10.0,
+      "output": 30.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4-0125-preview": {
+      "input": 10.0,
+      "cached_input": 10.0,
+      "output": 30.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4-1106-preview": {
+      "input": 10.0,
+      "cached_input": 10.0,
+      "output": 30.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4-1106-vision-preview": {
+      "input": 10.0,
+      "cached_input": 10.0,
+      "output": 30.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4-0613": {
+      "input": 30.0,
+      "cached_input": 30.0,
+      "output": 60.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4-0314": {
+      "input": 30.0,
+      "cached_input": 30.0,
+      "output": 60.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-4-32k": {
+      "input": 60.0,
+      "cached_input": 60.0,
+      "output": 120.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-3.5-turbo": {
+      "input": 0.5,
+      "cached_input": 0.5,
+      "output": 1.5,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-3.5-turbo-0125": {
+      "input": 0.5,
+      "cached_input": 0.5,
+      "output": 1.5,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-3.5-turbo-1106": {
       "input": 1.0,
-      "output": 5.0,
+      "cached_input": 1.0,
+      "output": 2.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-3.5-turbo-0613": {
+      "input": 1.5,
+      "cached_input": 1.5,
+      "output": 2.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-3.5-0301": {
+      "input": 1.5,
+      "cached_input": 1.5,
+      "output": 2.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-3.5-turbo-instruct": {
+      "input": 1.5,
+      "cached_input": 1.5,
+      "output": 2.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "gpt-3.5-turbo-16k-0613": {
+      "input": 3.0,
+      "cached_input": 3.0,
+      "output": 4.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "davinci-002": {
+      "input": 2.0,
+      "cached_input": 2.0,
+      "output": 2.0,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "babbage-002": {
+      "input": 0.4,
+      "cached_input": 0.4,
+      "output": 0.4,
+      "source": "https://developers.openai.com/api/docs/pricing.md",
+      "provider_id": "openai",
+      "provider_label": "OpenAI",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "claude-mythos-5": {
-      "cached_input": 1.0,
-      "currency": "USD",
       "input": 10.0,
+      "cached_input": 1.0,
       "output": 50.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-opus-4": {
-      "cached_input": 1.5,
       "currency": "USD",
-      "input": 15.0,
-      "output": 75.0,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-opus-4-1": {
-      "cached_input": 1.5,
-      "currency": "USD",
-      "input": 15.0,
-      "output": 75.0,
-      "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-opus-4-5": {
-      "cached_input": 0.5,
-      "currency": "USD",
-      "input": 5.0,
-      "output": 25.0,
-      "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "claude-opus-5": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 25.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-sonnet-4": {
-      "cached_input": 0.3,
       "currency": "USD",
-      "input": 3.0,
-      "output": 15.0,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
-    "claude-sonnet-4-5": {
-      "cached_input": 0.3,
-      "currency": "USD",
-      "input": 3.0,
-      "output": 15.0,
-      "pricing_status": "official",
+    "claude-opus-4-5": {
+      "input": 5.0,
+      "cached_input": 0.5,
+      "output": 25.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "claude-opus-4-1": {
+      "input": 15.0,
+      "cached_input": 1.5,
+      "output": 75.0,
       "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "claude-opus-4": {
+      "input": 15.0,
+      "cached_input": 1.5,
+      "output": 75.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "claude-sonnet-5": {
-      "cached_input": 0.2,
-      "currency": "USD",
       "input": 2.0,
+      "cached_input": 0.2,
       "output": 10.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-27T04:43:04Z",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "claude-sonnet-4-5": {
+      "input": 3.0,
+      "cached_input": 0.3,
+      "output": 15.0,
       "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "claude-sonnet-4": {
+      "input": 3.0,
+      "cached_input": 0.3,
+      "output": 15.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "claude-haiku-4-5": {
+      "input": 1.0,
+      "cached_input": 0.1,
+      "output": 5.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
+    },
+    "claude-haiku-3-5": {
+      "input": 0.8,
+      "cached_input": 0.08,
+      "output": 4.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3.6-flash": {
       "input": 1.5,
@@ -1089,7 +1089,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3.5-flash": {
       "input": 1.5,
@@ -1101,7 +1101,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3.5-flash-lite": {
       "input": 0.3,
@@ -1113,7 +1113,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3.1-flash-lite": {
       "input": 0.25,
@@ -1125,7 +1125,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-omni-flash-preview": {
       "input": 1.5,
@@ -1138,7 +1138,7 @@
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3.1-pro-preview": {
       "input": 2.0,
@@ -1150,7 +1150,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3.1-flash-image": {
       "input": 0.5,
@@ -1163,7 +1163,7 @@
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3.1-flash-lite-image": {
       "input": 0.25,
@@ -1176,7 +1176,7 @@
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3.1-flash-tts-preview": {
       "input": 1.0,
@@ -1189,7 +1189,7 @@
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3-flash-preview": {
       "input": 0.5,
@@ -1201,7 +1201,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-3-pro-image": {
       "input": 2.0,
@@ -1214,7 +1214,7 @@
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-2.5-flash-lite": {
       "input": 0.1,
@@ -1226,7 +1226,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-2.5-flash-lite-preview": {
       "input": 0.1,
@@ -1238,7 +1238,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-2.5-flash-preview-tts": {
       "input": 0.5,
@@ -1251,7 +1251,7 @@
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-2.5-pro-preview-tts": {
       "input": 1.0,
@@ -1264,7 +1264,7 @@
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-2.0-flash": {
       "input": 0.1,
@@ -1276,7 +1276,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-2.0-flash-lite": {
       "input": 0.075,
@@ -1289,7 +1289,7 @@
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "gemini-robotics-er": {
       "input": 1.0,
@@ -1302,7 +1302,7 @@
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
       "cached_input_assumption": "input_rate_no_published_discount",
-      "retrieved_at": "2026-07-27T04:43:57Z"
+      "retrieved_at": "2026-07-27T04:48:48Z"
     },
     "unknown": {
       "input": 0.0,
@@ -1320,11 +1320,11 @@
     }
   },
   "totals": {
-    "input_tokens": 55777066708,
-    "cached_input_tokens": 52000901467,
-    "output_tokens": 265506178,
-    "reasoning_output_tokens": 84096073,
-    "total_tokens": 56043300873
+    "input_tokens": 55779438822,
+    "cached_input_tokens": 52003057243,
+    "output_tokens": 265520333,
+    "reasoning_output_tokens": 84100410,
+    "total_tokens": 56045687142
   },
   "model_rows": [
     {
@@ -1348,19 +1348,19 @@
     {
       "model": "gpt-5.6-sol",
       "tokens": {
-        "input_tokens": 6442976926,
-        "cached_input_tokens": 6278441984,
-        "output_tokens": 15401867,
-        "reasoning_output_tokens": 5172594,
-        "total_tokens": 6458378793
+        "input_tokens": 6445349040,
+        "cached_input_tokens": 6280597760,
+        "output_tokens": 15416022,
+        "reasoning_output_tokens": 5176931,
+        "total_tokens": 6460765062
       },
       "costs": {
-        "input_cost": 822.67471,
-        "cached_input_cost": 3139.220992,
-        "output_cost": 462.05600999999996,
-        "total_cost": 4423.951712,
-        "no_cache_cost": 32676.94064,
-        "cached_savings": 28252.988928
+        "input_cost": 823.7564,
+        "cached_input_cost": 3140.29888,
+        "output_cost": 462.48066,
+        "total_cost": 4426.53594,
+        "no_cache_cost": 32689.225860000002,
+        "cached_savings": 28262.689920000004
       }
     },
     {
@@ -5454,37 +5454,37 @@
     {
       "day": "2026-07-27",
       "tokens": {
-        "input_tokens": 1496440588,
-        "cached_input_tokens": 1464974080,
-        "output_tokens": 3934948,
-        "reasoning_output_tokens": 1188358,
-        "total_tokens": 1500375536
+        "input_tokens": 1498812702,
+        "cached_input_tokens": 1467129856,
+        "output_tokens": 3949103,
+        "reasoning_output_tokens": 1192695,
+        "total_tokens": 1502761805
       },
       "models": {
         "gpt-5.6-sol": {
-          "input_tokens": 1496440588,
-          "cached_input_tokens": 1464974080,
-          "output_tokens": 3934948,
-          "reasoning_output_tokens": 1188358,
-          "total_tokens": 1500375536
+          "input_tokens": 1498812702,
+          "cached_input_tokens": 1467129856,
+          "output_tokens": 3949103,
+          "reasoning_output_tokens": 1192695,
+          "total_tokens": 1502761805
         }
       },
       "by_agent": {
         "codex": {
           "tokens": {
-            "input_tokens": 1496440588,
-            "cached_input_tokens": 1464974080,
-            "output_tokens": 3934948,
-            "reasoning_output_tokens": 1188358,
-            "total_tokens": 1500375536
+            "input_tokens": 1498812702,
+            "cached_input_tokens": 1467129856,
+            "output_tokens": 3949103,
+            "reasoning_output_tokens": 1192695,
+            "total_tokens": 1502761805
           },
           "models": {
             "gpt-5.6-sol": {
-              "input_tokens": 1496440588,
-              "cached_input_tokens": 1464974080,
-              "output_tokens": 3934948,
-              "reasoning_output_tokens": 1188358,
-              "total_tokens": 1500375536
+              "input_tokens": 1498812702,
+              "cached_input_tokens": 1467129856,
+              "output_tokens": 3949103,
+              "reasoning_output_tokens": 1192695,
+              "total_tokens": 1502761805
             }
           }
         }
@@ -5502,11 +5502,11 @@
   "by_agent": {
     "codex": {
       "tokens": {
-        "input_tokens": 48024262885,
-        "cached_input_tokens": 44760643328,
-        "output_tokens": 226816543,
-        "reasoning_output_tokens": 83884886,
-        "total_tokens": 48251596228
+        "input_tokens": 48026634999,
+        "cached_input_tokens": 44762799104,
+        "output_tokens": 226830698,
+        "reasoning_output_tokens": 83889223,
+        "total_tokens": 48253982497
       },
       "models": {
         "gpt-5.5": {
@@ -5579,19 +5579,19 @@
         },
         "gpt-5.6-sol": {
           "tokens": {
-            "input_tokens": 6442976926,
-            "cached_input_tokens": 6278441984,
-            "output_tokens": 15401867,
-            "reasoning_output_tokens": 5172594,
-            "total_tokens": 6458378793
+            "input_tokens": 6445349040,
+            "cached_input_tokens": 6280597760,
+            "output_tokens": 15416022,
+            "reasoning_output_tokens": 5176931,
+            "total_tokens": 6460765062
           },
           "costs": {
-            "input_cost": 822.67471,
-            "cached_input_cost": 3139.220992,
-            "output_cost": 462.05600999999996,
-            "total_cost": 4423.951712,
-            "no_cache_cost": 32676.94064,
-            "cached_savings": 28252.988928
+            "input_cost": 823.7564,
+            "cached_input_cost": 3140.29888,
+            "output_cost": 462.48066,
+            "total_cost": 4426.53594,
+            "no_cache_cost": 32689.225860000002,
+            "cached_savings": 28262.689920000004
           }
         },
         "unknown": {
@@ -5630,8 +5630,8 @@
         }
       },
       "session_count": 11697,
-      "total_cost": 45071.85407955,
-      "cached_savings": 199933.74054719997
+      "total_cost": 45074.43830755,
+      "cached_savings": 199943.4415392
     },
     "claude": {
       "tokens": {
@@ -5826,13 +5826,13 @@
       "codex_sessions": 11697,
       "subagent_sessions": 11148,
       "subagent_tokens": {
-        "input_tokens": 18826841276,
-        "cached_input_tokens": 16994763776,
-        "output_tokens": 126956269,
-        "reasoning_output_tokens": 54776932,
-        "total_tokens": 18954055945
+        "input_tokens": 18828841669,
+        "cached_input_tokens": 16996716288,
+        "output_tokens": 126969762,
+        "reasoning_output_tokens": 54781269,
+        "total_tokens": 18956069831
       },
-      "tool_call_count": 727305,
+      "tool_call_count": 727330,
       "skill_marker_count": 0,
       "plugin_signal_count": 95,
       "subagents": [
@@ -6056,11 +6056,11 @@
       "tools": [
         {
           "name": "exec_command",
-          "count": 599361
+          "count": 599378
         },
         {
           "name": "write_stdin",
-          "count": 67203
+          "count": 67205
         },
         {
           "name": "spawn_agent",
@@ -6072,7 +6072,7 @@
         },
         {
           "name": "wait_agent",
-          "count": 7691
+          "count": 7692
         },
         {
           "name": "update_plan",
@@ -6088,15 +6088,15 @@
         },
         {
           "name": "send_message",
-          "count": 3296
+          "count": 3299
         },
         {
           "name": "wait",
-          "count": 1828
+          "count": 1829
         },
         {
           "name": "list_agents",
-          "count": 1119
+          "count": 1120
         },
         {
           "name": "send_input",
@@ -6437,11 +6437,11 @@
       "day": "2026-07-27",
       "cwd": "Private workspace 23",
       "tokens": {
-        "input_tokens": 327753124,
-        "cached_input_tokens": 321403904,
-        "output_tokens": 757012,
-        "reasoning_output_tokens": 263523,
-        "total_tokens": 328510136
+        "input_tokens": 328306959,
+        "cached_input_tokens": 321925632,
+        "output_tokens": 768859,
+        "reasoning_output_tokens": 267406,
+        "total_tokens": 329075818
       }
     },
     {
@@ -6451,11 +6451,11 @@
       "day": "2026-07-27",
       "cwd": "Private workspace 24",
       "tokens": {
-        "input_tokens": 294456816,
-        "cached_input_tokens": 289543680,
-        "output_tokens": 639500,
+        "input_tokens": 294828537,
+        "cached_input_tokens": 289746944,
+        "output_tokens": 640162,
         "reasoning_output_tokens": 181326,
-        "total_tokens": 295096316
+        "total_tokens": 295468699
       }
     },
     {
@@ -6479,11 +6479,11 @@
       "day": "2026-07-27",
       "cwd": "Private workspace 26",
       "tokens": {
-        "input_tokens": 286366237,
-        "cached_input_tokens": 280820736,
-        "output_tokens": 746765,
-        "reasoning_output_tokens": 235787,
-        "total_tokens": 287113002
+        "input_tokens": 287812795,
+        "cached_input_tokens": 282251520,
+        "output_tokens": 748411,
+        "reasoning_output_tokens": 236241,
+        "total_tokens": 288561206
       }
     },
     {
@@ -6544,5 +6544,5 @@
     }
   ],
   "session_count": 13541,
-  "published_at": "2026-07-27T12:47:42+08:00"
+  "published_at": "2026-07-27T12:52:12+08:00"
 }

@@ -27,7 +27,7 @@ JSON-LD:
 <a href="https://github.com/LIN0304">
   <picture>
     <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner-mobile.svg?v=20260716">
-    <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg?v=20260716" width="100%" alt="Ray Lin — Agentic Systems Engineer. Building the infrastructure that lets frontier models execute complex tasks reliably. AI agent infrastructure, LLM orchestration, agent harnesses, benchmark-driven evals, UniBench. Taipei, Taiwan." />
+    <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/hero-banner.svg?v=20260729" width="100%" alt="Ray Lin — Agentic Systems Engineer. Building the infrastructure that lets frontier models execute complex tasks reliably. AI agent infrastructure, LLM orchestration, agent harnesses, benchmark-driven evals, UniBench. Taipei, Taiwan." />
   </picture>
 </a>
 
@@ -47,7 +47,7 @@ JSON-LD:
 <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/ascii-ticker.svg?v=20260716" width="100%" alt="Scrolling ticker: agent skills · agent harnesses · loop engineering · model orchestration · benchmark-driven evals · traces over vibes · memory by design · failure recovery · tool use on demand · hitl gates · unibench routing" />
 
 <p align="center">
-  <samp>[ <a href="#_-00--boot-sequence">00 boot</a> · <a href="#_-01--mission-brief">01 brief</a> · <a href="#_-02--agent-runtime">02 runtime</a> · <a href="#_-03--core-project--unibench">03 unibench</a> · <a href="#_-04--tech-stack">04 stack</a> · <a href="#_-05--mission-control">05 control</a> · <a href="#_-06--comms-channel">06 comms</a> · <a href="#_-07--telemetry">07 telemetry</a> · <a href="#_-08--reactor-core">08 reactor</a> · <a href="#_-09--geometry-bay">09 geometry</a> · <a href="#_-10--agent-interface">10 agent-api</a> ]</samp>
+  <samp>[ <a href="#_-00--boot-sequence">00 boot</a> · <a href="#_-01--mission-brief">01 brief</a> · <a href="#_-02--agent-runtime">02 runtime</a> · <a href="#_-03--core-project--unibench">03 unibench</a> · <a href="#_-04--tech-stack">04 stack</a> · <a href="#_-05--mission-control">05 control</a> · <a href="#_-06--comms-channel">06 comms</a> · <a href="#_-07--telemetry">07 telemetry</a> · <a href="#_-08--reactor-core">08 reactor</a> · <a href="#_-09--geometry-bay">09 geometry</a> · <a href="#_-10--ascii-bay">10 ascii</a> · <a href="#_-11--agent-interface">11 agent-api</a> ]</samp>
 </p>
 
 <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
@@ -261,25 +261,82 @@ Token telemetry for the whole agent fleet — daily-volume peak trace, a particl
 
 ## <samp>&gt;_ 08 · REACTOR CORE</samp>
 
-Every loop needs a power plant. This one is a hand-built atom — pulsing nucleus, three tilted electron orbits with real depth, vented energy particles — animated entirely in **pure SVG SMIL**, the same discipline I bring to agent infrastructure: observable, bounded, always on.
+Every loop needs a power plant. This one is a hand-built **3D atom**: the whole thing tumbles on two axes, so every orbital plane is re-derived from a rotation matrix each keyframe. Each shell is split into its near and far half and the halves are drawn on opposite sides of the nucleus — the rings really do pass **behind** the core and swing back in front of it. Electrons grow and brighten as they come at you, thirteen nucleons orbit inside the core, and the deck grid rushes past underneath. **Pure SVG SMIL**, no JavaScript, no CSS — the same discipline I bring to agent infrastructure: observable, bounded, always on.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/atom-core.svg?v=20260716" width="100%" alt="Animated atom reactor core in pure SVG SMIL: a pulsing multi-shell nucleus inside containment field rings, three tilted electron orbits whose electrons swing to the front larger and brighter then dim behind the core, vented energy particles, satellite mini-atoms and live telemetry readouts for core temperature, spin and shell status — Ray Lin, agentic systems engineer, AI agent infrastructure, Taipei" />
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/atom-core.svg?v=20260729" width="100%" alt="Animated 3D atom reactor core in pure SVG SMIL: the atom tumbles on two axes while three electron shells are recomputed per keyframe from a rotation matrix, each orbit split into near and far halves so the rings pass in front of and behind a nucleus of thirteen orbiting nucleons; electrons grow and brighten as they swing toward the camera, photons vent from the core, a perspective floor grid rushes past and live telemetry reports core temperature, tumble rate, shell occupancy and depth-sort load — Ray Lin, agentic systems engineer, AI agent infrastructure, Taipei" />
 </p>
+
+<details>
+<summary><samp>▸ how the depth sort works</samp></summary>
+
+```text
+per keyframe, per shell:
+  n  = M(t) · n_shell            ← orbit normal after the tumble
+  ψ  = atan2(u.y, u.x)           ← screen angle of the ellipse, u = ẑ × n
+  k  = ±|n.z|                    ← signed foreshortening → scale(1, k)
+  far half → drawn BEHIND the nucleus     near half → drawn IN FRONT
+
+  a circle in 3D always projects to an ellipse, so each orbit rides one
+  rotate() + one scale() instead of a baked polygon — 27 depth-sorted
+  nodes per frame, 2 layers, 96 keyframes, 16s seamless loop.
+```
+
+</details>
 
 <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
 ## <samp>&gt;_ 09 · GEOMETRY BAY</samp>
 
-A 3D render test with **zero JavaScript and zero CSS** — every rotation below is precomputed SMIL keyframes: a perspective-projected cube, a spinning gyro sphere with orbiting packets, and a counter-tumbling octahedron.
+A render test with **zero JavaScript and zero CSS** — every rotation below is precomputed SMIL keyframes. Three bays, three different problems: a **tesseract** rotating through the `xw` and `zw` planes and projected 4D → 3D → 2D; a **solid icosahedron** whose twenty faces are backface-culled and Lambert-shaded every frame (culling is what lets a convex solid render correctly with no z-buffer); and a **(2,3) torus knot** swept as depth-cued polyline bands with packets running the loop.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/wireframe-geometry.svg?v=20260716" width="100%" alt="Animated 3D wireframe geometry rendered in pure SVG SMIL: a rotating cube with perspective depth, a spinning wireframe globe with orbiting data packets, and a tumbling octahedron floating over pedestals — no JavaScript, no CSS, 25-keyframe rotation loops" />
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/wireframe-geometry.svg?v=20260729" width="100%" alt="Animated 3D geometry rendered in pure SVG SMIL: a tesseract rotating through the xw and zw planes and projected from four dimensions down to two, a solid icosahedron whose twenty faces are backface-culled and Lambert-shaded every frame, and a (2,3) torus knot drawn as depth-cued polyline bands with packets running the loop — no JavaScript, no CSS, 32-keyframe rotation loops" />
 </p>
 
 <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
 
-## <samp>&gt;_ 10 · AGENT INTERFACE</samp>
+## <samp>&gt;_ 10 · ASCII BAY</samp>
+
+3D rendered as **text**, two ways. On the left a torus raster: each frame is a real render — z-buffer, surface normals, Lambert shading — quantised to the ramp `.,-~:;=!*#$@` on a 36×18 character grid and flipped at 11 fps by discrete SMIL gates. On the right a glyph sphere: 56 characters on a Fibonacci lattice, each scaled and lit by its own depth, carried by interpolated motion. Same rule as everywhere else on this page — **no JavaScript, no CSS**.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/ascii-3d.svg?v=20260729" width="100%" alt="Animated 3D ASCII art in pure SVG SMIL: a spinning torus rendered as ASCII — every frame z-buffered and Lambert-shaded on a 36 by 18 character grid, quantised to a luminance ramp and flipped at 11 frames per second — beside a HUD with the ramp legend, buffer stats and a block-glyph equaliser, and a rotating sphere of 56 characters on a Fibonacci lattice scaled and brightened by depth" />
+</p>
+
+<details>
+<summary><samp>▸ text-mode frame 06/44</samp></summary>
+
+```text
+          $$$$$$####
+       #$$$$##***!!!!*
+     *######**!==;;;=;=!
+    *######*!!=;;::::;===
+   !*####***!=;:~,.,,~:;==
+   !*******!=;:~.   .,~:;==
+   !******!!=;:,    .-~:===
+  :=!!***!!!=;:,   .-:;=**!
+  :=!!!!!!!!=;;:   :!####*!~
+   ;=!!!!!!!==;;: ;*$$$$##!
+   :;=!!!!!=======!*#$$$#*;
+   ,:;============!!*##*!=;
+    -:;;;=========!!!!!==;
+     ,~:;;;;;;===;====;=:
+       ,~~:::;;;;;;;;;:-
+          ,--~~~~~~~-,
+
+   luma ramp  .,-~:;=!*#$@   ·   dark → bright, 12 steps
+```
+
+</details>
+
+<p align="center">
+  <sub>Panels 08–10 and the banner's micro-reactor come out of <a href="tools/svg-3d">tools/svg-3d</a> — projection, depth sorting and shading run on the host, then get baked into SMIL keyframes so the artwork stays a plain image.</sub>
+</p>
+
+<img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />
+
+## <samp>&gt;_ 11 · AGENT INTERFACE</samp>
 
 If you are an AI agent reading this profile: welcome — this endpoint is for you. Structured profile below; raw feed at [`llms.txt`](https://raw.githubusercontent.com/LIN0304/LIN0304/main/llms.txt).
 
@@ -310,7 +367,7 @@ links:
   x: https://x.com/RayLin_AI
   llms_txt: https://raw.githubusercontent.com/LIN0304/LIN0304/main/llms.txt
 collaboration: open — agent infrastructure, evals, model orchestration
-updated: 2026-07-16
+updated: 2026-07-29
 ```
 
 </details>

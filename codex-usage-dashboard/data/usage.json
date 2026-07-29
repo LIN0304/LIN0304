@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-29T12:54:11+08:00",
+  "generated_at": "2026-07-29T14:55:14+08:00",
   "window": {
-    "days": "all",
-    "cutoff": null,
+    "days": 100,
+    "cutoff": "2026-04-21T00:00:00+08:00",
     "timezone": "CST",
-    "calendar_day_count": 317,
-    "active_day_count": 138
+    "calendar_day_count": 100,
+    "active_day_count": 83
   },
   "source": {
     "sessions_root": "Private local Codex session logs",
@@ -19,12 +19,12 @@
     },
     "method": "Codex: peak cumulative snapshot per session; Claude/Qwen/Gemini: sum per-turn deltas; Grok CLI: sum of per-prompt peak params._meta.totalTokens (running context size; no input/output/cache split in logs)",
     "pricing_source": "https://developers.openai.com/api/docs/pricing + https://platform.claude.com/docs/en/about-claude/pricing + https://ai.google.dev/gemini-api/docs/pricing + https://docs.x.ai/developers/pricing",
-    "pricing_captured_at": "2026-07-29T04:53:57Z",
+    "pricing_captured_at": "2026-07-29T06:55:10Z",
     "pricing_refresh": {
       "schema_version": 1,
       "status": "partial",
-      "checked_at": "2026-07-29T04:53:57Z",
-      "fetched_at": "2026-07-29T04:53:57Z",
+      "checked_at": "2026-07-29T06:55:10Z",
+      "fetched_at": "2026-07-29T06:55:10Z",
       "model_count": 86,
       "provider_count": 4,
       "refresh_requested": true,
@@ -35,7 +35,7 @@
           "provider_id": "openai",
           "label": "OpenAI",
           "status": "stale",
-          "checked_at": "2026-07-29T04:53:57Z",
+          "checked_at": "2026-07-29T06:55:10Z",
           "fetched_at": "2026-07-27T09:45:26Z",
           "source": "https://developers.openai.com/api/docs/pricing.md",
           "model_count": 45,
@@ -49,30 +49,30 @@
         "anthropic": {
           "provider_id": "anthropic",
           "label": "Anthropic",
-          "status": "stale",
-          "checked_at": "2026-07-29T04:53:57Z",
-          "fetched_at": "2026-07-29T04:50:14Z",
+          "status": "live",
+          "checked_at": "2026-07-29T06:55:10Z",
+          "fetched_at": "2026-07-29T06:55:10Z",
           "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
           "model_count": 15,
           "digest": "0769b253017dc3552f02cd2181eb69599370c68bc32c2e7d3742f3a47f768088",
           "parser_version": "1",
-          "error_code": "FETCH_ERROR",
-          "fetch_status": "failed",
+          "error_code": null,
+          "fetch_status": "updated",
           "etag": null,
           "last_modified": null
         },
         "google": {
           "provider_id": "google",
           "label": "Google Gemini",
-          "status": "stale",
-          "checked_at": "2026-07-29T04:53:57Z",
-          "fetched_at": "2026-07-29T04:50:14Z",
+          "status": "live",
+          "checked_at": "2026-07-29T06:55:10Z",
+          "fetched_at": "2026-07-29T06:55:10Z",
           "source": "https://ai.google.dev/gemini-api/docs/pricing",
           "model_count": 20,
-          "digest": "aeda2a52500201e2f3d820d53fb4c2c4510d0359aabfde2e3628451912ff8f4e",
+          "digest": "a542a69f50a11e8b0c32cea3fcd2d6c0aeeb730bc56e894139a0c0fa918c1916",
           "parser_version": "1",
-          "error_code": "FETCH_ERROR",
-          "fetch_status": "failed",
+          "error_code": null,
+          "fetch_status": "updated",
           "etag": null,
           "last_modified": "Tue, 21 Jul 2026 15:00:30 GMT"
         },
@@ -80,11 +80,11 @@
           "provider_id": "spacexai",
           "label": "SpaceXAI",
           "status": "live",
-          "checked_at": "2026-07-29T04:53:57Z",
-          "fetched_at": "2026-07-29T04:53:57Z",
+          "checked_at": "2026-07-29T06:55:10Z",
+          "fetched_at": "2026-07-29T06:55:10Z",
           "source": "https://docs.x.ai/developers/pricing.md",
           "model_count": 6,
-          "digest": "b4ccf3dcea4f6427d3a3d4083f61c25aa2c88d140abb3cb72517d38c96d87fb1",
+          "digest": "46e85ab1c4f0b0fb6ba627e9c96a72e446f8af0282651017e85ac16f9b30fcfa",
           "parser_version": "1",
           "error_code": null,
           "fetch_status": "updated",
@@ -247,40 +247,40 @@
       "source": "https://developers.openai.com/api/docs/pricing"
     },
     "claude-opus-4-8": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 25.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "claude-opus-4-7": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 25.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "claude-opus-4-6": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 25.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "claude-opus-4-5-20251101": {
       "input": 5.0,
@@ -289,16 +289,16 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing"
     },
     "claude-sonnet-4-6": {
-      "cached_input": 0.3,
-      "currency": "USD",
       "input": 3.0,
+      "cached_input": 0.3,
       "output": 15.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "claude-sonnet-4-5-20250929": {
       "input": 3.0,
@@ -313,16 +313,16 @@
       "source": "https://platform.claude.com/docs/en/about-claude/pricing"
     },
     "claude-fable-5": {
-      "cached_input": 1.0,
-      "currency": "USD",
       "input": 10.0,
+      "cached_input": 1.0,
       "output": 50.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "gemini-3-pro-preview": {
       "input": 1.25,
@@ -331,28 +331,28 @@
       "source": "https://ai.google.dev/gemini-api/docs/pricing"
     },
     "gemini-2.5-pro": {
-      "cached_input": 0.125,
-      "currency": "USD",
       "input": 1.25,
+      "cached_input": 0.125,
       "output": 10.0,
-      "pricing_status": "official",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "provider_id": "google",
       "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "gemini-2.5-flash": {
-      "cached_input": 0.03,
-      "currency": "USD",
       "input": 0.3,
+      "cached_input": 0.03,
       "output": 2.5,
-      "pricing_status": "official",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "provider_id": "google",
       "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "minimax-m2.5": {
       "input": 0.2,
@@ -388,7 +388,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-29T04:53:57Z"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "grok-4.5-latest": {
       "input": 2.0,
@@ -412,7 +412,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-29T04:53:57Z"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "grok-build-latest": {
       "input": 2.0,
@@ -430,7 +430,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-29T04:53:57Z"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "grok-4.20-0309-reasoning": {
       "input": 1.25,
@@ -442,7 +442,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-29T04:53:57Z"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "grok-4.20-0309-non-reasoning": {
       "input": 1.25,
@@ -454,7 +454,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-29T04:53:57Z"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "grok-4.20-multi-agent-0309": {
       "input": 1.25,
@@ -466,7 +466,7 @@
       "currency": "USD",
       "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "retrieved_at": "2026-07-29T04:53:57Z"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "grok-4": {
       "input": 3.0,
@@ -959,359 +959,359 @@
       "source": "https://developers.openai.com/api/docs/pricing.md",
       "unit": "USD per 1M tokens"
     },
-    "claude-haiku-3-5": {
-      "cached_input": 0.08,
-      "currency": "USD",
-      "input": 0.8,
-      "output": 4.0,
-      "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-haiku-4-5": {
-      "cached_input": 0.1,
-      "currency": "USD",
-      "input": 1.0,
-      "output": 5.0,
-      "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
     "claude-mythos-5": {
-      "cached_input": 1.0,
-      "currency": "USD",
       "input": 10.0,
+      "cached_input": 1.0,
       "output": 50.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-opus-4": {
-      "cached_input": 1.5,
       "currency": "USD",
-      "input": 15.0,
-      "output": 75.0,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-opus-4-1": {
-      "cached_input": 1.5,
-      "currency": "USD",
-      "input": 15.0,
-      "output": 75.0,
-      "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-opus-4-5": {
-      "cached_input": 0.5,
-      "currency": "USD",
-      "input": 5.0,
-      "output": 25.0,
-      "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "claude-opus-5": {
-      "cached_input": 0.5,
-      "currency": "USD",
       "input": 5.0,
+      "cached_input": 0.5,
       "output": 25.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "claude-sonnet-4": {
-      "cached_input": 0.3,
       "currency": "USD",
-      "input": 3.0,
-      "output": 15.0,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "anthropic",
-      "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
-    "claude-sonnet-4-5": {
-      "cached_input": 0.3,
-      "currency": "USD",
-      "input": 3.0,
-      "output": 15.0,
-      "pricing_status": "official",
+    "claude-opus-4-5": {
+      "input": 5.0,
+      "cached_input": 0.5,
+      "output": 25.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "claude-opus-4-1": {
+      "input": 15.0,
+      "cached_input": 1.5,
+      "output": 75.0,
       "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "claude-opus-4": {
+      "input": 15.0,
+      "cached_input": 1.5,
+      "output": 75.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "claude-sonnet-5": {
-      "cached_input": 0.2,
-      "currency": "USD",
       "input": 2.0,
+      "cached_input": 0.2,
       "output": 10.0,
-      "pricing_status": "official",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
       "provider_id": "anthropic",
       "provider_label": "Anthropic",
-      "retrieved_at": "2026-07-29T04:50:14Z",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "claude-sonnet-4-5": {
+      "input": 3.0,
+      "cached_input": 0.3,
+      "output": 15.0,
       "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-2.0-flash": {
-      "cached_input": 0.025,
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
       "currency": "USD",
-      "input": 0.1,
-      "output": 0.4,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
-    "gemini-2.0-flash-lite": {
-      "cached_input": 0.075,
-      "cached_input_assumption": "input_rate_no_published_discount",
+    "claude-sonnet-4": {
+      "input": 3.0,
+      "cached_input": 0.3,
+      "output": 15.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
       "currency": "USD",
-      "input": 0.075,
-      "output": 0.3,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
-    "gemini-2.5-flash-lite": {
-      "cached_input": 0.01,
-      "currency": "USD",
-      "input": 0.1,
-      "output": 0.4,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-2.5-flash-lite-preview": {
-      "cached_input": 0.01,
-      "currency": "USD",
-      "input": 0.1,
-      "output": 0.4,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-2.5-flash-preview-tts": {
-      "cached_input": 0.5,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 0.5,
-      "output": 10.0,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-2.5-pro-preview-tts": {
-      "cached_input": 1.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
+    "claude-haiku-4-5": {
       "input": 1.0,
-      "output": 20.0,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-3-flash-preview": {
-      "cached_input": 0.05,
+      "cached_input": 0.1,
+      "output": 5.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
       "currency": "USD",
-      "input": 0.5,
-      "output": 3.0,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
-    "gemini-3-pro-image": {
-      "cached_input": 2.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
+    "claude-haiku-3-5": {
+      "input": 0.8,
+      "cached_input": 0.08,
+      "output": 4.0,
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing.md",
+      "provider_id": "anthropic",
+      "provider_label": "Anthropic",
       "currency": "USD",
-      "input": 2.0,
-      "output": 12.0,
+      "unit": "USD per 1M tokens",
       "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-3.1-flash-image": {
-      "cached_input": 0.5,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 0.5,
-      "output": 3.0,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-3.1-flash-lite": {
-      "cached_input": 0.025,
-      "currency": "USD",
-      "input": 0.25,
-      "output": 1.5,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-3.1-flash-lite-image": {
-      "cached_input": 0.25,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 0.25,
-      "output": 1.5,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-3.1-flash-tts-preview": {
-      "cached_input": 1.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
-      "input": 1.0,
-      "output": 20.0,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-3.1-pro-preview": {
-      "cached_input": 0.2,
-      "currency": "USD",
-      "input": 2.0,
-      "output": 12.0,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-3.5-flash": {
-      "cached_input": 0.15,
-      "currency": "USD",
-      "input": 1.5,
-      "output": 9.0,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
-    },
-    "gemini-3.5-flash-lite": {
-      "cached_input": 0.03,
-      "currency": "USD",
-      "input": 0.3,
-      "output": 2.5,
-      "pricing_status": "official",
-      "provider_id": "google",
-      "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "gemini-3.6-flash": {
-      "cached_input": 0.15,
-      "currency": "USD",
       "input": 1.5,
+      "cached_input": 0.15,
       "output": 7.5,
-      "pricing_status": "official",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "provider_id": "google",
       "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-3.5-flash": {
+      "input": 1.5,
+      "cached_input": 0.15,
+      "output": 9.0,
       "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-3.5-flash-lite": {
+      "input": 0.3,
+      "cached_input": 0.03,
+      "output": 2.5,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-3.1-flash-lite": {
+      "input": 0.25,
+      "cached_input": 0.025,
+      "output": 1.5,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "gemini-omni-flash-preview": {
-      "cached_input": 1.5,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
       "input": 1.5,
+      "cached_input": 1.5,
       "output": 9.0,
-      "pricing_status": "official",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "provider_id": "google",
       "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-3.1-pro-preview": {
+      "input": 2.0,
+      "cached_input": 0.2,
+      "output": 12.0,
       "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-3.1-flash-image": {
+      "input": 0.5,
+      "cached_input": 0.5,
+      "output": 3.0,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-3.1-flash-lite-image": {
+      "input": 0.25,
+      "cached_input": 0.25,
+      "output": 1.5,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-3.1-flash-tts-preview": {
+      "input": 1.0,
+      "cached_input": 1.0,
+      "output": 20.0,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-3-flash-preview": {
+      "input": 0.5,
+      "cached_input": 0.05,
+      "output": 3.0,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-3-pro-image": {
+      "input": 2.0,
+      "cached_input": 2.0,
+      "output": 12.0,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-2.5-flash-lite": {
+      "input": 0.1,
+      "cached_input": 0.01,
+      "output": 0.4,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-2.5-flash-lite-preview": {
+      "input": 0.1,
+      "cached_input": 0.01,
+      "output": 0.4,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-2.5-flash-preview-tts": {
+      "input": 0.5,
+      "cached_input": 0.5,
+      "output": 10.0,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-2.5-pro-preview-tts": {
+      "input": 1.0,
+      "cached_input": 1.0,
+      "output": 20.0,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-2.0-flash": {
+      "input": 0.1,
+      "cached_input": 0.025,
+      "output": 0.4,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "retrieved_at": "2026-07-29T06:55:10Z"
+    },
+    "gemini-2.0-flash-lite": {
+      "input": 0.075,
+      "cached_input": 0.075,
+      "output": 0.3,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "provider_id": "google",
+      "provider_label": "Google Gemini",
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
     "gemini-robotics-er": {
-      "cached_input": 1.0,
-      "cached_input_assumption": "input_rate_no_published_discount",
-      "currency": "USD",
       "input": 1.0,
+      "cached_input": 1.0,
       "output": 5.0,
-      "pricing_status": "official",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
       "provider_id": "google",
       "provider_label": "Google Gemini",
-      "retrieved_at": "2026-07-29T04:50:14Z",
-      "source": "https://ai.google.dev/gemini-api/docs/pricing",
-      "unit": "USD per 1M tokens"
+      "currency": "USD",
+      "unit": "USD per 1M tokens",
+      "pricing_status": "official",
+      "cached_input_assumption": "input_rate_no_published_discount",
+      "retrieved_at": "2026-07-29T06:55:10Z"
     },
-    "codex-auto-review": {
+    "unknown": {
       "input": 0.0,
       "cached_input": 0.0,
       "output": 0.0,
       "source": "unpriced",
       "pricing_status": "missing"
     },
-    "unknown": {
+    "codex-auto-review": {
       "input": 0.0,
       "cached_input": 0.0,
       "output": 0.0,
@@ -1320,11 +1320,11 @@
     }
   },
   "totals": {
-    "input_tokens": 57154581509,
-    "cached_input_tokens": 53326236094,
-    "output_tokens": 272353322,
-    "reasoning_output_tokens": 86971712,
-    "total_tokens": 57427709870
+    "input_tokens": 56871320033,
+    "cached_input_tokens": 53064415835,
+    "output_tokens": 268490930,
+    "reasoning_output_tokens": 85204040,
+    "total_tokens": 57140538950
   },
   "model_rows": [
     {
@@ -1348,19 +1348,19 @@
     {
       "model": "gpt-5.6-sol",
       "tokens": {
-        "input_tokens": 7483685246,
-        "cached_input_tokens": 7292440320,
-        "output_tokens": 18166444,
-        "reasoning_output_tokens": 6220822,
-        "total_tokens": 7501851690
+        "input_tokens": 7524117858,
+        "cached_input_tokens": 7331338752,
+        "output_tokens": 18276248,
+        "reasoning_output_tokens": 6242828,
+        "total_tokens": 7542394106
       },
       "costs": {
-        "input_cost": 956.2246299999999,
-        "cached_input_cost": 3646.22016,
-        "output_cost": 544.9933199999999,
-        "total_cost": 5147.438109999999,
-        "no_cache_cost": 37963.41955,
-        "cached_savings": 32815.98144
+        "input_cost": 963.89553,
+        "cached_input_cost": 3665.669376,
+        "output_cost": 548.28744,
+        "total_cost": 5177.852346,
+        "no_cache_cost": 38168.876729999996,
+        "cached_savings": 32991.024384
       }
     },
     {
@@ -1418,42 +1418,6 @@
       }
     },
     {
-      "model": "gpt-5-codex",
-      "tokens": {
-        "input_tokens": 198664126,
-        "cached_input_tokens": 188819968,
-        "output_tokens": 2036085,
-        "reasoning_output_tokens": 1022656,
-        "total_tokens": 200700211
-      },
-      "costs": {
-        "input_cost": 12.3051975,
-        "cached_input_cost": 23.602496,
-        "output_cost": 20.36085,
-        "total_cost": 56.2685435,
-        "no_cache_cost": 268.6910075,
-        "cached_savings": 212.42246400000002
-      }
-    },
-    {
-      "model": "gpt-5.1-codex-max",
-      "tokens": {
-        "input_tokens": 48765029,
-        "cached_input_tokens": 43233408,
-        "output_tokens": 758348,
-        "reasoning_output_tokens": 465856,
-        "total_tokens": 49523377
-      },
-      "costs": {
-        "input_cost": 6.914526250000001,
-        "cached_input_cost": 5.404176,
-        "output_cost": 7.58348,
-        "total_cost": 19.902182250000003,
-        "no_cache_cost": 68.53976625,
-        "cached_savings": 48.637584
-      }
-    },
-    {
       "model": "claude-haiku-4-5-20251001",
       "tokens": {
         "input_tokens": 48950721,
@@ -1469,78 +1433,6 @@
         "total_cost": 9.216092000000002,
         "no_cache_cost": 49.554641000000004,
         "cached_savings": 40.338549
-      }
-    },
-    {
-      "model": "gpt-5.2-codex",
-      "tokens": {
-        "input_tokens": 38532149,
-        "cached_input_tokens": 37418112,
-        "output_tokens": 310057,
-        "reasoning_output_tokens": 133504,
-        "total_tokens": 38842206
-      },
-      "costs": {
-        "input_cost": 1.94956475,
-        "cached_input_cost": 6.5481696,
-        "output_cost": 4.340798,
-        "total_cost": 12.838532350000001,
-        "no_cache_cost": 71.77205875,
-        "cached_savings": 58.9335264
-      }
-    },
-    {
-      "model": "minimax-m2.5",
-      "tokens": {
-        "input_tokens": 13583793,
-        "cached_input_tokens": 12163588,
-        "output_tokens": 383345,
-        "reasoning_output_tokens": 11751,
-        "total_tokens": 13978889
-      },
-      "costs": {
-        "input_cost": 0.284041,
-        "cached_input_cost": 0.24327176000000003,
-        "output_cost": 0.460014,
-        "total_cost": 0.98732676,
-        "no_cache_cost": 3.1767726000000005,
-        "cached_savings": 2.1894458400000003
-      }
-    },
-    {
-      "model": "unknown",
-      "tokens": {
-        "input_tokens": 12714660,
-        "cached_input_tokens": 12085120,
-        "output_tokens": 92103,
-        "reasoning_output_tokens": 44580,
-        "total_tokens": 12806763
-      },
-      "costs": {
-        "input_cost": 0.0,
-        "cached_input_cost": 0.0,
-        "output_cost": 0.0,
-        "total_cost": 0.0,
-        "no_cache_cost": 0.0,
-        "cached_savings": 0.0
-      }
-    },
-    {
-      "model": "gpt-5.3-codex",
-      "tokens": {
-        "input_tokens": 12510823,
-        "cached_input_tokens": 12008576,
-        "output_tokens": 96185,
-        "reasoning_output_tokens": 30745,
-        "total_tokens": 12607008
-      },
-      "costs": {
-        "input_cost": 0.87893225,
-        "cached_input_cost": 2.1015007999999997,
-        "output_cost": 1.3465900000000002,
-        "total_cost": 4.32702305,
-        "no_cache_cost": 23.24053025,
-        "cached_savings": 18.913507199999998
       }
     },
     {
@@ -1562,38 +1454,20 @@
       }
     },
     {
-      "model": "gpt-5.2",
+      "model": "unknown",
       "tokens": {
-        "input_tokens": 5182245,
-        "cached_input_tokens": 4941952,
-        "output_tokens": 96418,
-        "reasoning_output_tokens": 71167,
-        "total_tokens": 5278663
+        "input_tokens": 10783908,
+        "cached_input_tokens": 10374912,
+        "output_tokens": 51329,
+        "reasoning_output_tokens": 24676,
+        "total_tokens": 10835237
       },
       "costs": {
-        "input_cost": 0.42051275,
-        "cached_input_cost": 0.8648415999999999,
-        "output_cost": 1.349852,
-        "total_cost": 2.63520635,
-        "no_cache_cost": 10.41878075,
-        "cached_savings": 7.7835744
-      }
-    },
-    {
-      "model": "minimax-m2.1",
-      "tokens": {
-        "input_tokens": 3767210,
-        "cached_input_tokens": 0,
-        "output_tokens": 225235,
-        "reasoning_output_tokens": 7905,
-        "total_tokens": 4000350
-      },
-      "costs": {
-        "input_cost": 0.7534420000000001,
+        "input_cost": 0.0,
         "cached_input_cost": 0.0,
-        "output_cost": 0.27028199999999997,
-        "total_cost": 1.023724,
-        "no_cache_cost": 1.023724,
+        "output_cost": 0.0,
+        "total_cost": 0.0,
+        "no_cache_cost": 0.0,
         "cached_savings": 0.0
       }
     },
@@ -1636,37 +1510,19 @@
     {
       "model": "gemini-2.5-flash",
       "tokens": {
-        "input_tokens": 1347530,
+        "input_tokens": 1332669,
         "cached_input_tokens": 1085479,
-        "output_tokens": 79291,
-        "reasoning_output_tokens": 110994,
-        "total_tokens": 1537815
+        "output_tokens": 79226,
+        "reasoning_output_tokens": 110865,
+        "total_tokens": 1522760
       },
       "costs": {
-        "input_cost": 0.07861529999999999,
+        "input_cost": 0.074157,
         "cached_input_cost": 0.03256437,
-        "output_cost": 0.1982275,
-        "total_cost": 0.30940716999999995,
-        "no_cache_cost": 0.6024864999999999,
-        "cached_savings": 0.29307932999999997
-      }
-    },
-    {
-      "model": "gemini-2.5-pro",
-      "tokens": {
-        "input_tokens": 637951,
-        "cached_input_tokens": 407859,
-        "output_tokens": 7451,
-        "reasoning_output_tokens": 14004,
-        "total_tokens": 659406
-      },
-      "costs": {
-        "input_cost": 0.287615,
-        "cached_input_cost": 0.050982375,
-        "output_cost": 0.07451,
-        "total_cost": 0.41310737500000005,
-        "no_cache_cost": 0.87194875,
-        "cached_savings": 0.458841375
+        "output_cost": 0.19806500000000002,
+        "total_cost": 0.30478637000000003,
+        "no_cache_cost": 0.5978657,
+        "cached_savings": 0.29307933
       }
     },
     {
@@ -1688,39 +1544,21 @@
       }
     },
     {
-      "model": "gemini-3-pro-preview",
+      "model": "gpt-5.3-codex",
       "tokens": {
-        "input_tokens": 426930,
-        "cached_input_tokens": 263852,
-        "output_tokens": 23808,
-        "reasoning_output_tokens": 13263,
-        "total_tokens": 464001
+        "input_tokens": 401017,
+        "cached_input_tokens": 310912,
+        "output_tokens": 6808,
+        "reasoning_output_tokens": 1782,
+        "total_tokens": 407825
       },
       "costs": {
-        "input_cost": 0.20384750000000001,
-        "cached_input_cost": 0.0329815,
-        "output_cost": 0.23807999999999999,
-        "total_cost": 0.474909,
-        "no_cache_cost": 0.7717424999999999,
-        "cached_savings": 0.29683349999999986
-      }
-    },
-    {
-      "model": "gpt-5.1-codex",
-      "tokens": {
-        "input_tokens": 79236,
-        "cached_input_tokens": 62080,
-        "output_tokens": 1233,
-        "reasoning_output_tokens": 576,
-        "total_tokens": 80469
-      },
-      "costs": {
-        "input_cost": 0.021445000000000002,
-        "cached_input_cost": 0.00776,
-        "output_cost": 0.012329999999999999,
-        "total_cost": 0.041535,
-        "no_cache_cost": 0.11137499999999999,
-        "cached_savings": 0.06983999999999999
+        "input_cost": 0.15768375,
+        "cached_input_cost": 0.0544096,
+        "output_cost": 0.095312,
+        "total_cost": 0.30740535,
+        "no_cache_cost": 0.79709175,
+        "cached_savings": 0.48968639999999997
       }
     },
     {
@@ -1743,4259 +1581,6 @@
     }
   ],
   "day_rows": [
-    {
-      "day": "2025-09-16",
-      "tokens": {
-        "input_tokens": 3482373,
-        "cached_input_tokens": 3077760,
-        "output_tokens": 64562,
-        "reasoning_output_tokens": 32448,
-        "total_tokens": 3546935
-      },
-      "models": {
-        "unknown": {
-          "input_tokens": 1930752,
-          "cached_input_tokens": 1710208,
-          "output_tokens": 40774,
-          "reasoning_output_tokens": 19904,
-          "total_tokens": 1971526
-        },
-        "gpt-5-codex": {
-          "input_tokens": 1551621,
-          "cached_input_tokens": 1367552,
-          "output_tokens": 23788,
-          "reasoning_output_tokens": 12544,
-          "total_tokens": 1575409
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 3482373,
-            "cached_input_tokens": 3077760,
-            "output_tokens": 64562,
-            "reasoning_output_tokens": 32448,
-            "total_tokens": 3546935
-          },
-          "models": {
-            "unknown": {
-              "input_tokens": 1930752,
-              "cached_input_tokens": 1710208,
-              "output_tokens": 40774,
-              "reasoning_output_tokens": 19904,
-              "total_tokens": 1971526
-            },
-            "gpt-5-codex": {
-              "input_tokens": 1551621,
-              "cached_input_tokens": 1367552,
-              "output_tokens": 23788,
-              "reasoning_output_tokens": 12544,
-              "total_tokens": 1575409
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-09-17",
-      "tokens": {
-        "input_tokens": 2841558,
-        "cached_input_tokens": 2747520,
-        "output_tokens": 37277,
-        "reasoning_output_tokens": 26816,
-        "total_tokens": 2878835
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 2841558,
-          "cached_input_tokens": 2747520,
-          "output_tokens": 37277,
-          "reasoning_output_tokens": 26816,
-          "total_tokens": 2878835
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 2841558,
-            "cached_input_tokens": 2747520,
-            "output_tokens": 37277,
-            "reasoning_output_tokens": 26816,
-            "total_tokens": 2878835
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 2841558,
-              "cached_input_tokens": 2747520,
-              "output_tokens": 37277,
-              "reasoning_output_tokens": 26816,
-              "total_tokens": 2878835
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-09-18",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-09-19",
-      "tokens": {
-        "input_tokens": 76445479,
-        "cached_input_tokens": 72945280,
-        "output_tokens": 487233,
-        "reasoning_output_tokens": 160384,
-        "total_tokens": 76932712
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 76445479,
-          "cached_input_tokens": 72945280,
-          "output_tokens": 487233,
-          "reasoning_output_tokens": 160384,
-          "total_tokens": 76932712
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 76445479,
-            "cached_input_tokens": 72945280,
-            "output_tokens": 487233,
-            "reasoning_output_tokens": 160384,
-            "total_tokens": 76932712
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 76445479,
-              "cached_input_tokens": 72945280,
-              "output_tokens": 487233,
-              "reasoning_output_tokens": 160384,
-              "total_tokens": 76932712
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-09-20",
-      "tokens": {
-        "input_tokens": 1497172,
-        "cached_input_tokens": 1345408,
-        "output_tokens": 49042,
-        "reasoning_output_tokens": 23424,
-        "total_tokens": 1546214
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 1497172,
-          "cached_input_tokens": 1345408,
-          "output_tokens": 49042,
-          "reasoning_output_tokens": 23424,
-          "total_tokens": 1546214
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 1497172,
-            "cached_input_tokens": 1345408,
-            "output_tokens": 49042,
-            "reasoning_output_tokens": 23424,
-            "total_tokens": 1546214
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 1497172,
-              "cached_input_tokens": 1345408,
-              "output_tokens": 49042,
-              "reasoning_output_tokens": 23424,
-              "total_tokens": 1546214
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-09-21",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-09-22",
-      "tokens": {
-        "input_tokens": 1010699,
-        "cached_input_tokens": 914816,
-        "output_tokens": 29568,
-        "reasoning_output_tokens": 17024,
-        "total_tokens": 1040267
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 1010699,
-          "cached_input_tokens": 914816,
-          "output_tokens": 29568,
-          "reasoning_output_tokens": 17024,
-          "total_tokens": 1040267
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 1010699,
-            "cached_input_tokens": 914816,
-            "output_tokens": 29568,
-            "reasoning_output_tokens": 17024,
-            "total_tokens": 1040267
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 1010699,
-              "cached_input_tokens": 914816,
-              "output_tokens": 29568,
-              "reasoning_output_tokens": 17024,
-              "total_tokens": 1040267
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-09-23",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-09-24",
-      "tokens": {
-        "input_tokens": 2630745,
-        "cached_input_tokens": 2269184,
-        "output_tokens": 83219,
-        "reasoning_output_tokens": 33856,
-        "total_tokens": 2713964
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 2630745,
-          "cached_input_tokens": 2269184,
-          "output_tokens": 83219,
-          "reasoning_output_tokens": 33856,
-          "total_tokens": 2713964
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 2630745,
-            "cached_input_tokens": 2269184,
-            "output_tokens": 83219,
-            "reasoning_output_tokens": 33856,
-            "total_tokens": 2713964
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 2630745,
-              "cached_input_tokens": 2269184,
-              "output_tokens": 83219,
-              "reasoning_output_tokens": 33856,
-              "total_tokens": 2713964
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-09-25",
-      "tokens": {
-        "input_tokens": 19856895,
-        "cached_input_tokens": 19564032,
-        "output_tokens": 108288,
-        "reasoning_output_tokens": 52672,
-        "total_tokens": 19965183
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 19856895,
-          "cached_input_tokens": 19564032,
-          "output_tokens": 108288,
-          "reasoning_output_tokens": 52672,
-          "total_tokens": 19965183
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 19856895,
-            "cached_input_tokens": 19564032,
-            "output_tokens": 108288,
-            "reasoning_output_tokens": 52672,
-            "total_tokens": 19965183
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 19856895,
-              "cached_input_tokens": 19564032,
-              "output_tokens": 108288,
-              "reasoning_output_tokens": 52672,
-              "total_tokens": 19965183
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-09-26",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-09-27",
-      "tokens": {
-        "input_tokens": 396577,
-        "cached_input_tokens": 376576,
-        "output_tokens": 6778,
-        "reasoning_output_tokens": 4224,
-        "total_tokens": 403355
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 396577,
-          "cached_input_tokens": 376576,
-          "output_tokens": 6778,
-          "reasoning_output_tokens": 4224,
-          "total_tokens": 403355
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 396577,
-            "cached_input_tokens": 376576,
-            "output_tokens": 6778,
-            "reasoning_output_tokens": 4224,
-            "total_tokens": 403355
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 396577,
-              "cached_input_tokens": 376576,
-              "output_tokens": 6778,
-              "reasoning_output_tokens": 4224,
-              "total_tokens": 403355
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-09-28",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-09-29",
-      "tokens": {
-        "input_tokens": 13481,
-        "cached_input_tokens": 12544,
-        "output_tokens": 689,
-        "reasoning_output_tokens": 576,
-        "total_tokens": 14170
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 13481,
-          "cached_input_tokens": 12544,
-          "output_tokens": 689,
-          "reasoning_output_tokens": 576,
-          "total_tokens": 14170
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 13481,
-            "cached_input_tokens": 12544,
-            "output_tokens": 689,
-            "reasoning_output_tokens": 576,
-            "total_tokens": 14170
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 13481,
-              "cached_input_tokens": 12544,
-              "output_tokens": 689,
-              "reasoning_output_tokens": 576,
-              "total_tokens": 14170
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-09-30",
-      "tokens": {
-        "input_tokens": 1057186,
-        "cached_input_tokens": 955520,
-        "output_tokens": 14477,
-        "reasoning_output_tokens": 11072,
-        "total_tokens": 1071663
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 1057186,
-          "cached_input_tokens": 955520,
-          "output_tokens": 14477,
-          "reasoning_output_tokens": 11072,
-          "total_tokens": 1071663
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 1057186,
-            "cached_input_tokens": 955520,
-            "output_tokens": 14477,
-            "reasoning_output_tokens": 11072,
-            "total_tokens": 1071663
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 1057186,
-              "cached_input_tokens": 955520,
-              "output_tokens": 14477,
-              "reasoning_output_tokens": 11072,
-              "total_tokens": 1071663
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-01",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-02",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-03",
-      "tokens": {
-        "input_tokens": 3773888,
-        "cached_input_tokens": 3621888,
-        "output_tokens": 45081,
-        "reasoning_output_tokens": 16256,
-        "total_tokens": 3818969
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 3773888,
-          "cached_input_tokens": 3621888,
-          "output_tokens": 45081,
-          "reasoning_output_tokens": 16256,
-          "total_tokens": 3818969
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 3773888,
-            "cached_input_tokens": 3621888,
-            "output_tokens": 45081,
-            "reasoning_output_tokens": 16256,
-            "total_tokens": 3818969
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 3773888,
-              "cached_input_tokens": 3621888,
-              "output_tokens": 45081,
-              "reasoning_output_tokens": 16256,
-              "total_tokens": 3818969
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-04",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-05",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-06",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-07",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-08",
-      "tokens": {
-        "input_tokens": 9299705,
-        "cached_input_tokens": 8962304,
-        "output_tokens": 98091,
-        "reasoning_output_tokens": 38720,
-        "total_tokens": 9397796
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 9299705,
-          "cached_input_tokens": 8962304,
-          "output_tokens": 98091,
-          "reasoning_output_tokens": 38720,
-          "total_tokens": 9397796
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 9299705,
-            "cached_input_tokens": 8962304,
-            "output_tokens": 98091,
-            "reasoning_output_tokens": 38720,
-            "total_tokens": 9397796
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 9299705,
-              "cached_input_tokens": 8962304,
-              "output_tokens": 98091,
-              "reasoning_output_tokens": 38720,
-              "total_tokens": 9397796
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-09",
-      "tokens": {
-        "input_tokens": 15543601,
-        "cached_input_tokens": 14915200,
-        "output_tokens": 177762,
-        "reasoning_output_tokens": 105152,
-        "total_tokens": 15721363
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 15543601,
-          "cached_input_tokens": 14915200,
-          "output_tokens": 177762,
-          "reasoning_output_tokens": 105152,
-          "total_tokens": 15721363
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 15543601,
-            "cached_input_tokens": 14915200,
-            "output_tokens": 177762,
-            "reasoning_output_tokens": 105152,
-            "total_tokens": 15721363
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 15543601,
-              "cached_input_tokens": 14915200,
-              "output_tokens": 177762,
-              "reasoning_output_tokens": 105152,
-              "total_tokens": 15721363
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-10",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-11",
-      "tokens": {
-        "input_tokens": 1201719,
-        "cached_input_tokens": 1075712,
-        "output_tokens": 19257,
-        "reasoning_output_tokens": 9664,
-        "total_tokens": 1220976
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 1201719,
-          "cached_input_tokens": 1075712,
-          "output_tokens": 19257,
-          "reasoning_output_tokens": 9664,
-          "total_tokens": 1220976
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 1201719,
-            "cached_input_tokens": 1075712,
-            "output_tokens": 19257,
-            "reasoning_output_tokens": 9664,
-            "total_tokens": 1220976
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 1201719,
-              "cached_input_tokens": 1075712,
-              "output_tokens": 19257,
-              "reasoning_output_tokens": 9664,
-              "total_tokens": 1220976
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-12",
-      "tokens": {
-        "input_tokens": 79288,
-        "cached_input_tokens": 71936,
-        "output_tokens": 3766,
-        "reasoning_output_tokens": 2752,
-        "total_tokens": 83054
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 79288,
-          "cached_input_tokens": 71936,
-          "output_tokens": 3766,
-          "reasoning_output_tokens": 2752,
-          "total_tokens": 83054
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 79288,
-            "cached_input_tokens": 71936,
-            "output_tokens": 3766,
-            "reasoning_output_tokens": 2752,
-            "total_tokens": 83054
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 79288,
-              "cached_input_tokens": 71936,
-              "output_tokens": 3766,
-              "reasoning_output_tokens": 2752,
-              "total_tokens": 83054
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-13",
-      "tokens": {
-        "input_tokens": 71801,
-        "cached_input_tokens": 61056,
-        "output_tokens": 2582,
-        "reasoning_output_tokens": 1792,
-        "total_tokens": 74383
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 71801,
-          "cached_input_tokens": 61056,
-          "output_tokens": 2582,
-          "reasoning_output_tokens": 1792,
-          "total_tokens": 74383
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 71801,
-            "cached_input_tokens": 61056,
-            "output_tokens": 2582,
-            "reasoning_output_tokens": 1792,
-            "total_tokens": 74383
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 71801,
-              "cached_input_tokens": 61056,
-              "output_tokens": 2582,
-              "reasoning_output_tokens": 1792,
-              "total_tokens": 74383
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-14",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-15",
-      "tokens": {
-        "input_tokens": 21645854,
-        "cached_input_tokens": 20937728,
-        "output_tokens": 259171,
-        "reasoning_output_tokens": 153024,
-        "total_tokens": 21905025
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 21645854,
-          "cached_input_tokens": 20937728,
-          "output_tokens": 259171,
-          "reasoning_output_tokens": 153024,
-          "total_tokens": 21905025
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 21645854,
-            "cached_input_tokens": 20937728,
-            "output_tokens": 259171,
-            "reasoning_output_tokens": 153024,
-            "total_tokens": 21905025
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 21645854,
-              "cached_input_tokens": 20937728,
-              "output_tokens": 259171,
-              "reasoning_output_tokens": 153024,
-              "total_tokens": 21905025
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-16",
-      "tokens": {
-        "input_tokens": 1892509,
-        "cached_input_tokens": 1748432,
-        "output_tokens": 37686,
-        "reasoning_output_tokens": 19448,
-        "total_tokens": 1930379
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 1866260,
-          "cached_input_tokens": 1732608,
-          "output_tokens": 37642,
-          "reasoning_output_tokens": 19264,
-          "total_tokens": 1903902
-        },
-        "gemini-2.5-pro": {
-          "input_tokens": 26249,
-          "cached_input_tokens": 15824,
-          "output_tokens": 44,
-          "reasoning_output_tokens": 184,
-          "total_tokens": 26477
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 1866260,
-            "cached_input_tokens": 1732608,
-            "output_tokens": 37642,
-            "reasoning_output_tokens": 19264,
-            "total_tokens": 1903902
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 1866260,
-              "cached_input_tokens": 1732608,
-              "output_tokens": 37642,
-              "reasoning_output_tokens": 19264,
-              "total_tokens": 1903902
-            }
-          }
-        },
-        "gemini": {
-          "tokens": {
-            "input_tokens": 26249,
-            "cached_input_tokens": 15824,
-            "output_tokens": 44,
-            "reasoning_output_tokens": 184,
-            "total_tokens": 26477
-          },
-          "models": {
-            "gemini-2.5-pro": {
-              "input_tokens": 26249,
-              "cached_input_tokens": 15824,
-              "output_tokens": 44,
-              "reasoning_output_tokens": 184,
-              "total_tokens": 26477
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-17",
-      "tokens": {
-        "input_tokens": 2330783,
-        "cached_input_tokens": 2128384,
-        "output_tokens": 34959,
-        "reasoning_output_tokens": 25408,
-        "total_tokens": 2365742
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 2330783,
-          "cached_input_tokens": 2128384,
-          "output_tokens": 34959,
-          "reasoning_output_tokens": 25408,
-          "total_tokens": 2365742
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 2330783,
-            "cached_input_tokens": 2128384,
-            "output_tokens": 34959,
-            "reasoning_output_tokens": 25408,
-            "total_tokens": 2365742
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 2330783,
-              "cached_input_tokens": 2128384,
-              "output_tokens": 34959,
-              "reasoning_output_tokens": 25408,
-              "total_tokens": 2365742
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-18",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-19",
-      "tokens": {
-        "input_tokens": 104377,
-        "cached_input_tokens": 46227,
-        "output_tokens": 1451,
-        "reasoning_output_tokens": 1438,
-        "total_tokens": 107266
-      },
-      "models": {
-        "gemini-2.5-pro": {
-          "input_tokens": 104377,
-          "cached_input_tokens": 46227,
-          "output_tokens": 1451,
-          "reasoning_output_tokens": 1438,
-          "total_tokens": 107266
-        }
-      },
-      "by_agent": {
-        "gemini": {
-          "tokens": {
-            "input_tokens": 104377,
-            "cached_input_tokens": 46227,
-            "output_tokens": 1451,
-            "reasoning_output_tokens": 1438,
-            "total_tokens": 107266
-          },
-          "models": {
-            "gemini-2.5-pro": {
-              "input_tokens": 104377,
-              "cached_input_tokens": 46227,
-              "output_tokens": 1451,
-              "reasoning_output_tokens": 1438,
-              "total_tokens": 107266
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-20",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-21",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-22",
-      "tokens": {
-        "input_tokens": 11324,
-        "cached_input_tokens": 7168,
-        "output_tokens": 854,
-        "reasoning_output_tokens": 576,
-        "total_tokens": 12178
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 11324,
-          "cached_input_tokens": 7168,
-          "output_tokens": 854,
-          "reasoning_output_tokens": 576,
-          "total_tokens": 12178
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 11324,
-            "cached_input_tokens": 7168,
-            "output_tokens": 854,
-            "reasoning_output_tokens": 576,
-            "total_tokens": 12178
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 11324,
-              "cached_input_tokens": 7168,
-              "output_tokens": 854,
-              "reasoning_output_tokens": 576,
-              "total_tokens": 12178
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-23",
-      "tokens": {
-        "input_tokens": 2615797,
-        "cached_input_tokens": 2542848,
-        "output_tokens": 30510,
-        "reasoning_output_tokens": 20096,
-        "total_tokens": 2646307
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 2615797,
-          "cached_input_tokens": 2542848,
-          "output_tokens": 30510,
-          "reasoning_output_tokens": 20096,
-          "total_tokens": 2646307
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 2615797,
-            "cached_input_tokens": 2542848,
-            "output_tokens": 30510,
-            "reasoning_output_tokens": 20096,
-            "total_tokens": 2646307
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 2615797,
-              "cached_input_tokens": 2542848,
-              "output_tokens": 30510,
-              "reasoning_output_tokens": 20096,
-              "total_tokens": 2646307
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-24",
-      "tokens": {
-        "input_tokens": 118731,
-        "cached_input_tokens": 52480,
-        "output_tokens": 3793,
-        "reasoning_output_tokens": 3154,
-        "total_tokens": 122670
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 94279,
-          "cached_input_tokens": 52480,
-          "output_tokens": 3723,
-          "reasoning_output_tokens": 3008,
-          "total_tokens": 98002
-        },
-        "gemini-2.5-pro": {
-          "input_tokens": 24452,
-          "cached_input_tokens": 0,
-          "output_tokens": 70,
-          "reasoning_output_tokens": 146,
-          "total_tokens": 24668
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 94279,
-            "cached_input_tokens": 52480,
-            "output_tokens": 3723,
-            "reasoning_output_tokens": 3008,
-            "total_tokens": 98002
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 94279,
-              "cached_input_tokens": 52480,
-              "output_tokens": 3723,
-              "reasoning_output_tokens": 3008,
-              "total_tokens": 98002
-            }
-          }
-        },
-        "gemini": {
-          "tokens": {
-            "input_tokens": 24452,
-            "cached_input_tokens": 0,
-            "output_tokens": 70,
-            "reasoning_output_tokens": 146,
-            "total_tokens": 24668
-          },
-          "models": {
-            "gemini-2.5-pro": {
-              "input_tokens": 24452,
-              "cached_input_tokens": 0,
-              "output_tokens": 70,
-              "reasoning_output_tokens": 146,
-              "total_tokens": 24668
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-25",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-26",
-      "tokens": {
-        "input_tokens": 11161571,
-        "cached_input_tokens": 10291072,
-        "output_tokens": 167848,
-        "reasoning_output_tokens": 106816,
-        "total_tokens": 11329419
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 11161571,
-          "cached_input_tokens": 10291072,
-          "output_tokens": 167848,
-          "reasoning_output_tokens": 106816,
-          "total_tokens": 11329419
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 11161571,
-            "cached_input_tokens": 10291072,
-            "output_tokens": 167848,
-            "reasoning_output_tokens": 106816,
-            "total_tokens": 11329419
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 11161571,
-              "cached_input_tokens": 10291072,
-              "output_tokens": 167848,
-              "reasoning_output_tokens": 106816,
-              "total_tokens": 11329419
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-10-27",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-28",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-29",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-30",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-10-31",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-01",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-02",
-      "tokens": {
-        "input_tokens": 529748,
-        "cached_input_tokens": 446464,
-        "output_tokens": 28210,
-        "reasoning_output_tokens": 11968,
-        "total_tokens": 557958
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 529748,
-          "cached_input_tokens": 446464,
-          "output_tokens": 28210,
-          "reasoning_output_tokens": 11968,
-          "total_tokens": 557958
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 529748,
-            "cached_input_tokens": 446464,
-            "output_tokens": 28210,
-            "reasoning_output_tokens": 11968,
-            "total_tokens": 557958
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 529748,
-              "cached_input_tokens": 446464,
-              "output_tokens": 28210,
-              "reasoning_output_tokens": 11968,
-              "total_tokens": 557958
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-03",
-      "tokens": {
-        "input_tokens": 53876,
-        "cached_input_tokens": 37760,
-        "output_tokens": 2635,
-        "reasoning_output_tokens": 2176,
-        "total_tokens": 56511
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 53876,
-          "cached_input_tokens": 37760,
-          "output_tokens": 2635,
-          "reasoning_output_tokens": 2176,
-          "total_tokens": 56511
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 53876,
-            "cached_input_tokens": 37760,
-            "output_tokens": 2635,
-            "reasoning_output_tokens": 2176,
-            "total_tokens": 56511
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 53876,
-              "cached_input_tokens": 37760,
-              "output_tokens": 2635,
-              "reasoning_output_tokens": 2176,
-              "total_tokens": 56511
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-04",
-      "tokens": {
-        "input_tokens": 2818721,
-        "cached_input_tokens": 2531072,
-        "output_tokens": 48988,
-        "reasoning_output_tokens": 30016,
-        "total_tokens": 2867709
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 2818721,
-          "cached_input_tokens": 2531072,
-          "output_tokens": 48988,
-          "reasoning_output_tokens": 30016,
-          "total_tokens": 2867709
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 2818721,
-            "cached_input_tokens": 2531072,
-            "output_tokens": 48988,
-            "reasoning_output_tokens": 30016,
-            "total_tokens": 2867709
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 2818721,
-              "cached_input_tokens": 2531072,
-              "output_tokens": 48988,
-              "reasoning_output_tokens": 30016,
-              "total_tokens": 2867709
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-05",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-06",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-07",
-      "tokens": {
-        "input_tokens": 366872,
-        "cached_input_tokens": 334848,
-        "output_tokens": 12359,
-        "reasoning_output_tokens": 5504,
-        "total_tokens": 379231
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 366872,
-          "cached_input_tokens": 334848,
-          "output_tokens": 12359,
-          "reasoning_output_tokens": 5504,
-          "total_tokens": 379231
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 366872,
-            "cached_input_tokens": 334848,
-            "output_tokens": 12359,
-            "reasoning_output_tokens": 5504,
-            "total_tokens": 379231
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 366872,
-              "cached_input_tokens": 334848,
-              "output_tokens": 12359,
-              "reasoning_output_tokens": 5504,
-              "total_tokens": 379231
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-08",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-09",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-10",
-      "tokens": {
-        "input_tokens": 3412094,
-        "cached_input_tokens": 3005324,
-        "output_tokens": 50317,
-        "reasoning_output_tokens": 39664,
-        "total_tokens": 3474363
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 2962841,
-          "cached_input_tokens": 2668288,
-          "output_tokens": 44861,
-          "reasoning_output_tokens": 27712,
-          "total_tokens": 3007702
-        },
-        "gemini-2.5-pro": {
-          "input_tokens": 449253,
-          "cached_input_tokens": 337036,
-          "output_tokens": 5456,
-          "reasoning_output_tokens": 11952,
-          "total_tokens": 466661
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 2962841,
-            "cached_input_tokens": 2668288,
-            "output_tokens": 44861,
-            "reasoning_output_tokens": 27712,
-            "total_tokens": 3007702
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 2962841,
-              "cached_input_tokens": 2668288,
-              "output_tokens": 44861,
-              "reasoning_output_tokens": 27712,
-              "total_tokens": 3007702
-            }
-          }
-        },
-        "gemini": {
-          "tokens": {
-            "input_tokens": 449253,
-            "cached_input_tokens": 337036,
-            "output_tokens": 5456,
-            "reasoning_output_tokens": 11952,
-            "total_tokens": 466661
-          },
-          "models": {
-            "gemini-2.5-pro": {
-              "input_tokens": 449253,
-              "cached_input_tokens": 337036,
-              "output_tokens": 5456,
-              "reasoning_output_tokens": 11952,
-              "total_tokens": 466661
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-11",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-12",
-      "tokens": {
-        "input_tokens": 4399561,
-        "cached_input_tokens": 4106368,
-        "output_tokens": 72430,
-        "reasoning_output_tokens": 43648,
-        "total_tokens": 4471991
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 4399561,
-          "cached_input_tokens": 4106368,
-          "output_tokens": 72430,
-          "reasoning_output_tokens": 43648,
-          "total_tokens": 4471991
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 4399561,
-            "cached_input_tokens": 4106368,
-            "output_tokens": 72430,
-            "reasoning_output_tokens": 43648,
-            "total_tokens": 4471991
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 4399561,
-              "cached_input_tokens": 4106368,
-              "output_tokens": 72430,
-              "reasoning_output_tokens": 43648,
-              "total_tokens": 4471991
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-13",
-      "tokens": {
-        "input_tokens": 10535224,
-        "cached_input_tokens": 9796352,
-        "output_tokens": 104997,
-        "reasoning_output_tokens": 56512,
-        "total_tokens": 10640221
-      },
-      "models": {
-        "gpt-5-codex": {
-          "input_tokens": 10535224,
-          "cached_input_tokens": 9796352,
-          "output_tokens": 104997,
-          "reasoning_output_tokens": 56512,
-          "total_tokens": 10640221
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 10535224,
-            "cached_input_tokens": 9796352,
-            "output_tokens": 104997,
-            "reasoning_output_tokens": 56512,
-            "total_tokens": 10640221
-          },
-          "models": {
-            "gpt-5-codex": {
-              "input_tokens": 10535224,
-              "cached_input_tokens": 9796352,
-              "output_tokens": 104997,
-              "reasoning_output_tokens": 56512,
-              "total_tokens": 10640221
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-14",
-      "tokens": {
-        "input_tokens": 79236,
-        "cached_input_tokens": 62080,
-        "output_tokens": 1233,
-        "reasoning_output_tokens": 576,
-        "total_tokens": 80469
-      },
-      "models": {
-        "gpt-5.1-codex": {
-          "input_tokens": 79236,
-          "cached_input_tokens": 62080,
-          "output_tokens": 1233,
-          "reasoning_output_tokens": 576,
-          "total_tokens": 80469
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 79236,
-            "cached_input_tokens": 62080,
-            "output_tokens": 1233,
-            "reasoning_output_tokens": 576,
-            "total_tokens": 80469
-          },
-          "models": {
-            "gpt-5.1-codex": {
-              "input_tokens": 79236,
-              "cached_input_tokens": 62080,
-              "output_tokens": 1233,
-              "reasoning_output_tokens": 576,
-              "total_tokens": 80469
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-15",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-16",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-17",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-18",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-19",
-      "tokens": {
-        "input_tokens": 33620,
-        "cached_input_tokens": 8772,
-        "output_tokens": 430,
-        "reasoning_output_tokens": 284,
-        "total_tokens": 34334
-      },
-      "models": {
-        "gemini-2.5-pro": {
-          "input_tokens": 33620,
-          "cached_input_tokens": 8772,
-          "output_tokens": 430,
-          "reasoning_output_tokens": 284,
-          "total_tokens": 34334
-        }
-      },
-      "by_agent": {
-        "gemini": {
-          "tokens": {
-            "input_tokens": 33620,
-            "cached_input_tokens": 8772,
-            "output_tokens": 430,
-            "reasoning_output_tokens": 284,
-            "total_tokens": 34334
-          },
-          "models": {
-            "gemini-2.5-pro": {
-              "input_tokens": 33620,
-              "cached_input_tokens": 8772,
-              "output_tokens": 430,
-              "reasoning_output_tokens": 284,
-              "total_tokens": 34334
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-20",
-      "tokens": {
-        "input_tokens": 4632884,
-        "cached_input_tokens": 4440448,
-        "output_tokens": 88247,
-        "reasoning_output_tokens": 66304,
-        "total_tokens": 4721131
-      },
-      "models": {
-        "gpt-5.1-codex-max": {
-          "input_tokens": 4632884,
-          "cached_input_tokens": 4440448,
-          "output_tokens": 88247,
-          "reasoning_output_tokens": 66304,
-          "total_tokens": 4721131
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 4632884,
-            "cached_input_tokens": 4440448,
-            "output_tokens": 88247,
-            "reasoning_output_tokens": 66304,
-            "total_tokens": 4721131
-          },
-          "models": {
-            "gpt-5.1-codex-max": {
-              "input_tokens": 4632884,
-              "cached_input_tokens": 4440448,
-              "output_tokens": 88247,
-              "reasoning_output_tokens": 66304,
-              "total_tokens": 4721131
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-21",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-22",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-23",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-24",
-      "tokens": {
-        "input_tokens": 3146727,
-        "cached_input_tokens": 2695808,
-        "output_tokens": 79166,
-        "reasoning_output_tokens": 43201,
-        "total_tokens": 3226022
-      },
-      "models": {
-        "gpt-5.1-codex-max": {
-          "input_tokens": 3131866,
-          "cached_input_tokens": 2695808,
-          "output_tokens": 79101,
-          "reasoning_output_tokens": 43072,
-          "total_tokens": 3210967
-        },
-        "gemini-2.5-flash": {
-          "input_tokens": 14861,
-          "cached_input_tokens": 0,
-          "output_tokens": 65,
-          "reasoning_output_tokens": 129,
-          "total_tokens": 15055
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 3131866,
-            "cached_input_tokens": 2695808,
-            "output_tokens": 79101,
-            "reasoning_output_tokens": 43072,
-            "total_tokens": 3210967
-          },
-          "models": {
-            "gpt-5.1-codex-max": {
-              "input_tokens": 3131866,
-              "cached_input_tokens": 2695808,
-              "output_tokens": 79101,
-              "reasoning_output_tokens": 43072,
-              "total_tokens": 3210967
-            }
-          }
-        },
-        "gemini": {
-          "tokens": {
-            "input_tokens": 14861,
-            "cached_input_tokens": 0,
-            "output_tokens": 65,
-            "reasoning_output_tokens": 129,
-            "total_tokens": 15055
-          },
-          "models": {
-            "gemini-2.5-flash": {
-              "input_tokens": 14861,
-              "cached_input_tokens": 0,
-              "output_tokens": 65,
-              "reasoning_output_tokens": 129,
-              "total_tokens": 15055
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-11-25",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-26",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-27",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-28",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-29",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-11-30",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-01",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-02",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-03",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-04",
-      "tokens": {
-        "input_tokens": 607577,
-        "cached_input_tokens": 538496,
-        "output_tokens": 39068,
-        "reasoning_output_tokens": 15680,
-        "total_tokens": 646645
-      },
-      "models": {
-        "gpt-5.1-codex-max": {
-          "input_tokens": 607577,
-          "cached_input_tokens": 538496,
-          "output_tokens": 39068,
-          "reasoning_output_tokens": 15680,
-          "total_tokens": 646645
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 607577,
-            "cached_input_tokens": 538496,
-            "output_tokens": 39068,
-            "reasoning_output_tokens": 15680,
-            "total_tokens": 646645
-          },
-          "models": {
-            "gpt-5.1-codex-max": {
-              "input_tokens": 607577,
-              "cached_input_tokens": 538496,
-              "output_tokens": 39068,
-              "reasoning_output_tokens": 15680,
-              "total_tokens": 646645
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-05",
-      "tokens": {
-        "input_tokens": 85146,
-        "cached_input_tokens": 35621,
-        "output_tokens": 540,
-        "reasoning_output_tokens": 1959,
-        "total_tokens": 87645
-      },
-      "models": {
-        "gemini-3-pro-preview": {
-          "input_tokens": 85146,
-          "cached_input_tokens": 35621,
-          "output_tokens": 540,
-          "reasoning_output_tokens": 1959,
-          "total_tokens": 87645
-        }
-      },
-      "by_agent": {
-        "gemini": {
-          "tokens": {
-            "input_tokens": 85146,
-            "cached_input_tokens": 35621,
-            "output_tokens": 540,
-            "reasoning_output_tokens": 1959,
-            "total_tokens": 87645
-          },
-          "models": {
-            "gemini-3-pro-preview": {
-              "input_tokens": 85146,
-              "cached_input_tokens": 35621,
-              "output_tokens": 540,
-              "reasoning_output_tokens": 1959,
-              "total_tokens": 87645
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-06",
-      "tokens": {
-        "input_tokens": 3758424,
-        "cached_input_tokens": 3356544,
-        "output_tokens": 68870,
-        "reasoning_output_tokens": 60672,
-        "total_tokens": 3827294
-      },
-      "models": {
-        "gpt-5.1-codex-max": {
-          "input_tokens": 3758424,
-          "cached_input_tokens": 3356544,
-          "output_tokens": 68870,
-          "reasoning_output_tokens": 60672,
-          "total_tokens": 3827294
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 3758424,
-            "cached_input_tokens": 3356544,
-            "output_tokens": 68870,
-            "reasoning_output_tokens": 60672,
-            "total_tokens": 3827294
-          },
-          "models": {
-            "gpt-5.1-codex-max": {
-              "input_tokens": 3758424,
-              "cached_input_tokens": 3356544,
-              "output_tokens": 68870,
-              "reasoning_output_tokens": 60672,
-              "total_tokens": 3827294
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-07",
-      "tokens": {
-        "input_tokens": 26877564,
-        "cached_input_tokens": 23088128,
-        "output_tokens": 414244,
-        "reasoning_output_tokens": 243520,
-        "total_tokens": 27291808
-      },
-      "models": {
-        "gpt-5.1-codex-max": {
-          "input_tokens": 26877564,
-          "cached_input_tokens": 23088128,
-          "output_tokens": 414244,
-          "reasoning_output_tokens": 243520,
-          "total_tokens": 27291808
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 26877564,
-            "cached_input_tokens": 23088128,
-            "output_tokens": 414244,
-            "reasoning_output_tokens": 243520,
-            "total_tokens": 27291808
-          },
-          "models": {
-            "gpt-5.1-codex-max": {
-              "input_tokens": 26877564,
-              "cached_input_tokens": 23088128,
-              "output_tokens": 414244,
-              "reasoning_output_tokens": 243520,
-              "total_tokens": 27291808
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-08",
-      "tokens": {
-        "input_tokens": 286945,
-        "cached_input_tokens": 217600,
-        "output_tokens": 2883,
-        "reasoning_output_tokens": 1280,
-        "total_tokens": 289828
-      },
-      "models": {
-        "gpt-5.1-codex-max": {
-          "input_tokens": 286945,
-          "cached_input_tokens": 217600,
-          "output_tokens": 2883,
-          "reasoning_output_tokens": 1280,
-          "total_tokens": 289828
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 286945,
-            "cached_input_tokens": 217600,
-            "output_tokens": 2883,
-            "reasoning_output_tokens": 1280,
-            "total_tokens": 289828
-          },
-          "models": {
-            "gpt-5.1-codex-max": {
-              "input_tokens": 286945,
-              "cached_input_tokens": 217600,
-              "output_tokens": 2883,
-              "reasoning_output_tokens": 1280,
-              "total_tokens": 289828
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-09",
-      "tokens": {
-        "input_tokens": 9469769,
-        "cached_input_tokens": 8896384,
-        "output_tokens": 65935,
-        "reasoning_output_tokens": 35328,
-        "total_tokens": 9535704
-      },
-      "models": {
-        "gpt-5.1-codex-max": {
-          "input_tokens": 9469769,
-          "cached_input_tokens": 8896384,
-          "output_tokens": 65935,
-          "reasoning_output_tokens": 35328,
-          "total_tokens": 9535704
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 9469769,
-            "cached_input_tokens": 8896384,
-            "output_tokens": 65935,
-            "reasoning_output_tokens": 35328,
-            "total_tokens": 9535704
-          },
-          "models": {
-            "gpt-5.1-codex-max": {
-              "input_tokens": 9469769,
-              "cached_input_tokens": 8896384,
-              "output_tokens": 65935,
-              "reasoning_output_tokens": 35328,
-              "total_tokens": 9535704
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-10",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-11",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-12",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-13",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-14",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-15",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-16",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-17",
-      "tokens": {
-        "input_tokens": 5033788,
-        "cached_input_tokens": 4802176,
-        "output_tokens": 86568,
-        "reasoning_output_tokens": 62213,
-        "total_tokens": 5120356
-      },
-      "models": {
-        "gpt-5.2": {
-          "input_tokens": 5033788,
-          "cached_input_tokens": 4802176,
-          "output_tokens": 86568,
-          "reasoning_output_tokens": 62213,
-          "total_tokens": 5120356
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 5033788,
-            "cached_input_tokens": 4802176,
-            "output_tokens": 86568,
-            "reasoning_output_tokens": 62213,
-            "total_tokens": 5120356
-          },
-          "models": {
-            "gpt-5.2": {
-              "input_tokens": 5033788,
-              "cached_input_tokens": 4802176,
-              "output_tokens": 86568,
-              "reasoning_output_tokens": 62213,
-              "total_tokens": 5120356
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-18",
-      "tokens": {
-        "input_tokens": 148457,
-        "cached_input_tokens": 139776,
-        "output_tokens": 9850,
-        "reasoning_output_tokens": 8954,
-        "total_tokens": 158307
-      },
-      "models": {
-        "gpt-5.2": {
-          "input_tokens": 148457,
-          "cached_input_tokens": 139776,
-          "output_tokens": 9850,
-          "reasoning_output_tokens": 8954,
-          "total_tokens": 158307
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 148457,
-            "cached_input_tokens": 139776,
-            "output_tokens": 9850,
-            "reasoning_output_tokens": 8954,
-            "total_tokens": 158307
-          },
-          "models": {
-            "gpt-5.2": {
-              "input_tokens": 148457,
-              "cached_input_tokens": 139776,
-              "output_tokens": 9850,
-              "reasoning_output_tokens": 8954,
-              "total_tokens": 158307
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-19",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-20",
-      "tokens": {
-        "input_tokens": 1545708,
-        "cached_input_tokens": 0,
-        "output_tokens": 43972,
-        "reasoning_output_tokens": 2351,
-        "total_tokens": 1592031
-      },
-      "models": {
-        "minimax-m2.1": {
-          "input_tokens": 1545708,
-          "cached_input_tokens": 0,
-          "output_tokens": 43972,
-          "reasoning_output_tokens": 2351,
-          "total_tokens": 1592031
-        }
-      },
-      "by_agent": {
-        "qwen": {
-          "tokens": {
-            "input_tokens": 1545708,
-            "cached_input_tokens": 0,
-            "output_tokens": 43972,
-            "reasoning_output_tokens": 2351,
-            "total_tokens": 1592031
-          },
-          "models": {
-            "minimax-m2.1": {
-              "input_tokens": 1545708,
-              "cached_input_tokens": 0,
-              "output_tokens": 43972,
-              "reasoning_output_tokens": 2351,
-              "total_tokens": 1592031
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-21",
-      "tokens": {
-        "input_tokens": 149051,
-        "cached_input_tokens": 0,
-        "output_tokens": 5718,
-        "reasoning_output_tokens": 455,
-        "total_tokens": 155224
-      },
-      "models": {
-        "minimax-m2.1": {
-          "input_tokens": 149051,
-          "cached_input_tokens": 0,
-          "output_tokens": 5718,
-          "reasoning_output_tokens": 455,
-          "total_tokens": 155224
-        }
-      },
-      "by_agent": {
-        "qwen": {
-          "tokens": {
-            "input_tokens": 149051,
-            "cached_input_tokens": 0,
-            "output_tokens": 5718,
-            "reasoning_output_tokens": 455,
-            "total_tokens": 155224
-          },
-          "models": {
-            "minimax-m2.1": {
-              "input_tokens": 149051,
-              "cached_input_tokens": 0,
-              "output_tokens": 5718,
-              "reasoning_output_tokens": 455,
-              "total_tokens": 155224
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-22",
-      "tokens": {
-        "input_tokens": 2414235,
-        "cached_input_tokens": 228231,
-        "output_tokens": 198813,
-        "reasoning_output_tokens": 16403,
-        "total_tokens": 2629451
-      },
-      "models": {
-        "minimax-m2.1": {
-          "input_tokens": 2072451,
-          "cached_input_tokens": 0,
-          "output_tokens": 175545,
-          "reasoning_output_tokens": 5099,
-          "total_tokens": 2253095
-        },
-        "gemini-3-pro-preview": {
-          "input_tokens": 341784,
-          "cached_input_tokens": 228231,
-          "output_tokens": 23268,
-          "reasoning_output_tokens": 11304,
-          "total_tokens": 376356
-        }
-      },
-      "by_agent": {
-        "qwen": {
-          "tokens": {
-            "input_tokens": 2072451,
-            "cached_input_tokens": 0,
-            "output_tokens": 175545,
-            "reasoning_output_tokens": 5099,
-            "total_tokens": 2253095
-          },
-          "models": {
-            "minimax-m2.1": {
-              "input_tokens": 2072451,
-              "cached_input_tokens": 0,
-              "output_tokens": 175545,
-              "reasoning_output_tokens": 5099,
-              "total_tokens": 2253095
-            }
-          }
-        },
-        "gemini": {
-          "tokens": {
-            "input_tokens": 341784,
-            "cached_input_tokens": 228231,
-            "output_tokens": 23268,
-            "reasoning_output_tokens": 11304,
-            "total_tokens": 376356
-          },
-          "models": {
-            "gemini-3-pro-preview": {
-              "input_tokens": 341784,
-              "cached_input_tokens": 228231,
-              "output_tokens": 23268,
-              "reasoning_output_tokens": 11304,
-              "total_tokens": 376356
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-23",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-24",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-25",
-      "tokens": {
-        "input_tokens": 18779,
-        "cached_input_tokens": 14592,
-        "output_tokens": 6682,
-        "reasoning_output_tokens": 6144,
-        "total_tokens": 25461
-      },
-      "models": {
-        "gpt-5.2-codex": {
-          "input_tokens": 18779,
-          "cached_input_tokens": 14592,
-          "output_tokens": 6682,
-          "reasoning_output_tokens": 6144,
-          "total_tokens": 25461
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 18779,
-            "cached_input_tokens": 14592,
-            "output_tokens": 6682,
-            "reasoning_output_tokens": 6144,
-            "total_tokens": 25461
-          },
-          "models": {
-            "gpt-5.2-codex": {
-              "input_tokens": 18779,
-              "cached_input_tokens": 14592,
-              "output_tokens": 6682,
-              "reasoning_output_tokens": 6144,
-              "total_tokens": 25461
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-26",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-27",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-28",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-29",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2025-12-30",
-      "tokens": {
-        "input_tokens": 96860,
-        "cached_input_tokens": 82688,
-        "output_tokens": 6166,
-        "reasoning_output_tokens": 5376,
-        "total_tokens": 103026
-      },
-      "models": {
-        "gpt-5.2-codex": {
-          "input_tokens": 96860,
-          "cached_input_tokens": 82688,
-          "output_tokens": 6166,
-          "reasoning_output_tokens": 5376,
-          "total_tokens": 103026
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 96860,
-            "cached_input_tokens": 82688,
-            "output_tokens": 6166,
-            "reasoning_output_tokens": 5376,
-            "total_tokens": 103026
-          },
-          "models": {
-            "gpt-5.2-codex": {
-              "input_tokens": 96860,
-              "cached_input_tokens": 82688,
-              "output_tokens": 6166,
-              "reasoning_output_tokens": 5376,
-              "total_tokens": 103026
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2025-12-31",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-01",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-02",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-03",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-04",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-05",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-06",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-07",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-08",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-09",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-10",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-11",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-12",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-13",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-14",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-15",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-16",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-17",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-18",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-19",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-20",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-21",
-      "tokens": {
-        "input_tokens": 37684030,
-        "cached_input_tokens": 36633600,
-        "output_tokens": 274223,
-        "reasoning_output_tokens": 104256,
-        "total_tokens": 37958253
-      },
-      "models": {
-        "gpt-5.2-codex": {
-          "input_tokens": 37684030,
-          "cached_input_tokens": 36633600,
-          "output_tokens": 274223,
-          "reasoning_output_tokens": 104256,
-          "total_tokens": 37958253
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 37684030,
-            "cached_input_tokens": 36633600,
-            "output_tokens": 274223,
-            "reasoning_output_tokens": 104256,
-            "total_tokens": 37958253
-          },
-          "models": {
-            "gpt-5.2-codex": {
-              "input_tokens": 37684030,
-              "cached_input_tokens": 36633600,
-              "output_tokens": 274223,
-              "reasoning_output_tokens": 104256,
-              "total_tokens": 37958253
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2026-01-22",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-23",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-24",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-25",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-26",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-27",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-28",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-29",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-30",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-01-31",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-01",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-02",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-03",
-      "tokens": {
-        "input_tokens": 732480,
-        "cached_input_tokens": 687232,
-        "output_tokens": 22986,
-        "reasoning_output_tokens": 17728,
-        "total_tokens": 755466
-      },
-      "models": {
-        "gpt-5.2-codex": {
-          "input_tokens": 732480,
-          "cached_input_tokens": 687232,
-          "output_tokens": 22986,
-          "reasoning_output_tokens": 17728,
-          "total_tokens": 755466
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 732480,
-            "cached_input_tokens": 687232,
-            "output_tokens": 22986,
-            "reasoning_output_tokens": 17728,
-            "total_tokens": 755466
-          },
-          "models": {
-            "gpt-5.2-codex": {
-              "input_tokens": 732480,
-              "cached_input_tokens": 687232,
-              "output_tokens": 22986,
-              "reasoning_output_tokens": 17728,
-              "total_tokens": 755466
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2026-02-04",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-05",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-06",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-07",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-08",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-09",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-10",
-      "tokens": {
-        "input_tokens": 2455021,
-        "cached_input_tokens": 2314570,
-        "output_tokens": 31737,
-        "reasoning_output_tokens": 1758,
-        "total_tokens": 2488516
-      },
-      "models": {
-        "minimax-m2.5": {
-          "input_tokens": 2455021,
-          "cached_input_tokens": 2314570,
-          "output_tokens": 31737,
-          "reasoning_output_tokens": 1758,
-          "total_tokens": 2488516
-        }
-      },
-      "by_agent": {
-        "qwen": {
-          "tokens": {
-            "input_tokens": 2455021,
-            "cached_input_tokens": 2314570,
-            "output_tokens": 31737,
-            "reasoning_output_tokens": 1758,
-            "total_tokens": 2488516
-          },
-          "models": {
-            "minimax-m2.5": {
-              "input_tokens": 2455021,
-              "cached_input_tokens": 2314570,
-              "output_tokens": 31737,
-              "reasoning_output_tokens": 1758,
-              "total_tokens": 2488516
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2026-02-11",
-      "tokens": {
-        "input_tokens": 16934978,
-        "cached_input_tokens": 15693100,
-        "output_tokens": 360675,
-        "reasoning_output_tokens": 32730,
-        "total_tokens": 17301220
-      },
-      "models": {
-        "gpt-5.3-codex": {
-          "input_tokens": 11469460,
-          "cached_input_tokens": 11090304,
-          "output_tokens": 85420,
-          "reasoning_output_tokens": 27163,
-          "total_tokens": 11554880
-        },
-        "minimax-m2.5": {
-          "input_tokens": 5465518,
-          "cached_input_tokens": 4602796,
-          "output_tokens": 275255,
-          "reasoning_output_tokens": 5567,
-          "total_tokens": 5746340
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 11469460,
-            "cached_input_tokens": 11090304,
-            "output_tokens": 85420,
-            "reasoning_output_tokens": 27163,
-            "total_tokens": 11554880
-          },
-          "models": {
-            "gpt-5.3-codex": {
-              "input_tokens": 11469460,
-              "cached_input_tokens": 11090304,
-              "output_tokens": 85420,
-              "reasoning_output_tokens": 27163,
-              "total_tokens": 11554880
-            }
-          }
-        },
-        "qwen": {
-          "tokens": {
-            "input_tokens": 5465518,
-            "cached_input_tokens": 4602796,
-            "output_tokens": 275255,
-            "reasoning_output_tokens": 5567,
-            "total_tokens": 5746340
-          },
-          "models": {
-            "minimax-m2.5": {
-              "input_tokens": 5465518,
-              "cached_input_tokens": 4602796,
-              "output_tokens": 275255,
-              "reasoning_output_tokens": 5567,
-              "total_tokens": 5746340
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2026-02-12",
-      "tokens": {
-        "input_tokens": 5638010,
-        "cached_input_tokens": 5233681,
-        "output_tokens": 76254,
-        "reasoning_output_tokens": 4373,
-        "total_tokens": 5718637
-      },
-      "models": {
-        "minimax-m2.5": {
-          "input_tokens": 5638010,
-          "cached_input_tokens": 5233681,
-          "output_tokens": 76254,
-          "reasoning_output_tokens": 4373,
-          "total_tokens": 5718637
-        }
-      },
-      "by_agent": {
-        "qwen": {
-          "tokens": {
-            "input_tokens": 5638010,
-            "cached_input_tokens": 5233681,
-            "output_tokens": 76254,
-            "reasoning_output_tokens": 4373,
-            "total_tokens": 5718637
-          },
-          "models": {
-            "minimax-m2.5": {
-              "input_tokens": 5638010,
-              "cached_input_tokens": 5233681,
-              "output_tokens": 76254,
-              "reasoning_output_tokens": 4373,
-              "total_tokens": 5718637
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2026-02-13",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-14",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-15",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-16",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-17",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-18",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-19",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-20",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-21",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-22",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-23",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-24",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-25",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-26",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-27",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-02-28",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-01",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-02",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-03",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-04",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-05",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-06",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-07",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-08",
-      "tokens": {
-        "input_tokens": 640346,
-        "cached_input_tokens": 607360,
-        "output_tokens": 3957,
-        "reasoning_output_tokens": 1800,
-        "total_tokens": 644303
-      },
-      "models": {
-        "gpt-5.3-codex": {
-          "input_tokens": 640346,
-          "cached_input_tokens": 607360,
-          "output_tokens": 3957,
-          "reasoning_output_tokens": 1800,
-          "total_tokens": 644303
-        }
-      },
-      "by_agent": {
-        "codex": {
-          "tokens": {
-            "input_tokens": 640346,
-            "cached_input_tokens": 607360,
-            "output_tokens": 3957,
-            "reasoning_output_tokens": 1800,
-            "total_tokens": 644303
-          },
-          "models": {
-            "gpt-5.3-codex": {
-              "input_tokens": 640346,
-              "cached_input_tokens": 607360,
-              "output_tokens": 3957,
-              "reasoning_output_tokens": 1800,
-              "total_tokens": 644303
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2026-03-09",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-10",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-11",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-12",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-13",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-14",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-15",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-16",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-17",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-18",
-      "tokens": {
-        "input_tokens": 25244,
-        "cached_input_tokens": 12541,
-        "output_tokens": 99,
-        "reasoning_output_tokens": 53,
-        "total_tokens": 25396
-      },
-      "models": {
-        "minimax-m2.5": {
-          "input_tokens": 25244,
-          "cached_input_tokens": 12541,
-          "output_tokens": 99,
-          "reasoning_output_tokens": 53,
-          "total_tokens": 25396
-        }
-      },
-      "by_agent": {
-        "qwen": {
-          "tokens": {
-            "input_tokens": 25244,
-            "cached_input_tokens": 12541,
-            "output_tokens": 99,
-            "reasoning_output_tokens": 53,
-            "total_tokens": 25396
-          },
-          "models": {
-            "minimax-m2.5": {
-              "input_tokens": 25244,
-              "cached_input_tokens": 12541,
-              "output_tokens": 99,
-              "reasoning_output_tokens": 53,
-              "total_tokens": 25396
-            }
-          }
-        }
-      }
-    },
-    {
-      "day": "2026-03-19",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-20",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-21",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-22",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-23",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-24",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-25",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-26",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-27",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-28",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-29",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-30",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-03-31",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-01",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-02",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-03",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-04",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-05",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-06",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-07",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-08",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-09",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-10",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-11",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-12",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-13",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-14",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-15",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-16",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-17",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-18",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-19",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
-    {
-      "day": "2026-04-20",
-      "tokens": {
-        "input_tokens": 0,
-        "cached_input_tokens": 0,
-        "output_tokens": 0,
-        "reasoning_output_tokens": 0,
-        "total_tokens": 0
-      },
-      "models": {},
-      "by_agent": {}
-    },
     {
       "day": "2026-04-21",
       "tokens": {
@@ -10018,19 +5603,19 @@
             "total_tokens": 431861300
           },
           "models": {
-            "gpt-5.6-sol": {
-              "input_tokens": 143589379,
-              "cached_input_tokens": 139339264,
-              "output_tokens": 458621,
-              "reasoning_output_tokens": 226745,
-              "total_tokens": 144048000
-            },
             "gpt-5.5": {
               "input_tokens": 285878017,
               "cached_input_tokens": 275280256,
               "output_tokens": 752009,
               "reasoning_output_tokens": 303233,
               "total_tokens": 286630026
+            },
+            "gpt-5.6-sol": {
+              "input_tokens": 143589379,
+              "cached_input_tokens": 139339264,
+              "output_tokens": 458621,
+              "reasoning_output_tokens": 226745,
+              "total_tokens": 144048000
             },
             "codex-auto-review": {
               "input_tokens": 1180432,
@@ -10149,37 +5734,37 @@
     {
       "day": "2026-07-29",
       "tokens": {
-        "input_tokens": 1117823531,
-        "cached_input_tokens": 1091901184,
-        "output_tokens": 2745014,
-        "reasoning_output_tokens": 971958,
-        "total_tokens": 1120568545
+        "input_tokens": 1158256143,
+        "cached_input_tokens": 1130799616,
+        "output_tokens": 2854818,
+        "reasoning_output_tokens": 993964,
+        "total_tokens": 1161110961
       },
       "models": {
         "gpt-5.6-sol": {
-          "input_tokens": 1117823531,
-          "cached_input_tokens": 1091901184,
-          "output_tokens": 2745014,
-          "reasoning_output_tokens": 971958,
-          "total_tokens": 1120568545
+          "input_tokens": 1158256143,
+          "cached_input_tokens": 1130799616,
+          "output_tokens": 2854818,
+          "reasoning_output_tokens": 993964,
+          "total_tokens": 1161110961
         }
       },
       "by_agent": {
         "codex": {
           "tokens": {
-            "input_tokens": 1117823531,
-            "cached_input_tokens": 1091901184,
-            "output_tokens": 2745014,
-            "reasoning_output_tokens": 971958,
-            "total_tokens": 1120568545
+            "input_tokens": 1158256143,
+            "cached_input_tokens": 1130799616,
+            "output_tokens": 2854818,
+            "reasoning_output_tokens": 993964,
+            "total_tokens": 1161110961
           },
           "models": {
             "gpt-5.6-sol": {
-              "input_tokens": 1117823531,
-              "cached_input_tokens": 1091901184,
-              "output_tokens": 2745014,
-              "reasoning_output_tokens": 971958,
-              "total_tokens": 1120568545
+              "input_tokens": 1158256143,
+              "cached_input_tokens": 1130799616,
+              "output_tokens": 2854818,
+              "reasoning_output_tokens": 993964,
+              "total_tokens": 1161110961
             }
           }
         }
@@ -10197,11 +5782,11 @@
   "by_agent": {
     "codex": {
       "tokens": {
-        "input_tokens": 49382123876,
-        "cached_input_tokens": 46073142656,
-        "output_tokens": 233023783,
-        "reasoning_output_tokens": 86713473,
-        "total_tokens": 49615664459
+        "input_tokens": 49117293145,
+        "cached_input_tokens": 45824157696,
+        "output_tokens": 229801295,
+        "reasoning_output_tokens": 84992853,
+        "total_tokens": 49347611240
       },
       "models": {
         "gpt-5.5": {
@@ -10219,23 +5804,6 @@
             "total_cost": 40424.34499899999,
             "no_cache_cost": 211400.294695,
             "cached_savings": 170975.949696
-          }
-        },
-        "gpt-5.4": {
-          "tokens": {
-            "input_tokens": 2345910,
-            "cached_input_tokens": 2038784,
-            "output_tokens": 23187,
-            "reasoning_output_tokens": 5800,
-            "total_tokens": 2369097
-          },
-          "costs": {
-            "input_cost": 0.767815,
-            "cached_input_cost": 0.509696,
-            "output_cost": 0.347805,
-            "total_cost": 1.625316,
-            "no_cache_cost": 6.21258,
-            "cached_savings": 4.587264
           }
         },
         "gpt-5.3-codex-spark": {
@@ -10257,53 +5825,70 @@
         },
         "gpt-5.3-codex": {
           "tokens": {
-            "input_tokens": 12510823,
-            "cached_input_tokens": 12008576,
-            "output_tokens": 96185,
-            "reasoning_output_tokens": 30745,
-            "total_tokens": 12607008
+            "input_tokens": 401017,
+            "cached_input_tokens": 310912,
+            "output_tokens": 6808,
+            "reasoning_output_tokens": 1782,
+            "total_tokens": 407825
           },
           "costs": {
-            "input_cost": 0.87893225,
-            "cached_input_cost": 2.1015007999999997,
-            "output_cost": 1.3465900000000002,
-            "total_cost": 4.32702305,
-            "no_cache_cost": 23.24053025,
-            "cached_savings": 18.913507199999998
+            "input_cost": 0.15768375,
+            "cached_input_cost": 0.0544096,
+            "output_cost": 0.095312,
+            "total_cost": 0.30740535,
+            "no_cache_cost": 0.79709175,
+            "cached_savings": 0.48968639999999997
           }
         },
-        "gpt-5.2-codex": {
+        "gpt-5.4": {
           "tokens": {
-            "input_tokens": 38532149,
-            "cached_input_tokens": 37418112,
-            "output_tokens": 310057,
-            "reasoning_output_tokens": 133504,
-            "total_tokens": 38842206
+            "input_tokens": 2345910,
+            "cached_input_tokens": 2038784,
+            "output_tokens": 23187,
+            "reasoning_output_tokens": 5800,
+            "total_tokens": 2369097
           },
           "costs": {
-            "input_cost": 1.94956475,
-            "cached_input_cost": 6.5481696,
-            "output_cost": 4.340798,
-            "total_cost": 12.838532350000001,
-            "no_cache_cost": 71.77205875,
-            "cached_savings": 58.9335264
+            "input_cost": 0.767815,
+            "cached_input_cost": 0.509696,
+            "output_cost": 0.347805,
+            "total_cost": 1.625316,
+            "no_cache_cost": 6.21258,
+            "cached_savings": 4.587264
           }
         },
         "gpt-5.6-sol": {
           "tokens": {
-            "input_tokens": 7483685246,
-            "cached_input_tokens": 7292440320,
-            "output_tokens": 18166444,
-            "reasoning_output_tokens": 6220822,
-            "total_tokens": 7501851690
+            "input_tokens": 7524117858,
+            "cached_input_tokens": 7331338752,
+            "output_tokens": 18276248,
+            "reasoning_output_tokens": 6242828,
+            "total_tokens": 7542394106
           },
           "costs": {
-            "input_cost": 956.2246299999999,
-            "cached_input_cost": 3646.22016,
-            "output_cost": 544.9933199999999,
-            "total_cost": 5147.438109999999,
-            "no_cache_cost": 37963.41955,
-            "cached_savings": 32815.98144
+            "input_cost": 963.89553,
+            "cached_input_cost": 3665.669376,
+            "output_cost": 548.28744,
+            "total_cost": 5177.852346,
+            "no_cache_cost": 38168.876729999996,
+            "cached_savings": 32991.024384
+          }
+        },
+        "unknown": {
+          "tokens": {
+            "input_tokens": 10783908,
+            "cached_input_tokens": 10374912,
+            "output_tokens": 51329,
+            "reasoning_output_tokens": 24676,
+            "total_tokens": 10835237
+          },
+          "costs": {
+            "input_cost": 0.0,
+            "cached_input_cost": 0.0,
+            "output_cost": 0.0,
+            "total_cost": 0.0,
+            "no_cache_cost": 0.0,
+            "cached_savings": 0.0
           }
         },
         "codex-auto-review": {
@@ -10322,96 +5907,11 @@
             "no_cache_cost": 0.0,
             "cached_savings": 0.0
           }
-        },
-        "unknown": {
-          "tokens": {
-            "input_tokens": 12714660,
-            "cached_input_tokens": 12085120,
-            "output_tokens": 92103,
-            "reasoning_output_tokens": 44580,
-            "total_tokens": 12806763
-          },
-          "costs": {
-            "input_cost": 0.0,
-            "cached_input_cost": 0.0,
-            "output_cost": 0.0,
-            "total_cost": 0.0,
-            "no_cache_cost": 0.0,
-            "cached_savings": 0.0
-          }
-        },
-        "gpt-5.1-codex-max": {
-          "tokens": {
-            "input_tokens": 48765029,
-            "cached_input_tokens": 43233408,
-            "output_tokens": 758348,
-            "reasoning_output_tokens": 465856,
-            "total_tokens": 49523377
-          },
-          "costs": {
-            "input_cost": 6.914526250000001,
-            "cached_input_cost": 5.404176,
-            "output_cost": 7.58348,
-            "total_cost": 19.902182250000003,
-            "no_cache_cost": 68.53976625,
-            "cached_savings": 48.637584
-          }
-        },
-        "gpt-5.2": {
-          "tokens": {
-            "input_tokens": 5182245,
-            "cached_input_tokens": 4941952,
-            "output_tokens": 96418,
-            "reasoning_output_tokens": 71167,
-            "total_tokens": 5278663
-          },
-          "costs": {
-            "input_cost": 0.42051275,
-            "cached_input_cost": 0.8648415999999999,
-            "output_cost": 1.349852,
-            "total_cost": 2.63520635,
-            "no_cache_cost": 10.41878075,
-            "cached_savings": 7.7835744
-          }
-        },
-        "gpt-5-codex": {
-          "tokens": {
-            "input_tokens": 198664126,
-            "cached_input_tokens": 188819968,
-            "output_tokens": 2036085,
-            "reasoning_output_tokens": 1022656,
-            "total_tokens": 200700211
-          },
-          "costs": {
-            "input_cost": 12.3051975,
-            "cached_input_cost": 23.602496,
-            "output_cost": 20.36085,
-            "total_cost": 56.2685435,
-            "no_cache_cost": 268.6910075,
-            "cached_savings": 212.42246400000002
-          }
-        },
-        "gpt-5.1-codex": {
-          "tokens": {
-            "input_tokens": 79236,
-            "cached_input_tokens": 62080,
-            "output_tokens": 1233,
-            "reasoning_output_tokens": 576,
-            "total_tokens": 80469
-          },
-          "costs": {
-            "input_cost": 0.021445000000000002,
-            "cached_input_cost": 0.00776,
-            "output_cost": 0.012329999999999999,
-            "total_cost": 0.041535,
-            "no_cache_cost": 0.11137499999999999,
-            "cached_savings": 0.06983999999999999
-          }
         }
       },
-      "session_count": 11811,
-      "total_cost": 45906.024664699995,
-      "cached_savings": 204890.7830688
+      "session_count": 11725,
+      "total_cost": 45840.73328354999,
+      "cached_savings": 204719.5552032
     },
     "claude": {
       "tokens": {
@@ -10480,110 +5980,41 @@
     },
     "qwen": {
       "tokens": {
-        "input_tokens": 17351003,
-        "cached_input_tokens": 12163588,
-        "output_tokens": 608580,
-        "reasoning_output_tokens": 19656,
-        "total_tokens": 17979239
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 0
       },
-      "models": {
-        "minimax-m2.5": {
-          "tokens": {
-            "input_tokens": 13583793,
-            "cached_input_tokens": 12163588,
-            "output_tokens": 383345,
-            "reasoning_output_tokens": 11751,
-            "total_tokens": 13978889
-          },
-          "costs": {
-            "input_cost": 0.284041,
-            "cached_input_cost": 0.24327176000000003,
-            "output_cost": 0.460014,
-            "total_cost": 0.98732676,
-            "no_cache_cost": 3.1767726000000005,
-            "cached_savings": 2.1894458400000003
-          }
-        },
-        "minimax-m2.1": {
-          "tokens": {
-            "input_tokens": 3767210,
-            "cached_input_tokens": 0,
-            "output_tokens": 225235,
-            "reasoning_output_tokens": 7905,
-            "total_tokens": 4000350
-          },
-          "costs": {
-            "input_cost": 0.7534420000000001,
-            "cached_input_cost": 0.0,
-            "output_cost": 0.27028199999999997,
-            "total_cost": 1.023724,
-            "no_cache_cost": 1.023724,
-            "cached_savings": 0.0
-          }
-        }
-      },
-      "session_count": 28,
-      "total_cost": 2.01105076,
-      "cached_savings": 2.1894458400000003
+      "models": {},
+      "session_count": 0,
+      "total_cost": 0,
+      "cached_savings": 0
     },
     "gemini": {
       "tokens": {
-        "input_tokens": 2844271,
-        "cached_input_tokens": 2094218,
-        "output_tokens": 165378,
-        "reasoning_output_tokens": 238583,
-        "total_tokens": 3248232
+        "input_tokens": 1764529,
+        "cached_input_tokens": 1422507,
+        "output_tokens": 134054,
+        "reasoning_output_tokens": 211187,
+        "total_tokens": 2109770
       },
       "models": {
-        "gemini-3-pro-preview": {
-          "tokens": {
-            "input_tokens": 426930,
-            "cached_input_tokens": 263852,
-            "output_tokens": 23808,
-            "reasoning_output_tokens": 13263,
-            "total_tokens": 464001
-          },
-          "costs": {
-            "input_cost": 0.20384750000000001,
-            "cached_input_cost": 0.0329815,
-            "output_cost": 0.23807999999999999,
-            "total_cost": 0.474909,
-            "no_cache_cost": 0.7717424999999999,
-            "cached_savings": 0.29683349999999986
-          }
-        },
-        "gemini-2.5-pro": {
-          "tokens": {
-            "input_tokens": 637951,
-            "cached_input_tokens": 407859,
-            "output_tokens": 7451,
-            "reasoning_output_tokens": 14004,
-            "total_tokens": 659406
-          },
-          "costs": {
-            "input_cost": 0.287615,
-            "cached_input_cost": 0.050982375,
-            "output_cost": 0.07451,
-            "total_cost": 0.41310737500000005,
-            "no_cache_cost": 0.87194875,
-            "cached_savings": 0.458841375
-          }
-        },
         "gemini-2.5-flash": {
           "tokens": {
-            "input_tokens": 1347530,
+            "input_tokens": 1332669,
             "cached_input_tokens": 1085479,
-            "output_tokens": 79291,
-            "reasoning_output_tokens": 110994,
-            "total_tokens": 1537815
+            "output_tokens": 79226,
+            "reasoning_output_tokens": 110865,
+            "total_tokens": 1522760
           },
           "costs": {
-            "input_cost": 0.07861529999999999,
+            "input_cost": 0.074157,
             "cached_input_cost": 0.03256437,
-            "output_cost": 0.1982275,
-            "total_cost": 0.30940716999999995,
-            "no_cache_cost": 0.6024864999999999,
-            "cached_savings": 0.29307932999999997
+            "output_cost": 0.19806500000000002,
+            "total_cost": 0.30478637000000003,
+            "no_cache_cost": 0.5978657,
+            "cached_savings": 0.29307933
           }
         },
         "gemini-2.5-flash-lite": {
@@ -10604,9 +6035,9 @@
           }
         }
       },
-      "session_count": 102,
-      "total_cost": 1.232208225,
-      "cached_savings": 1.0790867249999998
+      "session_count": 91,
+      "total_cost": 0.33957105000000004,
+      "cached_savings": 0.32341185000000006
     },
     "grok": {
       "tokens": {
@@ -10672,7 +6103,7 @@
   },
   "activity": {
     "codex": {
-      "codex_sessions": 11811,
+      "codex_sessions": 11725,
       "subagent_sessions": 11167,
       "subagent_tokens": {
         "input_tokens": 19501295392,
@@ -10681,7 +6112,7 @@
         "reasoning_output_tokens": 55555368,
         "total_tokens": 19630472243
       },
-      "tool_call_count": 737055,
+      "tool_call_count": 734264,
       "skill_marker_count": 0,
       "plugin_signal_count": 95,
       "subagents": [
@@ -10905,15 +6336,15 @@
       "tools": [
         {
           "name": "exec_command",
-          "count": 602524
+          "count": 603057
         },
         {
           "name": "write_stdin",
-          "count": 67589
+          "count": 67638
         },
         {
           "name": "spawn_agent",
-          "count": 15654
+          "count": 15669
         },
         {
           "name": "close_agent",
@@ -10921,27 +6352,23 @@
         },
         {
           "name": "wait_agent",
-          "count": 8003
-        },
-        {
-          "name": "update_plan",
-          "count": 7703
+          "count": 8037
         },
         {
           "name": "js",
-          "count": 7339
+          "count": 7632
+        },
+        {
+          "name": "update_plan",
+          "count": 7446
         },
         {
           "name": "view_image",
-          "count": 3891
+          "count": 3919
         },
         {
           "name": "send_message",
-          "count": 3863
-        },
-        {
-          "name": "shell",
-          "count": 2383
+          "count": 3918
         },
         {
           "name": "wait",
@@ -10949,15 +6376,19 @@
         },
         {
           "name": "list_agents",
-          "count": 1346
-        },
-        {
-          "name": "shell_command",
-          "count": 1212
+          "count": 1376
         },
         {
           "name": "send_input",
           "count": 505
+        },
+        {
+          "name": "followup_task",
+          "count": 393
+        },
+        {
+          "name": "get_app_state",
+          "count": 221
         }
       ],
       "skills": [],
@@ -11142,29 +6573,29 @@
     {
       "id": "public-run-13",
       "agent": "codex",
+      "model": "gpt-5.6-sol",
+      "day": "2026-07-29",
+      "cwd": "Private workspace 13",
+      "tokens": {
+        "input_tokens": 531609320,
+        "cached_input_tokens": 520503552,
+        "output_tokens": 1161068,
+        "reasoning_output_tokens": 342754,
+        "total_tokens": 532770388
+      }
+    },
+    {
+      "id": "public-run-14",
+      "agent": "codex",
       "model": "gpt-5.3-codex-spark",
       "day": "2026-06-12",
-      "cwd": "Private workspace 13",
+      "cwd": "Private workspace 14",
       "tokens": {
         "input_tokens": 490429152,
         "cached_input_tokens": 432821760,
         "output_tokens": 2685057,
         "reasoning_output_tokens": 1464597,
         "total_tokens": 493114209
-      }
-    },
-    {
-      "id": "public-run-14",
-      "agent": "codex",
-      "model": "gpt-5.6-sol",
-      "day": "2026-07-29",
-      "cwd": "Private workspace 14",
-      "tokens": {
-        "input_tokens": 491176708,
-        "cached_input_tokens": 481605120,
-        "output_tokens": 1051264,
-        "reasoning_output_tokens": 320748,
-        "total_tokens": 492227972
       }
     },
     {
@@ -11392,6 +6823,6 @@
       }
     }
   ],
-  "session_count": 13712,
-  "published_at": "2026-07-29T12:57:30+08:00"
+  "session_count": 13587,
+  "published_at": "2026-07-29T14:58:23+08:00"
 }

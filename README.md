@@ -242,17 +242,17 @@ Open to collaboration on agent infrastructure, evals, and model orchestration �
 
 ![Dashboard updated](https://img.shields.io/github/last-commit/LIN0304/LIN0304?label=dashboard%20updated&style=for-the-badge&color=16745b)
 
-Last updated: <relative-time datetime="2026-07-29T14:58:23+08:00">just now</relative-time>
-Snapshot: `2026-07-29T14:58:23+08:00` · Range: **Past 100 days** · Feed: `reasoning-visible`
+Last updated: <relative-time datetime="2026-07-29T15:10:50+08:00">just now</relative-time>
+Snapshot: `2026-07-29T15:10:50+08:00` · Range: **Past 100 days** · Feed: `reasoning-visible`
 
 Token telemetry for the whole agent fleet — daily-volume peak trace, a particle-atom token core, model share, token mix with reasoning tokens visible, agent lanes and a 3D geometry bay. Animated in **pure SVG SMIL**, zero JavaScript.
 
 <picture>
-  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/token-usage-dashboard-mobile-20260729T1458230800.svg">
-  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/token-usage-dashboard-20260729T1458230800.svg" width="100%" alt="Token usage dashboard: 57.1B tokens, 93.3% cache hit, $56,256.40 estimated cost, 13,587 sessions, past 100 days — animated telemetry with a particle-atom token core, reasoning-visible token mix and 3D wireframe geometry">
+  <source media="(max-width: 520px)" srcset="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/token-usage-dashboard-mobile-20260729T1510500800.svg">
+  <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/token-usage-dashboard-20260729T1510500800.svg" width="100%" alt="Token usage dashboard: 57.1B tokens, 93.3% cache hit, $56,259.31 estimated cost, 13,587 sessions, past 100 days — animated telemetry with a particle-atom token core, reasoning-visible token mix and 3D wireframe geometry">
 </picture>
 
-<!-- generated-at: 2026-07-29T14:55:14+08:00 -->
+<!-- generated-at: 2026-07-29T15:07:42+08:00 -->
 <!-- CODEX_USAGE_DASHBOARD:END -->
 
 <img src="https://raw.githubusercontent.com/LIN0304/LIN0304/main/assets/divider-signal.svg?v=20260716" width="100%" alt="" />

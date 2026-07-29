@@ -28,9 +28,14 @@ Claude Code), Model Context Protocol (MCP), multi-agent systems.
 ## This repository
 
 - [README](https://github.com/LIN0304/LIN0304/blob/main/README.md): animated profile page —
-  every animation is hand-authored pure-SMIL SVG (no JavaScript, no CSS), including a
-  reactor-core atom, 3D wireframe geometry, a particle collider, and a mission-control panel
-- [Agent interface](https://github.com/LIN0304#_-10--agent-interface): structured
+  every animation is pure-SMIL SVG (no JavaScript, no CSS), including a depth-sorted 3D
+  reactor-core atom, a geometry bay (4D tesseract, backface-culled solid icosahedron, torus
+  knot), an ASCII bay (z-buffered ASCII torus raster + 3D glyph sphere), a particle collider,
+  and a mission-control panel
+- [3D asset generator](https://github.com/LIN0304/LIN0304/tree/main/tools/svg-3d): the
+  renderer behind those panels — precomputes projection, depth sorting and shading on the
+  host and bakes the result into SMIL keyframes, so the artwork stays a plain image
+- [Agent interface](https://github.com/LIN0304#_-11--agent-interface): structured
   machine-readable profile block for AI agents (YAML), plus a schema.org Person JSON-LD
   object in the README's leading HTML comment
 

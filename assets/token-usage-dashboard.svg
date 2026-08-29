@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1160" height="1080" viewBox="0 0 1160 1080" role="img" aria-labelledby="title desc">
   <!-- render: token-usage-dashboard -->
   <title id="title">Token Usage Dashboard — telemetry</title>
-  <desc id="desc">Animated token usage telemetry: 73.9B tokens over 120 days, 94.2% cache hit, $68,320.14 estimated cost, 13,827 sessions, peak 5.8B on 06-06, reasoning tokens visible at 31.1% of output. Pure SVG SMIL — particle atom orbits and precomputed 3D wireframes, no JavaScript.</desc>
+  <desc id="desc">Animated token usage telemetry: 74.2B tokens over 120 days, 94.2% cache hit, $68,480.56 estimated cost, 13,850 sessions, peak 5.8B on 06-06, reasoning tokens visible at 31.1% of output. Pure SVG SMIL — particle atom orbits and precomputed 3D wireframes, no JavaScript.</desc>
   <defs>
     <linearGradient id="panelBG" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0%" stop-color="#160b04"/><stop offset="62%" stop-color="#0c0806"/><stop offset="100%" stop-color="#221004"/>
@@ -42,7 +42,7 @@
     <rect x="50" y="74" width="0" height="2.5" fill="#ff7a1a">
       <animate attributeName="width" values="0;640" dur="1.4s" begin="0.2s" fill="freeze"/>
     </rect>
-    <text x="50" y="96" font-size="13" font-weight="750" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">&gt; window 120d | snapshot 2026-08-26T13:35:09+08:00 | feed 127.0.0.1:8787 /?v=reasoning-visible</text>
+    <text x="50" y="96" font-size="13" font-weight="750" fill="#ffca88" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">&gt; window 120d | snapshot 2026-08-29T13:14:20+08:00 | feed 127.0.0.1:8787 /?v=reasoning-visible</text>
     <g>
       <circle cx="1046" cy="62" r="3.6" fill="#ff7a1a"><animate attributeName="opacity" values="0.25;1;0.25" dur="2s" repeatCount="indefinite"/></circle>
       <circle cx="1046" cy="62" r="7" fill="none" stroke="#ff7a1a" stroke-width="1">
@@ -88,7 +88,7 @@
       <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" begin="0s" repeatCount="indefinite"/>
     </circle>
     <text x="62" y="156" font-size="10.5" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">&gt; TOTAL TOKENS</text>
-    <text x="62" y="182" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">73.9B</text>
+    <text x="62" y="182" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">74.2B</text>
     <text x="205" y="196" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">120d window</text>
   </g><g>
     <rect x="229" y="130" width="165" height="76" rx="8" fill="#15100c" stroke="#ff4d00" stroke-opacity="0.7"/>
@@ -101,8 +101,8 @@
       <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
     </circle>
     <text x="241" y="156" font-size="10.5" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">&gt; EST COST</text>
-    <text x="241" y="182" font-size="19" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">$68,320.14</text>
-    <text x="384" y="196" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">$569.33 / day</text>
+    <text x="241" y="182" font-size="19" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">$68,480.56</text>
+    <text x="384" y="196" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">$570.67 / day</text>
   </g><g>
     <rect x="408" y="130" width="165" height="76" rx="8" fill="#15100c" stroke="#2dd4a3" stroke-opacity="0.7"/>
     <rect x="416" y="139" width="149" height="2" fill="#2dd4a3" opacity="0.75"/>
@@ -115,7 +115,7 @@
     </circle>
     <text x="420" y="156" font-size="10.5" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">&gt; CACHE HIT</text>
     <text x="420" y="182" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">94.2%</text>
-    <text x="563" y="196" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">69.3B cached</text>
+    <text x="563" y="196" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">69.6B cached</text>
   </g><g>
     <rect x="587" y="130" width="165" height="76" rx="8" fill="#15100c" stroke="#f06d19" stroke-opacity="0.7"/>
     <rect x="595" y="139" width="149" height="2" fill="#f06d19" opacity="0.75"/>
@@ -127,7 +127,7 @@
       <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" begin="1.8s" repeatCount="indefinite"/>
     </circle>
     <text x="599" y="156" font-size="10.5" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">&gt; SAVINGS</text>
-    <text x="599" y="182" font-size="17" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">$326,698.10</text>
+    <text x="599" y="182" font-size="17" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">$327,773.87</text>
     <text x="742" y="196" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">vs no-cache</text>
   </g><g>
     <rect x="766" y="130" width="165" height="76" rx="8" fill="#15100c" stroke="#ffb057" stroke-opacity="0.7"/>
@@ -140,7 +140,7 @@
       <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" begin="2.4s" repeatCount="indefinite"/>
     </circle>
     <text x="778" y="156" font-size="10.5" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">&gt; SESSIONS</text>
-    <text x="778" y="182" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">13,827</text>
+    <text x="778" y="182" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">13,850</text>
     <text x="921" y="196" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">115 / day</text>
   </g><g>
     <rect x="945" y="130" width="165" height="76" rx="8" fill="#15100c" stroke="#b779ff" stroke-opacity="0.7"/>
@@ -153,7 +153,7 @@
       <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" begin="3s" repeatCount="indefinite"/>
     </circle>
     <text x="957" y="156" font-size="10.5" font-weight="800" fill="#ffb057" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">&gt; ACTIVE DAYS</text>
-    <text x="957" y="182" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">101/120</text>
+    <text x="957" y="182" font-size="22" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">102/120</text>
     <text x="1100" y="196" font-size="9" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">telemetry on</text>
   </g>
 
@@ -173,17 +173,17 @@
     <g transform="translate(826,246)">
       <rect width="270" height="18" rx="9" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.6"/>
       <circle cx="14" cy="9" r="3.5" fill="#ff8a22"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.6s" repeatCount="indefinite"/></circle>
-      <text x="24" y="13" font-size="10" font-weight="800" fill="#ffd08a" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">peak 5.8B · 06-06 · today 308.2M</text>
+      <text x="24" y="13" font-size="10" font-weight="800" fill="#ffd08a" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">peak 5.8B · 06-06 · today 262.7M</text>
     </g>
     <text x="88" y="456" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">0</text><text x="88" y="418" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">1.6B</text><text x="88" y="380" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">3.2B</text><text x="88" y="342" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">4.8B</text><text x="88" y="304" font-size="10" font-weight="800" fill="#7a4318" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">6.4B</text>
     <path d="M94 414 H1090" stroke="#4b2a13" stroke-width="1" opacity="0.55" stroke-dasharray="2 4"/><path d="M94 376 H1090" stroke="#4b2a13" stroke-width="1" opacity="0.55" stroke-dasharray="2 4"/><path d="M94 338 H1090" stroke="#4b2a13" stroke-width="1" opacity="0.55" stroke-dasharray="2 4"/>
     <path d="M94 452 H1090" stroke="#6c3a16" stroke-width="1.3"/>
-    <path d="M94,452 L94,451.51 L102.37,452 L110.74,452 L119.11,451.4 L127.48,449.45 L135.85,448.17 L144.22,446.75 L152.59,449.49 L160.96,441.7 L169.33,439.55 L177.7,437.15 L186.07,443.61 L194.44,447.01 L202.81,437.6 L211.18,440.74 L219.55,432.97 L227.92,440.09 L236.29,439.84 L244.66,430.03 L253.03,438.45 L261.39,433.74 L269.76,382.11 L278.13,424.15 L286.5,434.59 L294.87,443.53 L303.24,439.95 L311.61,435.28 L319.98,441.81 L328.35,432.01 L336.72,439.9 L345.09,404.37 L353.46,451.99 L361.83,377.5 L370.2,423.44 L378.57,440.03 L386.94,435.91 L395.31,419.98 L403.68,419.48 L412.05,313.65 L420.42,450.49 L428.79,451.98 L437.16,443.68 L445.53,450.54 L453.9,450.93 L462.27,426.35 L470.64,433.16 L479.01,408.89 L487.38,365.75 L495.75,452 L504.12,452 L512.49,449.13 L520.86,441.38 L529.23,452 L537.6,452 L545.97,452 L554.34,451.63 L562.71,446.22 L571.08,446.58 L579.45,449.88 L587.82,452 L596.18,451.91 L604.55,448.26 L612.92,446.42 L621.29,432.78 L629.66,432.43 L638.03,418.05 L646.4,444.47 L654.77,452 L663.14,449.52 L671.51,449.88 L679.88,442.98 L688.25,429.59 L696.62,447.35 L704.99,436.83 L713.36,435.38 L721.73,433.82 L730.1,448.34 L738.47,440.29 L746.84,427.56 L755.21,442.53 L763.58,452 L771.95,440.94 L780.32,438.89 L788.69,452 L797.06,432.26 L805.43,430.81 L813.8,420.88 L822.17,452 L830.54,448.17 L838.91,418.18 L847.28,451.99 L855.65,434.67 L864.02,439.39 L872.39,444.91 L880.76,440.32 L889.13,345.28 L897.5,452 L905.87,452 L914.24,452 L922.61,452 L930.97,452 L939.34,432.66 L947.71,388.29 L956.08,442.2 L964.45,432.48 L972.82,440.74 L981.19,449.27 L989.56,366.36 L997.93,452 L1006.3,452 L1014.67,451.97 L1023.04,452 L1031.41,451.84 L1039.78,448.93 L1048.15,443.52 L1056.52,450.91 L1064.89,450.84 L1073.26,445.21 L1081.63,433.78 L1090,444.68 L1090,452 Z" fill="url(#peakArea)" opacity="0">
+    <path d="M94,452 L94,451.4 L102.37,449.45 L110.74,448.17 L119.11,446.75 L127.48,449.49 L135.85,441.7 L144.22,439.55 L152.59,437.15 L160.96,443.61 L169.33,447.01 L177.7,437.6 L186.07,440.74 L194.44,432.97 L202.81,440.09 L211.18,439.84 L219.55,430.03 L227.92,438.45 L236.29,433.74 L244.66,382.11 L253.03,424.15 L261.39,434.59 L269.76,443.53 L278.13,439.95 L286.5,435.28 L294.87,441.81 L303.24,432.01 L311.61,439.9 L319.98,404.37 L328.35,451.99 L336.72,377.5 L345.09,423.44 L353.46,440.03 L361.83,435.91 L370.2,419.98 L378.57,419.48 L386.94,313.65 L395.31,450.49 L403.68,451.98 L412.05,443.68 L420.42,450.54 L428.79,450.93 L437.16,426.35 L445.53,433.16 L453.9,408.89 L462.27,365.75 L470.64,452 L479.01,452 L487.38,449.13 L495.75,441.38 L504.12,452 L512.49,452 L520.86,452 L529.23,451.63 L537.6,446.22 L545.97,446.58 L554.34,449.88 L562.71,452 L571.08,451.91 L579.45,448.26 L587.82,446.42 L596.18,432.78 L604.55,432.43 L612.92,418.05 L621.29,444.47 L629.66,452 L638.03,449.52 L646.4,449.88 L654.77,442.98 L663.14,429.59 L671.51,447.35 L679.88,436.83 L688.25,435.38 L696.62,433.82 L704.99,448.34 L713.36,440.29 L721.73,427.56 L730.1,442.53 L738.47,452 L746.84,440.94 L755.21,438.89 L763.58,452 L771.95,432.26 L780.32,430.81 L788.69,420.88 L797.06,452 L805.43,448.17 L813.8,418.18 L822.17,451.99 L830.54,434.67 L838.91,439.39 L847.28,444.91 L855.65,440.32 L864.02,345.28 L872.39,452 L880.76,452 L889.13,452 L897.5,452 L905.87,452 L914.24,432.66 L922.61,388.29 L930.97,442.2 L939.34,432.48 L947.71,440.74 L956.08,449.27 L964.45,366.36 L972.82,452 L981.19,452 L989.56,451.97 L997.93,452 L1006.3,451.84 L1014.67,448.93 L1023.04,443.52 L1031.41,450.91 L1039.78,450.84 L1048.15,445.21 L1056.52,433.78 L1064.89,444.55 L1073.26,451.99 L1081.63,451.96 L1090,445.76 L1090,452 Z" fill="url(#peakArea)" opacity="0">
       <animate attributeName="opacity" values="0;1" dur="1s" begin="1.6s" fill="freeze"/>
     </path>
-    <path d="M94,451.51 L102.37,452 L110.74,452 L119.11,451.4 L127.48,449.45 L135.85,448.17 L144.22,446.75 L152.59,449.49 L160.96,441.7 L169.33,439.55 L177.7,437.15 L186.07,443.61 L194.44,447.01 L202.81,437.6 L211.18,440.74 L219.55,432.97 L227.92,440.09 L236.29,439.84 L244.66,430.03 L253.03,438.45 L261.39,433.74 L269.76,382.11 L278.13,424.15 L286.5,434.59 L294.87,443.53 L303.24,439.95 L311.61,435.28 L319.98,441.81 L328.35,432.01 L336.72,439.9 L345.09,404.37 L353.46,451.99 L361.83,377.5 L370.2,423.44 L378.57,440.03 L386.94,435.91 L395.31,419.98 L403.68,419.48 L412.05,313.65 L420.42,450.49 L428.79,451.98 L437.16,443.68 L445.53,450.54 L453.9,450.93 L462.27,426.35 L470.64,433.16 L479.01,408.89 L487.38,365.75 L495.75,452 L504.12,452 L512.49,449.13 L520.86,441.38 L529.23,452 L537.6,452 L545.97,452 L554.34,451.63 L562.71,446.22 L571.08,446.58 L579.45,449.88 L587.82,452 L596.18,451.91 L604.55,448.26 L612.92,446.42 L621.29,432.78 L629.66,432.43 L638.03,418.05 L646.4,444.47 L654.77,452 L663.14,449.52 L671.51,449.88 L679.88,442.98 L688.25,429.59 L696.62,447.35 L704.99,436.83 L713.36,435.38 L721.73,433.82 L730.1,448.34 L738.47,440.29 L746.84,427.56 L755.21,442.53 L763.58,452 L771.95,440.94 L780.32,438.89 L788.69,452 L797.06,432.26 L805.43,430.81 L813.8,420.88 L822.17,452 L830.54,448.17 L838.91,418.18 L847.28,451.99 L855.65,434.67 L864.02,439.39 L872.39,444.91 L880.76,440.32 L889.13,345.28 L897.5,452 L905.87,452 L914.24,452 L922.61,452 L930.97,452 L939.34,432.66 L947.71,388.29 L956.08,442.2 L964.45,432.48 L972.82,440.74 L981.19,449.27 L989.56,366.36 L997.93,452 L1006.3,452 L1014.67,451.97 L1023.04,452 L1031.41,451.84 L1039.78,448.93 L1048.15,443.52 L1056.52,450.91 L1064.89,450.84 L1073.26,445.21 L1081.63,433.78 L1090,444.68" fill="none" stroke="url(#peakStroke)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"
-      stroke-dasharray="2392" stroke-dashoffset="2392">
-      <animate attributeName="stroke-dashoffset" values="2392;0" dur="2.4s" begin="0.3s" fill="freeze"/>
+    <path d="M94,451.4 L102.37,449.45 L110.74,448.17 L119.11,446.75 L127.48,449.49 L135.85,441.7 L144.22,439.55 L152.59,437.15 L160.96,443.61 L169.33,447.01 L177.7,437.6 L186.07,440.74 L194.44,432.97 L202.81,440.09 L211.18,439.84 L219.55,430.03 L227.92,438.45 L236.29,433.74 L244.66,382.11 L253.03,424.15 L261.39,434.59 L269.76,443.53 L278.13,439.95 L286.5,435.28 L294.87,441.81 L303.24,432.01 L311.61,439.9 L319.98,404.37 L328.35,451.99 L336.72,377.5 L345.09,423.44 L353.46,440.03 L361.83,435.91 L370.2,419.98 L378.57,419.48 L386.94,313.65 L395.31,450.49 L403.68,451.98 L412.05,443.68 L420.42,450.54 L428.79,450.93 L437.16,426.35 L445.53,433.16 L453.9,408.89 L462.27,365.75 L470.64,452 L479.01,452 L487.38,449.13 L495.75,441.38 L504.12,452 L512.49,452 L520.86,452 L529.23,451.63 L537.6,446.22 L545.97,446.58 L554.34,449.88 L562.71,452 L571.08,451.91 L579.45,448.26 L587.82,446.42 L596.18,432.78 L604.55,432.43 L612.92,418.05 L621.29,444.47 L629.66,452 L638.03,449.52 L646.4,449.88 L654.77,442.98 L663.14,429.59 L671.51,447.35 L679.88,436.83 L688.25,435.38 L696.62,433.82 L704.99,448.34 L713.36,440.29 L721.73,427.56 L730.1,442.53 L738.47,452 L746.84,440.94 L755.21,438.89 L763.58,452 L771.95,432.26 L780.32,430.81 L788.69,420.88 L797.06,452 L805.43,448.17 L813.8,418.18 L822.17,451.99 L830.54,434.67 L838.91,439.39 L847.28,444.91 L855.65,440.32 L864.02,345.28 L872.39,452 L880.76,452 L889.13,452 L897.5,452 L905.87,452 L914.24,432.66 L922.61,388.29 L930.97,442.2 L939.34,432.48 L947.71,440.74 L956.08,449.27 L964.45,366.36 L972.82,452 L981.19,452 L989.56,451.97 L997.93,452 L1006.3,451.84 L1014.67,448.93 L1023.04,443.52 L1031.41,450.91 L1039.78,450.84 L1048.15,445.21 L1056.52,433.78 L1064.89,444.55 L1073.26,451.99 L1081.63,451.96 L1090,445.76" fill="none" stroke="url(#peakStroke)" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"
+      stroke-dasharray="2397" stroke-dashoffset="2397">
+      <animate attributeName="stroke-dashoffset" values="2397;0" dur="2.4s" begin="0.3s" fill="freeze"/>
     </path>
     <g clip-path="url(#chartClip)">
       <rect x="94" y="292" width="46" height="166" fill="url(#scanline)" opacity="0.16">
@@ -191,25 +191,25 @@
       </rect>
     </g>
     <circle r="4" fill="#fff2df" filter="url(#peakGlow)">
-      <animateMotion path="M94,451.51 L102.37,452 L110.74,452 L119.11,451.4 L127.48,449.45 L135.85,448.17 L144.22,446.75 L152.59,449.49 L160.96,441.7 L169.33,439.55 L177.7,437.15 L186.07,443.61 L194.44,447.01 L202.81,437.6 L211.18,440.74 L219.55,432.97 L227.92,440.09 L236.29,439.84 L244.66,430.03 L253.03,438.45 L261.39,433.74 L269.76,382.11 L278.13,424.15 L286.5,434.59 L294.87,443.53 L303.24,439.95 L311.61,435.28 L319.98,441.81 L328.35,432.01 L336.72,439.9 L345.09,404.37 L353.46,451.99 L361.83,377.5 L370.2,423.44 L378.57,440.03 L386.94,435.91 L395.31,419.98 L403.68,419.48 L412.05,313.65 L420.42,450.49 L428.79,451.98 L437.16,443.68 L445.53,450.54 L453.9,450.93 L462.27,426.35 L470.64,433.16 L479.01,408.89 L487.38,365.75 L495.75,452 L504.12,452 L512.49,449.13 L520.86,441.38 L529.23,452 L537.6,452 L545.97,452 L554.34,451.63 L562.71,446.22 L571.08,446.58 L579.45,449.88 L587.82,452 L596.18,451.91 L604.55,448.26 L612.92,446.42 L621.29,432.78 L629.66,432.43 L638.03,418.05 L646.4,444.47 L654.77,452 L663.14,449.52 L671.51,449.88 L679.88,442.98 L688.25,429.59 L696.62,447.35 L704.99,436.83 L713.36,435.38 L721.73,433.82 L730.1,448.34 L738.47,440.29 L746.84,427.56 L755.21,442.53 L763.58,452 L771.95,440.94 L780.32,438.89 L788.69,452 L797.06,432.26 L805.43,430.81 L813.8,420.88 L822.17,452 L830.54,448.17 L838.91,418.18 L847.28,451.99 L855.65,434.67 L864.02,439.39 L872.39,444.91 L880.76,440.32 L889.13,345.28 L897.5,452 L905.87,452 L914.24,452 L922.61,452 L930.97,452 L939.34,432.66 L947.71,388.29 L956.08,442.2 L964.45,432.48 L972.82,440.74 L981.19,449.27 L989.56,366.36 L997.93,452 L1006.3,452 L1014.67,451.97 L1023.04,452 L1031.41,451.84 L1039.78,448.93 L1048.15,443.52 L1056.52,450.91 L1064.89,450.84 L1073.26,445.21 L1081.63,433.78 L1090,444.68" dur="18s" begin="2.8s" repeatCount="indefinite" rotate="0"/>
+      <animateMotion path="M94,451.4 L102.37,449.45 L110.74,448.17 L119.11,446.75 L127.48,449.49 L135.85,441.7 L144.22,439.55 L152.59,437.15 L160.96,443.61 L169.33,447.01 L177.7,437.6 L186.07,440.74 L194.44,432.97 L202.81,440.09 L211.18,439.84 L219.55,430.03 L227.92,438.45 L236.29,433.74 L244.66,382.11 L253.03,424.15 L261.39,434.59 L269.76,443.53 L278.13,439.95 L286.5,435.28 L294.87,441.81 L303.24,432.01 L311.61,439.9 L319.98,404.37 L328.35,451.99 L336.72,377.5 L345.09,423.44 L353.46,440.03 L361.83,435.91 L370.2,419.98 L378.57,419.48 L386.94,313.65 L395.31,450.49 L403.68,451.98 L412.05,443.68 L420.42,450.54 L428.79,450.93 L437.16,426.35 L445.53,433.16 L453.9,408.89 L462.27,365.75 L470.64,452 L479.01,452 L487.38,449.13 L495.75,441.38 L504.12,452 L512.49,452 L520.86,452 L529.23,451.63 L537.6,446.22 L545.97,446.58 L554.34,449.88 L562.71,452 L571.08,451.91 L579.45,448.26 L587.82,446.42 L596.18,432.78 L604.55,432.43 L612.92,418.05 L621.29,444.47 L629.66,452 L638.03,449.52 L646.4,449.88 L654.77,442.98 L663.14,429.59 L671.51,447.35 L679.88,436.83 L688.25,435.38 L696.62,433.82 L704.99,448.34 L713.36,440.29 L721.73,427.56 L730.1,442.53 L738.47,452 L746.84,440.94 L755.21,438.89 L763.58,452 L771.95,432.26 L780.32,430.81 L788.69,420.88 L797.06,452 L805.43,448.17 L813.8,418.18 L822.17,451.99 L830.54,434.67 L838.91,439.39 L847.28,444.91 L855.65,440.32 L864.02,345.28 L872.39,452 L880.76,452 L889.13,452 L897.5,452 L905.87,452 L914.24,432.66 L922.61,388.29 L930.97,442.2 L939.34,432.48 L947.71,440.74 L956.08,449.27 L964.45,366.36 L972.82,452 L981.19,452 L989.56,451.97 L997.93,452 L1006.3,451.84 L1014.67,448.93 L1023.04,443.52 L1031.41,450.91 L1039.78,450.84 L1048.15,445.21 L1056.52,433.78 L1064.89,444.55 L1073.26,451.99 L1081.63,451.96 L1090,445.76" dur="18s" begin="2.8s" repeatCount="indefinite" rotate="0"/>
     </circle>
     <circle r="1.8" fill="#ffd08a">
-      <animateMotion path="M94,451.51 L102.37,452 L110.74,452 L119.11,451.4 L127.48,449.45 L135.85,448.17 L144.22,446.75 L152.59,449.49 L160.96,441.7 L169.33,439.55 L177.7,437.15 L186.07,443.61 L194.44,447.01 L202.81,437.6 L211.18,440.74 L219.55,432.97 L227.92,440.09 L236.29,439.84 L244.66,430.03 L253.03,438.45 L261.39,433.74 L269.76,382.11 L278.13,424.15 L286.5,434.59 L294.87,443.53 L303.24,439.95 L311.61,435.28 L319.98,441.81 L328.35,432.01 L336.72,439.9 L345.09,404.37 L353.46,451.99 L361.83,377.5 L370.2,423.44 L378.57,440.03 L386.94,435.91 L395.31,419.98 L403.68,419.48 L412.05,313.65 L420.42,450.49 L428.79,451.98 L437.16,443.68 L445.53,450.54 L453.9,450.93 L462.27,426.35 L470.64,433.16 L479.01,408.89 L487.38,365.75 L495.75,452 L504.12,452 L512.49,449.13 L520.86,441.38 L529.23,452 L537.6,452 L545.97,452 L554.34,451.63 L562.71,446.22 L571.08,446.58 L579.45,449.88 L587.82,452 L596.18,451.91 L604.55,448.26 L612.92,446.42 L621.29,432.78 L629.66,432.43 L638.03,418.05 L646.4,444.47 L654.77,452 L663.14,449.52 L671.51,449.88 L679.88,442.98 L688.25,429.59 L696.62,447.35 L704.99,436.83 L713.36,435.38 L721.73,433.82 L730.1,448.34 L738.47,440.29 L746.84,427.56 L755.21,442.53 L763.58,452 L771.95,440.94 L780.32,438.89 L788.69,452 L797.06,432.26 L805.43,430.81 L813.8,420.88 L822.17,452 L830.54,448.17 L838.91,418.18 L847.28,451.99 L855.65,434.67 L864.02,439.39 L872.39,444.91 L880.76,440.32 L889.13,345.28 L897.5,452 L905.87,452 L914.24,452 L922.61,452 L930.97,452 L939.34,432.66 L947.71,388.29 L956.08,442.2 L964.45,432.48 L972.82,440.74 L981.19,449.27 L989.56,366.36 L997.93,452 L1006.3,452 L1014.67,451.97 L1023.04,452 L1031.41,451.84 L1039.78,448.93 L1048.15,443.52 L1056.52,450.91 L1064.89,450.84 L1073.26,445.21 L1081.63,433.78 L1090,444.68" dur="18s" begin="2.55s" repeatCount="indefinite"/>
+      <animateMotion path="M94,451.4 L102.37,449.45 L110.74,448.17 L119.11,446.75 L127.48,449.49 L135.85,441.7 L144.22,439.55 L152.59,437.15 L160.96,443.61 L169.33,447.01 L177.7,437.6 L186.07,440.74 L194.44,432.97 L202.81,440.09 L211.18,439.84 L219.55,430.03 L227.92,438.45 L236.29,433.74 L244.66,382.11 L253.03,424.15 L261.39,434.59 L269.76,443.53 L278.13,439.95 L286.5,435.28 L294.87,441.81 L303.24,432.01 L311.61,439.9 L319.98,404.37 L328.35,451.99 L336.72,377.5 L345.09,423.44 L353.46,440.03 L361.83,435.91 L370.2,419.98 L378.57,419.48 L386.94,313.65 L395.31,450.49 L403.68,451.98 L412.05,443.68 L420.42,450.54 L428.79,450.93 L437.16,426.35 L445.53,433.16 L453.9,408.89 L462.27,365.75 L470.64,452 L479.01,452 L487.38,449.13 L495.75,441.38 L504.12,452 L512.49,452 L520.86,452 L529.23,451.63 L537.6,446.22 L545.97,446.58 L554.34,449.88 L562.71,452 L571.08,451.91 L579.45,448.26 L587.82,446.42 L596.18,432.78 L604.55,432.43 L612.92,418.05 L621.29,444.47 L629.66,452 L638.03,449.52 L646.4,449.88 L654.77,442.98 L663.14,429.59 L671.51,447.35 L679.88,436.83 L688.25,435.38 L696.62,433.82 L704.99,448.34 L713.36,440.29 L721.73,427.56 L730.1,442.53 L738.47,452 L746.84,440.94 L755.21,438.89 L763.58,452 L771.95,432.26 L780.32,430.81 L788.69,420.88 L797.06,452 L805.43,448.17 L813.8,418.18 L822.17,451.99 L830.54,434.67 L838.91,439.39 L847.28,444.91 L855.65,440.32 L864.02,345.28 L872.39,452 L880.76,452 L889.13,452 L897.5,452 L905.87,452 L914.24,432.66 L922.61,388.29 L930.97,442.2 L939.34,432.48 L947.71,440.74 L956.08,449.27 L964.45,366.36 L972.82,452 L981.19,452 L989.56,451.97 L997.93,452 L1006.3,451.84 L1014.67,448.93 L1023.04,443.52 L1031.41,450.91 L1039.78,450.84 L1048.15,445.21 L1056.52,433.78 L1064.89,444.55 L1073.26,451.99 L1081.63,451.96 L1090,445.76" dur="18s" begin="2.55s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.7;0.25;0.7" dur="1.2s" repeatCount="indefinite"/>
     </circle>
     <g>
-      <circle cx="412.05" cy="313.65" r="11" fill="#ff4d00" opacity="0.3">
+      <circle cx="386.94" cy="313.65" r="11" fill="#ff4d00" opacity="0.3">
         <animate attributeName="r" values="8;14;8" dur="2.6s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="412.05" cy="313.65" r="6" fill="#ff8a22" filter="url(#peakGlow)"/>
-      <circle cx="412.05" cy="313.65" r="2.8" fill="#fff2df"/>
-      <rect x="346.05" y="279.65" width="132" height="20" rx="5" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.85"/>
-      <text x="412.05" y="293.65" font-size="11" font-weight="900" fill="#ffd08a" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">↑ 5.8B · 06-06</text>
+      <circle cx="386.94" cy="313.65" r="6" fill="#ff8a22" filter="url(#peakGlow)"/>
+      <circle cx="386.94" cy="313.65" r="2.8" fill="#fff2df"/>
+      <rect x="320.94" y="279.65" width="132" height="20" rx="5" fill="#1b0e07" stroke="#ff7a1a" stroke-opacity="0.85"/>
+      <text x="386.94" y="293.65" font-size="11" font-weight="900" fill="#ffd08a" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">↑ 5.8B · 06-06</text>
     </g>
-    <circle cx="1090" cy="444.68" r="4.5" fill="#1b0e07" stroke="#ffd08a" stroke-width="1.6"/>
-    <text x="1086" y="434.68" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">today 308.2M</text>
-    <text x="94" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">04-29</text><text x="194.44" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">05-11</text><text x="311.61" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">05-25</text><text x="412.05" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">06-06</text><text x="529.23" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">06-20</text><text x="646.4" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">07-04</text><text x="1090" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">08-26</text>
-    <text x="66" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">avg</text><text x="93.2" y="486" font-size="10" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">616.0M</text><text x="180" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">median</text><text x="226.4" y="486" font-size="10" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">492.0M</text><text x="320" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">range</text><text x="360" y="486" font-size="10" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">50.5K ↔ 5.8B</text><text x="510" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">last 7d</text><text x="562.8" y="486" font-size="10" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">1.9B</text><text x="640" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">Δ vs prev 7d</text><text x="724.8" y="486" font-size="10" font-weight="850" fill="#ff5f56" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">-48%</text><text x="810" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">trend</text><text x="850" y="486" font-size="10" font-weight="850" fill="#ff5f56" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">▼ cooling</text>
+    <circle cx="1090" cy="445.76" r="4.5" fill="#1b0e07" stroke="#ffd08a" stroke-width="1.6"/>
+    <text x="1086" y="435.76" font-size="9" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">today 262.7M</text>
+    <text x="94" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">05-02</text><text x="194.44" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">05-14</text><text x="311.61" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">05-28</text><text x="386.94" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">06-06</text><text x="529.23" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">06-23</text><text x="646.4" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">07-07</text><text x="1090" y="468" font-size="10" font-weight="800" fill="#ffca88" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">08-29</text>
+    <text x="66" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">avg</text><text x="93.2" y="486" font-size="10" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">618.1M</text><text x="180" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">median</text><text x="226.4" y="486" font-size="10" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">492.0M</text><text x="320" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">range</text><text x="360" y="486" font-size="10" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">436.8K ↔ 5.8B</text><text x="510" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">last 7d</text><text x="562.8" y="486" font-size="10" font-weight="850" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">1.7B</text><text x="640" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">Δ vs prev 7d</text><text x="724.8" y="486" font-size="10" font-weight="850" fill="#2dd4a3" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">+211%</text><text x="810" y="486" font-size="10" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">trend</text><text x="850" y="486" font-size="10" font-weight="850" fill="#2dd4a3" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">▲ accelerating</text>
   </g>
 
   <!-- [02] token core: particle atom -->
@@ -236,7 +236,7 @@
       <animate attributeName="r" values="24;40" dur="3.2s" repeatCount="indefinite"/>
       <animate attributeName="stroke-opacity" values="0.5;0" dur="3.2s" repeatCount="indefinite"/>
     </circle>
-    <text x="220" y="664" font-size="15" font-weight="900" fill="#fff2df" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">73.9B</text>
+    <text x="220" y="664" font-size="15" font-weight="900" fill="#fff2df" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">74.2B</text>
     <text x="220" y="677" font-size="7.5" font-weight="800" fill="#ffb057" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">TOKENS</text>
     <g transform="translate(220,668) rotate(-18)">
     <ellipse rx="128" ry="44" fill="none" stroke="#ff8a22" stroke-width="1" stroke-opacity="0.68" stroke-dasharray="5 7">
@@ -289,7 +289,7 @@
     </circle>
   </g>
     <circle r="1.3" fill="#ffb057"><animateMotion path="M220,640 L150,560" dur="4.2s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="4.2s" begin="0s" repeatCount="indefinite"/></circle><circle r="1.3" fill="#ff8a22"><animateMotion path="M220,640 L292,566" dur="5s" begin="-1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="5s" begin="-1.8s" repeatCount="indefinite"/></circle><circle r="1.1" fill="#2dd4a3"><animateMotion path="M220,640 L202,552" dur="5.8s" begin="-3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="5.8s" begin="-3s" repeatCount="indefinite"/></circle>
-    <text x="66" y="786" font-size="9" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">input 73.6B · cached 69.3B · output 316.4M</text>
+    <text x="66" y="786" font-size="9" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">input 73.9B · cached 69.6B · output 317.2M</text>
   </g>
 
   <!-- [03] model share -->
@@ -308,46 +308,46 @@
   </g>
   <g>
       <text x="422" y="578" font-size="11.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">gpt-5.5</text>
-      <text x="750" y="578" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace"><tspan fill="#fff2df" font-weight="900">41.6B</tspan><tspan fill="#ffb057" font-weight="800" font-size="9.5"> · 56.28%</tspan></text>
+      <text x="750" y="578" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace"><tspan fill="#fff2df" font-weight="900">41.6B</tspan><tspan fill="#ffb057" font-weight="800" font-size="9.5"> · 56.06%</tspan></text>
       <rect x="422" y="584" width="328" height="11" rx="4" fill="#24160d" stroke="#4b2a13"/>
-      <rect x="422" y="584" width="184.6" height="11" rx="4" fill="url(#modelBar)">
-        <animate attributeName="width" values="0;184.6" dur="0.9s" begin="0.3s" fill="freeze"/>
+      <rect x="422" y="584" width="183.88" height="11" rx="4" fill="url(#modelBar)">
+        <animate attributeName="width" values="0;183.88" dur="0.9s" begin="0.3s" fill="freeze"/>
       </rect>
       <rect x="422" y="584" width="9" height="11" rx="3" fill="#fff2df" opacity="0">
-        <animate attributeName="x" values="422;597.6" dur="3.2s" begin="1.4s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="422;596.88" dur="3.2s" begin="1.4s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;0.3;0" dur="3.2s" begin="1.4s" repeatCount="indefinite"/>
       </rect>
     </g><g>
       <text x="422" y="614" font-size="11.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">gpt-5.6-sol</text>
-      <text x="750" y="614" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace"><tspan fill="#fff2df" font-weight="900">21.5B</tspan><tspan fill="#ffb057" font-weight="800" font-size="9.5"> · 29.12%</tspan></text>
+      <text x="750" y="614" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace"><tspan fill="#fff2df" font-weight="900">21.8B</tspan><tspan fill="#ffb057" font-weight="800" font-size="9.5"> · 29.38%</tspan></text>
       <rect x="422" y="620" width="328" height="11" rx="4" fill="#24160d" stroke="#4b2a13"/>
-      <rect x="422" y="620" width="95.51" height="11" rx="4" fill="url(#modelBar)">
-        <animate attributeName="width" values="0;95.51" dur="0.9s" begin="0.48s" fill="freeze"/>
+      <rect x="422" y="620" width="96.35" height="11" rx="4" fill="url(#modelBar)">
+        <animate attributeName="width" values="0;96.35" dur="0.9s" begin="0.48s" fill="freeze"/>
       </rect>
       <rect x="422" y="620" width="9" height="11" rx="3" fill="#fff2df" opacity="0">
-        <animate attributeName="x" values="422;508.51" dur="3.2s" begin="1.9s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="422;509.35" dur="3.2s" begin="1.9s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;0.3;0" dur="3.2s" begin="1.9s" repeatCount="indefinite"/>
       </rect>
     </g><g>
       <text x="422" y="650" font-size="11.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">claude-fable-5</text>
-      <text x="750" y="650" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace"><tspan fill="#fff2df" font-weight="900">4.5B</tspan><tspan fill="#ffb057" font-weight="800" font-size="9.5"> · 6.03%</tspan></text>
+      <text x="750" y="650" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace"><tspan fill="#fff2df" font-weight="900">4.5B</tspan><tspan fill="#ffb057" font-weight="800" font-size="9.5"> · 6.01%</tspan></text>
       <rect x="422" y="656" width="328" height="11" rx="4" fill="#24160d" stroke="#4b2a13"/>
-      <rect x="422" y="656" width="19.79" height="11" rx="4" fill="url(#modelBar)">
-        <animate attributeName="width" values="0;19.79" dur="0.9s" begin="0.6599999999999999s" fill="freeze"/>
+      <rect x="422" y="656" width="19.72" height="11" rx="4" fill="url(#modelBar)">
+        <animate attributeName="width" values="0;19.72" dur="0.9s" begin="0.6599999999999999s" fill="freeze"/>
       </rect>
       <rect x="422" y="656" width="9" height="11" rx="3" fill="#fff2df" opacity="0">
-        <animate attributeName="x" values="422;432.79" dur="3.2s" begin="2.4s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="422;432.72" dur="3.2s" begin="2.4s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;0.3;0" dur="3.2s" begin="2.4s" repeatCount="indefinite"/>
       </rect>
     </g><g>
       <text x="422" y="686" font-size="11.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">claude-opus-4-8</text>
-      <text x="750" y="686" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace"><tspan fill="#fff2df" font-weight="900">4.1B</tspan><tspan fill="#ffb057" font-weight="800" font-size="9.5"> · 5.50%</tspan></text>
+      <text x="750" y="686" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace"><tspan fill="#fff2df" font-weight="900">4.1B</tspan><tspan fill="#ffb057" font-weight="800" font-size="9.5"> · 5.48%</tspan></text>
       <rect x="422" y="692" width="328" height="11" rx="4" fill="#24160d" stroke="#4b2a13"/>
-      <rect x="422" y="692" width="18.04" height="11" rx="4" fill="url(#modelBar)">
-        <animate attributeName="width" values="0;18.04" dur="0.9s" begin="0.8400000000000001s" fill="freeze"/>
+      <rect x="422" y="692" width="17.98" height="11" rx="4" fill="url(#modelBar)">
+        <animate attributeName="width" values="0;17.98" dur="0.9s" begin="0.8400000000000001s" fill="freeze"/>
       </rect>
       <rect x="422" y="692" width="9" height="11" rx="3" fill="#fff2df" opacity="0">
-        <animate attributeName="x" values="422;431.04" dur="3.2s" begin="2.9s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="422;430.98" dur="3.2s" begin="2.9s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;0.3;0" dur="3.2s" begin="2.9s" repeatCount="indefinite"/>
       </rect>
     </g><g>
@@ -380,28 +380,28 @@
   </circle>
   <path d="M798 554 H1094" stroke="#ff7a1a" stroke-width="1" opacity="0.65"/>
   <text x="798" y="545" font-size="14" font-weight="900" fill="#ff8a22" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">[04] TOKEN MIX</text>
-  <text x="1094" y="545" font-size="10.5" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">73.9B total</text>
+  <text x="1094" y="545" font-size="10.5" font-weight="800" fill="#ffd08a" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">74.2B total</text>
     <rect x="796" y="572" width="300" height="18" rx="5" fill="#24160d" stroke="#4b2a13"/>
-    <rect x="798" y="574" width="277.56" height="14" fill="#2dd4a3"/><rect x="1075.56" y="574" width="17.16" height="14" fill="#58a6ff"/><rect x="1092.72" y="574" width="1.4" height="14" fill="#ff8a22"/><rect x="1093.59" y="574" width="1.4" height="14" fill="#b779ff"/>
+    <rect x="798" y="574" width="277.6" height="14" fill="#2dd4a3"/><rect x="1075.6" y="574" width="17.12" height="14" fill="#58a6ff"/><rect x="1092.72" y="574" width="1.4" height="14" fill="#ff8a22"/><rect x="1093.59" y="574" width="1.4" height="14" fill="#b779ff"/>
     <rect x="798" y="598" width="9" height="9" rx="2" fill="#2dd4a3"/>
       <text x="814" y="606" font-size="10.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">Cached input</text>
-      <text x="1042" y="606" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">69.3B</text>
-      <text x="1094" y="606" font-size="9.5" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">93.77%</text><rect x="798" y="624" width="9" height="9" rx="2" fill="#58a6ff"/>
+      <text x="1042" y="606" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">69.6B</text>
+      <text x="1094" y="606" font-size="9.5" font-weight="800" fill="#2dd4a3" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">93.78%</text><rect x="798" y="624" width="9" height="9" rx="2" fill="#58a6ff"/>
       <text x="814" y="632" font-size="10.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">Non-cached input</text>
       <text x="1042" y="632" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">4.3B</text>
-      <text x="1094" y="632" font-size="9.5" font-weight="800" fill="#58a6ff" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">5.80%</text><rect x="798" y="650" width="9" height="9" rx="2" fill="#ff8a22"/>
+      <text x="1094" y="632" font-size="9.5" font-weight="800" fill="#58a6ff" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">5.78%</text><rect x="798" y="650" width="9" height="9" rx="2" fill="#ff8a22"/>
       <text x="814" y="658" font-size="10.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">Output</text>
-      <text x="1042" y="658" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">218.1M</text>
+      <text x="1042" y="658" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">218.5M</text>
       <text x="1094" y="658" font-size="9.5" font-weight="800" fill="#ff8a22" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">0.29%</text><rect x="798" y="676" width="9" height="9" rx="2" fill="#b779ff"/>
       <text x="814" y="684" font-size="10.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">Reasoning</text>
-      <text x="1042" y="684" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">98.4M</text>
+      <text x="1042" y="684" font-size="11" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">98.7M</text>
       <text x="1094" y="684" font-size="9.5" font-weight="800" fill="#b779ff" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">0.13%</text>
     <g>
       <path d="M839.09,771 A38,38 0 1,1 904.91,771" fill="none" stroke="#24160d" stroke-width="7" stroke-opacity="1" stroke-linecap="round"/>
-      <path d="M839.09,771 A38,38 0 0,1 844.95,725.31" fill="none" stroke="#b779ff" stroke-width="7" stroke-opacity="0.95" stroke-linecap="round"/>
+      <path d="M839.09,771 A38,38 0 0,1 844.96,725.3" fill="none" stroke="#b779ff" stroke-width="7" stroke-opacity="0.95" stroke-linecap="round"/>
       <g transform="rotate(-120 872 752)">
         <path d="M872 752 L872 723" stroke="#fff2df" stroke-width="2" stroke-linecap="round"/>
-        <animateTransform attributeName="transform" type="rotate" values="-120 872 752;-39.39 872 752;-45.39 872 752" keyTimes="0;0.8;1" dur="1.8s" begin="0.8s" fill="freeze"/>
+        <animateTransform attributeName="transform" type="rotate" values="-120 872 752;-39.35 872 752;-45.35 872 752" keyTimes="0;0.8;1" dur="1.8s" begin="0.8s" fill="freeze"/>
       </g>
       <circle cx="872" cy="752" r="3.4" fill="#b779ff"/>
       <text x="872" y="776" font-size="13" font-weight="900" fill="#fff2df" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">31.1%</text>
@@ -413,7 +413,7 @@
       </rect>
       <circle cx="12" cy="15" r="2.6" fill="#b779ff"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite"/></circle>
       <text x="21" y="12" font-size="8.5" font-weight="900" fill="#d9b8ff" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">REASONING VISIBLE</text>
-      <text x="21" y="24" font-size="8" font-weight="800" fill="#9a7bc0" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">98.4M · peak 6.6M 06-06</text>
+      <text x="21" y="24" font-size="8" font-weight="800" fill="#9a7bc0" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">98.7M · peak 6.6M 06-06</text>
     </g>
   </g>
 
@@ -433,23 +433,23 @@
     <g>
       <text x="70" y="882" font-size="11.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">codex</text>
       <path d="M200 878 H530" stroke="#24160d" stroke-width="10" stroke-linecap="round"/>
-      <path d="M200 878 H485.04" stroke="url(#modelBar)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M200 878 H485.17" stroke="url(#modelBar)" stroke-width="10" stroke-linecap="round"/>
       <circle r="2.6" fill="#ffd08a" filter="url(#softGlow)">
         <animateMotion path="M200,878 L530,878" dur="3s" begin="0s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.9;1" dur="3s" begin="0s" repeatCount="indefinite"/>
       </circle>
-      <text x="592" y="882" font-size="11.5" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">63.9B</text>
+      <text x="592" y="882" font-size="11.5" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">64.1B</text>
       <text x="648" y="882" font-size="9.5" font-weight="800" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">86.4%</text>
     </g><g>
       <text x="70" y="908" font-size="11.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">claude</text>
       <path d="M200 904 H530" stroke="#24160d" stroke-width="10" stroke-linecap="round"/>
-      <path d="M200 904 H243.2" stroke="url(#modelBar)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M200 904 H243.05" stroke="url(#modelBar)" stroke-width="10" stroke-linecap="round"/>
       <circle r="2.6" fill="#ffd08a" filter="url(#softGlow)">
         <animateMotion path="M200,904 L530,904" dur="4.4s" begin="-0.9s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.9;1" dur="4.4s" begin="-0.9s" repeatCount="indefinite"/>
       </circle>
       <text x="592" y="908" font-size="11.5" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">9.7B</text>
-      <text x="648" y="908" font-size="9.5" font-weight="800" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">13.1%</text>
+      <text x="648" y="908" font-size="9.5" font-weight="800" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">13.0%</text>
     </g><g>
       <text x="70" y="934" font-size="11.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">opencode</text>
       <path d="M200 930 H530" stroke="#24160d" stroke-width="10" stroke-linecap="round"/>
@@ -458,8 +458,8 @@
         <animateMotion path="M200,930 L530,930" dur="5.8s" begin="-1.8s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.9;1" dur="5.8s" begin="-1.8s" repeatCount="indefinite"/>
       </circle>
-      <text x="592" y="934" font-size="11.5" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">369.2M</text>
-      <text x="648" y="934" font-size="9.5" font-weight="800" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">0.50%</text>
+      <text x="592" y="934" font-size="11.5" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">374.6M</text>
+      <text x="648" y="934" font-size="9.5" font-weight="800" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">0.51%</text>
     </g><g>
       <text x="70" y="960" font-size="11.5" font-weight="800" fill="#fff2df" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">grok</text>
       <path d="M200 956 H530" stroke="#24160d" stroke-width="10" stroke-linecap="round"/>
@@ -471,7 +471,7 @@
       <text x="592" y="960" font-size="11.5" font-weight="900" fill="#fff2df" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">22.6M</text>
       <text x="648" y="960" font-size="9.5" font-weight="800" fill="#ffb057" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">0.03%</text>
     </g>
-    <text x="66" y="986" font-size="9.5" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">tool calls 756,954 · subagent sessions 11,374 · codex sessions 11,977 · plugin signals 95</text>
+    <text x="66" y="986" font-size="9.5" font-weight="800" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">tool calls 757,691 · subagent sessions 11,385 · codex sessions 11,999 · plugin signals 95</text>
   </g>
 
   <!-- [06] geometry bay: 3D wireframes -->
@@ -513,7 +513,7 @@
       <animate attributeName="stroke-dashoffset" values="0;-136" dur="3.2s" repeatCount="indefinite"/>
     </path>
     <rect x="716" y="1022" width="394" height="24" rx="6" fill="#0a0604" stroke="#673110" stroke-opacity="0.82"/>
-    <text x="730" y="1038" font-size="9.5" font-weight="650" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">01010100 // token.telemetry | window=120d | avg=616.0M | cache=94.2%</text>
+    <text x="730" y="1038" font-size="9.5" font-weight="650" fill="#cc6b2c" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace">01010100 // token.telemetry | window=120d | avg=618.1M | cache=94.2%</text>
     <circle cx="704" cy="1036" r="3" fill="#ffd08a">
       <animate attributeName="opacity" values="1;0.2;1" dur="1.1s" repeatCount="indefinite"/>
     </circle>

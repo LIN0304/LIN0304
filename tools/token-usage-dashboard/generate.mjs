@@ -53,6 +53,7 @@ const usd = (n) => `$${n.toLocaleString('en-US', { minimumFractionDigits: 2, max
 const pct = (n, d = 1) => `${n.toFixed(d)}%`;
 const r2 = (n) => Math.round(n * 100) / 100;
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const ratio = (value, total) => total > 0 ? value / total : 0;
 
 function stampNow() {
   const p = new Intl.DateTimeFormat('en-CA', {
@@ -67,7 +68,7 @@ const T = DATA.totals;
 const days = DATA.day_rows;
 const daily = days.map((d) => d.tokens.total_tokens);
 const totalTokens = T.total_tokens;
-const cacheHit = (T.cached_input_tokens / T.input_tokens) * 100;
+const cacheHit = ratio(T.cached_input_tokens, T.input_tokens) * 100;
 let cost = 0, savings = 0;
 for (const m of DATA.model_rows) { cost += m.costs.total_cost; savings += m.costs.cached_savings; }
 const sessions = DATA.session_count;
@@ -79,26 +80,26 @@ const windowDays =
 const activeDays = DATA.window.active_day_count;
 
 const peakIdx = daily.indexOf(Math.max(...daily));
-const peakVal = daily[peakIdx];
-const peakDay = days[peakIdx].day.slice(5);
-const todayVal = daily[daily.length - 1];
-const todayDay = days[days.length - 1].day.slice(5);
+const peakVal = daily[peakIdx] ?? 0;
+const peakDay = days[peakIdx]?.day.slice(5) ?? '-';
+const todayVal = daily[daily.length - 1] ?? 0;
+const todayDay = days[days.length - 1]?.day.slice(5) ?? '-';
 const nonZero = daily.filter((v) => v > 0);
-const minVal = Math.min(...nonZero);
-const avgVal = totalTokens / windowDays;
-const medianVal = [...nonZero].sort((a, b) => a - b)[Math.floor(nonZero.length / 2)];
+const minVal = nonZero.length ? Math.min(...nonZero) : 0;
+const avgVal = ratio(totalTokens, windowDays);
+const medianVal = [...nonZero].sort((a, b) => a - b)[Math.floor(nonZero.length / 2)] ?? 0;
 const last7 = daily.slice(-7).reduce((a, b) => a + b, 0);
 const prev7 = daily.slice(-14, -7).reduce((a, b) => a + b, 0);
 const d7pct = prev7 > 0 ? ((last7 - prev7) / prev7) * 100 : 0;
 
 const reasoning = T.reasoning_output_tokens;
-const reasoningShareOut = (reasoning / T.output_tokens) * 100;
+const reasoningShareOut = ratio(reasoning, T.output_tokens) * 100;
 const reasoningDaily = days.map((d) => d.tokens.reasoning_output_tokens);
-const reasoningPeak = Math.max(...reasoningDaily);
-const reasoningPeakDay = days[reasoningDaily.indexOf(reasoningPeak)].day.slice(5);
+const reasoningPeak = reasoningDaily.length ? Math.max(...reasoningDaily) : 0;
+const reasoningPeakDay = days[reasoningDaily.indexOf(reasoningPeak)]?.day.slice(5) ?? '-';
 
 const models = DATA.model_rows.slice(0, 5).map((m) => ({
-  name: m.model, tokens: m.tokens.total_tokens, share: (m.tokens.total_tokens / totalTokens) * 100,
+  name: m.model, tokens: m.tokens.total_tokens, share: ratio(m.tokens.total_tokens, totalTokens) * 100,
 }));
 const otherTokens = totalTokens - models.reduce((a, m) => a + m.tokens, 0);
 const otherCount = DATA.model_rows.length - models.length;
@@ -232,7 +233,7 @@ function kpi(x, y, w, h, label, value, sub, accent, begin, vSize = 21) {
 // Daily chart geometry.
 function chartGeom(x0, x1, y0, y1, series, yMax) {
   const n = series.length;
-  const X = (i) => r2(x0 + (i * (x1 - x0)) / (n - 1));
+  const X = (i) => r2(n > 1 ? x0 + (i * (x1 - x0)) / (n - 1) : (x0 + x1) / 2);
   const Y = (v) => r2(y1 - (Math.min(v, yMax) / yMax) * (y1 - y0));
   const pts = series.map((v, i) => [X(i), Y(v)]);
   const line = pts.map(([a, b], i) => `${i ? 'L' : 'M'}${a},${b}`).join(' ');
@@ -250,15 +251,16 @@ function desktopSVG() {
   const peakPt = g.pts[peakIdx];
   const gridY = [0, 1.6e9, 3.2e9, 4.8e9, 6.4e9];
 
-  const xTicks = [0, 12, 26, peakIdx, 52, 66, daily.length - 1]
-    .filter((v, i, a) => a.indexOf(v) === i).sort((a, b) => a - b);
+  const tickCount = Math.min(7, daily.length);
+  const xTicks = Array.from({ length: tickCount }, (_, i) =>
+    Math.round(i * (daily.length - 1) / Math.max(1, tickCount - 1)));
 
   const kpis = [
     ['TOTAL TOKENS', fmt(totalTokens), `${windowDays}d window`, '#ff8a22', 0, 22],
-    ['EST COST', usd(cost), `${usd(cost / windowDays)} / day`, '#ff4d00', 0.6, 19],
+    ['EST COST', usd(cost), `${usd(ratio(cost, windowDays))} / day`, '#ff4d00', 0.6, 19],
     ['CACHE HIT', pct(cacheHit), `${fmt(T.cached_input_tokens)} cached`, '#2dd4a3', 1.2, 22],
     ['SAVINGS', usd(savings), 'vs no-cache', '#f06d19', 1.8, 17],
-    ['SESSIONS', int(sessions), `${Math.round(sessions / windowDays)} / day`, '#ffb057', 2.4, 22],
+    ['SESSIONS', int(sessions), `${Math.round(ratio(sessions, windowDays))} / day`, '#ffb057', 2.4, 22],
     ['ACTIVE DAYS', `${activeDays}/${windowDays}`, 'telemetry on', '#b779ff', 3.0, 22],
   ];
   const kw = 165, kg = 14;
@@ -294,8 +296,8 @@ function desktopSVG() {
   const mxX = 798, mxW = 296, mxY = 574;
   let acc = 0;
   const mixBar = mix.map((m) => {
-    const w = r2((m.val / totalTokens) * mxW);
-    const seg = `<rect x="${r2(mxX + acc)}" y="${mxY}" width="${Math.max(w, 1.4)}" height="14" fill="${m.color}"/>`;
+    const w = r2(ratio(m.val, totalTokens) * mxW);
+    const seg = `<rect x="${r2(mxX + acc)}" y="${mxY}" width="${totalTokens ? Math.max(w, 1.4) : 0}" height="14" fill="${m.color}"/>`;
     acc += w;
     return seg;
   }).join('');
@@ -304,7 +306,7 @@ function desktopSVG() {
     return `<rect x="${mxX}" y="${y - 8}" width="9" height="9" rx="2" fill="${m.color}"/>
       ${text(mxX + 16, y, 10.5, '#fff2df', m.label)}
       ${text(mxX + mxW - 52, y, 11, '#fff2df', fmt(m.val), { anchor: 'end', weight: 900 })}
-      ${text(mxX + mxW, y, 9.5, m.color, pct((m.val / totalTokens) * 100, 2), { anchor: 'end' })}`;
+      ${text(mxX + mxW, y, 9.5, m.color, pct(ratio(m.val, totalTokens) * 100, 2), { anchor: 'end' })}`;
   }).join('');
 
   // --- reasoning gauge (share of output tokens)
@@ -319,7 +321,7 @@ function desktopSVG() {
   // --- agent fleet lanes
   const fleetY0 = 878, laneH = 26, laneX = 200, laneW = 330;
   const fleetRows = agents.slice(0, 4).map((a, i) => {
-    const share = (a.tokens / totalTokens) * 100;
+    const share = ratio(a.tokens, totalTokens) * 100;
     const y = fleetY0 + i * laneH;
     const w = Math.max(2.5, r2((share / 100) * laneW));
     const dur = 3 + i * 1.4;
@@ -417,6 +419,7 @@ function desktopSVG() {
     ${gridY.map((v) => text(88, g.Y(v) + 4, 10, '#7a4318', fmt(v).replace('.0', ''), { anchor: 'end' })).join('')}
     ${gridY.slice(1, -1).map((v) => `<path d="M94 ${g.Y(v)} H1090" stroke="#4b2a13" stroke-width="1" opacity="0.55" stroke-dasharray="2 4"/>`).join('')}
     <path d="M94 452 H1090" stroke="#6c3a16" stroke-width="1.3"/>
+    ${daily.length ? `
     <path d="${g.area}" fill="url(#peakArea)" opacity="0">
       <animate attributeName="opacity" values="0;1" dur="1s" begin="1.6s" fill="freeze"/>
     </path>
@@ -447,6 +450,7 @@ function desktopSVG() {
     </g>
     <circle cx="${g.pts[daily.length - 1][0]}" cy="${g.pts[daily.length - 1][1]}" r="4.5" fill="#1b0e07" stroke="#ffd08a" stroke-width="1.6"/>
     ${text(g.pts[daily.length - 1][0] - 4, g.pts[daily.length - 1][1] - 10, 9, '#ffd08a', `today ${fmt(todayVal)}`, { anchor: 'end' })}
+    ` : text(592, 382, 12, '#cc6b2c', 'No data', { anchor: 'middle' })}
     ${xTicks.map((i) => text(g.X(i), 468, 10, '#ffca88', days[i].day.slice(5), { anchor: 'middle' })).join('')}
     ${stat(66, 'avg', fmt(avgVal))}${stat(180, 'median', fmt(medianVal))}${stat(320, 'range', `${fmt(minVal)} ↔ ${fmt(peakVal)}`)}${stat(510, 'last 7d', fmt(last7))}${stat(640, 'Δ vs prev 7d', `${d7pct >= 0 ? '+' : ''}${d7pct.toFixed(0)}%`, d7pct >= 0 ? '#2dd4a3' : '#ff5f56')}${stat(810, 'trend', d7pct >= 0 ? '▲ accelerating' : '▼ cooling', d7pct >= 0 ? '#2dd4a3' : '#ff5f56')}
   </g>
@@ -570,10 +574,10 @@ function mobileSVG() {
 
   const kpiRows = [
     ['TOTAL', fmt(totalTokens), `${windowDays}d window`, '#ff8a22'],
-    ['EST COST', usd(cost), `${usd(cost / windowDays)}/day`, '#ff4d00'],
+    ['EST COST', usd(cost), `${usd(ratio(cost, windowDays))}/day`, '#ff4d00'],
     ['CACHE HIT', pct(cacheHit), `${fmt(T.cached_input_tokens)} cached`, '#2dd4a3'],
     ['SAVINGS', usd(savings), 'vs no-cache', '#f06d19'],
-    ['SESSIONS', int(sessions), `${Math.round(sessions / windowDays)}/day`, '#ffb057'],
+    ['SESSIONS', int(sessions), `${Math.round(ratio(sessions, windowDays))}/day`, '#ffb057'],
     ['ACTIVE', `${activeDays}/${windowDays}`, 'days on', '#b779ff'],
   ];
 
@@ -593,8 +597,8 @@ function mobileSVG() {
 
   const mxY = 1042; let acc = 0;
   const mixBar = mix.map((m) => {
-    const w = r2((m.val / totalTokens) * barW);
-    const seg = `<rect x="${r2(barX + acc)}" y="${mxY}" width="${Math.max(w, 1.2)}" height="12" fill="${m.color}"/>`;
+    const w = r2(ratio(m.val, totalTokens) * barW);
+    const seg = `<rect x="${r2(barX + acc)}" y="${mxY}" width="${totalTokens ? Math.max(w, 1.2) : 0}" height="12" fill="${m.color}"/>`;
     acc += w; return seg;
   }).join('');
   const mixLegend = mix.map((m, i) => {
@@ -647,6 +651,7 @@ function mobileSVG() {
     ${text(28, 362, 12, '#ff8a22', '[01] DAILY VOLUME', { weight: 900 })}
     ${text(392, 362, 8.5, '#ffd08a', `peak ${fmt(peakVal)} ${peakDay}`, { anchor: 'end' })}
     <path d="M36 444 H396" stroke="#6c3a16" stroke-width="1"/>
+    ${daily.length ? `
     <path d="${g.area}" fill="url(#peakArea)" opacity="0"><animate attributeName="opacity" values="0;1" dur="1s" begin="1.3s" fill="freeze"/></path>
     <path d="${g.line}" fill="none" stroke="url(#peakStroke)" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="${g.len}" stroke-dashoffset="${g.len}">
       <animate attributeName="stroke-dashoffset" values="${g.len};0" dur="2.2s" begin="0.3s" fill="freeze"/>
@@ -654,6 +659,7 @@ function mobileSVG() {
     <circle r="3" fill="#fff2df" filter="url(#softGlow)"><animateMotion path="${g.line}" dur="15s" begin="2.4s" repeatCount="indefinite"/></circle>
     <circle cx="${peakPt[0]}" cy="${peakPt[1]}" r="5" fill="#ff8a22" filter="url(#softGlow)"><animate attributeName="r" values="4;6;4" dur="2.4s" repeatCount="indefinite"/></circle>
     <circle cx="${peakPt[0]}" cy="${peakPt[1]}" r="2" fill="#fff2df"/>
+    ` : text(216, 414, 10, '#cc6b2c', 'No data', { anchor: 'middle' })}
     ${text(28, 470, 8.5, '#cc6b2c', `avg ${fmt(avgVal)} · median ${fmt(medianVal)} · today ${fmt(todayVal)}`)}
     ${text(392, 470, 8.5, d7pct >= 0 ? '#2dd4a3' : '#ff5f56', `7d ${d7pct >= 0 ? '+' : ''}${d7pct.toFixed(0)}%`, { anchor: 'end' })}
   </g>
